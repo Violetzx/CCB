@@ -3774,7 +3774,7 @@
 			<Text>众神诞生之地</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS_DESC" Language="zh_Hans_CN">
-			<Text>国际 [ICON_TradeRoute] 贸易路线会根据所宗主城邦类型获得额外产出：[NEWLINE] 宗主宗教城邦则获得+1 [ICON_FOOD] 食物。[NEWLINE]宗主军事或工业城邦则获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]宗主贸易城邦则获得+3 [ICON_GOLD] 金币。[NEWLINE]宗主科技城邦则获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]宗主文化城邦则获得+1 [ICON_CULTURE] 文化值。[NEWLINE]若宗主两个同样类型城邦，则额外产出增至三倍。</Text>
+			<Text>国际 [ICON_TradeRoute] 贸易路线会根据所宗主城邦类型获得额外产出：[NEWLINE]宗主宗教城邦则获得+1 [ICON_FOOD] 食物。[NEWLINE]宗主军事或工业城邦则获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]宗主贸易城邦则获得+3 [ICON_GOLD] 金币。[NEWLINE]宗主科技城邦则获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]宗主文化城邦则获得+1 [ICON_CULTURE] 文化值。[NEWLINE]若宗主两个同样类型城邦，则额外产出增至三倍。</Text>
 		</Replace>
 		<!-- = Leader ability -->
 		<Replace Tag="LOC_TRAIT_LEADER_LIME_TEO_OWL_FIRE_IS_BORN_NAME" Language="zh_Hans_CN">
@@ -3914,7 +3914,7 @@
 			<Text>世界屋脊</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SUK_DHARMA_KINGS_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：[NEWLINE][ICON_FOOD]每个市中心获得+2 [ICON_FOOD] 食物。[NEWLINE]每个工业区获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]每个港口或商业中心获得+1 [ICON_GOLD] 金币。[NEWLINE]每个学院获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]每个剧院获得+1 [ICON_CULTURE] 文化值。[NEWLINE]每个圣地获得+1 [ICON_FAITH] 信仰值。[NEWLINE] 相邻山脉的特色区域可用信仰购买建筑。 [ICON_GOVERNOR] 总督每次升级（包括首次升级）都将提供5%城市 [ICON_FAITH] 信仰值产出。[NEWLINE][NEWLINE]出生地关联：T3草原山脉、平原山脉和冻土山脉。</Text>
+			<Text>公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：[NEWLINE]每个市中心获得+2 [ICON_FOOD] 食物。[NEWLINE]每个工业区获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]每个港口或商业中心获得+1 [ICON_GOLD] 金币。[NEWLINE]每个学院获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]每个剧院获得+1 [ICON_CULTURE] 文化值。[NEWLINE]每个圣地获得+1 [ICON_FAITH] 信仰值。[NEWLINE] 相邻山脉的特色区域可用信仰购买建筑。 [ICON_GOVERNOR] 总督每次升级（包括首次升级）都将提供5%城市 [ICON_FAITH] 信仰值产出。[NEWLINE][NEWLINE]出生地关联：T3草原山脉、平原山脉和冻土山脉。</Text>
 		</Replace>
 		<!-- = Leader ability -->
 		<Replace Tag="LOC_TRAIT_LEADER_SUK_CAPTURE_OF_CHANGAN_NAME" Language="zh_Hans_CN">
