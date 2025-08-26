@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>415</build>
+		<revision>990</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/tilebases"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="RES_p0k_Penguins_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Penguins_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_CVS_POM_PLNT_Ancient"/>
+			<m_ObjectName text="IMP_CVS_POM_PLNT_Ancient"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_CVS_POM_PLNT_Industrial"/>
+			<m_ObjectName text="IMP_CVS_POM_PLNT_Industrial"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Penguin_Camp_AN_01"/>
+			<m_ObjectName text="IMP_p0k_Penguin_Camp_AN_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Penguin_Camp_AN_02"/>
+			<m_ObjectName text="IMP_p0k_Penguin_Camp_AN_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Penguin_Camp_AN_03"/>
+			<m_ObjectName text="IMP_p0k_Penguin_Camp_AN_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Penguin_Camp_IND_01"/>
+			<m_ObjectName text="IMP_p0k_Penguin_Camp_IND_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Penguin_Camp_IND_02"/>
+			<m_ObjectName text="IMP_p0k_Penguin_Camp_IND_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Penguin_Camp_IND_03"/>
+			<m_ObjectName text="IMP_p0k_Penguin_Camp_IND_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_CVS_Pomegranate_Tree_Bld_A"/>
+			<m_ObjectName text="RES_CVS_Pomegranate_Tree_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_CVS_Pomegranate_Tree_Bld_B"/>
+			<m_ObjectName text="RES_CVS_Pomegranate_Tree_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_CVS_Pomegranate_Tree_Bld_C"/>
+			<m_ObjectName text="RES_CVS_Pomegranate_Tree_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Papyrus_Asset_01"/>
+			<m_ObjectName text="p0k_Papyrus_Asset_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Papyrus_Asset_02"/>
+			<m_ObjectName text="p0k_Papyrus_Asset_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Papyrus_Asset_03"/>
+			<m_ObjectName text="p0k_Papyrus_Asset_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Papyrus_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Papyrus_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Papyrus_Bld_B"/>
+			<m_ObjectName text="RES_p0k_Papyrus_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Papyrus_Bld_C"/>
+			<m_ObjectName text="RES_p0k_Papyrus_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Papyrus_PLNT_Ancient"/>
+			<m_ObjectName text="IMP_p0k_Papyrus_PLNT_Ancient"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Papyrus_PLNT_Industrial"/>
+			<m_ObjectName text="IMP_p0k_Papyrus_PLNT_Industrial"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_DeepRed_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Maple_DeepRed_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_DeepRed_Bld_B"/>
+			<m_ObjectName text="RES_p0k_Maple_DeepRed_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_DeepRed_Bld_C"/>
+			<m_ObjectName text="RES_p0k_Maple_DeepRed_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_LiteRed_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Maple_LiteRed_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_LiteRed_Bld_B"/>
+			<m_ObjectName text="RES_p0k_Maple_LiteRed_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_LiteRed_Bld_C"/>
+			<m_ObjectName text="RES_p0k_Maple_LiteRed_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_MedRed_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Maple_MedRed_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_MedRed_Bld_B"/>
+			<m_ObjectName text="RES_p0k_Maple_MedRed_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_MedRed_Bld_C"/>
+			<m_ObjectName text="RES_p0k_Maple_MedRed_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Maple_PLNT_Ancient"/>
+			<m_ObjectName text="IMP_p0k_Maple_PLNT_Ancient"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Maple_PLNT_Industrial"/>
+			<m_ObjectName text="IMP_p0k_Maple_PLNT_Industrial"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Opal_Mine_AN_01"/>
+			<m_ObjectName text="IMP_p0k_Opal_Mine_AN_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Opal_Mine_AN_02"/>
+			<m_ObjectName text="IMP_p0k_Opal_Mine_AN_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Opal_Mine_AN_03"/>
+			<m_ObjectName text="IMP_p0k_Opal_Mine_AN_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Opal_Mine_IND"/>
+			<m_ObjectName text="IMP_p0k_Opal_Mine_IND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Opal_Mine_IND_02"/>
+			<m_ObjectName text="IMP_p0k_Opal_Mine_IND_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Opal_Mine_IND_03"/>
+			<m_ObjectName text="IMP_p0k_Opal_Mine_IND_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Boulder_Clump_Bld"/>
+			<m_ObjectName text="RES_p0k_Opal_Boulder_Clump_Bld"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock_Bld_B"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock_Bld_C"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Plum_Tree_Bld_A"/>
+			<m_ObjectName text="RES_p0k_Plum_Tree_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Plum_Tree_Bld_B"/>
+			<m_ObjectName text="RES_p0k_Plum_Tree_Bld_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Plum_Tree_Bld_C"/>
+			<m_ObjectName text="RES_p0k_Plum_Tree_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Plums_PLNT_Ancient"/>
+			<m_ObjectName text="IMP_p0k_Plums_PLNT_Ancient"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_p0k_Plums_PLNT_Industrial"/>
+			<m_ObjectName text="IMP_p0k_Plums_PLNT_Industrial"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

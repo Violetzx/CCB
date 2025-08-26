@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="62e6da74-ae34-4f24-b19f-ffccf5c8d499" version="1">
+  <Properties>
+    <Name>[COLOR_GREEN]Port Lime[ENDCOLOR] - Phoenicia - Ahiram</Name>
+    <Description>Adds Ahiram - King of Byblos and Really Really Rich Dude - to the game as an Alt Leader of Phoenicia! Cha-ching![NEWLINE][NEWLINE][COLOR_GREEN]Ahiram - Phoenicia[ENDCOLOR][NEWLINE][COLOR_GREEN]LUA: Merchant Princes[ENDCOLOR][NEWLINE]Purchasing buildings generates a burst of Great Merchant points. Unlock the Shaft Tomb unique building.[ENDCOLOR][NEWLINE][COLOR_GREEN]LUB: Royal Tomb[ENDCOLOR][NEWLINE]Replaces the Library. Provides bonus Gold equal to the adjacency Science bonus of its district. +1 Science for each Great Merchant earnt by this civilization.</Description>
+    <Created>1589840972</Created>
+    <Teaser>It's all about the Money, Money, Money!</Teaser>
+    <Authors>Lime</Authors>
+    <SpecialThanks>Leugi, p0khiel</SpecialThanks>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <References>
+    <Mod id="74c5f76a-5aa8-4b40-b727-c8c5e6ca9b01" title="p0kiehl's Phoenicia Rework" />
+  </References>
+  <FrontEndActions>
+    <UpdateDatabase id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Config.sql</File>
+    </UpdateDatabase>
+    <UpdateColors id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Colours.sql</File>
+    </UpdateColors>
+    <UpdateText id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Text.sql</File>
+    </UpdateText>
+    <UpdateIcons id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Icons.sql</File>
+    </UpdateIcons>
+    <UpdateArt id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Lime_Phoenicia_Ahiram.dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Game Defines.sql</File>
+    </UpdateDatabase>
+    <UpdateColors id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Colours.sql</File>
+    </UpdateColors>
+    <UpdateArt id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Lime_Phoenicia_Ahiram.dep</File>
+    </UpdateArt>
+    <UpdateText id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Text.sql</File>
+    </UpdateText>
+    <AddGameplayScripts id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Lua.lua</File>
+    </AddGameplayScripts>
+    <UpdateIcons id="NewAction">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>core/Ahiram - Icons.sql</File>
+    </UpdateIcons>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Buildings.artdef</File>
+    <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
+    <File>ArtDefs/Leaders.artdef</File>
+    <File>ArtDefs/StrategicView.artdef</File>
+    <File>core/Ahiram - Colours.sql</File>
+    <File>core/Ahiram - Config.sql</File>
+    <File>core/Ahiram - Game Defines.sql</File>
+    <File>core/Ahiram - Icons.sql</File>
+    <File>core/Ahiram - Lua.lua</File>
+    <File>core/Ahiram - ModSupport.sql</File>
+    <File>core/Ahiram - Text.sql</File>
+    <File>Lime_Phoenicia_Ahiram.dep</File>
+    <File>Mod.Art.xml</File>
+    <File>Mod.Art_Backup.xml</File>
+    <File>Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbackImages.blp</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CMP_Base_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CMP_RoyalTomb_Basecolor_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_GOV_Base_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foundation_Modern_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_IMP_Mine_Base_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Pillage_Construction_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_A</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_E</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_GOV_Base_A</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_GOV_Base_E</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_GOV_Base_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_GOV_Base_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_GOV_Base_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_GOV_Base_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Mine_Base_A</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Mine_Base_E</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Mine_Base_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Mine_Base_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Mine_Base_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Mine_Base_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_O</File>
+    <File>Platforms/Windows/BLPs/strategicview/strategicview_buildings.blp</File>
+    <File>Platforms/Windows/BLPs/UILeaders.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+  </Files>
+</Mod>

@@ -1,0 +1,30 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2354899908	Suk_Vercingetorix_Declare_War			\Default Work Unit\Speech\Leaders\Suk_Vercingetorix\Suk_Vercingetorix_Declare_War	
+	2406059811	Suk_Vercingetorix_First_Meet			\Default Work Unit\Speech\Leaders\Suk_Vercingetorix\Suk_Vercingetorix_First_Meet	
+	3750075151	Suk_Vercingetorix_Stop			\Default Work Unit\Speech\Leaders\Suk_Vercingetorix\Suk_Vercingetorix_Stop	
+	3921163700	Suk_Vercingetorix_Attacked			\Default Work Unit\Speech\Leaders\Suk_Vercingetorix\Suk_Vercingetorix_Attacked	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3441926412	Game_Views			\Default Work Unit\Game_Views	
+
+State	ID	Name	State Group			Notes
+	138330285	Lens	Game_Views			
+	319258907	Paused	Game_Views			
+	706390200	Normal_View	Game_Views			
+	748895195	None	Game_Views			
+	2005704188	Main_Menu	Game_Views			
+	2664707777	Leader_Screen	Game_Views			
+	4264815106	Endgame	Game_Views			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	42385655	Endgame	Game_Views	\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix		
+	170447481	Normal_View	Game_Views	\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix		
+	292387670	Paused	Game_Views	\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix		
+	316218594	Main_Menu	Game_Views	\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix		
+	705827644	Lens	Game_Views	\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	362775055	Suk_Vercingetorix_Declare_War_Modulated	C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\.cache\Windows\SFX\Suk_Vercingetorix_Declare_War_Modulated_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix\Suk_Vercingetorix_Declare_War_Modulated		37814
+	474386452	Suk_Vercingetorix_Introduction_Modulated	C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\.cache\Windows\SFX\Suk_Vercingetorix_Introduction_Modulated_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix\Suk_Vercingetorix_Introduction_Modulated		48592
+	814770026	Suk_Vercingetorix_Attacked_Modulated	C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\.cache\Windows\SFX\Suk_Vercingetorix_Attacked_Modulated_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeadeSpeech\Suk_Vercingetorix\Suk_Vercingetorix_Attacked_Modulated		31734
+

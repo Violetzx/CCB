@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UI/Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_22"/>
+			<m_ObjectName text="p0k_Resources_Atlas_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_256"/>
+			<m_ObjectName text="p0k_Resources_Atlas_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_38"/>
+			<m_ObjectName text="p0k_Resources_Atlas_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_50"/>
+			<m_ObjectName text="p0k_Resources_Atlas_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_64"/>
+			<m_ObjectName text="p0k_Resources_Atlas_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_FOW"/>
+			<m_ObjectName text="p0k_Resources_Atlas_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_Atlas_256_FOW"/>
+			<m_ObjectName text="p0k_Resources_Atlas_256_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_MODE_Atlas_FOW"/>
+			<m_ObjectName text="p0k_Resources_MODE_Atlas_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_MODE_Atlas_256"/>
+			<m_ObjectName text="p0k_Resources_MODE_Atlas_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_MODE_Atlas_32"/>
+			<m_ObjectName text="p0k_Resources_MODE_Atlas_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_MODE_Atlas_38"/>
+			<m_ObjectName text="p0k_Resources_MODE_Atlas_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_MODE_Atlas_50"/>
+			<m_ObjectName text="p0k_Resources_MODE_Atlas_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="p0k_Resources_MODE_Atlas_64"/>
+			<m_ObjectName text="p0k_Resources_MODE_Atlas_64"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

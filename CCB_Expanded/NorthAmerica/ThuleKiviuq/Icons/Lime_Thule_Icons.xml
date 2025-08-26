@@ -1,0 +1,76 @@
+<GameInfo>
+	<IconTextureAtlases>
+		<!--Kiviuq/Dave-->
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="32"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave32.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="45"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave45.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="48"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave48.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="50"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave50.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="55"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave55.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="64"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave64.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="80"  IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave80.dds"/>
+		<Row Name="ICON_ATLAS_LEADER_LIME_THULE_DAVE" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="KiviuqDave256.dds"/>
+		
+		<!--Kiviuq/Dave Color-->
+<!--		<Row Name="ICON_ATLAS_CIV_LIME_THULE_DAVE_COLOR" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="ThuleKiviuqDave45.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE_DAVE_COLOR" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="ThuleKiviuqDave256.dds"/>
+
+		<!--Civ-->
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="Thule256.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="200" IconsPerRow="1" IconsPerColumn="1" Filename="Thule200.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="128" IconsPerRow="1" IconsPerColumn="1" Filename="Thule128.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="22"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule22.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="30"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule30.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="36"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule36.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="44"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule44.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="45"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule44.dds"/>
+<!--		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize=" 45" IconsPerRow="1" IconsPerColumn="1" Filename="ThuleKiviuqDave45.dds"/> <!--Suk's Civ Select-->
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="48"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule48.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="50"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule50.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="64"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule64.dds"/>
+		<Row Name="ICON_ATLAS_CIV_LIME_THULE" IconSize="80"  IconsPerRow="1" IconsPerColumn="1" Filename="Thule80.dds"/>
+
+		<!--Dogsled-->
+		<Row Name="ICON_ATLAS_LIME_DOGSLED" IconSize="22"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_ICON_22.dds"/>
+		<Row Name="ICON_ATLAS_LIME_DOGSLED" IconSize="32"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_ICON_32.dds"/>
+		<Row Name="ICON_ATLAS_LIME_DOGSLED" IconSize="80"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_ICON_80.dds"/>
+		<Row Name="ICON_ATLAS_LIME_DOGSLED" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_ICON_256.dds"/>
+		
+		<!--Angakkuq Portrait-->
+		<Row Name="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" IconSize="38"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_PORTRAIT_38.dds"/>
+		<Row Name="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" IconSize="50"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_PORTRAIT_50.dds"/>
+		<Row Name="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" IconSize="70"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_PORTRAIT_70.dds"/>
+		<Row Name="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" IconSize="95"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_PORTRAIT_95.dds"/>
+		<Row Name="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" IconSize="200" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_PORTRAIT_200.dds"/>
+		<Row Name="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_UU_PORTRAIT_256.dds"/>
+		
+		<!--WhaleboneHouse-->
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" IconSize="38"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WBH_ICON_38.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" IconSize="40"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WBH_ICON_40.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" IconSize="50"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WBH_ICON_50.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" IconSize="80"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WBH_ICON_80.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" IconSize="200" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WBH_ICON_200.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WBH_ICON_256.dds"/>
+
+		<!--WhaleboneHouse-->
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALES" IconSize="38"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WHALE_ICON_38.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALES" IconSize="40"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WHALE_ICON_40.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALES" IconSize="50"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WHALE_ICON_50.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALES" IconSize="80"  IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WHALE_ICON_80.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALES" IconSize="200" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WHALE_ICON_200.dds"/>
+		<Row Name="ICON_ATLAS_LIME_THULE_WHALES" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="CIVILIZATION_LIME_THULE_WHALE_ICON_256.dds"/>
+
+</IconTextureAtlases>
+	
+	<IconDefinitions>
+		<Row Name="ICON_LEADER_LIME_THULE_DAVE"				Atlas="ICON_ATLAS_LEADER_LIME_THULE_DAVE" Index="0"/>
+<!--		<Row Name="ICON_CIV_LIME_THULE_DAVE_COLOR"		Atlas="ICON_ATLAS_CIV_LIME_THULE_DAVE_COLOR" Index="0"/> -->
+		
+		<Row Name="ICON_CIVILIZATION_LIME_THULE"			Atlas="ICON_ATLAS_CIV_LIME_THULE" Index="0"/>
+		
+		<Row Name="ICON_UNIT_LIME_THULE_DOGSLED"			Atlas="ICON_ATLAS_LIME_DOGSLED" Index="0"/>
+		<Row Name="ICON_UNIT_LIME_THULE_DOGSLED_PORTRAIT"	Atlas="ICON_ATLAS_LIME_ANGAKKUQ_PORTRAIT" Index="0"/>
+
+		<Row Name="ICON_IMPROVEMENT_LIME_THULE_WBH"			Atlas="ICON_ATLAS_LIME_THULE_WHALEBONEHOUSE" Index="0"/>
+		<Row Name="ICON_IMPROVEMENT_LIME_THULE_WHALES"		Atlas="ICON_ATLAS_LIME_THULE_WHALES" Index="0"/>
+	</IconDefinitions>
+</GameInfo>

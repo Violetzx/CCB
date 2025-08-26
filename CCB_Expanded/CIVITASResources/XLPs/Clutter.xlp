@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>415</build>
+		<revision>990</revision>
+	</m_Version>
+	<m_ClassName text="Landmark"/>
+	<m_PackageName text="environment/clutter"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="RES_p0k_Penguins"/>
+			<m_ObjectName text="RES_p0k_Penguins"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_CVS_Pomegranate_Tree01"/>
+			<m_ObjectName text="RES_CVS_Pomegranate_Tree01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Papyrus01"/>
+			<m_ObjectName text="RES_p0k_Papyrus01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Papyrus02"/>
+			<m_ObjectName text="RES_p0k_Papyrus02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Papyrus03"/>
+			<m_ObjectName text="RES_p0k_Papyrus03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_DeepRed_01"/>
+			<m_ObjectName text="RES_p0k_Maple_DeepRed_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_DeepRed_02"/>
+			<m_ObjectName text="RES_p0k_Maple_DeepRed_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_DeepRed_03"/>
+			<m_ObjectName text="RES_p0k_Maple_DeepRed_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_LiteRed_01"/>
+			<m_ObjectName text="RES_p0k_Maple_LiteRed_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_LiteRed_02"/>
+			<m_ObjectName text="RES_p0k_Maple_LiteRed_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_LiteRed_03"/>
+			<m_ObjectName text="RES_p0k_Maple_LiteRed_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_MedRed_01"/>
+			<m_ObjectName text="RES_p0k_Maple_MedRed_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_MedRed_02"/>
+			<m_ObjectName text="RES_p0k_Maple_MedRed_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Maple_MedRed_03"/>
+			<m_ObjectName text="RES_p0k_Maple_MedRed_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Decal01"/>
+			<m_ObjectName text="RES_p0k_Opal_Decal01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Decal02"/>
+			<m_ObjectName text="RES_p0k_Opal_Decal02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock01"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock02"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock03"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock04"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock04"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Opal_Rock05"/>
+			<m_ObjectName text="RES_p0k_Opal_Rock05"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_p0k_Plum_Tree01"/>
+			<m_ObjectName text="RES_p0k_Plum_Tree01"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

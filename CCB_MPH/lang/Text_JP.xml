@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+
+        <!-- New entries -->
+        <Replace Tag="LOC_MAP_RICH_HIGHTLANDS_NANME" language="ja_JP">
+            <Text>リッチ・ハイランド</Text>
+        </Replace>
+        <Replace Tag="LOC_MAP_RICH_HIGHTLANDS_DESCRIPTION" language="ja_JP">
+            <Text>より資源の多くなったハイランド。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TURN_IS_PROCESSED" language="ja_JP">
+            <Text>このターンは処理中です。しばらくお待ち下さい…</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_MODCHECK_BUTTON_TOOLTIP" language="ja_JP">
+            <Text>クライアントにインストールされているMODを確認します。（対応：BBG、BBS、MPH）[NEWLINE]MPHはホストとクライアントの両方に事前にロードされている必要があります。</Text>
+        </Replace>
+        <Replace Tag="CPL_SYNCTURN_NAME" language="ja_JP">
+            <Text>ターン同期</Text>
+        </Replace>
+        <Replace Tag="CPL_SYNCTURN_DESC" language="ja_JP">
+            <Text>人間のプレイヤーは同時にターンを開始し、終了します。</Text>
+        </Replace>
+        <Replace Tag="CPL_CWC_NAME" language="ja_JP">
+            <Text>[COLOR_Civ6Red]Official CWC Game[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="CPL_CWC_DESC" language="ja_JP">
+            <Text>Civ World Cupトーナメントの設定</Text>
+        </Replace>
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_NAME" language="ja_JP">
+            <Text>準備中</Text>
+        </Replace>
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_DESCRIPTION" language="ja_JP">
+            <Text>攻撃時、[ICON_Strength]戦闘力-20。</Text>
+        </Replace>
+        <Replace Tag="LOC_MOD_LAST_MOVED_DESCRIPTION" language="ja_JP">
+            <Text>ターンの最初の数秒、[ICON_Strength]戦闘力-20。 </Text>
+        </Replace>
+
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_READY_NAME" language="ja_JP">
+            <Text>準備完了！</Text>
+        </Replace>
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_READY_DESCRIPTION" language="ja_JP">
+            <Text>あなたの最後のアクションから回復します。</Text>
+        </Replace>
+        <Replace Tag="CPL_FS_NAME" language="ja_JP">
+            <Text>友好宣言</Text>
+        </Replace>
+        <Replace Tag="CPL_FS_DESC" language="ja_JP">
+            <Text>各プレイヤーが結べる（ゲーム上の）同盟または友好宣言の最大数を決めます（デフォルト＝２）</Text>
+        </Replace>
+        <Replace Tag="CPL_CS_NAME" language="ja_JP">
+            <Text>占領された都市国家</Text>
+        </Replace>
+        <Replace Tag="CPL_CS_DESC" language="ja_JP">
+            <Text>各プレイヤーが所有する都市国家の最大数を定義する。それを超えると自動的に破壊される。（デフォルト＝１）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_IRONMAN_NAME" language="ja_JP">
+            <Text>鉄人モード</Text>
+        </Replace>
+        <Replace Tag="CPL_IRONMAN_DESC" language="ja_JP">
+            <Text>降参投票はありません。死ぬまで戦え！（デフォルト＝オフ）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_NO_PINS_NAME" language="ja_JP">
+            <Text>マップピンなし</Text>
+        </Replace>
+        <Replace Tag="CPL_NO_PINS_DESC" language="ja_JP">
+            <Text>パフォーマンス上の問題を減らすため、マップピンを打てなくします。（デフォルト＝オフ）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_SUDDENDEATH_NAME" language="ja_JP">
+            <Text>サドンデス</Text>
+        </Replace>
+        <Replace Tag="CPL_SUDDENDEATH_DESC" language="ja_JP">
+            <Text>最もスコアの低いプレイヤーがゆっくりと一人ずつ脱落していきます！（デフォルト＝オフ）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_FREECITY_STRONGER_NAME" language="ja_JP">
+            <Text>より強力な自由都市</Text>
+        </Replace>
+        <Replace Tag="CPL_FREECITY_STRONGER_DESC" language="ja_JP">
+            <Text>自由都市がより速く防壁を建設します。（デフォルト＝オフ）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_LASTMOVE_OPT_NAME" language="ja_JP">
+            <Text>間際行動デバフ</Text>
+        </Replace>
+        <Replace Tag="CPL_LASTMOVE_OPT_DESC" language="ja_JP">
+            <Text>ターンの最後の10秒間に攻撃したユニットは、次のターンの開始時にデバフを受け、ターン初めの移動ができなくなります。（デフォルト＝オフ）</Text>
+        </Replace>
+        <Replace Tag="CPL_FREECITY_OPT_NAME" language="ja_JP">
+            <Text></Text>
+        </Replace>
+        <Replace Tag="CPL_FREECITY_OPT_DESC" language="ja_JP">
+            <Text>FFAでの「無関係プレイヤー」(Irrelvant player)は、都市が自由都市になり、既存の同盟・友好宣言を壊すことができる（デフォルト＝オン）</Text>
+        </Replace>
+
+
+        <Replace Tag="CPL_RULES_NAME" language="ja_JP">
+            <Text>CivPlayers Leagues ルール</Text>
+        </Replace>
+        <Replace Tag="CPL_RULES_DESC" language="ja_JP">
+            <Text>Apply the rules of CPL in-game with Concede votes, vetoes and so on (Default = On)</Text>
+        </Replace>
+
+        <Replace Tag="CPL_SMARTTIMER_NAME" language="ja_JP">
+            <Text>スマートタイマーr</Text>
+        </Replace>
+        <Replace Tag="CPL_SMARTTIMER_DESC" language="ja_JP">
+            <Text>Override the base game timer dynamically</Text>
+        </Replace>
+
+        <Replace Tag="CPL_TRADING_CITY_NAME" language="ja_JP">
+            <Text>都市の取引</Text>
+        </Replace>
+
+        <Replace Tag="CPL_TRADING_CITY_DESC" language="ja_JP">
+            <Text>Authorises players to trade city (Default = Off)</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_GOLD_NAME" language="ja_JP">
+            <Text>ゴールドの取引</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_GOLD_DESC" language="ja_JP">
+            <Text>Authorises players to trade gold (Default = On)</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_LUXURY_NAME" language="ja_JP">
+            <Text>高級資源の取引</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_LUXURY_DESC" language="ja_JP">
+            <Text>Authorises players to trade luxury resources (Default = On)</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_STRATEGIC_NAME" language="ja_JP">
+            <Text>戦略資源の取引</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_STRATEGIC_DESC" language="ja_JP">
+            <Text>Authorises players to trade strategic resources (Default = On)</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_NONE_NAME" language="ja_JP">
+            <Text>禁止</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_NONE_DESC" language="ja_JP">
+            <Text>This type of trading would not be possible in-game.</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLOWED_NAME" language="ja_JP">
+            <Text>許可</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLOWED_DESC" language="ja_JP">
+            <Text>This type of trading would allowed.</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLIED_NAME" language="ja_JP">
+            <Text>同盟国間のみ</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLIED_DESC" language="ja_JP">
+            <Text>This type of trading would be solely permitted in-game between allies.</Text>
+        </Replace>
+
+        <Replace Tag="LOC_SETUP_ERROR_NO_BANNED_LEADERS" language="ja_JP">
+            <Text>禁止されている指導者</Text>
+        </Replace>
+        <Replace Tag="LOC_SETUP_ERROR_NO_RANDOM_LEADERS" language="ja_JP">
+            <Text>ランダムな指導者は選べません</Text>
+        </Replace>
+
+        <Replace Tag="CPL_BAN_FORMAT_NAME" language="ja_JP">
+            <Text>ドラフトモード</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_FORMAT_DESC" language="ja_JP">
+            <Text>特定の指導者をゲームから除外する（デフォルト＝ランダムな指導者）</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NOBAN_NAME" language="ja_JP">
+            <Text>なし</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NOBAN_DESC" language="ja_JP">
+            <Text>No choice limitations like in the original game</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NORANDOM_NAME" language="ja_JP">
+            <Text>ランダムな指導者禁止</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NORANDOM_DESC" language="ja_JP">
+            <Text>Players will be forced to select a leader</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_6BANS_NAME" language="ja_JP">
+            <Text>6人までのBAN指導者</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_6BANS_DESC" language="ja_JP">
+            <Text>The Host will be able to 6 leaders</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_TOURNAMENT_NAME" language="ja_JP">
+            <Text>トーナメント</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_TOURNAMENT_DESC" language="ja_JP">
+            <Text>Bans and player picks would be drafted in order</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_VOTEDRAFT_NAME" language="ja_JP">
+            <Text>ドラフト投票</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_VOTEDRAFT_DESC" language="ja_JP">
+            <Text>Players would set the game based on majority vote. [WIP]</Text>
+        </Replace>
+
+        <Replace Tag="CPL_BAN_01_NAME" language="ja_JP">
+            <Text>BAN 1枠目</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_02_NAME" language="ja_JP">
+            <Text>BAN 2枠目</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_03_NAME" language="ja_JP">
+            <Text>BAN 3枠目</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_04_NAME" language="ja_JP">
+            <Text>BAN 4枠目</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_05_NAME" language="ja_JP">
+            <Text>BAN 5枠目</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_06_NAME" language="ja_JP">
+            <Text>BAN 6枠目</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_DESC" language="ja_JP">
+            <Text>Ban a leader from the draft</Text>
+        </Replace>
+        <Replace Tag="LOC_LEADER_NONE_NAME" language="ja_JP">
+            <Text>None</Text>
+        </Replace>
+        <Replace Tag="LOC_BAN_OPTIONS" language="ja_JP">
+            <Text>ドラフトとBANのオプション</Text>
+        </Replace>
+        <Replace Tag="LOC_BAN_POOL_OPTIONS" language="ja_JP">
+            <Text>マッププール選択</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_GAME_REFRESH_SEED_CONFIG" language="ja_JP">
+            <Text>シード値更新</Text>
+        </Replace>
+        <Replace Tag="TIMER_DEFAULT_NAME" language="ja_JP">
+            <Text>競技的　Competitive</Text>
+        </Replace>
+        <Replace Tag="TIMER_DEFAULT_DESC" language="ja_JP">
+            <Text>Scales depending on the numbers of units, cities, wars, game type, events. Ideal for tournament. </Text>
+        </Replace>
+        <Replace Tag="TIMER_NONE_NAME" language="ja_JP">
+            <Text>オフ</Text>
+        </Replace>
+        <Replace Tag="TIMER_NONE_DESC" language="ja_JP">
+            <Text>Disable the lua Smart-Timer to allow the base game timer or an sql based timer to take over</Text>
+        </Replace>
+        <Replace Tag="TIMER_LEGE_NAME" language="ja_JP">
+            <Text>狂気的　Insane</Text>
+        </Replace>
+        <Replace Tag="TIMER_LEGE_DESC" language="ja_JP">
+            <Text>Lege's pressure: timer with 15 secs for the first 15 turns, 45 until turn 70 and 75 thereafter.</Text>
+        </Replace>
+        <Replace Tag="TIMER_CIVLAN_NAME" language="ja_JP">
+            <Text>CivLan / CWC 2025</Text>
+        </Replace>
+        <Replace Tag="TIMER_CIVLAN_DESC" language="ja_JP">
+            <Text>CWC + CivLan 2025 用の動的タイマー。</Text>
+        </Replace>
+        <Replace Tag="TIMER_SEPHI_NAME" language="ja_JP">
+            <Text>普通　Moderate</Text>
+        </Replace>
+        <Replace Tag="TIMER_SEPHI_DESC" language="ja_JP">
+            <Text>Sephi's timer: Baseline 30 secs, then 1 extra second per turn</Text>
+        </Replace>
+        <Replace Tag="TIMER_CASUAL_NAME" language="ja_JP">
+            <Text>カジュアル　Casual</Text>
+        </Replace>
+        <Replace Tag="TIMER_CASUAL_DESC" language="ja_JP">
+            <Text>Ideal for novice or streamers</Text>
+        </Replace>
+        <Replace Tag="TIMER_PHYPHY_NAME" language="ja_JP">
+            <Text>電撃戦　Blitz</Text>
+        </Replace>
+        <Replace Tag="TIMER_PHYPHY_DESC" language="ja_JP">
+            <Text>15s timer that increase by few seconds every 15/20 turns</Text>
+        </Replace>
+        <Replace Tag="FC_NOTHING_NAME" language="ja_JP">
+            <Text>なし</Text>
+        </Replace>
+        <Replace Tag="FC_NOTHING_DESC" language="ja_JP">
+            <Text>Duplicate of S1aL's dynamic timer</Text>
+        </Replace>
+        <Replace Tag="FC_FREE_NAME" language="ja_JP">
+            <Text>自由都市化</Text>
+        </Replace>
+        <Replace Tag="FC_FREE_DESC" language="ja_JP">
+            <Text>FFAゲームにおいて無関係プレイヤー(Irrelevant player)の都市は自由都市に変化します</Text>
+        </Replace>
+        <Replace Tag="FC_RAZE_NAME" language="ja_JP">
+            <Text>都市破壊</Text>
+        </Replace>
+        <Replace Tag="FC_RAZE_DESC" language="ja_JP">
+            <Text>FFAゲームにおいて無関係プレイヤー(Irrelevant player)の都市は破壊されます</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_PLAYER_OPTIONS" language="ja_JP">
+            <Text>MPH: プレイヤーオプション</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ADMIN_OPTIONS" language="ja_JP">
+            <Text>MPH: 管理者オプション</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OTHER_OPTIONS" language="ja_JP">
+            <Text>MPH: その他のオプション</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_TITLE_REMAP_TEXT" language="ja_JP">
+            <Text>リマップ投票</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_VOTEPANEL_TITLE_REMAP_ADMIN_TEXT" language="ja_JP">
+            <Text>管理者リマップ</Text>
+        </Replace>
+		 <Replace Tag="LOC_MPH_VOTEPANEL_GAME_RANDOM_SEED" language="ja_JP">
+            <Text>ゲームシード値</Text>
+        </Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_MAP_RANDOM_SEED" language="ja_JP">
+            <Text>マップシード値</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_LABEL_REMAP_TEXT" language="ja_JP">
+            <Text>新しいマップシード値でゲームをリスタートする投票</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_DEFAULT_TEXT" language="ja_JP">
+            <Text>投票者のうち単純多数が賛成すれば、投票は可決される。[NEWLINE][COLOR_Grey]灰色のプレイヤー[ENDCOLOR]は投票できません。[NEWLINE] 既に投票したプレイヤーは [COLOR_Civ6Green]緑色[ENDCOLOR]で表示されます。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_PASS_TEXT" language="ja_JP">
+            <Text>賛成多数。多数決の結果、ホストが承諾した後、ゲームは自動的に新しいマップでリスタートされます。[NEWLINE][COLOR_Civ6Green]緑色のプレイヤー[ENDCOLOR]は賛成票を投じた。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_FAIL_TEXT" language="ja_JP">
+            <Text>>反対多数。多数決の結果、ゲームはこのままのマップで続行されます。[NEWLINE][COLOR_Civ6Red]赤色のプレイヤー[ENDCOLOR]は反対票を投じた。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTELEFT_BUTTON_1_REMAP_TEXT" language="ja_JP">
+            <Text>賛成</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTERIGHT_BUTTON_1_REMAP_TEXT" language="ja_JP">
+            <Text>反対</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_CONFIRM_BUTTON_1_REMAP_TEXT" language="ja_JP">
+            <Text>了解</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_CONFIRM_BUTTON_HOST_REMAP_TEXT" language="ja_JP">
+            <Text>承諾</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_CONFIRM_BUTTON_HOST_REMAP_CANCEL_TEXT" language="ja_JP">
+            <Text>キャンセル</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAPPANEL_LABEL_TEXT" language="ja_JP">
+            <Text>カスタムシード値を入力するか、空白のままランダムシード値で新マップを生成し、ゲームをリスタートする。データを正しく送信するために、この段階ではゲームを[COLOR_Civ6Red]ポーズせずに[ENDCOLOR]リマップしてください。その後、プレーヤーの再同期のため、ゲームの状態が変化しないように自動的に一時停止しますので、ご心配なく。 </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_VOTE_TEXT" language="ja_JP">
+            <Text>リマップ投票</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_VOTE_TOOLTIP" language="ja_JP">
+            <Text>Trigger a simple majority vote to restart the game on a new map.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_ADMIN_TEXT" language="ja_JP">
+            <Text>管理者リマップ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_ADMIN_TOOLTIP" language="ja_JP">
+            <Text>Allows to restart the game on a new seed.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_IRR_VOTE_TEXT" language="ja_JP">
+            <Text>無関係プレイヤー(IRRELEVANCY)投票</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_TITLE_TEXT" language="ja_JP">
+            <Text>ネットワークマネージャー</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_LABEL_TEXT" language="ja_JP">
+            <Text>The following player(s) disconnected from the game. Game configuration is being frozen.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_HOST_BUTTON_TEXT" language="ja_JP">
+            <Text>AIに操作を任せる</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_HOST_WARNING_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Red]ゲームを続行した場合、落ちたプレイヤーは再びゲームに接続するまでAIに操作され、ユニットが移動します。[ENDCOLOR] </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_NORMAL_BUTTON_TEXT" language="ja_JP">
+            <Text>了解</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_HELPER_BUTTON_TOOLTIP" language="ja_JP">
+            <Text>Access custom MPH functions such as Remap vote and more.</Text>
+        </Replace>
+        <Replace Tag="LOC_VICTORY_CONCEDE_NAME" language="ja_JP">
+            <Text>勝利</Text>
+        </Replace>
+        <Replace Tag="LOC_VICTORY_CONCEDE_TEXT" language="ja_JP">
+            <Text>あなたの敵は降参しました！</Text>
+        </Replace>
+
+
+        <Replace Tag="LOC_DEFEAT_CONCEDE_NAME" language="ja_JP">
+            <Text>降参</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_RANDOM_TOOLTIP" language="ja_JP">
+            <Text>FFA: First Banning/Picking player picked at Random, then pursue in slot order. [NEWLINE]Teamers: First Banning/Picking player picked at Random, then alternate between each teams. </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_SLOT_TOOLTIP" language="ja_JP">
+            <Text>FFA: Banning/Picking are in the slot order ignoring Observers. Reset at each phase. [NEWLINE]Teamers: Banning Map picked first team in slot and then alternate. Banning/Picking then in slot orders. </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_CWC_TOOLTIP" language="ja_JP">
+            <Text>[NEWLINE]Legacy CWC Format: Banning Map/Leaders start with first in slot and Alternate in A/B/A/B/A/B format. [NEWLINE] Picking is done following the slot order (Should be A/B/B/A/A/B/A/B for 4v4).</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_CWC_NEW_TOOLTIP" language="ja_JP">
+            <Text>[NEWLINE]Official CWC Format: Banning Leaders start with first in slot and Alternate in A/B/A/B/A/B format then B/A/B/A [NEWLINE] Picking is done following the slot order (Should be A/B/B/A then B/A/A/B for 4v4).</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_SWAP_DISABLED_TITLE" language="ja_JP">
+            <Text>プレイヤー設定を変更できません</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SWAP_DISABLED_TEXT" language="ja_JP">
+            <Text>ドラフト中はスロット順を変更できません。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SLOT_DISABLED_TITLE" language="ja_JP">
+            <Text>プレイヤー設定を変更できません</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SLOT_DISABLED_TEXT" language="ja_JP">
+            <Text>ドラフト中はスロット順を変更できません。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SLOT_HOST_DISABLED_TEXT" language="ja_JP">
+            <Text>ドラフト中はスロット順を変更できません。[NEWLINE]変更するためには、ドラフトタイプを変更するか、ドラフトをリセットしてください。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ADD_DISABLED_TEXT" language="ja_JP">
+            <Text>ドラフト中はスロット順を変更できません。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ADD_HOST_DISABLED_TEXT" language="ja_JP">
+            <Text>ドラフト中は新プレイヤーを追加できません。[NEWLINE]追加するためには、ドラフトタイプを変更するか、ドラフトをリセットしてください。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_KICK_DISABLED_TITLE" language="ja_JP">
+            <Text>プレイヤー設定を変更できません</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_KICK_DISABLED_TEXT" language="ja_JP">
+            <Text>ドラフト中はプレイヤーをキックできません。[NEWLINE]キックするためには、ドラフトタイプを変更するか、ドラフトをリセットしてください。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_TEXT" language="ja_JP">
+            <Text>トーナメントドラフト：チーム/スロット/観戦者を選択してください</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_HINT_TEXT" language="ja_JP">
+            <Text>ステップ: マップBAN - 6人の指導者をBAN - 1人ずつ指導者を選択 - ゲームを開始/スロット変更</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_HOST_HINT_TEXT" language="ja_JP">
+            <Text>Select your drafting option in Game Setup, then press Launch to initiate the draft.[NEWLINE] You can press Reset at any time to reinitialize the draft and Skip to skip a step.[NEWLINE] This mod requires everyone to have subscribed on the Steam workshop to use the advanced Setup features. Downloading from the Host isn't sufficient. </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_TEXT" language="ja_JP">
+            <Text>投票ドラフト：チーム/スロット/観戦者を選択してください</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_HINT_TEXT" language="ja_JP">
+            <Text>ステップ：マップ設定を投票で決定 - 6人の指導者をBAN - 1人ずつ指導者を選択 - ゲームを開始/スロット変更</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_HOST_HINT_TEXT" language="ja_JP">
+            <Text>Select your drafting option in Game Setup, then press Launch to initiate the draft.[NEWLINE] You can press Reset at any time to reinitialize the draft and Skip to skip a step.[NEWLINE] This mod requires every player to have subscribed on the Steam workshop. Downloading from the Host isn't sufficient.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_HOST_TEXT" language="ja_JP">
+            <Text>ホストを待っています</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_LAUNCH_HOST_TEXT" language="ja_JP">
+            <Text>PRESS LAUNCH TO START THE DRAFT</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_PHASE_BUTTON_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Green]ドラフト開始[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_PHASE_BUTTON_NOT_READY_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Red]ドラフト開始[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_PHASE_BUTTON_TEXT" language="ja_JP">
+            <Text>ドラフト開始</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_1_PHASE_BUTTON_TEXT" language="ja_JP">
+            <Text>スキップ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_1_PHASE_BUTTON_TEXT" language="ja_JP">
+            <Text>スキップ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_2_PHASE_BUTTON_TEXT" language="ja_JP">
+            <Text>スキップ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_3_PHASE_BUTTON_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Green]アンロック[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTE_BUTTON" language="ja_JP">
+            <Text>投票を送信</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_11_TEXT" language="ja_JP">
+            <Text>マップ設定を選択</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_11_HINT_TEXT" language="ja_JP">
+            <Text>Select your preferred map settings, the most popular options would be selected.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_12_TEXT" language="ja_JP">
+            <Text>指導者BANフェーズ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_12_HINT_TEXT" language="ja_JP">
+            <Text>Each players has been granted with 3 bans to exclude a leader from the game.[NEWLINE] The 6 leaders receiving the most bans would be removed from the picking phase.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_MAP_VOTE_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Red]マップ設定を確認してください[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_MAP_BAN_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Red]BANマップを確認してください[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_BAN_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Red]BAN指導者を確認してください[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_PICK_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Red]選択した指導者を確認してください[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_MAP_BAN_FFA_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Green] プレイヤーがマップのBANを完了するまでお待ちください [ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_BAN_FFA_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Green] プレイヤーが指導者のBANを完了するまでお待ちください [ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_PICK_FFA_TEXT" language="ja_JP">
+            <Text>[COLOR_Civ6Green] プレイヤーが指導者を選択するまでお待ちください [ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_THANKS_TEXT" language="ja_JP">
+            <Text>THANKS</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_TEXT" language="ja_JP">
+            <Text>チーム戦：マップBANフェーズ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_TEXT" language="ja_JP">
+            <Text>FFA：マップBANフェーズ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_RAND_HINT_TEXT" language="ja_JP">
+            <Text>Teamer: The first player of each teams will ban a map every round until only one map remains in the map pool.[NEWLINE] The Team banning first is randomly selected.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_SLOT_HINT_TEXT" language="ja_JP">
+            <Text>Teamer: The first player of each teams will ban a map every round until only one map remains in the map pool.[NEWLINE] The Team banning first is the first in slot.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_RAND_HINT_TEXT" language="ja_JP">
+            <Text>FFA: A player will ban a map every round until only one map remains in the map pool.[NEWLINE] The first player banning first is randomly selected.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_SLOT_HINT_TEXT" language="ja_JP">
+            <Text>FFA: A player will ban a map every round round until only one map remains in the map pool.[NEWLINE] The first in slot starts banning.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_GAME_OPTIONS" language="ja_JP">
+            <Text>マップとゲームのオプション</Text>
+        </Replace>
+        <Replace Tag="LOC_SETUP_ERROR_NOT_DRAFTED_LEADERS" language="ja_JP">
+            <Text>除外された指導者</Text>
+        </Replace>
+        <Replace Tag="CPL_ANONYMOUS_NAME" language="ja_JP">
+            <Text>匿名ゲーム</Text>
+        </Replace>
+        <Replace Tag="CPL_ANONYMOUS_DESC" language="ja_JP">
+            <Text>[WIP]Players' names would not be displayed to provide an anonymous experience in the lobby and during the game.</Text>
+        </Replace>
+        <Replace Tag="CPL_NO_PM_NAME" language="ja_JP">
+            <Text>プライベートメッセージなし</Text>
+        </Replace>
+        <Replace Tag="CPL_NO_PM_DESC" language="ja_JP">
+            <Text>[WIP]Remove the ability to send private messages through the ingame chat.</Text>
+        </Replace>
+        <Replace Tag="CPL_RESTRICTED_DRAFT_NAME" language="ja_JP">
+            <Text>制限されたドラフト指導者プール</Text>
+        </Replace>
+        <Replace Tag="CPL_RESTRICTED_DRAFT_DESC" language="ja_JP">
+            <Text>[WIP]Would only grant 5 leaders to each players to select instead of the full leader selection.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_SPECTATOR_TOOLTIP" language="ja_JP">
+            <Text>Allows you to participate as an Observer instead of an actual Player. Ideal for Casting.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_PLAYER_TOOLTIP" language="ja_JP">
+            <Text>Confirms you are participating to the game as a Player and not an Observer.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_SPECTATOR_NAME" language="ja_JP">
+            <Text>観戦者としてプレイ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_PLAYER_NAME" language="ja_JP">
+            <Text>通常のプレイヤーとしてプレイ</Text>
+        </Replace>
+        <Replace Tag="LOC_SETUP_ERROR_NO_SPECTATOR_LEADERS" language="ja_JP">
+            <Text>観戦者ではありません</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RESET_BUTTON_TOOLTIP" language="ja_JP">
+            <Text>ドラフトに間違いがあった場合、ドラフトをリセットして再び開始できます。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_START_BUTTON_TOOLTIP" language="ja_JP">
+            <Text>(ホストのみ) [NEWLINE]即座にゲームを開始します。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_LAUNCH_BUTTON_TOOLTIP" language="ja_JP">
+            <Text>(ホストのみ) [NEWLINE]Launch: ドラフトを開始します [NEWLINE]Skip: 次のステップに進みます [NEWLINE]Unlock: ゲームが始まる前にプレイヤーがスロットを入れ替えることを許可します </Text>
+        </Replace>
+
+        <Replace Tag="LOC_GAMESPEED_FAST_NAME" Language="ja_JP">
+            <Text>オンライン+</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMESPEED_FAST_HELP" Language="ja_JP">
+            <Text>Slightly faster than Online speed to allow playing in Standard Age / Standard Resources</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_TITLE" Language="ja_JP">
+            <Text>CHANGE DEATH TIMER</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_LABEL" Language="ja_JP">
+            <Text>Please enter how many seconds before the next player get eliminated? (e.g. 1200 = 20 mins)</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_BOX" Language="ja_JP">
+            <Text>残り時間:</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_BUTTON" Language="ja_JP">
+            <Text>確認</Text>
+        </Replace>
+        <Replace Tag="LOC_SUDDEN_DEATH_TOP_BOX" Language="ja_JP">
+            <Text>[ICON_TURN]サドンデス:</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_SUDDEN_DEATH_NAME" Language="ja_JP">
+            <Text>サドンデスモード</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_SUDDEN_DEATH_DESCRIPTION" Language="ja_JP">
+            <Text>Players are gradually eliminated based on their score as the clock is inexorably ticking...Standing the test of time has just taken a whole new meaning! </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RETIME_ADMIN_TEXT" Language="ja_JP">
+            <Text>サドンデスタイマー</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RETIME_ADMIN_TOOLTIP" Language="ja_JP">
+            <Text>Adjust the remaining time before a player gets eliminated.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_TIMER_TOOLTIP" Language="ja_JP">
+            <Text>Each phase of the tournament draft would have a timer:[NEWLINE]30 secs for banning a map[NEWLINE]60 secs for banning a leader[NEWLINE]90 secs for picking a leader[NEWLINE]When the timer expires, the player would loss its ban or forced to play as a random civ.</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_TITLE" Language="ja_JP">
+            <Text>名前を編集</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_LABEL" Language="ja_JP">
+            <Text>Please enter your new name, it will also be used in-game.</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_BOX" Language="ja_JP">
+            <Text>新しい名前:</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_BUTTON" Language="ja_JP">
+            <Text>名前を確認</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_EDIT_PLAYER_NAME_TT" Language="ja_JP">
+            <Text>クリックしてこのゲームで用いる名前を変更</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_ANONYMOUS_NAME" Language="ja_JP">
+            <Text>匿名モード</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_ANONYMOUS_DESCRIPTION" Language="ja_JP">
+            <Text>Players are all anonymous![NEWLINE]No more side-arrangement.</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_LASTMOVE_NAME" Language="ja_JP">
+            <Text>Last Move - First Move Mode</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_LASTMOVE_DESCRIPTION" Language="ja_JP">
+            <Text>Infamous end of turn last move first move are coming to an end![NEWLINE][NEWLINE]Moving or attacking during the last 15 secs of the turn would make your unit [COLOR_Civ6Red]Unprepared[ENDCOLOR].[NEWLINE][COLOR_Civ6Red]Unprepared[ENDCOLOR] units have a -20[ICON_Strength] penalty when attacking.[NEWLINE]An unit will stays [COLOR_Civ6Red]Unprepared[ENDCOLOR] until it is attacked or after 10 secs in the following game turn. </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PHASE_BUTTON_TOOLTIP_ERROR" Language="ja_JP">
+            <Text>The draft cannot be launched at the moment. It could be due to:[NEWLINE]A player having an incorrect version of the mod or that hasn't subscribed to the mod.[NEWLINE]Host still waiting for data from other clients. (Shouldn't take more than 10 secs). </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PHASE_BUTTON_TOOLTIP" Language="ja_JP">
+            <Text>クリックしてドラフトを開始</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RESYNC_ADMIN_TEXT" language="ja_JP">
+            <Text>再同期</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RESYNC_ADMIN_TOOLTIP" language="ja_JP">
+            <Text>Triggers an automatic resynchronisation from all players to the host. Host should not unpause during this process.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PAUSE_COUNDOWN_TEXT" language="ja_JP">
+            <Text>カウントダウン</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PAUSE_COUNDOWN_LABEL_TEXT" language="ja_JP">
+            <Text>ゲームはまもなく再開されます！</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_FORCEEND_ADMIN_TEXT" language="ja_JP">
+            <Text>強制ターンエンド</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_FORCEEND_ADMIN_TOOLTIP" language="ja_JP">
+            <Text>全プレイヤーに強制的にターンを終了させます</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RESYNC_TITLE" language="ja_JP">
+            <Text>再同期の要求</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RESYNC_LABEL" language="ja_JP">
+            <Text>All players would be re-synchronized to the Host. Are you sure?</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RESYNC_BUTTON" language="ja_JP">
+            <Text>再同期</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_FORCEEND_TITLE" language="ja_JP">
+            <Text>強制ターンエンド</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_FORCEEND_LABEL" language="ja_JP">
+            <Text>This will end the turn for all players. Are you sure?</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_FORCEEND_BUTTON" language="ja_JP">
+            <Text>ターンを終了</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_UI_REFRESH_TEXT" Language="ja_JP">
+            <Text>UIをリセット</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_UI_REFRESH_TOOLTIP" Language="ja_JP">
+            <Text>Hard reset the UI environment</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_UI_REFRESH_TITLE" Language="ja_JP">
+            <Text>UIをリセット</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_UI_REFRESH_LABEL" Language="ja_JP">
+            <Text>Are you sure to reset the UI?</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_UI_REFRESH_BUTTON" Language="ja_JP">
+            <Text>リセット</Text>
+        </Replace>
+
+
+        <!--  Tournament Settings -->
+        <Replace Tag="LOC_MPH_TOURNAMENT_PARAMETERS_OPTIONS" Language="ja_JP">
+            <Text>トーナメントとドラフトのオプション</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_SLOT_ORDER_NAME" Language="ja_JP">
+            <Text>ドラフトタイプ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_TIMER_NAME" Language="ja_JP">
+            <Text>ドラフトタイマー</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_MAP_NAME" Language="ja_JP">
+            <Text>制限されたマッププール</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_SLOT_ORDER_DESC" Language="ja_JP">
+            <Text>ドラフトタイプ</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_TIMER_DESC" Language="ja_JP">
+            <Text>Untick to disabled the timer during drafting</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_MAP_DESC" Language="ja_JP">
+            <Text>When selected the Drafting will first begin by a map selection stage with the maps included in the map pool</Text>
+        </Replace>
+
+        <Replace Tag="DRAFT_NONE_NAME" Language="ja_JP">
+            <Text>ランダム</Text>
+        </Replace>
+        <Replace Tag="DRAFT_SLOT_NAME" Language="ja_JP">
+            <Text>スロット順</Text>
+        </Replace>
+        <Replace Tag="DRAFT_4V4T_NAME" Language="ja_JP">
+            <Text>4v4チーム戦 6BAN</Text>
+        </Replace>
+        <Replace Tag="DRAFT_CWCT_NAME" Language="ja_JP">
+            <Text>Civilization World Cup</Text>
+        </Replace>
+
+        <Replace Tag="DRAFT_NONE_DESC" Language="ja_JP">
+            <Text>プレイヤーのドラフト順はランダムに選ばれます</Text>
+        </Replace>
+        <Replace Tag="DRAFT_SLOT_DESC" Language="ja_JP">
+            <Text>プレイヤーのドラフト順はスロットの順になります</Text>
+        </Replace>
+        <Replace Tag="DRAFT_4V4T_DESC" Language="ja_JP">
+            <Text>6人の指導者をBANするために2つのフェーズがあるチーム戦ドラフトです</Text>
+        </Replace>
+        <Replace Tag="DRAFT_CWCT_DESC" Language="ja_JP">
+            <Text>Esports準拠の段階式ドラフト: 1) 6BAN  2) 4ピック  3) 4BAN  4) 残りのピック</Text>
+        </Replace>
+
+
+        <!--  Trading Settings -->
+        <Replace Tag="LOC_MPH_TRADING_PARAMETERS_OPTIONS" Language="ja_JP">
+            <Text>取引と外交のオプション</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_FRIENDSHIP_NAME" Language="ja_JP">
+            <Text>友好宣言なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_FRIENDSHIP_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to declare a Friendship with another Civilization.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SURPRISE_WAR_NAME" Language="ja_JP">
+            <Text>奇襲戦争なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SURPRISE_WAR_DESC" Language="ja_JP">
+            <Text>When ticked players would have to first denounce or use Casus Belli to declare war.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_FAVOR_NAME" Language="ja_JP">
+            <Text>外交的支持の取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GOLD_NAME" Language="ja_JP">
+            <Text>ゴールド取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_STRATEGICS_NAME" Language="ja_JP">
+            <Text>戦略資源の取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_LUXURIES_NAME" Language="ja_JP">
+            <Text>高級資源の取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_AGREEMENTS_NAME" Language="ja_JP">
+            <Text>協定なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CAPTIVES_NAME" Language="ja_JP">
+            <Text>スパイの取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CITIES_NAME" Language="ja_JP">
+            <Text>都市の取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GREATWORKS_NAME" Language="ja_JP">
+            <Text>傑作の取引なし</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_NO_TRADING_FAVOR_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Favor from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GOLD_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Gold from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_STRATEGICS_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Strategics from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_LUXURIES_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Luxuries from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_AGREEMENTS_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to establish Agreements from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CAPTIVES_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Captives from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CITIES_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Cities from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GREATWORKS_DESC" Language="ja_JP">
+            <Text>Tick to remove the ability to trade Great Works from the game.</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_DIPLOMATIC_DEAL_NAME" Language="ja_JP">
+            <Text>全ての取引なし</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DIPLOMATIC_DEAL_DESC" Language="ja_JP">
+            <Text>Remove the ability to initiate any Diplomatic Deals from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_MILITARY_NAME" Language="ja_JP">
+            <Text>軍事同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_MILITARY_DESC" Language="ja_JP">
+            <Text>Untick to remove the ability to form a Military Alliance from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_CULTURAL_NAME" Language="ja_JP">
+            <Text>文化同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_CULTURAL_DESC" Language="ja_JP">
+            <Text>Untick to remove the ability to form a Cultural Alliance from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_ECONOMIC_NAME" Language="ja_JP">
+            <Text>経済同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_ECONOMIC_DESC" Language="ja_JP">
+            <Text>Untick to remove the ability to form a Economic Alliance from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RELIGIOUS_NAME" Language="ja_JP">
+            <Text>宗教同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RELIGIOUS_DESC" Language="ja_JP">
+            <Text>Untick to remove the ability to form a Religious Alliance from the game.</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RESEARCH_NAME" Language="ja_JP">
+            <Text>研究同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RESEARCH_DESC" Language="ja_JP">
+            <Text>Untick to remove the ability to form a Research Alliance from the game.</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_NAME" Language="ja_JP">
+            <Text>プリセット</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_NONE_NAME" Language="ja_JP">
+            <Text>なし</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CWC_NAME" Language="ja_JP">
+            <Text>Civilization World Cup</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLFFA_NAME" Language="ja_JP">
+            <Text>CPL FFA</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRTEAMER_NAME" Language="ja_JP">
+            <Text>Squadron CivFR</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLSQUADRON_NAME" Language="ja_JP">
+            <Text>CPL Premier League</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLSQUADRON_DESC" language="ja_JP">
+            <Text>Premier League 4v4 with drafting</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_1v1RR_NAME" Language="ja_JP">
+            <Text>を日本語に翻訳すると、"1対1 ロイヤルランブル" です。</Text>
+        </Replace>
+		<Replace Tag="MPH_PRESET_NONE_DESC" Language="ja_JP">
+            <Text>Default Settings</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CWC_DESC" Language="ja_JP">
+            <Text>Drafting and 4v4 teamers</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLFFA_DESC" Language="ja_JP">
+            <Text>CivPlayer League typical settings with abundant resources</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="ja_JP">
+            <Text>CivFR typical settings for teamers</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_1v1RR_DESC" Language="ja_JP">
+            <Text>1v1 Royal Rumble"にふさわしい特別なプレゼントをお探しですね</Text>
+        </Replace>
+        <Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="ja_JP">
+            <Text>[COLOR_RED]Official tournament game[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="MPH_OFFICIAL_GAME_DESC" Language="ja_JP">
+            <Text>If the game is part of an official tournament game, other mods can load/unload extra features.</Text>
+        </Replace>
+		<Replace Tag="TIMER_2VI2_NAME" Language="ja_JP">
+            <Text>2VI2 HOT</Text>
+        </Replace>
+        <Replace Tag="TIMER_2VI2_DESC" Language="ja_JP">
+            <Text>Very fast timer that starts at 15 seconds and increases in jumps till 60 second by turn 40. Scales linearly after</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_ARENA_NAME" Language="ja_JP">
+            <Text>PPLアリーナ</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_ARENA_DESC" Language="ja_JP">
+            <Text>PPL 1v1 1つの大陸パンゲア</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_BATTLEGROUND_NAME" Language="ja_JP">
+            <Text>PPL戦場</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_BATTLEGROUND_DESC" Language="ja_JP">
+            <Text>PPL 1v1 2つの大陸パンゲア</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRFFA_NAME" Language="ja_JP">
+            <Text>FFA CivFr</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRFFA_DESC" Language="ja_JP">
+            <Text>CivFR typical settings for FFA.</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="ja_JP">
+            <Text>CLC 中国リーグカップ</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="ja_JP">
+            <Text>中国リーグカップの典型的な設定</Text>
+        </Replace>
+        <Replace Tag= "MPH_PRESET_2vi2_NAME" Language="ja_JP">
+            <Text>2対2</Text>
+        </Replace>
+        <Replace Tag= "MPH_PRESET_2vi2_DESC" Language="ja_JP">
+            <Text>CPL 2v2リーグ用プリセット</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPL_GOAT_DESC" Language="ja_JP">
+            <Text>CivPlayer リーグ GOAT トーナメントプリセット</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPL_GOAT_NAME" Language="ja_JP">
+            <Text>CPL G.O.A.T</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>

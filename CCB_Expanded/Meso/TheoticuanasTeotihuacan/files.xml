@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="473da2b8-f7e1-4cd6-bca5-f114fbe41e99" version="1">
+  <Properties>
+    <Name>[COLOR_GREEN]Port Lime[ENDCOLOR] - Teotihuacan</Name>
+    <Description>It's finally here! The Glorious City of Teotihuacan, the Rome of the New World, lead by the enigmatic Spearthrower Owl and his elite emissary Fire Is Born. Conquer the Maya World, and Owl assure you, hu-can have everything you will every ask for.[NEWLINE][NEWLINE][COLOR_GREEN]Teotihuacan - Empire of City-States[NEWLINE]UA: Where Men Become Gods[ENDCOLOR][NEWLINE]May not build Settlers. All Trade Routes grant +1 [ICON_Envoy] Envoy when sent to a City-state. Type bonuses from City-States following your Religion are increased by 100%.[NEWLINE][COLOR_GREEN]UU: Ehuatl Wearer[ENDCOLOR][NEWLINE]Replaces the Swordsmen. Unlocked at Early Empire. Does not require Iron. When at least one is within 3 tiles of a City-State, Envoys sent to that City-State are doubled.[NEWLINE][COLOR_GREEN]UD: Pochteca Enclave[ENDCOLOR][NEWLINE]Replaces the Diplomatic Quarter. Unlocked at State Workforce. Provides +1 [ICON_TradeRoute] Trade Route capacity, with an additonal +1 per adjacent District, and +2 per adjacent Wonder. Grants a major adjacency bonus to adjacent specialty Districts. Generates +1 [ICON_GreatProphet] Great Prophet Points and may be used to found a Religion.[NEWLINE][NEWLINE][COLOR_GREEN]Spearthrower Owl[NEWLINE]LUA: Lord of the West[ENDCOLOR][NEWLINE]Has access to the Emissary Unique Governor, Fire Is Born. The Capital gains +1 [ICON_Citizen] Population when a City-State is Conquered.[NEWLINE][COLOR_GREEN]LUG: The Emissary[ENDCOLOR][NEWLINE]Unique Governor focusing on City-State Conquest and Economic Exploitation. Gain bonuses towards defending interests at Tributary City-States, usurping power in rival City-States, and conquering other nearby Cities.[NEWLINE][NEWLINE]Hey, this mod requires the Gran Colombia &amp; Maya DLC, as well as the Ethiopia DLC. If you don't have those, they won't work as intended. Sorry!</Description>
+    <Created>1668580488</Created>
+    <Teaser>HE COMES</Teaser>
+    <Authors>Lime</Authors>
+    <SpecialThanks>Leugi, SeelingCat, Sailor Cat, Alexxis</SpecialThanks>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+  </Dependencies>
+  <FrontEndActions>
+    <UpdateDatabase id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Leader Configs.sql</File>
+    </UpdateDatabase>
+    <UpdateIcons id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Icon Definitions.sql</File>
+      <File>Teotihuacan/Icon Definitions.sql</File>
+    </UpdateIcons>
+    <UpdateColors id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Colors.sql</File>
+    </UpdateColors>
+    <UpdateText id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Game Text.sql</File>
+      <File>Teotihuacan/Game Text.sql</File>
+      <File>Spearthrower Owl/Diplomacy.sql</File>
+    </UpdateText>
+    <UpdateArt id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Port Lime - Teotihuacan.dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Game Defines.sql</File>
+      <File>Teotihuacan/Game Defines.sql</File>
+      <File>Teotihuacan/ModSupport.sql</File>
+    </UpdateDatabase>
+    <UpdateIcons id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Icon Definitions.sql</File>
+      <File>Teotihuacan/Icon Definitions.sql</File>
+    </UpdateIcons>
+    <UpdateColors id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Colors.sql</File>
+    </UpdateColors>
+    <UpdateText id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Game Text.sql</File>
+      <File>Teotihuacan/Game Text.sql</File>
+      <File>Spearthrower Owl/Diplomacy.sql</File>
+    </UpdateText>
+    <UpdateArt id="NewAction">
+      <Properties>
+        <LoadOrder>350</LoadOrder>
+      </Properties>
+      <File>Port Lime - Teotihuacan.dep</File>
+    </UpdateArt>
+    <AddGameplayScripts id="NewAction">
+      <Properties>
+        <LoadOrder>300</LoadOrder>
+      </Properties>
+      <File>Spearthrower Owl/Spearthrower-PopConqueror.lua</File>
+      <File>Teotihuacan/Teotihuacan-EnvoyDoubler.lua</File>
+    </AddGameplayScripts>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Civilization.artdef</File>
+    <File>ArtDefs/Cultures.artdef</File>
+    <File>ArtDefs/Districts.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
+    <File>ArtDefs/LeaderFallbacks.artdef</File>
+    <File>ArtDefs/Leaders.artdef</File>
+    <File>ArtDefs/Overlay.artdef</File>
+    <File>ArtDefs/SV.artdef</File>
+    <File>ArtDefs/Units.artdef</File>
+    <File>Platforms/MacOS/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/LensAssets.blp</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Industrial_01_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_AW_Grounds_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_ENC_Ikanda_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_ENC_Ikanda_FINAL_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_TOL_Base_FINAL_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_eaglewarriorbase_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_Light_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Tree_Jungle_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RE_BaseA_A</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_M</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_N1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_E</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_AO</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_E</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_N1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_O</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_AO</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_M</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_N1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal_Light</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LimeTeo_LoyaltyOverlay</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LimeTeo_LoyaltyPressure</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_Light</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_N1</File>
+    <File>Platforms/MacOS/BLPs/strategicview/strategicview_districts.blp</File>
+    <File>Platforms/MacOS/BLPs/UILeaders.blp</File>
+    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/MacOS/BLPs/units/units.blp</File>
+    <File>Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/LensAssets.blp</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Industrial_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_AW_Grounds_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_ENC_Ikanda_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_ENC_Ikanda_FINAL_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_TOL_Base_FINAL_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_eaglewarriorbase_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_Light_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Tree_Jungle_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RE_BaseA_A</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_E</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_AO</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_E</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_O</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_AO</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal_Light</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_LimeTeo_LoyaltyOverlay</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_LimeTeo_LoyaltyPressure</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_Light</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_N1</File>
+    <File>Platforms/Windows/BLPs/strategicview/strategicview_districts.blp</File>
+    <File>Platforms/Windows/BLPs/UILeaders.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/units/units.blp</File>
+    <File>Port Lime - Teotihuacan.dep</File>
+    <File>Spearthrower Owl/Colors.sql</File>
+    <File>Spearthrower Owl/Diplomacy.sql</File>
+    <File>Spearthrower Owl/Game Defines.sql</File>
+    <File>Spearthrower Owl/Game Text.sql</File>
+    <File>Spearthrower Owl/Icon Definitions.sql</File>
+    <File>Spearthrower Owl/Leader Configs.sql</File>
+    <File>Spearthrower Owl/Spearthrower-PopConqueror.lua</File>
+    <File>Teotihuacan/Game Defines.sql</File>
+    <File>Teotihuacan/Game Text.sql</File>
+    <File>Teotihuacan/Icon Definitions.sql</File>
+    <File>Teotihuacan/ModSupport.sql</File>
+    <File>Teotihuacan/Teotihuacan-EnvoyDoubler.lua</File>
+  </Files>
+</Mod>

@@ -1,0 +1,57 @@
+<GameInfo>
+	<ConfigurationUpdates>
+		<!--  CWC Defaulting  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="1" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="1" TargetGroup="Game" TargetId="BBGVictorySpeedSlider" TargetValue="5" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="1" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="1" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="0" Hash="0" />
+		<!-- CPL FFA -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="2" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="2" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="2" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="2" Hash="0" />
+		<!-- CivFR Teamer -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="3" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="3" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="3" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="0" Hash="0" />
+		<!-- CPL Premier League -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="0" Hash="0" />
+		<!--1v1 RR -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="0" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Game" TargetId="VICTORY_RELIGIOUS" TargetValue="0" Hash="0" />
+		<!-- OCC -->
+		<Row SourceGroup="Game" SourceId="GAMEMODE_ONECITY" SourceValue="1" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Static="1"/>
+		<!-- CivFr FFA -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="6" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="3" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="6" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="6" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="0" Hash="0" />
+		<!-- Chinese League Cup -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="2" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Game" TargetId="VICTORY_RELIGIOUS" TargetValue="1" Hash="0" />
+		<!-- PPL Arena-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="2" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="VICTORY_RELIGIOUS" TargetValue="0" Hash="0" />
+		<!--PPL Battleground-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="2" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="VICTORY_RELIGIOUS" TargetValue="0" Hash="0" />
+		<!--2vi2-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="10" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="-1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="10" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="10" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="0" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="10" TargetGroup="Game" TargetId="VICTORY_RELIGIOUS" TargetValue="1" Hash="0" />
+		<!--GOAT-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="11" TargetGroup="Game" TargetId="BARBS_SETTING" TargetValue="3" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="11" TargetGroup="Game" TargetId="BBCC_SETTING" TargetValue="1" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="11" TargetGroup="Game" TargetId="BBCC_SETTING_YIELD" TargetValue="2" Hash="0" />
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="11" TargetGroup="Game" TargetId="VICTORY_DIPLOMATIC" TargetValue="0" Hash="0" />
+	</ConfigurationUpdates>
+</GameInfo>

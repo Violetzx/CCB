@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="StrategicView_Sprite"/>
+	<m_PackageName text="strategicview/strategicview_improvements"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="WBHRevealed"/>
+			<m_ObjectName text="WBHRevealed"/>
+		</Element>
+		<Element>
+			<m_EntryID text="WBHRevealedPillaged"/>
+			<m_ObjectName text="WBHRevealedPillaged"/>
+		</Element>
+		<Element>
+			<m_EntryID text="WBHVisible"/>
+			<m_ObjectName text="WBHVisible"/>
+		</Element>
+		<Element>
+			<m_EntryID text="WBHVisiblePillaged"/>
+			<m_ObjectName text="WBHVisiblePillaged"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

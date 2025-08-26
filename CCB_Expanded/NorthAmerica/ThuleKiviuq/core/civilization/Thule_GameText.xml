@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameData>
+	<LocalizedText>
+		<!--CIVILIZATION-->
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_NAME" Language="en_US">
+			<Text>Thule</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_DESCRIPTION" Language="en_US">
+			<Text>Thule Tradition</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_ADJECTIVE" Language="en_US">
+			<Text>Thule</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_DESCRIPTION_JFD_CIVILIZATION" Language="en_US">
+			<Text>Thule Civilization</Text>
+		</Row>
+		<!--Pedia-->
+		<Row Tag="LOC_CIVINFO_LIME_THULE_LOCATION" Language="en_US">
+			<Text>Northern Canada, Northern Alaska, Arctic Archipelago, Greenland</Text>
+		</Row>
+		<Row Tag="LOC_CIVINFO_LIME_THULE_POPULATION" Language="en_US">
+			<Text>Est. 55 thousand</Text>
+		</Row>
+		<Row Tag="LOC_CIVINFO_LIME_THULE_SIZE" Language="en_US">
+			<Text>Est. 6 million square miles (1.55 million square km)</Text>
+		</Row>
+		<Row Tag="LOC_CIVINFO_LIME_THULE_CAPITAL" Language="en_US">
+			<Text>Qilakitsoq</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The Thule (Pronounced 'Too-lee') Peoples were ancestors of the modern Inuit who inhabited the northern territories of modern Canada, Alaska and Greenland. Developing first in 10th century Alaska, they stretched across Canada and into Greenland in the next 300 years, displacing and dominating the preceding Dorset cultures.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>Though they only began truly prospering in the 10th century, Thule Tradition approximately began in 200 B.C.E in the Bering Strait, though this estimate varies greatly. The strong maritime-hunter and artistic tradition of the Thule first took shape here, in what became known as the Old Bering Sea stage of Thule tradition. Decorated ivory harpoon heads and remains of Umiaks (large skinned boats used for whaling), and various other tools made of ivory and polished slate are discovered from this time. Specifically, innovations in the form of harpoon-mounted ice picks, toggling harpoon, sophisticated tools for seal and walrus-hunting, and their mastery of dogs helped the early Thule.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>Following the Old Bering Sea stage was the Punuk stage, where the Thule were able to dominate the Dorset culture due to their more advanced technologies. The Thule thrived in their vast new territories, and the seal and walrus-society transitioned into the whaling-centered culture the Thule became known for. The ideal quarry was the Bowhead whale, primarily due to slow swimming and sleeping near the surface. The Bowhead's blubber, meat, bones, and skins became important and eventually essential to Thule life. These necessary resources were carved into the tools needed for hunting, the frames for their whalebone houses, and their beautiful relics.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>Thule culture moved into a cycle of wintering in large semi-subterranean houses made of wood and whalebone, to summer life in skin huts. Teams of experienced whalers in multiple umiaks, lead by a prestigious veteran captain known as the umialik would go out and whale in narrow ice leads and then the open sea during the fall. Though open-sea whaling was dangerous, the expert hunters and boatmen developed bone armor, archery, even more advanced hunting tools, and expert techniques to mitigate the dangers.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_5" Language="en_US">
+			<Text>Around the year 800 A.D., Thule culture divided into the western half in Alaska and more mainland Canada, and the eastern half in Greenland and the High Arctic Seas. The Eastern half became known as the Birnirk stage, who transitioned on their own through the Early, Middle, and Late Birnirk stages. Gradually, harpoon head and arrow styles changed from being highly decorated ivory points to unembellished versions made of antler.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_6" Language="en_US">
+			<Text>Meanwhile, the eastern Punuk entered the Classic Thule era from the years 1100 to 1400 A.D. They began using iron tools derived from meteoric resources or trade from Norse contact, but ultimately had a very limited supply of iron. The metal was used for carving, but the Thule’s artistic tendencies continued to decline.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_7" Language="en_US">
+			<Text>Thule faith developed into a form of Animism and Shamanism. Priest-healers known as Angakkuit helped communities in times of crisis, especially during whaling and marine scarcity. The harshness of life in the icy north made the people live in constant fear of unseen and supernatural forces, with some motifs being around protectors or guardians, and others around overcoming supernatural obstacles. They also believed that all things have an anirniq – a spirit – that are borrowed from the sky around them, and persist after death and are free to take revenge.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_8" Language="en_US">
+			<Text>Postclassical Thule was a period of decline due to climate changes and lack of whales – settlements were now forced to use subsistence strategies of land-based hunting or fishing. The decreasing temperatures of the little Ice Age caused the whale-hunting season to shorten and whaling efforts were finally abandoned by the 17th century.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_9" Language="en_US">
+			<Text>Thule tradition made contact with European society before their demise. Though they had already contacted the Norse, who called them skrælingr, they encountered Basque whalers and later French and English explorers. Plagues killed the Thule en masse, and material wealth disrupted the Thule way of life as they began to transform into the Inuit society. During a time when their main source of food was rapidly depleting, the impact of European colonization was devastating and ultimately lethal to the culture. The last trappings of the Thule culture died out by the year 1850, being replaced entirely by modern Inuit in the British Canadian colonies.</Text>
+		</Row>
+		<!--Trait-->
+		<Row Tag="LOC_TRAIT_CIVILIZATION_LIME_THULE_HUNTING_BOWHEAD_NAME" Language="en_US">
+			<Text>Hunting of the Bowhead</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_LIME_THULE_HUNTING_BOWHEAD_DESCRIPTION" Language="en_US">
+			<Text>Workers may build a [ICON_RESOURCE_WHALES] Whales luxury resource at the cost of 1 population.</Text>
+		</Row>
+		<!--Cities-->
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_2" Language="en_US">
+			<Text>Tatlurutit</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_3" Language="en_US">
+			<Text>Qikiqtaaluk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_4" Language="en_US">
+			<Text>Kuganajuup</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_5" Language="en_US">
+			<Text>Qikiqtanga</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_6" Language="en_US">
+			<Text>Pituffik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_7" Language="en_US">
+			<Text>Kinngait</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_8" Language="en_US">
+			<Text>Kangiqliniq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_9" Language="en_US">
+			<Text>Torngat</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_10" Language="en_US">
+			<Text>Qaqortoq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_11" Language="en_US">
+			<Text>Iqaluktuuttiaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_12" Language="en_US">
+			<Text>Qijurittug</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_13" Language="en_US">
+			<Text>Ivujivik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_14" Language="en_US">
+			<Text>Iqaluit</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_15" Language="en_US">
+			<Text>Iglulik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_16" Language="en_US">
+			<Text>Quaqtaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_17" Language="en_US">
+			<Text>Sisimiut</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_18" Language="en_US">
+			<Text>Salliq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_19" Language="en_US">
+			<Text>Ikpiarjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_20" Language="en_US">
+			<Text>Etah</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_21" Language="en_US">
+			<Text>Kuugaarjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_22" Language="en_US">
+			<Text>Kuugjuaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_23" Language="en_US">
+			<Text>Utqiaġvik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_24" Language="en_US">
+			<Text>Kangeq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_25" Language="en_US">
+			<Text>Paulatuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_26" Language="en_US">
+			<Text>Arsuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_27" Language="en_US">
+			<Text>Kulusuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_28" Language="en_US">
+			<Text>Nuussuaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_29" Language="en_US">
+			<Text>Kaktovik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_30" Language="en_US">
+			<Text>Quasuittuq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_31" Language="en_US">
+			<Text>Iditarod</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_32" Language="en_US">
+			<Text>It Looks Like Caribou</Text>
+		</Row>
+		<!--Citizens-->
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_1" Language="en_US">
+			<Text>Nootaikoq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_2" Language="en_US">
+			<Text>Panuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_3" Language="en_US">
+			<Text>Silla</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_4" Language="en_US">
+			<Text>Kumaglak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_5" Language="en_US">
+			<Text>Pana</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_6" Language="en_US">
+			<Text>Qimmiq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_7" Language="en_US">
+			<Text>Nanurjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_8" Language="en_US">
+			<Text>Nanuq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_9" Language="en_US">
+			<Text>Kiviaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_10" Language="en_US">
+			<Text>Arnarsaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_1" Language="en_US">
+			<Text>Tagak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_2" Language="en_US">
+			<Text>Tivi</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_3" Language="en_US">
+			<Text>Osuitok</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_4" Language="en_US">
+			<Text>Orpingalik</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_5" Language="en_US">
+			<Text>Aaju</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_6" Language="en_US">
+			<Text>Kuupik</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_7" Language="en_US">
+			<Text>Angaangaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_8" Language="en_US">
+			<Text>Unalaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_9" Language="en_US">
+			<Text>Ipiirviq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_10" Language="en_US">
+			<Text>Dave</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_1" Language="en_US">
+			<Text>Tanaraq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_2" Language="en_US">
+			<Text>Atiqtalik</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_3" Language="en_US">
+			<Text>Nuvua</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_4" Language="en_US">
+			<Text>Meriwa</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_5" Language="en_US">
+			<Text>Katsitanoron</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_6" Language="en_US">
+			<Text>Puqtu</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_7" Language="en_US">
+			<Text>Ataksaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_8" Language="en_US">
+			<Text>Cupun</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_9" Language="en_US">
+			<Text>Ikiaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_10" Language="en_US">
+			<Text>Kallik</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_1" Language="en_US">
+			<Text>Atuat</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_2" Language="en_US">
+			<Text>Mitiarjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_3" Language="en_US">
+			<Text>Taqulittuq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_4" Language="en_US">
+			<Text>Uvavnuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_5" Language="en_US">
+			<Text>Kya</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_6" Language="en_US">
+			<Text>Pitseolak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_7" Language="en_US">
+			<Text>Inunak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_8" Language="en_US">
+			<Text>Meekitjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_9" Language="en_US">
+			<Text>Kitikmeot</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_10" Language="en_US">
+			<Text>Qinnuayuak</Text>
+		</Row>
+		<!--Dogsled Hunter-->
+		<Row Tag="LOC_UNIT_LIME_THULE_DOGSLED_NAME" Language="en_US">
+			<Text>Dogsled Raider</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_LIME_THULE_DOGSLED_DESCRIPTION" Language="en_US">
+			<Text>Skirmisher Replacement. Unlocked at Construction. Much cheaper. -5 [ICON_Strength] Combat Strength when defending. +10 [ICON_Strength] Combat Strength when attacking units at full health.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>Dogs... sleds... since time immemorial, people have tried to tie these two concepts together. The sled dog, lost to time, never held much of a future. While trying to interbreed sleds with dogs was a fruitless endeavour, man is persistent and creativity is at its hand. Eventually, Iqualiq the Frostbitten, be his name feared, came up with the revolutionary idea of a sled... pulled by dogs.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>All of those words were wrong.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>For over 9,000 years dogs have been used as draft animals to pull sleighs and sleds across terrain in sub-zero conditions, with the first evidence appearing in the far north of Siberia. Though the concept of selective breeding to make the ideal sled dog existed at this time, the first appearance of the modern Siberian Husky was roughly 2,000 years ago.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>The Thule peoples in part owe their dominance over the preceding Dorset peoples to their sled dogs. This form of transportation over the rough arctic terrain allowed them to propagate much farther and acquire more food than their Dorset counterparts, and before long the Thule overwhelmed their predecessors. New breeds were formed, including the Alaskan malamute, and the sports of dogsledding and dogsled racing have been popular throughout Canada, Alaska, and Greenland since.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_5" Language="en_US">
+			<Text>Thule expansion in this manner lead to warfare not only with the Dorset (who they were successful in wiping out), but also new peoples in new lands that their dogsled allowed them to access. Particularly and most violently, the Dene and Cree were involved in centuries of endemic warfare in the subarctic regions that all three peoples inhabit. Following colonization and the Thule tradition's metamorphosis into the modern Inuit groups, the warfare carried on in an even more bloody manner in the forms of continously launching raids on one another. These raids grew more vicious during bad winters or poor hunting seasons. While the Inuits' great strength was their mastery of mobility, the Cree managed to acquire firearms much more quickly via trade with Europeans, and it was shortly afterwards that many of the Inuit were driven back to the north. The warfare ended quite suddenly in 1793 for reasons not yet understood, and afterwards the dogsled was used for transport, hunting, and racing.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_6" Language="en_US">
+			<Text>The most famous event in dogsledding history was the legendary 1925 Great Race of Mercy, now immortalized in the annual Iditarod Race - the last great race on Earth. The town of Nome underwent a diptheria epidemic, the the town’s supply of antitoxin had gone bad months earlier. The only doctor of the little town, Curtis Welch, requested additional antitoxin from Anchorage, but it was too cold to send a ship. Undeterred, teams of dogsledders worked together to deliver a supply of the serum to Nome, despite a blizzard at the time. The dogsledders embarked on their 1,000 kilometer journey through horrible terrain on the Iditarod trail, from Anchorage to Nome, in weather that would drop to -57 degrees Centigrade (-70 Fahrenheit). The thirty day journey was completed six days later, when Gunnar Kaasen and his lead sled dog Balto arrived in Nome, with not a single ampule of serum broken.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_7" Language="en_US">
+			<Text>However, though Balto may be the most famous dog in the Great Race of Mercy, the lead dog that did the most difficult segment was Togo. In his youth, Togo was a sickly dog that did not seem to have much potential. He was the runt of the litter, and his master Leonhard Seppala sold him as a pet since he seemed unsuitable for being a sled dog. Several weeks later, Togo jumped through a window and ran back to Seppala’s kennel, showing extraordinary endurance, loyalty, and intelligence. In the 1925 run to Nome, Togo was 12 years old.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_8" Language="en_US">
+			<Text>Togo was Seppala’s lead dog in the 1925 race, and they were given the most difficult leg of the journey. Togo and Seppala traveled 170 miles (274 km) from Nome in three days, and picked up the serum in Shaktoolik on January 31. The temperature was estimated at −30 °F (−34 °C), and the gale force winds causing a wind chill of −85 °F (−65 °C). The return trip crossed the exposed open ice of the Norton Sound. The night and a ground blizzard prevented Seppala from being able to see the path but Togo navigated to the roadhouse at Isaac's Point on the shore by 8 PM preventing certain death to his team. After traveling 84 miles (134 km) in one day, the team slept for six hours before continuing at 2 AM.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_9" Language="en_US">
+			<Text>Before the night the temperature dropped to −40 °F (−40 °C), and the wind increased to 65 mi/h (105 km/h). The team ran across the ice, which was breaking up, while following the shoreline. They returned to shore to cross Little McKinley Mountain, climbing 5,000 feet (1,500 m). After descending to the next roadhouse in Golovin, Seppala passed the serum to Charlie Olsen, who in turn would pass it to Gunnar Kaasen and Balto. Since then, the Iditarod Race has been the most extreme and famous event in dogsledding, recreating the 1925 race from Anchorage to Nome every year.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_10" Language="en_US">
+			<Text>Also, I couldn't figure out how to make a sled model so sorry.</Text>
+		</Row>
+		<Row Tag="LOC_ABIL_LIME_THULE_SNEAK_ATTACK_DESC" Language="en_US">
+			<Text>+{1_Amount} [ICON_Strength] Combat Strength when attacking Uninjured Opponents.</Text>
+		</Row>
+		<Row Tag="LOC_ABIL_LIME_THULE_DEFEND_WEAK_DESC" Language="en_US">
+			<Text>-{1_Amount} [ICON_Strength] Combat Strength when defending.</Text>
+		</Row>
+		<Row Tag="LOC_ABIL_LIME_THULE_DOGSLED_DESC" Language="en_US">
+			<Text>+10 Combat Strength when attacking Uninjured Opponents. -5 Combat Strength when defending.</Text>
+		</Row>
+		<!--Whalebone House-->
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_NAME" Language="en_US">
+			<Text>Whalebone House</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_DESCRIPTION" Language="en_US">
+			<Text>Unlocked at Celestial Navigation. Must be placed adjacent to 3 Coast tiles. Provides +1 [ICON_Food] Food, and +1 [ICON_Production] Production to each adjacent Fishing Boats improvement. Provides +1 [ICON_Culture] Culture, +1 [ICON_Faith] Faith, and +1 [ICON_tourism] Tourism for each adjacent Sea Resource. +1 [ICON_Housing] Housing.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_LIME_THULE_WBH_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The Thule peoples constructed large semi-subterranean houses called Whalebone Houses. These houses were usually large enough to house eight to ten people, and served as shelter during the brutal polar winters. They varied widely in layout, but all were made half underground with a frame made of wood and whale ivory (shocking, I know). All featured a hearth, presumably because the Thule peoples did not enjoy freezing to death.</Text>
+		</Row>
+		<!--Place Names-->
+			<!--Mountains-->
+		<Row Tag="LOC_NAMED_MOUNTAIN_AUYUITTUQ_PEAKS_NAME" Language="en_US">
+			<Text>Auyuittuq Peaks</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_INNUITIAN_MOUNTAINS_NAME" Language="en_US">
+			<Text>Innuitian Mountains</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_TORNGAT_MOUNTAINS_NAME" Language="en_US">
+			<Text>Torngat Mountains</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_ALANGUP_QAQAI_NAME" Language="en_US">
+			<Text>Alángup Qáqai</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_LEMON_RANGE_NAME" Language="en_US">
+			<Text>Lemon Range</Text>
+		</Row>
+		<!--Rivers-->
+		<Row Tag="LOC_NAMED_RIVER_KITLINERMIUT_RIVER_NAME" Language="en_US">
+			<Text>Kitlinermiut River</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_MELIADINE_RIVER_NAME" Language="en_US">
+			<Text>Meliadine River</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_KUUKPAK_RIVER_NAME" Language="en_US">
+			<Text>Kuukpak River</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_AKULIARUSIARSUUP_KUUA_NAME" Language="en_US">
+			<Text>Akuliarusiarsuup Kuua</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_QINNGUATA_KUUSSUA_NAME" Language="en_US">
+			<Text>Qinnguata Kuussua</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,69 @@
+Enums
+TerrainType: 
+E_BBS_TERRAIN_PLAIN = 0
+E_BBS_TERRAIN_PLAIN_HILL = 1
+E_BBS_TERRAIN_PLAIN_MOUNTAIN = 2
+E_BBS_TERRAIN_PLAIN = 3
+E_BBS_TERRAIN_PLAIN_HILL = 4
+E_BBS_TERRAIN_PLAIN_MOUNTAIN = 5
+E_BBS_TERRAIN_DESERT = 6
+E_BBS_TERRAIN_DESERT_HILL = 7
+E_BBS_TERRAIN_DESERT_MOUNTAIN = 8
+E_BBS_TERRAIN_TUNDRA = 9
+E_BBS_TERRAIN_TUNDRA_HILL = 10
+E_BBS_TERRAIN_TUNDRA_MOUNTAIN = 11
+E_BBS_TERRAIN_SNOW = 12
+E_BBS_TERRAIN_SNOW_HILL = 13
+E_BBS_TERRAIN_SNOW_MOUNTAIN = 14
+
+FeatureType:
+E_BBS_FEATURE_NONE = -1
+E_BBS_FEATURE_OASIS = g_FEATURE_OASIS = ?
+E_BBS_FEATURE_ICE = 1
+E_BBS_FEATURE_WOOD = 3
+E_BBS_FEATURE = g_FEATURE_JUNGLE = ?
+E_BBS_FEATURE_FLOODPLAIN = g_FEATURE_FLOODPLAINS = ? 32
+
+RessourceType:
+
+####################
+#  Balancing part  #
+####################
+
+# Current
+Improve spawns 2/2 and hills
+Map all capital info 
+Remove luxs under capital
+Update global map for Desert and Tundra civs
+Remove Extrem montains
+Fix walled in spawn
+Fix not enough Trees and plains
+Add fresh water
+--
+Fix ressources
+Strategique
+Strategique 2
+Food balancing
+Costal spawn
+Production balancing
+Rebalance civ bellow threshold
+--
+3 step rebalancing by checking best tiles
+remove oasis hill -- Should not happen
+Fix fresh water missing (Terraforming_Water ==> add lake)
+Last evaluation
+Ethiopia hill fix
+
+# Proposed new
+-- Parse data
+Map all capital info 
+-- Terraforming
+Update global map for Desert and Tundra civs
+Remove Extrem montains
+Fix walled in spawn
+Fix fresh water missing (Terraforming_Water ==> add lake)
+-- Spawn balancing
+Remove luxs under capital
+Ethiopia hill fix
+Balance spawns => 1 iteration
+

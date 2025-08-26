@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameData>
+	<LocalizedText>
+		<!--MOD-->
+		<Row Tag="LOC_MOD_JFD_MACEDON_OLYMPIAS_DESCRIPTION" Language="en_US">
+			<Text>------------------------------------[NEWLINE]LEADER -- OLYMPIAS[NEWLINE][NEWLINE]TRAIT - CABEIRI MYSTERIES[NEWLINE]Receives an [ICON_ENVOY] Envoy from founding a Pantheon. Assigning [ICON_ENVOY] Envoys to City-States grants [ICON_GREATGENERAL] Great General and [ICON_GREATPROPHET] Great Prophet Points, doubling if to Militaristic and Religious City-States.[NEWLINE][NEWLINE]AGENDA - ORACLE OF THE CHTONICS[NEWLINE]Ensures she is high in [ICON_FAITH] Faith and [ICON_GREATPROPHET] Great Prophet Points whilst competing for City-States, and prefers other civilizations to be low in [ICON_FAITH] Faith if they are competing for the same City-States. She despises those civilizations that are high in [ICON_FAITH] Faith and competing for the same City-States.</Text>
+		</Row>
+		<!--LEADER-->
+		<Row Tag="LOC_LEADER_JFD_OLYMPIAS_NAME" Language="en_US">
+			<Text>Olympias</Text>
+		</Row>
+		<!--Agenda-->
+		<Row Tag="LOC_AGENDA_JFD_ORACLE_CHTONICS_NAME" Language="en_US">
+			<Text>Oracle of the Chthonics</Text>
+		</Row>
+		<Row Tag="LOC_AGENDA_JFD_ORACLE_CHTONICS_DESCRIPTION" Language="en_US">
+			<Text>Ensures she is high in [ICON_FAITH] Faith and [ICON_GREATPROPHET] Great Prophet Points whilst competing for City-States, and prefers other civilizations to be low in [ICON_FAITH] Faith if they are competing for the same City-States. She despises those civilizations that are high in [ICON_FAITH] Faith and competing for the same City-States.</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_JFD_OLYMPIAS_REASON_LAGS_FAITH_AND_COMPETING_MINORS" Language="en_US">
+			<Text>(You are competing for the same City-States and are weak in Faith.)</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_AGENDA_JFD_ORACLE_CHTONICS_LAGS_FAITH_AND_COMPETING_MINORS" Language="en_US">
+			<Text>Olmpias is pleased that you are no threat to her competition over City-States</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_JFD_OLYMPIAS_REASON_LEADS_FAITH_AND_COMPETING_MINORS" Language="en_US">
+			<Text>(You are competing for the same City-States and are strong in Faith.)</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_AGENDA_JFD_ORACLE_CHTONICS_LEADS_FAITH_AND_COMPETING_MINORS" Language="en_US">
+			<Text>Olympias feels threatened by your competition over City-States</Text>
+		</Row>
+		<!--DOM-->
+		<Row Tag="LOC_LOADING_INFO_LEADER_JFD_OLYMPIAS" Language="en_US">
+			<Text>You have dreamed of a vision, Queen Olympias - of a thunderbolt fallen upon your womb and of the fires of Zeus spreading through your body. You have been blessed. A son will be born to take the throne of the world and all with it. And you must be his herald.</Text>
+		</Row>
+		<!--Traits-->
+		<Row Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_NAME" Language="en_US">
+			<Text>Cabeiri Mysteries</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_DESCRIPTION" Language="en_US">
+			<Text>Receives an [ICON_ENVOY] Envoy from founding a Pantheon. Assigning [ICON_ENVOY] Envoys to City-States grants [ICON_GREATGENERAL] Great General and [ICON_GREATPROPHET] Great Prophet Points, doubling if to Militaristic and Religious City-States.</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_ENVOY_NOTIFICATION" Language="en_US">
+			<Text>We rejoice in the Gods' splendour. Receive +{1_Num} [COLOR_GREEN][ICON_ENVOY] Envoy[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_POINTS_NOTIFICATION" Language="en_US">
+			<Text>Others have heard our vision of the son of Zeus. Receive +{1_Num} [COLOR_GREEN][ICON_GREATGENERAL] Great General Points[ENDCOLOR] and +{2_Num} [COLOR_GREEN][ICON_GREATPROPHET] Great Prophet Points[ENDCOLOR].</Text>
+		</Row>
+		<!--Civilopedia-->
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_TITLE" Language="en_US">
+			<Text>Olympias</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_SUBTITLE" Language="en_US">
+			<Text>Queen of Macedon</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_QUOTE" Language="en_US">
+			<Text>Olympias told Alexander that his true father was not Philip but Zeus.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>Alexander the Great owed much to the influence of his parents: from his father, Philip II, he learned the art of warfare, but by far the most influential person in his life was his mother, Olympias. From her he inherited not only his love of learning but also his fiery nature, strength of character and as one historian put it --- “his thirst for blood.” Olympias was the driving force behind Alexander’s rise to the throne of Macedonia and she was, as one historian described her, “…arrogant, headstrong, and meddlesome.”</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>Olympias, whose birth name was actually Myrtle, was the daughter of Neoptolemus, the late king of Epirus, a kingdom to the southwest of Macedonia. Her ancestors, the Molossia, claimed to be descended from Molassas, the son of Andromache and Neoptolemus - a son of Achilles - who had slain King Priam of Troy during the Trojan War. While historians disagree on how Philip and Olympias met, the most widely accepted story is written that they met on Samothrace, an island in the Aegean Sea lying between Macedonia and Troy. The island was noted as the religious centre of the twin gods Caberi. While Philip may have participated in the religious ceremonies, he was actually there to promote an alliance. When he saw the young Olympias, a red-haired woman with intoxicating beauty and a fiery temper, it was love at first sight. Plutarch wrote, “…after Philip has been initiated on Samothrace along with Olympias, he fell passionately in love with her, and although he was only a young adult and she was an orphan, he went right ahead and betrothed himself to her…”</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>It was not uncommon for a king to marry more than once, and in Philip’s case, many of his marriages were solely for the purpose of making alliances. It was this way with Olympias, for she would be his second wife. In 357 BCE they married; Olympias was about eighteen at the time and Philip about twenty-eight. Historians have discussed the many omens that surrounded the young couple’s wedding night. In his Greek Lives Plutarch wrote, “On the night before they were to be locked into the bridal chamber together, the bride had a dream in which, following a clap of thunder, her womb was struck by a thunderbolt, this started a vigorous fire which then burst into flames and spread all over the place before dying down.” Together with Philip’s dream where “… he was pressing a seal on his wife’s womb, and that the emblem on the seal was the figure of a lion…” the future of their great son was foretold. Philip and Olympias were to have two children, Alexander and a daughter, Cleopatra, but after Philip saw his wife sleeping with snakes; his days of visiting the bedchamber were over. Olympias had long been a devotee to the cult of Dionysos, something that angered many of the Macedonian people and she may even have introduced the practice of handling snakes to the cult.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>On July 20, 356 BCE Olympias proved her value to Philip by providing him with an heir in Alexander. Without an heir, she would only have been beneficial to Philip and Macedonia as an alliance with Epirus. In actuality there was another possible heir to the throne - a younger half-brother, Phillip Arridaeus, whose mother was a commoner, named Philinna. However, some evidence exists that the always jealous Olympias poisoned him with a drug that eventually “addled his wits,” so he would never be a threat to Alexander becoming king. Plutarch wrote, “…his mind became ruined when he was poisoned by Olympias.”</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_5" Language="en_US">
+			<Text>Three major events occurred in the life of Philip on the day of the future king’s birth. At the time of Alexander’s birth, Philip was away in battle at Potidaea. On this day he received the good news that one of his commanders, Parmenio, had won a decisive battle against the Illyrians. Secondly, his racehorse had won at the Olympic Games (this is where Myrtle became Olympias), and lastly, his son and heir was born. A soothsayer would later claim that Alexander’s birth, coinciding with the other events, meant the young boy would grow to be invincible.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_6" Language="en_US">
+			<Text>After Alexander’s arrival, his mother’s primary objective in life was to make him king. Olympias doted on the young Alexander, telling him constantly of his noble lineage and his ties to Achilles.  This story had a powerful effect on Alexander (he even carried a copy of the Iliad with him). When he crossed the Hellespont into Asia Minor, one of the first places he visited was the remains of Troy, paying homage to his ancestor Achilles. To see to his early education, Olympias brought in a relative, the stern Leonidas of Epirus, to act as both a tutor and mentor to the future king. Afterwards, Aristotle would be summoned from Athens to complete his education.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_7" Language="en_US">
+			<Text>A real situation, however, would soon arise that could threaten Olympias and her quest to enthrone her son - Philip’s marriage to Attalus’s niece, Cleopatra-Eurydice. According to those around Philip, Alexander was only half Macedonian and the pressure was on for the king to marry someone of pure blood. So, Philip divorced Olympias, accusing her of adultery, and even claiming that Alexander was not his son. Philip’s marriage to Cleopatra-Eurydice combined with her pregnancy put Olympias in a precarious situation. If the baby were a boy and, therefore, a legitimate heir to the throne, Alexander would not become king. This was further complicated when Olympia’s brother, Alexander, who Philip had put on the throne of Epirus, was betrothed to her daughter (and his niece), Cleopatra. With this marriage, she would no longer serve a purpose even as a diplomatic tie to Epirus.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_8" Language="en_US">
+			<Text>At the wedding banquet of Phillip and Cleopatra-Eurydice, Attalus (one of Philip’s commanders) made a disparaging remark about Alexander - calling him a bastard - “…he called on the Macedonians to pray to the gods for a legitimate heir to the throne.” After this verbal assault, Alexander angrily rose to his feet, deriding his drunken father’s inability to cross the room. Plutarch wrote, “Philip got up to attack Alexander and drew his sword but luckily for both of them his anger and the wine he had drunk made him stumble and fall…After this drunken brawl Alexander took Olympias and set her up in Epirus, while he stayed among the Illyrians.” Possibly, Olympias’ purpose of returning to Epirus was not only to get her away from the wrath of Phillip but also to coax her brother into declaring war on Philip. After Philip arranged reconciliation through Demarcates of Corinth, Alexander and Olympias were allowed to return to Pella.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_9" Language="en_US">
+			<Text>In 336 BCE at the wedding banquet of Olympias’ brother Alexander to her daughter Cleopatra, Philip was assassinated by the disgruntled Pausanias of Oretis, who had been rebuked by Philip after he had asked for retribution against Attalus. Suspicion immediately fell upon Olympias who some believed had encouraged Pausanias to seek revenge and kill Philip. Plutarch wrote, “When Pausanias, who had been assaulted at the instigation of Attalus and Cleopatra, murdered Philip for failing to recompense him, most of the blame attached itself to Olympias, on the grounds that she had encouraged the young man in his anger and incited him to do the deed …” There is even some evidence that she had horses waiting for the assassin to use for his escape. After Philip’s death and Alexander’s ascension to the throne, Cleopatra-Eurydice and her young daughter (there may also have been a son) were put to death on Olympias’ orders - some claim they were burned to death while others say Cleopatra was forced to hang herself. With this done, Olympia’s future was secure - she was the king’s mother.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_10" Language="en_US">
+			<Text>When Alexander prepared to cross the Hellespont and into Asia Minor, his mother pulled him aside and told him that his true father was not Philip but Zeus; therefore, he must act with courage, something suitable to his divine origin. He would never see his homeland or mother again. Throughout his travels across Asia, he and his mother corresponded often - she offered advice and he ignored it. Left behind to rule Macedonia and Greece was Antipater. Letters between Alexander and Antipater as well as those between Alexander and Olympias were filled with complaints and accusations - Antipater called her, among other things, a shrew while she said he was more like a king than a governor. In order to solve the quarrel, Alexander sent for Antipater to meet him in Babylon (some say it was just to get him away from Olympias), but Antipater sent his son Cassander in his place, something that angered Alexander.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_HISTORY_PARA_11" Language="en_US">
+			<Text>After Alexander’s death in 323 BCE and the onset of the Succession Wars over the inheritor of his kingdom, Olympias called for Roxanne, Alexander’s wife, to come to Pella where she and her son the future Alexander IV would be safe. After Antipater’s death in 319 BCE, one of Alexander’s commanders Polyperchon was named the new regent; however, he was forced out by Cassander, fleeing to Epirus with Roxanne and the young Alexander. While she had originally tried to remain neutral, Olympias realized her grandson could never be king as long as Cassander was regent, so she joined forces with her cousin Aeacides (King of Epirus) and the remainder of Polyperchon’s army and invaded Macedonia. At the orders of Olympias, Alexander’s half-brother Phillip (who actually had been king but in name only), his wife Eurydice and hundreds of selected Macedonians loyal to Cassander were executed in 317 BCE. However, Olympias’ invasion failed; Cassander captured her at Pydna and while he initially promised to save her life, he changed his mind and put her to death in 316 BCE. Sadly, Olympias’ dream of her grandson inheriting the throne of Alexander would never be realized and Roxanne and the young Alexander IV would meet the same fate as Olympias in 310 BCE.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<Text>Olympia's Macedon is the one civilization that is prepared to pursue diplomacy for the entire game. Knowing that her fate lies in her alliances, Olympia will seek out the influence of as many City-States as she can.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_DETAILED_BODY" Language="en_US">
+			<Text>Olympia's diplomacy is something to behold. By delegating Macedon's Envoys to those who believe in her destiny, she can quickly accumulate Great Generals and Great Prophets with which to either march to war or found a religion. If their units are trained at the Basilikoi Paides, Macedon advances in technology without having to expend the time on developing a campus. With a strong faith, Olympia can secure allegiance from neighbouring City-States, who in turn can fuel her armies and her faith, allowing Macedon to pursue either a Domination or a Religious Victory at their leisure.</Text>
+		</Row>
+		<!--Diplomacy-->
+		<!--FIRST MEET-->
+		<!--First AI line-->		
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>In sight of great Mount Olympus, I greet you. I am Olympias, daughter of Neoptolemus.</Text>
+		</Row>
+		<!--AI invitation to visit nearby City-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>We are close to my home. I offer my hospitality to you.</Text>
+		</Row>
+		<!--AI accepts Human invitation-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I am bestown with such kindness and grace.</Text>
+		</Row>
+		<!--AI invitation to exchange Capital Information-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I invite you to tell me about your Capital, and I would do the same.</Text>
+		</Row>
+		<!--GREETINGS-->
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>Your return is welcome, if expected.</Text>
+		</Row>
+		<!--DELEGATION-->
+		<!--AI Accepts-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I will speak with them.</Text>
+		</Row>
+		<!--AI Rejects-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>Misfortune follows you delegation. I cannot accept.</Text>
+		</Row>
+		<!--AI Requests-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I send a delegation to you now, blessed as they are. May you accept them and the will of the Gods that follows.</Text>
+		</Row>
+		<!--OPEN BORDERS-->
+		<!--AI accepts from human-->
+		<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>May it prove our good fortune.</Text>
+		</Row>
+		<!--AI rejects from human-->
+		<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I cannot accept such things.</Text>
+		</Row>
+		<!--AI requests from human-->
+		<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I invite you to join me in an open borders agreement.</Text>
+		</Row>
+		<!--DECLARE FRIENDSHIP-->
+		<!--AI accepts from human-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I will honour your wish, for it is one shared by the Gods.</Text>
+		</Row>
+		<!--AI Rejects from human-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I won't have it.</Text>
+		</Row>
+		<!--AI Requests friendship from human-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I believe we must come to terms with the will of the Gods. We are destined to be friends, and we need only to declare it.</Text>
+		</Row>
+		<!--Human accepts AI requests, AI responds-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>This will bring us both much fortune.</Text>
+		</Row>
+		<!--Human rejects AI requests, AI responds-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>No, it would only bring misfortune.</Text>
+		</Row>
+		<!--ALLIANCE-->
+		<!--AI Requests an alliance from human-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>An alliance between you and I will bring glory to the Gods.</Text>
+		</Row>
+		<!--KUDOS & WARNINGS-->	
+		<!--AI Kudos-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>You deal in the politics of mortals. It does not unseat me.</Text>
+		</Row>
+		<!--AI Warnings-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>Your favour with the Gods is short-lived.</Text>
+		</Row>
+		<!--AI warns player for border troops-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>Come then. I am prepared to fight you. I have a son born of Zeus. What do you have?</Text>
+		</Row>
+		<!--TRADE-->
+		<!--AI Accepts Deal-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_OLYMPIAS_ANY}</Text>
+		</Row>
+		<!-- AI Rejects Deal -->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_OLYMPIAS_ANY}</Text>
+		</Row>
+		<!--DENOUNCE-->
+		<!--From Human-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>What shame you bring to yourself.</Text>
+		</Row>
+		<!--From AI-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I have seen your future, and you are not one that can be dealt with through soft words (Denounces You).</Text>
+		</Row>
+		<!--Rationale-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_JFD_ORACLE_CHTONICS_LEADS_FAITH_AND_COMPETING_MINORS" Language="en_US">
+			<Text>(You are competing for the same City-States and are strong in Faith)</Text>
+		</Row>	
+		<!--DECLARE WAR-->
+		<!--Human Declares War-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>I dreamt of this moment. I did not end with your victory.</Text>
+		</Row>
+		<!--AI Declares War-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>The Gods give me strength. We march to war.</Text>
+		</Row>
+		<!--MAKE PEACE-->
+		<!--AI accepts from human-->
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>The time has come then. I accept.</Text>
+		</Row>
+		<!--AI refuses human-->
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>The Gods guide me to triumph. I will not disappoint them with surrender.</Text>
+		</Row>
+		<!--AI requests from human-->
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>War has failed. We must find a way through peace.</Text>
+		</Row>
+		<!--DEFEAT-->
+		<!--AI is Defeated-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>Hades take you.</Text>
+		</Row>
+		<!--Human is Defeated (will see this in hotseat)-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="en_US">
+			<Text>[LOC_DIPLO_DEFEAT_FROM_AI_LEADER_JFD_OLYMPIAS_ANY]</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

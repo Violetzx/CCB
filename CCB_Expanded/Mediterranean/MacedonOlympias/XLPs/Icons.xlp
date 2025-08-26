@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UI/Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="JFD_OLYMPIAS_4"/>
+			<m_ObjectName text="JFD_OLYMPIAS_4"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacedonOlympias45"/>
+			<m_ObjectName text="MacedonOlympias45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_JFD_OLYMPIAS_NEUTRAL"/>
+			<m_ObjectName text="LEADER_JFD_OLYMPIAS_NEUTRAL"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias256"/>
+			<m_ObjectName text="Olympias256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias32"/>
+			<m_ObjectName text="Olympias32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias45"/>
+			<m_ObjectName text="Olympias45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias48"/>
+			<m_ObjectName text="Olympias48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias50"/>
+			<m_ObjectName text="Olympias50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias55"/>
+			<m_ObjectName text="Olympias55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias64"/>
+			<m_ObjectName text="Olympias64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Olympias80"/>
+			<m_ObjectName text="Olympias80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="JFD_OLYMPIAS_1"/>
+			<m_ObjectName text="JFD_OLYMPIAS_1"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

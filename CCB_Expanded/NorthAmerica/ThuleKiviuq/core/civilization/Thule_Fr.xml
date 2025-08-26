@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameData>
+	<LocalizedText>
+		<!--CIVILIZATION-->
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_NAME" Language="fr_FR">
+			<Text>Thulé</Text>
+			<Gender>masculine:no_article</Gender>
+			<Plurality>1</Plurality>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_DESCRIPTION" Language="fr_FR">
+			<Text>Empire thuléen</Text>
+			<Gender>masculine:vowel</Gender>
+			<Plurality>1</Plurality>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_ADJECTIVE" Language="fr_FR">
+			<Text>thuléen|thuléenne|thuléens|thuléennes</Text>
+			<Gender>masculine|feminine|masculine|feminine</Gender>
+			<Plurality>1|1|2|2</Plurality>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_DESCRIPTION_LIME_CIVILIZATION" Language="fr_FR">
+			<Text>Civilisation thuléenne</Text>
+		</Row>
+		<!--Pedia-->
+		<Row Tag="LOC_CIVINFO_LIME_THULE_LOCATION" Language="fr_FR">
+			<Text>Nord du Canada, nord de l'Alaska, archipel arctique, Groenland</Text>
+		</Row>
+		<Row Tag="LOC_CIVINFO_LIME_THULE_POPULATION" Language="fr_FR">
+			<Text>Environ 55 000</Text>
+		</Row>
+		<Row Tag="LOC_CIVINFO_LIME_THULE_SIZE" Language="fr_FR">
+			<Text>Environ 1,55 million de kilomètres carrés</Text>
+		</Row>
+		<Row Tag="LOC_CIVINFO_LIME_THULE_CAPITAL" Language="fr_FR">
+			<Text>Qilakitsoq</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Les membres de la culture de Thulé sont les ancêtres de tous les Inuits modernes, habitant les territoires septentrionaux du Canada moderne, de l'Alaska et du Groenland. S'étant d'abord développés au 10ème siècle en Alaska, ils s'étendirent au Canada puis au Groenland au cours des 300 années suivantes, déplaçant et dominant la culture de Dorset.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_2" Language="fr_FR">
+			<Text>Bien qu'ils aient commencé à prospérer au 10ème siècle, la culture de Thulé émergea vers 200 avant Jésus-Christ dans le détroit de Béring, bien que cette estimation varie considérablement. La forte tradition de chasseurs et d'artistes maritimes de Thulé prit forme dans ce qui est désormais le site archéologique de la mer de Béring. Des têtes de harpon décorées en ivoire ainsi que des restes d'umiaks (de grands bateaux en peau utilisés pour la chasse à la baleine) et divers autres outils en ivoire et ardoise polie y ont été découverts. Plus précisément, des innovations sous la forme de pics à glace montés sur harpon, de harpon à bascule, d'outils sophistiqués pour la chasse au phoque et au morse, et la maîtrise des chiens de traîneau aida la culture de Thulé à prospérer.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_3" Language="fr_FR">
+			<Text>Après la mer de Béring, la culture de Thulé s'installa à Punuk, où ils purent dominer la culture du Dorset grâce à leurs technologies plus avancées. Thulé prospéra ainsi dans de vastes nouveaux territoires, et la société basée sur la chasse aux phoques et aux morses devint une culture centrée sur la chasse à la baleine pour laquelle Thulé s'est fait connaître. La baleine boréale était une proie idéale, principalement en raison de sa lenteur et de son sommeil à proximité de la surface. La graisse, la viande, les os et la peau de la baleine boréale devinrent importantes et finalement essentielles à la vie thuléenne. Ces ressources nécessaires étaient sculptées en outils nécessaires à la chasse, en charpente pour leurs maisons en os de baleine et en de magnifiques reliques.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
+			<Text>La culture de Thulé s'installa dans un cycle dans lequel ils habitaient dans de grandes maisons semi-souterraines faites de bois et d'os de baleine en hiuver, et dans des huttes de peau durant l'été. Des équipes de baleiniers expérimentés, menés par un prestigieux capitaine vétéran connu sous le nom d'umialik, sortaient et chassaient la baleine dans des chenaux de glace étroits, puis dans la mer ouverte durant l'automne. Bien que la chasse à la baleine en haute mer soit dangereuse, les chasseurs experts et les bateliers avaient développé des armures en os, des techniques de tir à l'arc, des outils de chasse encore plus avancés et diverses techniques expertes pour atténuer les dangers.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_5" Language="fr_FR">
+			<Text>Autour de l'an 800 après Jésus-Christ, la culture de Thulé se divisa : une moitié resta en Alaska et dans le Canada continental, et une autre moitié s'installa au Groenland et dans les mers du Haut-Arctique. La partie orientale devint connue sous le nom de culture de Birnirk. Peu à peu, les styles de têtes de harpons et de flèches passèrent de têtes en ivoire hautement décorées à des versions sans fioritures en bois de cervidé.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_6" Language="fr_FR">
+			<Text>Pendant ce temps, la culture de Punuk entra dans l'ère classique de Thulé entre les années 1100 à 1400. Ils commencèrent à utiliser des outils en fer, mais eurent finalement eu un approvisionnement en fer très limité, essentiellement par le biais du commerce avec les Vikings. Le métal était utilisé pour la sculpture, mais les tendances artistiques de la culture de Thulé continuèrent à décliner.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_7" Language="fr_FR">
+			<Text>La foi de la culture de Thulé se développa sous une forme d'animisme et de shamanisme. Les prêtres-guérisseurs, connus sous le nom d'Angakkuit, aidaient les communautés en temps de crise, particulièrement pendant la chasse à la baleine et la pénurie marine. La dureté de la vie dans le Grand Nord faisait que les gens vivaient dans la crainte constante de forces invisibles et surnaturelles, et étaient tantôt aidés par des protecteurs ou des gardiens, qui leur permettaient également de surmonter les obstacles surnaturels. Ils croyaient aussi que toutes chose disposait d'un anirniq - un esprit - emprunté au ciel autour d'eux, qui persistait après la mort et qui était libre de se venger.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_8" Language="fr_FR">
+			<Text>La culture de Thulé postclassique fut une période de déclin en raison des changements climatiques et du manque de baleines - les colonies étaient désormais obligées d'utiliser des stratégies de subsistance de chasse en terre ou de pêche. La baisse des températures du petit âge glaciaire réduisit la saison de chasse à la baleine, et les tentatives de chasse à la baleine furent finalement abandonnées au 17ème siècle.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_9" Language="fr_FR">
+			<Text>La culture de Thulé avait été en contact avec la société européenne avant sa disparition. Bien qu'ils avaient déjà été en contact avec les Scandinaves, qui les appelaient skrælingr, ils rencontrèrent des baleiniers basques et plus tard des explorateurs français et anglais. Les épidémies décimèrent le peuple de Thulé, et la richesse matérielle bouleversa leur mode de vie alors qu'ils commençaient à se transformer en société inuite. À une époque où leur principale source de nourriture s'épuisait rapidement, l'impact de la colonisation européenne fut dévastateur et finalement fatal pour la culture. Les derniers aspects de la culture de Thulé s'éteignirent vers 1850, et furent entièrement remplacés par les Inuits modernes dans les colonies canadiennes britanniques.</Text>
+		</Row>
+		<!--Trait-->
+		<Row Tag="LOC_TRAIT_CIVILIZATION_LIME_THULE_HUNTING_BOWHEAD_NAME" Language="fr_FR">
+			<Text>Chasse à la baleine</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_LIME_THULE_HUNTING_BOWHEAD_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_FAITH] Foi + 3 et [ICON_PRODUCTION] Production + 3 pour les reliques. Les ressources de luxe des baleines procurent un bonus de [ICON_FOOD] nourriture et de [ICON_FAITH] foi.</Text>
+		</Row>
+		<!--Cities-->
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_2" Language="fr_FR">
+			<Text>Tatlurutit</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_3" Language="fr_FR">
+			<Text>Qikiqtaaluk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_4" Language="fr_FR">
+			<Text>Kuganajuup</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_5" Language="fr_FR">
+			<Text>Qikiqtanga</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_6" Language="fr_FR">
+			<Text>Pituffik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_7" Language="fr_FR">
+			<Text>Kinngait</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_8" Language="fr_FR">
+			<Text>Kangiqliniq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_9" Language="fr_FR">
+			<Text>Torngat</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_10" Language="fr_FR">
+			<Text>Qaqortoq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_11" Language="fr_FR">
+			<Text>Iqaluktuuttiaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_12" Language="fr_FR">
+			<Text>Qijurittug</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_13" Language="fr_FR">
+			<Text>Ivujivik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_14" Language="fr_FR">
+			<Text>Iqaluit</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_15" Language="fr_FR">
+			<Text>Iglulik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_16" Language="fr_FR">
+			<Text>Quaqtaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_17" Language="fr_FR">
+			<Text>Sisimiut</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_18" Language="fr_FR">
+			<Text>Salliq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_19" Language="fr_FR">
+			<Text>Ikpiarjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_20" Language="fr_FR">
+			<Text>Etah</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_21" Language="fr_FR">
+			<Text>Kuugaarjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_22" Language="fr_FR">
+			<Text>Kuugjuaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_23" Language="fr_FR">
+			<Text>Utqiaġvik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_24" Language="fr_FR">
+			<Text>Kangeq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_25" Language="fr_FR">
+			<Text>Paulatuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_26" Language="fr_FR">
+			<Text>Arsuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_27" Language="fr_FR">
+			<Text>Kulusuk</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_28" Language="fr_FR">
+			<Text>Nuussuaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_29" Language="fr_FR">
+			<Text>Kaktovik</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_30" Language="fr_FR">
+			<Text>Quasuittuq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_31" Language="fr_FR">
+			<Text>Qaanaaq</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_32" Language="fr_FR">
+			<Text>Katimavik</Text>
+		</Row>
+		<!--Citizens-->
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_1" Language="fr_FR">
+			<Text>Nootaikoq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_2" Language="fr_FR">
+			<Text>Panuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_3" Language="fr_FR">
+			<Text>Silla</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_4" Language="fr_FR">
+			<Text>Kumaglak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_5" Language="fr_FR">
+			<Text>Pana</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_6" Language="fr_FR">
+			<Text>Qimmiq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_7" Language="fr_FR">
+			<Text>Nanurjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_8" Language="fr_FR">
+			<Text>Nanuq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_9" Language="fr_FR">
+			<Text>Kiviaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MALE_10" Language="fr_FR">
+			<Text>Inuksuq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_1" Language="fr_FR">
+			<Text>Enigma</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_2" Language="fr_FR">
+			<Text>Relic</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_3" Language="fr_FR">
+			<Text>JFD</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_4" Language="fr_FR">
+			<Text>Tranquil</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_5" Language="fr_FR">
+			<Text>Sensh</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_6" Language="fr_FR">
+			<Text>Dray</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_7" Language="fr_FR">
+			<Text>Kyofu</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_8" Language="fr_FR">
+			<Text>Leugi</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_9" Language="fr_FR">
+			<Text>Ipiirviq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_MALE_10" Language="fr_FR">
+			<Text>Dave</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_1" Language="fr_FR">
+			<Text>Tanaraq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_2" Language="fr_FR">
+			<Text>Atiqtalik</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_3" Language="fr_FR">
+			<Text>Nuvua</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_4" Language="fr_FR">
+			<Text>Meriwa</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_5" Language="fr_FR">
+			<Text>Katsitanoron</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_6" Language="fr_FR">
+			<Text>Puqtu</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_7" Language="fr_FR">
+			<Text>Ataksaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_8" Language="fr_FR">
+			<Text>Cupun</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_9" Language="fr_FR">
+			<Text>Ikiaq</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_FEMALE_10" Language="fr_FR">
+			<Text>Kallik</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_1" Language="fr_FR">
+			<Text>Chrisy</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_2" Language="fr_FR">
+			<Text>Angel</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_3" Language="fr_FR">
+			<Text>Seeling</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_4" Language="fr_FR">
+			<Text>Sailor</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_5" Language="fr_FR">
+			<Text>Lee</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_6" Language="fr_FR">
+			<Text>Pitseolak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_7" Language="fr_FR">
+			<Text>Inunak</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_8" Language="fr_FR">
+			<Text>Meekitjuk</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_9" Language="fr_FR">
+			<Text>Kitikmeot</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_LIME_THULE_MODERN_FEMALE_10" Language="fr_FR">
+			<Text>Chimp</Text>
+		</Row>
+		<!--Dogsled Hunter-->
+		<Row Tag="LOC_UNIT_LIME_THULE_DOGSLED_NAME" Language="fr_FR">
+			<Text>Traîneau à chiens|Traîneaux à chiens</Text>
+			<Gender>masculine</Gender>
+			<Plurality>1|2</Plurality>
+		</Row>
+		<Row Tag="LOC_UNIT_LIME_THULE_DOGSLED_DESCRIPTION" Language="fr_FR">
+			<Text>Unité exclusive à Thulé, remplaçant le char lourd. Possède d'emblée la promotion Reconnaissance. Peut uniquement attaquer à distance.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Chiens... Traîneaux... Depuis la nuit des temps, l'homme a tenté de lier ces deux concepts. Le chien de traîneau, perdu dans les rouages du temps, n'a jamais eu beaucoup d'avenir. Bien que la tentative de croiser des traîneaux avec des chiens était une entreprise vouée à l'échec, l'homme est persistant de nature, et la créativité est à sa portée. Ce fut finalement Iqualiq l'Engelure, dont le nom est depuis redouté, qui a eu l'idée révolutionnaire d'un traîneau tiré par des chiens.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_2" Language="fr_FR">
+			<Text>D'acord, j'avoue, j'ai un peu brodé. Allez, on efface tout et on recommence !</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_3" Language="fr_FR">
+			<Text>Le chien est utilisé depuis très longtemps dans les attelages : on a retrouvé des indices datés de 6000 ans avant Jésus-Christ le prouvant. Néanmoins, il semble que cette pratique ait été très sporadique jusqu'à l’époque de la culture inuite dite de Thulé qui s’est épanouie aux alentours de l'an mil.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
+			<Text>Les peuples thuléens doivent en partie leur domination sur la culture de Dorest à leurs chiens de traîneau. Cette forme de transport sur des terrains arides et rugueux leur permettait de se déplacer beaucoup plus loin et d'acquérir plus de nourriture que leurs homologues de Dorset, si bien que Thulé s'installa rapidement sur tout le territoire. De nouvelles races de chien furent formées, dont le malamute de l'Alaska. Depuis, les activités de chiens de traîneaux sont populaires partout au Canada, en Alaska et au Groenland.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_5" Language="fr_FR">
+			<Text>La course de chiens de taîneaux la plus célèbre est probablement la course au sérum de 1925, aussi connue sous le nom de Grande course de la Miséricorde. Une épidémie de diphtérie menaça de ravager Nome, petite cité de l'Alaska. Aucun avion ne pouvant voler en raison d'une tempête, et l'hiver rendant les routes hasardeuses, une caisse de sérum fut transportée d'abord par rail, avant que des traîneaux à chiens prennent le relais pour les deux mille kilomètres restants (mille kilomètres pour récupérer la caisse de sérum, mille autres pour la ramener à Nome) dans des conditions effroyables.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_6" Language="fr_FR">
+			<Text>En tout, 20 mushers se relayèrent sur le parcours reliant Nome à Nenana, où le train ne pouvait aller plus loin faute rails. Le premier musher fut Leonhard Seppala, qui partit de Nome en direction de Nenana avec un attelage de 20 huskies dirigé par Togo, son meilleur chien de tête. Alors que Seppala était déjà en route, les autorités décidèrent qu'un relais de plusieurs attelages avait des chances de délivrer le précieux sérum plus rapidement. C'est ainsi que 20 mushers et plus de 100 huskies prirent part à la course.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_7" Language="fr_FR">
+			<Text>On demanda à Gunnar Kaasen, l'assistant de Seppala, dont l'équipage de huskies était dirigé par Balto, de faire partie du relais. Arrivant au dernier point de contrôle avant Nome, Kaasen trouva son remplaçant endormi. Considérant que son équipage se comportait bien, il décida de poursuivre jusqu'à Nome. Le sérum fut ainsi livré de Nenana à Nome en seulement 5 jours et demi. Aucune ampoule de sérum ne fut brisée durant le trajet, et la population de la ville fut sauvée.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_8" Language="fr_FR">
+			<Text>Kaasen et Balto ayant parcouru près du double de distance dans la portion la plus dangereuse du parcours, la presse s'empara de l'histoire et fit de Balto le nouveau héros de la nation. À la fin de l'année, une statue sculptée par F.G. Roth fut érigée à Central Park, à New York, avec cette inscription : "Cette statue est consacrée à l’esprit invincible des chiens de traîneau qui ont transmis par relais l’antitoxine sur 600 miles de glace rugueuse, à travers les eaux déloyales, par les tempêtes de neige arctique de Nenana au soulagement de Nome en détresse pendant l’hiver de 1925."</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_9" Language="fr_FR">
+			<Text>(Si vous n'avez pas versé une petite larme en lisant ce texte tout en pensant au courage et à l'héroïsme de ces chiens, c'est que vous n'êtes pas un être humain. Ou alors, vous vous dites que le chihuahua de la voisine n'aurait lui pas tenu plus de 100 mètres.)</Text>
+		</Row>
+		<!--Whalebone House-->
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_NAME" Language="fr_FR">
+			<Text>Maison d'os de baleine|Maisons d'os de baleine</Text>
+			<Gender>feminine</Gender>
+			<Plurality>1|2</Plurality>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_DESCRIPTION" Language="fr_FR">
+			<Text>Aménagement exclusif à Thulé, disponible une fois la navigation astronomique découverte. Doit être placé à côté de 3 cases de mer. [ICON_Production] +1 et [ICON_Faith] foi +1 pour chaque bateau de pêche adjacent. [ICON_Tourism] Tourisme +2, [ICON_Food] nourriture +2 et [ICON_Housing] logement +1.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_LIME_THULE_WBH_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Le peuple de Thulé a construit de grandes maisons semi-souterraines appelées maisons d'os de baleine. Ces habitations étaient généralement assez grandes pour abriter de huit à dix personnes, et servir d'abri pendant les hivers polaires. Leur disposition variait considérablement, mais toutes les maisons étaient en partie sous terre avec une charpente faite de bois et d'ivoire de baleine (heureusement qu'ils ne chassaient pas des pigeons, il en aurait fallu des milliards pour construire des habitations avec leurs os). Toutes les maisons disposaient d'un foyer, vraisemblablement parce que le peuple de Thulé, comme bon nombre d'autres peuples, n'appréciait pas de mourir de froid.</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_FISHING_FOOD" Language="fr_FR">
+			<Text>[ICON_FOOD] Nourriture +{1_num} provenant des bateaux de pêche adjacents.</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_FISHING_PRODUCTION" Language="fr_FR">
+			<Text>[ICON_PRODUCTION] Production +{1_num} provenant des bateaux de pêche adjacents.</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_FISHING_FAITH" Language="fr_FR">
+			<Text>[ICON_FAITH] Foi +{1_num} provenant des bateaux de pêche adjacents.</Text>
+		</Row>
+		<!--JFD's Civilization Title Thingy-->
+		<Row Tag="LOC_CIVILIZATION_LIME_THULE_DESCRIPTION_JFD_CIVILIZATION" Language="fr_FR">
+			<Text>Civilisation thuléenne</Text>
+		</Row>
+		<!--Place Names-->
+		<!--Mountains-->
+		<Row Tag="LOC_NAMED_MOUNTAIN_AUYUITTUQ_PEAKS_NAME" Language="fr_FR">
+			<Text>Pics d'Auyuittuq</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_INNUITIAN_MOUNTAINS_NAME" Language="fr_FR">
+			<Text>Montagnes Innuitiennes</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_TORNGAT_MOUNTAINS_NAME" Language="fr_FR">
+			<Text>Monts Torngat</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_ALANGUP_QAQAI_NAME" Language="fr_FR">
+			<Text>Alángup Qáqai</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_LEMON_RANGE_NAME" Language="fr_FR">
+			<Text>Monts Lemon</Text>
+		</Row>
+		<!--Rivers-->
+		<Row Tag="LOC_NAMED_RIVER_KITLINERMIUT_RIVER_NAME" Language="fr_FR">
+			<Text>Rivière Kitlinermiut</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_MELIADINE_RIVER_NAME" Language="fr_FR">
+			<Text>Rivière Meliadine</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_KUUKPAK_RIVER_NAME" Language="fr_FR">
+			<Text>Rivière Kuukpak</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_AKULIARUSIARSUUP_KUUA_NAME" Language="fr_FR">
+			<Text>Akuliarusiarsuup Kuua</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_QINNGUATA_KUUSSUA_NAME" Language="fr_FR">
+			<Text>Qinnguata Kuussua</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

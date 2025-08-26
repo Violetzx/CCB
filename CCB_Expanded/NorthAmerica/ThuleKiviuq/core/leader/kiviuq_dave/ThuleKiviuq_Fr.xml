@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameData>
+	<LocalizedText>
+		<!--LEADER-->
+		<Row Tag="LOC_LEADER_LIME_THULE_DAVE_NAME" Language="fr_FR">
+			<Text>Kiviuq</Text>
+			<Gender>masculine:no_article</Gender>
+			<Plurality>1</Plurality>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_LIME_THULE_DAVE_QILAKITSOQ" Language="fr_FR">
+			<Text>Qilakitsoq</Text>
+		</Row>
+		<!--Agenda-->
+		<Row Tag="LOC_AGENDA_LIME_THULE_DAVE_ALWAYS_ROAMING_NAME" Language="fr_FR">
+			<Text>Aventurier éternel</Text>
+		</Row>
+		<Row Tag="LOC_AGENDA_LIME_THULE_DAVE_ALWAYS_ROAMING_DESCRIPTION" Language="fr_FR">
+			<Text>Apprécie les civilisations qui envoient des explorateurs. N'aime pas les civilisations qui n'explorent pas.</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_KUDOS_LEADER_LIME_THULE_DAVE_ALWAYS_ROAMING_EXPLORERPHILE_POSITIVE" Language="fr_FR">
+			<Text>(Vous avez envoyé beaucoup d'explorateurs.)</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_LEADER_LIME_THULE_DAVE_ALWAYS_ROAMING_EXPLORERPHILE_POSITIVE" Language="fr_FR">
+			<Text>Kiviuq vous considère comme un compagnon d'exploration.</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_LIME_THULE_DAVE_ALWAYS_ROAMING_EXPLORERPHILE_NEGATIVE" Language="fr_FR">
+			<Text>(Vous négligez l'exploration.)</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_LEADER_LIME_THULE_DAVE_ALWAYS_ROAMING_EXPLORERPHILE_NEGATIVE" Language="fr_FR">
+			<Text>Kiviuq pense que vous avez l'esprit fermé et que vous avez peur de l'aventure.</Text>
+		</Row>
+		<!--DOM-->
+		<Row Tag="LOC_LOADING_INFO_LEADER_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Une vaste étendue se trouve devant vous, héroïque Kiviuq, éternel vagabond. Votre peuple est pieux et cultivé, possédant des reliques incomparables et des légendes au-delà de toute croyance. Envoyez vos courageux compagnons chasser les baleines, et laissez vos angakkuit se battre contre Sedna afin que la chance vous sourie. Mais n'oubliez jamais d'explorer et de conduire vos éclaireurs par-delà l'horizon. Battez-vous vaillamment et surmontez les obstacles, et surtout ne laissez pas votre cœur se transformer en pierre.</Text>
+		</Row>
+		<!--Traits-->
+		<Row Tag="LOC_TRAIT_LEADER_LIME_THULE_DAVE_HEART_NOT_STONE_NAME" Language="fr_FR">
+			<Text>Un cœur non fait de pierre</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_LIME_THULE_DAVE_HEART_NOT_STONE_DESCRIPTION" Language="fr_FR">
+			<Text>Les unités de reconnaissance promues augmentent votre génération de [ICON_FAITH] foi de 10 % chacune. [ICON_Movement] PM + 1 et [ICON_Strength] puissance de combat + 10 pour les unités de reconnaissance sur les cases de toundra ou de neige.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_LIME_THULE_DAVE_HEART_NOT_STONE_RECON_EXP_NAME" Language="fr_FR">
+			<Text>Un cœur non fait de pierre</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_LIME_THULE_DAVE_HEART_NOT_STONE_RECON_EXP_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Movement] PM + 1 et [ICON_Strength] puissance de combat + 10 pour les unités de reconnaissance sur les cases de toundra ou de neige.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_LIME_THULE_DAVE_HEART_NOT_STONE_RECON_FAITHGEN_NAME" Language="fr_FR">
+			<Text>Un cœur non fait de pierre</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_LIME_THULE_DAVE_HEART_NOT_STONE_RECON_FAITHGEN_DESCRIPTION" Language="fr_FR">
+			<Text>Les unités de reconnaissance promues sur ces cases augmentent votre génération de [ICON_FAITH] foi de 10 % chacune.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_LIME_THULE_DAVE_HEART_NOT_STONE_RECON_FAITHBURST_NAME" Language="fr_FR">
+			<Text>Un cœur non fait de pierre</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_LIME_THULE_DAVE_HEART_NOT_STONE_RECON_FAITHBURST_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Movement] PM + 1 et [ICON_Strength] puissance de combat + 10 pour les unités de reconnaissance sur les cases de toundra ou de neige.</Text>
+		</Row>
+		<!--Civilopedia-->
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_TITLE" Language="fr_FR">
+			<Text>Kiviuq</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_SUBTITLE" Language="fr_FR">
+			<Text>Héros de Thulé</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_QUOTE" Language="fr_FR">
+			<Text>Les anciens disent qu'il est désormais dans sa dernière vie, et toujours à l'aventure. Cependant, avant de mourir, il reviendra auprès de son peuple.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Kiviuq, ou Qivioq, est un héros légendaire thuléen puis inuit qui apparaît dans beaucoup d'unipkaaqs (des sagas épiques qui ont eu lieu dans un passé indéfini appelé taimmani). Il est un aventurier éternel, voyageant pour l'éternité à pied, en traîneau à chiens, en umiak, ou sur d'énormes poissons. Il utilise ses pouvoirs surnaturels pour surmonter les esprits, les dieux, les géants, les cannibales, les ours et les monstres marins, ainsi que de nombreux autres obstacles lors de ses voyages.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_HISTORY_PARA_2" Language="fr_FR">
+			<Text>Une légende bien connue de Kiviuq raconte son amitié avec le petit-fils d'une vieille femme. Tout le monde abuse et se moque du garçon, sauf Kiviuq. La vieille femme décide de se venger. Elle change son petit-fils en un phoque et le fait nager vers la mer. Les hommes suivent le phoque, avec l'intention de le chasser. Cependant, avant que les chasseurs ne l'atteignent, la vieille femme crée une tempête et noie tout le monde, sauf le phoque et Kiviuq. Le phoque rejoint alors le rivage en toute sécurité, où la vieille femme le transforme de nouveau en garçon.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_HISTORY_PARA_3" Language="fr_FR">
+			<Text>Kiviuq aurait combattu la tempête pendant plusieurs jours, et et aurait dérivé avec son kayak tout en continuant ses aventures et en vivant avec des gens de nombreux pays étrangers. Toutefois, durant cette lutte, il a lentement commencé à se transformer en pierre. Dans les temps modernes, on croit que la moitié de son visage s'est transformée en pierre, et que la fin du monde surviendra lorsque son cœur cessera de battre pour de bon. Les peuples d'Alaska lui ont donné une nouvelle épithète - Qajartuarungnertoq, signifiant "Celui qui aura toujours envie de s'aventurer avec son kayak".</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
+			<Text>La tradition orale a préservé de nombreuses versions du cycle narratif de Kiviuq, et aujourd'hui, une nouvelle génération de conteurs donne vie aux contes sous forme écrite ou graphique. La résurgence de la culture esquimaude a attiré l'attention sur Kiviuq, et en l'an 2000, une lune de Saturne fut baptisée en son nom, bien qu'il s'agisse d'un satellite irrégulier. La légende de Kiviuq ne cesse de grandir, il poursuit désormais ses aventures par-delà les étoiles.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_CAPSULE_BODY" Language="fr_FR">
+			<Text>La capacité de Kiviuq encouragent grandement l'exploration, tandis que celle de Thulé permet d'établir rapidement une base culturelle et religieuse forte dans un paysage inhabitable pour les autres civilisations.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_DETAILED_BODY" Language="fr_FR">
+			<Text>La culture de Thulé était un peuple religieux et artistique, dont le mode de vie reposait en grande partie sur la chasse à la baleine boréale. Les angakkuit permettent aux Thuléens de transformer une région polaire en un environnement habitable grâce à la chasse à la baleine, tandis que la capacité "Chasse à la baleine" et le quartier unique de maisons d'os de baleine font de ces mammifères marins la clé vers une victoire religieuse ou culturelle. La capacité de Kiviuq "Un cœur non fait de pierre" aidera Thulé à trouver de bons endroits pour s'installer, tout en générant rapidement de la foi.</Text>
+		</Row>
+		<!--Diplomacy-->
+		<!--FIRST MEET-->
+		<!--First AI line-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Salutations, compagnon aventurier ! Je suis Kiviuq, et ma tribu fait partie du peuple de Thulé. Avez-vous aussi l'âme d'un vagabond ?</Text>
+		</Row>
+		<!--AI invitation to visit nearby City-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>La saison est bonne pour chasser la baleine boréale, et je pars en voyage de chasse. Aimeriez-vous vous joindre à moi ?</Text>
+		</Row>
+		<!--AI accepts Human invitation-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>C'est entendu.</Text>
+		</Row>
+		<!--AI invitation to exchange Capital Information-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>La vie est pleine d'occasions d'aventures. Feriez-vous le voyage pour visiter mes terres ?</Text>
+		</Row>
+		<!--GREETINGS-->
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Salutations.</Text>
+		</Row>
+		<!--DELEGATION-->
+		<!--AI Accepts-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Je vous remercie. Cette offrande est joliment décorée. Je vais m'assurer de visiter vos terres un jour.</Text>
+		</Row>
+		<!--AI Rejects-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Je crains que ce soit tirigusuusiit. Je ne suis pas d'accord.</Text>
+		</Row>
+		<!--AI Requests -->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>J'ai envoyé sur vos terres des éclaireurs portant des cadeaux de viande de baleine et des couteaux de chasse décorés. Les autoriseriez-vous à voir vos villes et à raconter leurs unipkaaqs ?</Text>
+		</Row>
+		<!--OPEN BORDERS-->
+		<!--AI accepts from human-->
+		<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Excellent ! De telles nouvelles terres à explorer.</Text>
+		</Row>
+		<!--AI rejects from human-->
+		<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Ah. Vous ne pouvez pas aller explorer ailleurs ?</Text>
+		</Row>
+		<!--AI requests from human-->
+		<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>J'ai entendu beaucoup de légendes à propos de votre royaume. Pourrais-je voyager là-bas et voir si elles sont véridiques ?</Text>
+		</Row>
+		<!--DECLARE FRIENDSHIP-->
+		<!--AI accepts from human-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>C'est piqujait ! J'en suis ravi.</Text>
+		</Row>
+		<!--AI Rejects from human -->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>J'ai peur que ma route ne croisera pas la vôtre de sitôt.</Text>
+		</Row>
+		<!--AI Requests friendship from human-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Je serais fier de vous considérer comme un ami.</Text>
+		</Row>
+		<!--Human accepts AI requests, AI responds-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Je vous remercie.</Text>
+		</Row>
+		<!--Human rejects AI requests, AI responds-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Il est dangereux de s'aventurer seul - Amaruq chasse les voyageurs solitaires. Je peux le vaincre, mais j'ai peur pour vous.</Text>
+		</Row>
+		<!--ALLIANCE-->
+		<!--AI Requests an alliance from human-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Vous êtes semblable à l'Agloolik. Seriez-vous intéressé pour me joindre à l'aventure ?</Text>
+		</Row>
+		<!--KUDOS & WARNINGS-->
+		<!--AI Kudos-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Partez à l'aventure, et que vos voyages soient mémorables.</Text>
+		</Row>
+		<!--AI Warnings-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Vous n'êtes pas un voyageur. Il s'agit d'un petit obstacle que je peux surmonter.</Text>
+		</Row>
+		<!--AI warns player for border troops-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Ces gens qui s'amassent à mes frontières ne ressemblent pas à des aventuriers. Ou des chasseurs. En fait, ils semblent plutôt être des envahisseurs. Mes yeux ne sont pas encore en pierre.</Text>
+		</Row>
+		<!--TRADE-->
+		<!--AI Accepts Deal-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_LIME_THULE_DAVE_ANY}</Text>
+		</Row>
+		<!--AI Rejects Deal-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_LIME_THULE_DAVE_ANY}</Text>
+		</Row>
+		<!--DENOUNCE-->
+		<!--From Human-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Vous risquez d'exaspérer Sedna ! Avez-vous l'intention de nous entraîner tous sur votre chemin ?</Text>
+		</Row>
+		<!--From AI-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Si vous ne voyez pas le monde, comment pouvez-vous protéger votre peuple ? Comment pouvez-vous approcher le destin ?</Text>
+		</Row>
+		<!--Rationale-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_LIME_THULE_DAVE_ALWAYS_ROAMING_EXPLORERPHILE_NEGATIVE" Language="fr_FR">
+			<Text>(Vous négligez l'exploration.)</Text>
+		</Row>
+		<!--DECLARE WAR-->
+		<!--Human Declares War-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Ce n'est pas une guerre. C'est une aventure ! Elle permettra d'écrire une belle histoire sur comment les agresseurs finissent toujours par être vaincus.</Text>
+		</Row>
+		<!--AI Declares War-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Vous êtes arriéré et faible, et avez peur de la nature. Maintenant, voyez ce que cela vous apporte. Il est temps pour vous de vous mesurer à la tempête.</Text>
+		</Row>
+		<!--MAKE PEACE-->
+		<!--AI accepts from human-->
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Très bien. Angakkuit demandera à Sedna de nous pardonner.</Text>
+		</Row>
+		<!--AI refuses human-->
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Je ne suis pas un imbécile, et le vent du Nord n'a pas encore émoussé mon esprit.</Text>
+		</Row>
+		<!--AI requests from human-->
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>L'hiver arrive, nous devrions tous les deux nous y préparer. Pouvons-nous accepter cette trêve ?</Text>
+		</Row>
+		<!--DEFEAT-->
+		<!--AI is Defeated-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Je suppose qu'il s'agit de ma dernière aventure. Le dernier obstacle que je n'ai pas pu surmonter, c'était vous. Je peux sentir mon cœur battre plus lentement, et je me sens devenir en pierre. J'ai froid... si froid...</Text>
+		</Row>
+		<!--Human is Defeated (will see this in hotseat)-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
+			<Text>Vous n'aviez pas besoin d'être mon ennemi. Je voulais seulement explorer. En fait, d'une certaine manière je vous envie - vous voyagez vers Adlivun, une destination que je n'ai jamais eu l'occasion de visiter.</Text>
+		</Row>
+		<!--MOD SUPPORT-->
+		<!--JFD's Rule with Faith-->
+		<Row Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Chef</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Grand Chef</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Issumatak</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Inua</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_MERCHANT_REPUBLIC_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Umialik</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Sangilak</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_NOBLE_REPUBLIC_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Issorartuyok</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_PEOPLES_REPUBLIC_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Président</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Premier ministre</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_MILITARY_GUARDIANSHIP_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Chef de guerre</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Illituyok</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Kadzaq</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
+			<Text>Kingudlerk</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

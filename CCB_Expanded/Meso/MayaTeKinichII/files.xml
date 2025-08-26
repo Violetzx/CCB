@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="395c8362-54be-4d7d-a656-14a194c42bd1" version="1">
+  <Properties>
+    <Name>[COLOR_FLOAT_SCIENCE]Leugi &amp; Lime[ENDCOLOR] - Te' K'inich II (Maya)</Name>
+    <Description>A collaborative effort to introduce Te' K'inich II, the winner of the first Mayan Star War and Lord of Caracol, to the game! This mod is a part of Modder Pass V: Celestial Omens, and was made by Lime (code, test, balance), Leugi (design and art) with text contributions from Zharques!</Description>
+    <Created>1717553907</Created>
+    <Teaser>The Stars tell us to Strike, and we Maya do so!</Teaser>
+    <Authors>Lime, Leugi</Authors>
+    <SpecialThanks>Zharques</SpecialThanks>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <FrontEndActions>
+    <UpdateDatabase id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Config.sql</File>
+    </UpdateDatabase>
+    <UpdateArt id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>PortLime_TeKinichII.dep</File>
+    </UpdateArt>
+    <UpdateColors id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Colours.sql</File>
+    </UpdateColors>
+    <UpdateIcons id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Icons.sql</File>
+    </UpdateIcons>
+    <UpdateText id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Pedia.sql</File>
+    </UpdateText>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Leader.sql</File>
+    </UpdateDatabase>
+    <AddGameplayScripts id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Functions.lua</File>
+    </AddGameplayScripts>
+    <UpdateIcons id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Icons.sql</File>
+    </UpdateIcons>
+    <UpdateArt id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>PortLime_TeKinichII.dep</File>
+    </UpdateArt>
+    <UpdateText id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Diplomacy.sql</File>
+      <File>core/Port Lime - Te Kinich - Pedia.sql</File>
+    </UpdateText>
+    <UpdateColors id="NewAction">
+      <Properties>
+        <LoadOrder>333</LoadOrder>
+      </Properties>
+      <File>core/Port Lime - Te Kinich - Colours.sql</File>
+    </UpdateColors>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/LeaderFallbacks.artdef</File>
+    <File>ArtDefs/Leaders.artdef</File>
+    <File>core/Port Lime - Te Kinich - Colours.sql</File>
+    <File>core/Port Lime - Te Kinich - Config.sql</File>
+    <File>core/Port Lime - Te Kinich - Diplomacy.sql</File>
+    <File>core/Port Lime - Te Kinich - Functions.lua</File>
+    <File>core/Port Lime - Te Kinich - Icons.sql</File>
+    <File>core/Port Lime - Te Kinich - Leader.sql</File>
+    <File>core/Port Lime - Te Kinich - Pedia.sql</File>
+    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/UILeaders.blp</File>
+    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/UILeaders.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>PortLime_TeKinichII.dep</File>
+  </Files>
+</Mod>

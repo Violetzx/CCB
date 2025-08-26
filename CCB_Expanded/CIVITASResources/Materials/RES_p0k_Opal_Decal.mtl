@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..MaterialInstance>
+	<m_CookParams>
+		<m_Values>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text="RES_p0k_Opal_Decal_New_B"/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="BaseColor"/>
+			</Element>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text="RES_Silver_Decal_H"/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="Heightmap"/>
+			</Element>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text="RES_Silver_Decal_G"/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="Spec"/>
+			</Element>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text="RES_Aluminum_Decal_FOW"/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="FOWColor"/>
+			</Element>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text=""/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="FOWSprite"/>
+			</Element>
+		</m_Values>
+	</m_CookParams>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>415</build>
+		<revision>990</revision>
+	</m_Version>
+	<m_ClassName text="DecalMaterial"/>
+	<m_DataFiles/>
+	<m_Name text="RES_p0k_Opal_Decal"/>
+	<m_Description text=""/>
+	<m_Tags>
+		<Element text="DecalMaterial"/>
+	</m_Tags>
+</AssetObjects..MaterialInstance>
+

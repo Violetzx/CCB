@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Sukrit\Documents\WwiseProjects\Suk_Vercingetorix_Speech\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1657282602" Language="SFX">
+			<ShortName>Suk_Vercingetorix_Speech_Bank</ShortName>
+			<Path>Suk_Vercingetorix_Speech_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3921163700" Name="Suk_Vercingetorix_Attacked"/>
+				<Event Id="2354899908" Name="Suk_Vercingetorix_Declare_War"/>
+				<Event Id="2406059811" Name="Suk_Vercingetorix_First_Meet"/>
+				<Event Id="3750075151" Name="Suk_Vercingetorix_Stop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="362775055" Language="SFX">
+					<ShortName>Suk_Vercingetorix_Declare_War_Modulated.wav</ShortName>
+					<Path>SFX\Suk_Vercingetorix_Declare_War_Modulated_E843A46D.wem</Path>
+				</File>
+				<File Id="474386452" Language="SFX">
+					<ShortName>Suk_Vercingetorix_Introduction_Modulated.wav</ShortName>
+					<Path>SFX\Suk_Vercingetorix_Introduction_Modulated_E843A46D.wem</Path>
+				</File>
+				<File Id="814770026" Language="SFX">
+					<ShortName>Suk_Vercingetorix_Attacked_Modulated.wav</ShortName>
+					<Path>SFX\Suk_Vercingetorix_Attacked_Modulated_E843A46D.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

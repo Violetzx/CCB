@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+
+		<!-- New entries -->
+		<Replace Tag="LOC_MAP_RICH_HIGHTLANDS_NANME" language="ko_KR">
+			<Text>풍부한 고원</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_RICH_HIGHTLANDS_DESCRIPTION" language="ko_KR">
+			<Text>자원이 더 많은 고원</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TURN_IS_PROCESSED" language="ko_KR">
+			<Text>현재 턴을 처리 중입니다. 잠시 기다려주세요.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_MODCHECK_BUTTON_TOOLTIP" language="ko_KR">
+			<Text>클라이언트에 로컬로 설치된 모드 버전을 확인합니다. (지원: BBS, BBG, MPH) [NEWLINE] 호스트와 클라이언트 모두에 미리 MPH를 로드해야 합니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_SYNCTURN_NAME" language="ko_KR">
+			<Text>턴 동기화</Text>
+		</Replace>
+		<Replace Tag="CPL_SYNCTURN_DESC" language="ko_KR">
+			<Text>인간 플레이어들이 모두 동시에 턴을 시작하고 끝냅니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_CWC_NAME" language="ko_KR">
+			<Text>[COLOR_Civ6Red]공식 CWC 게임[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="CPL_CWC_DESC" language="ko_KR">
+			<Text>Civ World Cup 토너먼트의 매개변수를 설정합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LAST_MOVED_NAME" language="ko_KR">
+			<Text>준비 안 됨</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LAST_MOVED_DESCRIPTION" language="ko_KR">
+			<Text>공격 시 [ICON_Strength] 전투력이 -20 감소합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_LAST_MOVED_DESCRIPTION" language="ko_KR">
+			<Text>턴 시작 시 처음 몇 초 동안 공격 시 [ICON_Strength] 전투력이 -20 감소합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LAST_MOVED_READY_NAME" language="ko_KR">
+			<Text>준비 완료!</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LAST_MOVED_READY_DESCRIPTION" language="ko_KR">
+			<Text>마지막 행동에서 회복되었습니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_FS_NAME" language="ko_KR">
+			<Text>우정 협정</Text>
+		</Replace>
+		<Replace Tag="CPL_FS_DESC" language="ko_KR">
+			<Text>게임에서 각 플레이어가 가질 수 있는 형식적인 동맹 또는 우정 협정의 최대 수를 정의합니다 (기본값 = 2)</Text>
+		</Replace>
+		<Replace Tag="CPL_CS_NAME" language="ko_KR">
+			<Text>점령된 도시-국가</Text>
+		</Replace>
+		<Replace Tag="CPL_CS_DESC" language="ko_KR">
+			<Text>각 플레이어가 소유할 수 있는 도시-국가의 최대 수를 정의합니다. 그 이상으로 점령된 도시-국가는 체계적으로 파괴됩니다 (기본값 = 1)</Text>
+		</Replace>
+		<Replace Tag="CPL_IRONMAN_NAME" language="ko_KR">
+			<Text>아이언맨</Text>
+		</Replace>
+		<Replace Tag="CPL_IRONMAN_DESC" language="ko_KR">
+			<Text>항복 투표 없이, 죽을 때까지 싸웁니다! (기본값 = 꺼짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_NO_PINS_NAME" language="ko_KR">
+			<Text>지도 핀 없음</Text>
+		</Replace>
+		<Replace Tag="CPL_NO_PINS_DESC" language="ko_KR">
+			<Text>성능 문제를 줄이기 위해 지도 핀 사용 기능을 제거합니다 (기본값 = 꺼짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_SUDDENDEATH_NAME" language="ko_KR">
+			<Text>스udden Death</Text>
+		</Replace>
+		<Replace Tag="CPL_SUDDENDEATH_DESC" language="ko_KR">
+			<Text>가장 점수가 낮은 플레이어들이 점차적으로 하나씩 제거됩니다! (기본값 = 꺼짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_FREECITY_STRONGER_NAME" language="ko_KR">
+			<Text>더 강한 자유 도시</Text>
+		</Replace>
+		<Replace Tag="CPL_FREECITY_STRONGER_DESC" language="ko_KR">
+			<Text>자유 도시들이 그들의 벽을 더 빨리 건설합니다 (기본값 = 꺼짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_LASTMOVE_OPT_NAME" language="ko_KR">
+			<Text>마지막 움직임 디버프</Text>
+		</Replace>
+		<Replace Tag="CPL_LASTMOVE_OPT_DESC" language="ko_KR">
+			<Text>마지막 10초 동안 공격하는 유닛들은 다음 턴에도 선행 움직임을 방지하기 위해 디버프를 받습니다 (기본값 = 꺼짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_FREECITY_OPT_NAME" language="ko_KR">
+			<Text>별의 도시들을 위한 자유 도시들</Text>
+		</Replace>
+		<Replace Tag="CPL_FREECITY_OPT_DESC" language="ko_KR">
+			<Text>FFA 무관한 플레이어들의 경우, 그들의 도시들이 자유 도시로 변하고 기존의 동맹/우정을 파괴할 수 있습니다 (기본값 = 켜짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_RULES_NAME" language="ko_KR">
+			<Text>CivPlayers 리그 규칙</Text>
+		</Replace>
+		<Replace Tag="CPL_RULES_DESC" language="ko_KR">
+			<Text>게임 내에서 CPL 규칙을 적용하여 항복 투표, 거부권 등을 적용합니다 (기본값 = 켜짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_SMARTTIMER_NAME" language="ko_KR">
+			<Text>스마트 타이머</Text>
+		</Replace>
+		<Replace Tag="CPL_SMARTTIMER_DESC" language="ko_KR">
+			<Text>베이스 게임 타이머를 동적으로 재정의합니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_CITY_NAME" language="ko_KR">
+			<Text>도시 교역</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_CITY_DESC" language="ko_KR">
+			<Text>플레이어가 도시를 거래할 수 있도록 허용합니다 (기본값 = 꺼짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_GOLD_NAME" language="ko_KR">
+			<Text>골드 교역</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_GOLD_DESC" language="ko_KR">
+			<Text>플레이어가 골드를 거래할 수 있도록 허용합니다 (기본값 = 켜짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_LUXURY_NAME" language="ko_KR">
+			<Text>럭셔리 자원 교역</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_LUXURY_DESC" language="ko_KR">
+			<Text>플레이어가 럭셔리 자원을 거래할 수 있도록 허용합니다 (기본값 = 켜짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_STRATEGIC_NAME" language="ko_KR">
+			<Text>전략 자원 교역</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_STRATEGIC_DESC" language="ko_KR">
+			<Text>플레이어가 전략 자원을 거래할 수 있도록 허용합니다 (기본값 = 켜짐)</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_NONE_NAME" language="ko_KR">
+			<Text>금지됨</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_NONE_DESC" language="ko_KR">
+			<Text>이 유형의 거래는 게임 내에서 불가능합니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_ALLOWED_NAME" language="ko_KR">
+			<Text>허용됨</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_ALLOWED_DESC" language="ko_KR">
+			<Text>이 유형의 거래는 허용됩니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_ALLIED_NAME" language="ko_KR">
+			<Text>동맹자만 가능</Text>
+		</Replace>
+		<Replace Tag="CPL_TRADING_ALLIED_DESC" language="ko_KR">
+			<Text>이 유형의 거래는 게임 내에서 동맹자 간에만 허용됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_SETUP_ERROR_NO_BANNED_LEADERS" language="ko_KR">
+			<Text>금지된 지도자</Text>
+		</Replace>
+		<Replace Tag="LOC_SETUP_ERROR_NO_RANDOM_LEADERS" language="ko_KR">
+			<Text>랜덤 지도자 없음</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_FORMAT_NAME" language="ko_KR">
+			<Text>드래프트 모드</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_FORMAT_DESC" language="ko_KR">
+			<Text>게임에서 특정 지도자를 제거합니다 (기본값 = 랜덤 없음)</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_NOBAN_NAME" language="ko_KR">
+			<Text>없음</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_NOBAN_DESC" language="ko_KR">
+			<Text>원래 게임과 같이 선택 제한이 없습니다</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_NORANDOM_NAME" language="ko_KR">
+			<Text>랜덤 지도자 없음</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_NORANDOM_DESC" language="ko_KR">
+			<Text>플레이어가 지도자를 선택하도록 강제됩니다</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_6BANS_NAME" language="ko_KR">
+			<Text>비공식 6번 밴</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_6BANS_DESC" language="ko_KR">
+			<Text>호스트는 6명의 지도자를 밴할 수 있습니다</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_TOURNAMENT_NAME" language="ko_KR">
+			<Text>토너먼트</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_TOURNAMENT_DESC" language="ko_KR">
+			<Text>밴 및 플레이어 선택은 순서대로 드래프트됩니다</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_VOTEDRAFT_NAME" language="ko_KR">
+			<Text>투표 드래프트</Text>
+		</Replace>
+		<Replace Tag="BAN_FORMAT_VOTEDRAFT_DESC" language="ko_KR">
+			<Text>플레이어는 과반수 투표에 따라 게임을 설정할 수 있습니다. [WIP]</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_01_NAME" language="ko_KR">
+			<Text>밴 번호 1</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_02_NAME" language="ko_KR">
+			<Text>밴 번호 2</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_03_NAME" language="ko_KR">
+			<Text>밴 번호 3</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_04_NAME" language="ko_KR">
+			<Text>밴 번호 4</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_05_NAME" language="ko_KR">
+			<Text>밴 번호 5</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_06_NAME" language="ko_KR">
+			<Text>밴 번호 6</Text>
+		</Replace>
+		<Replace Tag="CPL_BAN_DESC" language="ko_KR">
+			<Text>드래프트에서 지도자를 밴합니다</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_NONE_NAME" language="ko_KR">
+			<Text>없음</Text>
+		</Replace>
+		<Replace Tag="LOC_BAN_OPTIONS" language="ko_KR">
+			<Text>드래프트 및 밴 옵션</Text>
+		</Replace>
+		<Replace Tag="LOC_BAN_POOL_OPTIONS" language="ko_KR">
+			<Text>맵 풀 선택</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_GAME_REFRESH_SEED_CONFIG" language="ko_KR">
+			<Text>시드 새로 고침</Text>
+		</Replace>
+		<Replace Tag="TIMER_DEFAULT_NAME" language="ko_KR">
+			<Text>경쟁적</Text>
+		</Replace>
+		<Replace Tag="TIMER_DEFAULT_DESC" language="ko_KR">
+			<Text>유닛, 도시, 전쟁, 게임 유형, 이벤트에 따라 크기가 조절됩니다. 토너먼트에 이상적입니다.</Text>
+		</Replace>
+		<Replace Tag="TIMER_NONE_NAME" language="ko_KR">
+			<Text>끄기</Text>
+		</Replace>
+		<Replace Tag="TIMER_NONE_DESC" language="ko_KR">
+			<Text>베이스 게임 타이머나 SQL 기반 타이머로 대체하기 위해 루아 스마트 타이머를 비활성화합니다</Text>
+		</Replace>
+		<Replace Tag="TIMER_LEGE_NAME" language="ko_KR">
+			<Text>미친</Text>
+		</Replace>
+		<Replace Tag="TIMER_LEGE_DESC" language="ko_KR">
+			<Text>15턴 동안 15초의 타이머, 70턴까지 45초, 그 후로 75초</Text>
+		</Replace>
+		<Replace Tag="TIMER_CIVLAN_NAME" language="ko_KR">
+				<Text>CivLan / CWC 2025</Text>
+		</Replace>
+		<Replace Tag="TIMER_CIVLAN_DESC" language="ko_KR">
+				<Text>CWC + CivLan 2025용 동적 타이머.</Text>
+		</Replace>
+		<Replace Tag="TIMER_SEPHI_NAME" language="ko_KR">
+			<Text>적당한</Text>
+		</Replace>
+		<Replace Tag="TIMER_SEPHI_DESC" language="ko_KR">
+			<Text>Sephi의 타이머: 기본 30초, 그 후 매 턴마다 1초 추가</Text>
+		</Replace>
+		<Replace Tag="TIMER_CASUAL_NAME" language="ko_KR">
+			<Text>캐주얼</Text>
+		</Replace>
+		<Replace Tag="TIMER_CASUAL_DESC" language="ko_KR">
+			<Text>초보자나 스트리머에게 이상적입니다</Text>
+		</Replace>
+		<Replace Tag="TIMER_PHYPHY_NAME" language="ko_KR">
+			<Text>급습</Text>
+		</Replace>
+		<Replace Tag="TIMER_PHYPHY_DESC" language="ko_KR">
+			<Text>15초 타이머, 15/20턴마다 몇 초씩 증가합니다</Text>
+		</Replace>
+		<Replace Tag="FC_NOTHING_NAME" language="ko_KR">
+			<Text>없음</Text>
+		</Replace>
+		<Replace Tag="FC_NOTHING_DESC" language="ko_KR">
+			<Text>S1aL의 동적 타이머의 복제</Text>
+		</Replace>
+		<Replace Tag="FC_FREE_NAME" language="ko_KR">
+			<Text>자유 도시로 전환</Text>
+		</Replace>
+		<Replace Tag="FC_FREE_DESC" language="ko_KR">
+			<Text>FFA에서 관련 없는 플레이어는 자유 도시가 됩니다</Text>
+		</Replace>
+		<Replace Tag="FC_RAZE_NAME" language="ko_KR">
+			<Text>도시 소멸</Text>
+		</Replace>
+		<Replace Tag="FC_RAZE_DESC" language="ko_KR">
+			<Text>FFA에서 관련 없는 플레이어는 소멸됩니다</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_PLAYER_OPTIONS" language="ko_KR">
+			<Text>MPH: 플레이어</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ADMIN_OPTIONS" language="ko_KR">
+			<Text>MPH: 관리자</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_OTHER_OPTIONS" language="ko_KR">
+			<Text>멀티플레이어 도우미: 기타 명령어</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_TITLE_REMAP_TEXT" language="ko_KR">
+			<Text>다시 맵 설정 투표</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_TITLE_REMAP_ADMIN_TEXT" language="ko_KR">
+			<Text>관리자 다시 맵 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_GAME_RANDOM_SEED" language="ko_KR">
+			<Text>게임 시드</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_MAP_RANDOM_SEED" language="ko_KR">
+			<Text>맵 시드</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_LABEL_REMAP_TEXT" language="ko_KR">
+			<Text>새로운 맵 시드로 게임을 다시 시작하는 투표가 진행되었습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_DEFAULT_TEXT" language="ko_KR">
+			<Text>투표는 과반수가 찬성하면 통과됩니다. [NEWLINE] [COLOR_Grey]회색[ENDCOLOR] 플레이어는 투표할 수 없습니다. [NEWLINE] 이미 투표한 플레이어는 [COLOR_Civ6Green]녹색[ENDCOLOR]입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_PASS_TEXT" language="ko_KR">
+			<Text>찬성표가 더 많습니다. 대다수의 의견이 있어 새로운 맵에서 게임이 자동으로 다시 시작됩니다. 호스트가 확인하면 게임이 다시 시작됩니다. [NEWLINE][COLOR_Civ6Green]녹색[ENDCOLOR]으로 투표한 플레이어들이 찬성했습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_FAIL_TEXT" language="ko_KR">
+			<Text>반대표가 더 많습니다. 대다수의 의견이 있어 현재 맵에서 게임이 계속됩니다. [NEWLINE] 반대표를 표한 [COLOR_Civ6Red]빨간색[ENDCOLOR] 플레이어가 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTELEFT_BUTTON_1_REMAP_TEXT" language="ko_KR">
+			<Text>찬성</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTERIGHT_BUTTON_1_REMAP_TEXT" language="ko_KR">
+			<Text>반대</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_CONFIRM_BUTTON_1_REMAP_TEXT" language="ko_KR">
+			<Text>확인</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_CONFIRM_BUTTON_HOST_REMAP_TEXT" language="ko_KR">
+			<Text>확인</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_CONFIRM_BUTTON_HOST_REMAP_CANCEL_TEXT" language="ko_KR">
+			<Text>취소</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_REMAPPANEL_LABEL_TEXT" language="ko_KR">
+			<Text>맞춤 시드를 입력하거나 새로운 맵에서 게임을 다시 시작하려면 비워 두십시오. 데이터가 올바르게 전송되도록 게임을 [COLOR_Civ6Red]일시 중단[ENDCOLOR]해야합니다. 이후 플레이어가 동기화되도록 상태가 변경되지 않도록 게임은 자동으로 일시 중단됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_REMAP_VOTE_TEXT" language="ko_KR">
+			<Text>다시 맵 설정 투표</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_REMAP_VOTE_TOOLTIP" language="ko_KR">
+			<Text>새로운 맵에서 게임을 다시 시작하는 과반수 투표를 발동합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_REMAP_ADMIN_TEXT" language="ko_KR">
+			<Text>관리자 다시 맵 설정</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_REMAP_ADMIN_TOOLTIP" language="ko_KR">
+			<Text>새로운 시드로 게임을 다시 시작할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_IRR_VOTE_TEXT" language="ko_KR">
+			<Text>관련 없음 투표</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DROP_TITLE_TEXT" language="ko_KR">
+			<Text>네트워크 관리자</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DROP_LABEL_TEXT" language="ko_KR">
+			<Text>다음 플레이어(들)이 게임에서 연결을 끊었습니다. 게임 설정이 고정됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DROP_HOST_BUTTON_TEXT" language="ko_KR">
+			<Text>AI에게 제어 양도</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DROP_HOST_WARNING_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Red]게임을 재개하려면, 게임에서 연결이 끊긴 플레이어가 AI에게 영향을 받아 유닛이 이동할 수 있습니다. [ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DROP_NORMAL_BUTTON_TEXT" language="ko_KR">
+			<Text>이해했습니다...</Text>
+		</Replace>
+		<Replace Tag="LOC_GAME_MENU_HELPER_BUTTON_TOOLTIP" language="ko_KR">
+			<Text>다시 맵 설정 투표 및 기타 사용자 정의 MPH 기능에 액세스합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONCEDE_NAME" language="ko_KR">
+			<Text>승리</Text>
+		</Replace>
+		<Replace Tag="LOC_VICTORY_CONCEDE_TEXT" language="ko_KR">
+			<Text>모든 적이 항복했습니다!</Text>
+		</Replace>
+		<Replace Tag="LOC_DEFEAT_CONCEDE_NAME" language="ko_KR">
+			<Text>항복</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_RANDOM_TOOLTIP" language="ko_KR">
+			<Text>FFA: 무작위로 처음 선택/밴을 시작한 플레이어가 선택된 다음 슬롯 순서로 진행됩니다. [NEWLINE]팀전: 무작위로 처음 선택/밴을 시작한 플레이어가 선택된 다음 팀 간에 번갈아가며 진행됩니다. </Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_SLOT_TOOLTIP" language="ko_KR">
+			<Text>FFA: 관전자를 무시하고 슬롯 순서대로 밴/픽이 진행됩니다. 각 단계마다 초기화됩니다. [NEWLINE]팀전: 첫 번째 팀이 슬롯에서 맵을 밴한 후 다음 팀이 번갈아가며 진행합니다. 밴/픽은 슬롯 순서대로 진행됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_CWC_TOOLTIP" language="ko_KR">
+			<Text>[NEWLINE]레거시 CWC 형식: 밴 맵/리더는 첫 번째 슬롯에서 시작하여 A/B/A/B/A/B 형식으로 번갈아가며 진행됩니다. [NEWLINE] 픽은 슬롯 순서에 따라 진행됩니다(4대4 경우 A/B/B/A/A/B/A/B). </Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_CWC_NEW_TOOLTIP" language="ko_KR">
+			<Text>[NEWLINE]공식 CWC 형식: 밴 리더는 첫 번째 슬롯에서 시작하여 A/B/A/B/A/B 형식으로 번갈아가며 진행되고, 그런 다음 B/A/B/A 형식으로 진행됩니다. [NEWLINE] 픽은 슬롯 순서에 따라 진행됩니다(4대4 경우 A/B/B/A, 그런 다음 B/A/A/B). </Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SWAP_DISABLED_TITLE" language="ko_KR">
+			<Text>플레이어 설정 변경 불가</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SWAP_DISABLED_TEXT" language="ko_KR">
+			<Text>드래프트의 이 단계에서는 슬롯 순서를 변경할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SLOT_DISABLED_TITLE" language="ko_KR">
+			<Text>플레이어 설정 변경 불가</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SLOT_DISABLED_TEXT" language="ko_KR">
+			<Text>드래프트의 이 단계에서는 슬롯 순서를 변경할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SLOT_HOST_DISABLED_TEXT" language="ko_KR">
+			<Text>드래프트의 이 단계에서는 슬롯 순서를 변경할 수 없습니다.[NEWLINE]드래프트 유형을 변경하거나 드래프트를 초기화하여 플레이어 설정을 다시 제어할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ADD_DISABLED_TEXT" language="ko_KR">
+			<Text>드래프트의 이 단계에서는 슬롯 순서를 변경할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ADD_HOST_DISABLED_TEXT" language="ko_KR">
+			<Text>드래프트의 이 단계에서는 새 플레이어를 추가할 수 없습니다.[NEWLINE]드래프트 유형을 변경하거나 드래프트를 초기화하여 새 플레이어를 추가할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_KICK_DISABLED_TITLE" language="ko_KR">
+			<Text>플레이어 설정 변경 불가</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_KICK_DISABLED_TEXT" language="ko_KR">
+			<Text>드래프트의 이 단계에서는 플레이어를 추방할 수 없습니다.[NEWLINE]드래프트 유형을 변경하거나 드래프트를 초기화하여 이 플레이어를 추방할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_TEXT" language="ko_KR">
+			<Text>토너먼트 드래프트: 팀 / 슬롯 / 관전자 선택</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_HINT_TEXT" language="ko_KR">
+			<Text>단계: 맵 밴 - 리더 6명 밴 - 리더 1명씩 선택 - 게임 시작/슬롯 변경</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_HOST_HINT_TEXT" language="ko_KR">
+			<Text>게임 설정에서 드래프트 옵션을 선택한 후 시작을 눌러 드래프트를 시작하십시오.[NEWLINE] 언제든지 초기화를 눌러 드래프트를 다시 초기화하고 건너뛰기를 눌러 단계를 건너뛸 수 있습니다.[NEWLINE] 이 모드를 사용하려면 모든 플레이어가 Steam 워크샵에서 고급 설정 기능을 사용하도록 가입해야합니다. 호스트에서 다운로드하는 것만으로는 충분하지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_0_TEXT" language="ko_KR">
+			<Text>투표 드래프트: 팀 / 슬롯 / 관전자 선택</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_0_HINT_TEXT" language="ko_KR">
+			<Text>단계: 맵 설정 투표 - 리더 6명 밴 투표 - 리더 1명씩 선택 - 게임 시작/슬롯 변경</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_0_HOST_HINT_TEXT" language="ko_KR">
+			<Text>게임 설정에서 드래프트 옵션을 선택한 후 시작을 눌러 드래프트를 시작하십시오.[NEWLINE] 언제든지 초기화를 눌러 드래프트를 다시 초기화하고 건너뛰기를 눌러 단계를 건너뛸 수 있습니다.[NEWLINE] 이 모드를 사용하려면 모든 플레이어가 Steam 워크샵에서 가입해야합니다. 호스트에서 다운로드하는 것만으로는 충분하지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_HOST_TEXT" language="ko_KR">
+			<Text>호스트 대기 중</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_LAUNCH_HOST_TEXT" language="ko_KR">
+			<Text>드래프트 시작을 누르세요</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_PHASE_BUTTON_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Green]시작[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_PHASE_BUTTON_NOT_READY_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Red]시작[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_0_PHASE_BUTTON_TEXT" language="ko_KR">
+			<Text>시작</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_1_PHASE_BUTTON_TEXT" language="ko_KR">
+			<Text>건너뛰기</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_1_PHASE_BUTTON_TEXT" language="ko_KR">
+			<Text>건너뛰기</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_2_PHASE_BUTTON_TEXT" language="ko_KR">
+			<Text>건너뛰기</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_3_PHASE_BUTTON_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Green]잠금 해제[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTE_BUTTON" language="ko_KR">
+			<Text>내 투표 전송</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_11_TEXT" language="ko_KR">
+			<Text>맵 설정 선택</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_11_HINT_TEXT" language="ko_KR">
+			<Text>선호하는 맵 설정을 선택하십시오. 가장 인기 있는 옵션이 선택됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_12_TEXT" language="ko_KR">
+			<Text>리더 밴 단계</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_VOTING_PHASE_12_HINT_TEXT" language="ko_KR">
+			<Text>각 플레이어에게 3회 밴을 부여하여 게임에서 리더를 제외합니다.[NEWLINE] 가장 많이 밴된 6명의 리더가 픽 단계에서 제거됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_MAP_VOTE_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Red]맵 설정을 확인하세요[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_MAP_BAN_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Red]맵 밴을 확인하세요[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_LEADER_BAN_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Red]리더 밴을 확인하세요[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_LEADER_PICK_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Red]리더 선택을 확인하세요[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_MAP_BAN_FFA_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Green]플레이어가 맵 밴을 완료하기를 기다립니다[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_LEADER_BAN_FFA_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Green]플레이어가 리더 밴을 완료하기를 기다립니다[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_WAITING_LEADER_PICK_FFA_TEXT" language="ko_KR">
+			<Text>[COLOR_Civ6Green]플레이어가 리더를 선택하기를 기다립니다[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_READY_THANKS_TEXT" language="ko_KR">
+			<Text>감사합니다</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_TEXT" language="ko_KR">
+			<Text>팀전: 맵 밴 단계</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_TEXT" language="ko_KR">
+			<Text>개인전: 맵 밴 단계</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_RAND_HINT_TEXT" language="ko_KR">
+			<Text>팀전: 각 팀의 첫 번째 플레이어는 맵을 번갈아가며 1개씩 밴하여 맵 풀에서 한 개의 맵만 남을 때까지 진행합니다.[NEWLINE] 맨 처음 밴하는 팀은 무작위로 선택됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_SLOT_HINT_TEXT" language="ko_KR">
+			<Text>팀전: 각 팀의 첫 번째 플레이어는 맵을 번갈아가며 1개씩 밴하여 맵 풀에서 한 개의 맵만 남을 때까지 진행합니다.[NEWLINE] 맨 처음 밴하는 팀은 슬롯에서 첫 번째 팀입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_RAND_HINT_TEXT" language="ko_KR">
+			<Text>개인전: 매 라운드마다 한 명의 플레이어가 맵을 번갈아가며 1개씩 밴하여 맵 풀에서 한 개의 맵만 남을 때까지 진행합니다.[NEWLINE] 가장 먼저 밴을 시작하는 플레이어는 무작위로 선택됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_SLOT_HINT_TEXT" language="ko_KR">
+			<Text>개인전: 매 라운드마다 한 명의 플레이어가 맵을 번갈아가며 1개씩 밴하여 맵 풀에서 한 개의 맵만 남을 때까지 진행합니다.[NEWLINE] 슬롯에서 첫 번째 플레이어가 밴을 시작합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_GAME_OPTIONS" language="ko_KR">
+			<Text>맵 및 게임 옵션</Text>
+		</Replace>
+		<Replace Tag="LOC_SETUP_ERROR_NOT_DRAFTED_LEADERS" language="ko_KR">
+			<Text>제외된 리더</Text>
+		</Replace>
+		<Replace Tag="CPL_ANONYMOUS_NAME" language="ko_KR">
+			<Text>익명 게임</Text>
+		</Replace>
+		<Replace Tag="CPL_ANONYMOUS_DESC" language="ko_KR">
+			<Text>[작업 중] 플레이어 이름이 표시되지 않아 로비 및 게임에서 익명 경험을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_NO_PM_NAME" language="ko_KR">
+			<Text>개인 메시지 불가</Text>
+		</Replace>
+		<Replace Tag="CPL_NO_PM_DESC" language="ko_KR">
+			<Text>[작업 중] 게임 내 채팅을 통한 개인 메시지 기능을 제거합니다.</Text>
+		</Replace>
+		<Replace Tag="CPL_RESTRICTED_DRAFT_NAME" language="ko_KR">
+			<Text>한정된 리더 풀 드래프트</Text>
+		</Replace>
+		<Replace Tag="CPL_RESTRICTED_DRAFT_DESC" language="ko_KR">
+			<Text>[작업 중] 각 플레이어에게 전체 리더 선택 대신 5명의 리더만 선택할 수 있는 권한을 부여합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_OBSERVER_SPECTATOR_TOOLTIP" language="ko_KR">
+			<Text>캐스팅을 위해 실제 플레이어 대신 관전자로 참여할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_OBSERVER_PLAYER_TOOLTIP" language="ko_KR">
+			<Text>플레이어로 게임에 참여하는 것을 확인합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_OBSERVER_SPECTATOR_NAME" language="ko_KR">
+			<Text>관전자로 참여</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_OBSERVER_PLAYER_NAME" language="ko_KR">
+			<Text>일반 플레이어로 참여</Text>
+		</Replace>
+		<Replace Tag="LOC_SETUP_ERROR_NO_SPECTATOR_LEADERS" language="ko_KR">
+			<Text>관전자가 아님</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_RESET_BUTTON_TOOLTIP" language="ko_KR">
+			<Text>드래프트를 재설정하여 누군가가 실수를 저지르면 다시 드래프트할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_START_BUTTON_TOOLTIP" language="ko_KR">
+			<Text>(호스트 전용) [NEWLINE]즉시 게임을 시작합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_LAUNCH_BUTTON_TOOLTIP" language="ko_KR">
+			<Text>(호스트 전용) [NEWLINE]시작: 드래프트 시작 [NEWLINE]건너뛰기: 다음 단계 진행 [NEWLINE]잠금 해제: 게임 시작 전에 플레이어가 슬롯을 변경할 수 있게 합니다.</Text>
+		</Replace>
+		<!-- 토너먼트 설정 -->
+		<Replace Tag="LOC_MPH_TOURNAMENT_PARAMETERS_OPTIONS" Language="ko_KR">
+			<Text>토너먼트 및 드래프팅 옵션</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_SLOT_ORDER_NAME" Language="ko_KR">
+			<Text>드래프트 유형</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_TIMER_NAME" Language="ko_KR">
+			<Text>드래프트 타이머</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_MAP_NAME" Language="ko_KR">
+			<Text>제한된 맵 풀</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_SLOT_ORDER_DESC" Language="ko_KR">
+			<Text>드래프트 유형</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_TIMER_DESC" Language="ko_KR">
+			<Text>드래프팅 중에 타이머를 비활성화하려면 선택을 해제하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DRAFT_MAP_DESC" Language="ko_KR">
+			<Text>선택한 경우 드래프팅은 먼저 맵 풀에 포함된 맵을 사용하여 맵 선택 단계로 시작합니다.</Text>
+		</Replace>
+
+		<Replace Tag="DRAFT_NONE_NAME" Language="ko_KR">
+			<Text>랜덤</Text>
+		</Replace>
+		<Replace Tag="DRAFT_SLOT_NAME" Language="ko_KR">
+			<Text>슬롯 순서</Text>
+		</Replace>
+		<Replace Tag="DRAFT_4V4T_NAME" Language="ko_KR">
+			<Text>팀전 4v4 밴 6</Text>
+		</Replace>
+		<Replace Tag="DRAFT_CWCT_NAME" Language="ko_KR">
+			<Text>문명 월드컵</Text>
+		</Replace>
+
+		<Replace Tag="DRAFT_NONE_DESC" Language="ko_KR">
+			<Text>플레이어 선발 순서가 무작위로 선택됩니다.</Text>
+		</Replace>
+		<Replace Tag="DRAFT_SLOT_DESC" Language="ko_KR">
+			<Text>플레이어 선발 순서가 슬롯 순서를 따릅니다.</Text>
+		</Replace>
+		<Replace Tag="DRAFT_4V4T_DESC" Language="ko_KR">
+			<Text>6개 리더 밴으로 두 단계로 진행되는 팀 드래프팅</Text>
+		</Replace>
+		<Replace Tag="DRAFT_CWCT_DESC" Language="ko_KR">
+			<Text>단계별로 진행되는 스포츠 대회용 드래프팅: 1) 6개 밴 2) 4개 선택 3) 4개 밴 4) 나머지 선택</Text>
+		</Replace>
+
+
+		<!-- 거래 설정 -->
+		<Replace Tag="LOC_MPH_TRADING_PARAMETERS_OPTIONS" Language="ko_KR">
+			<Text>거래 및 외교 옵션</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MPH_FRIENDSHIP_NAME" Language="ko_KR">
+			<Text>우호 선언 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_FRIENDSHIP_DESC" Language="ko_KR">
+			<Text>다른 문명과의 우호 선언 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SURPRISE_WAR_NAME" Language="ko_KR">
+			<Text>갑작스러운 전쟁 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_SURPRISE_WAR_DESC" Language="ko_KR">
+			<Text>체크하면 플레이어는 전쟁을 선포하기 위해 먼저 공식 선포나 전쟁 원인을 사용해야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_FAVOR_NAME" Language="ko_KR">
+			<Text>호감도 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_GOLD_NAME" Language="ko_KR">
+			<Text>금 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_STRATEGICS_NAME" Language="ko_KR">
+			<Text>전략 자원 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_LUXURIES_NAME" Language="ko_KR">
+			<Text>럭셔리 자원 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_AGREEMENTS_NAME" Language="ko_KR">
+			<Text>협정 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_CAPTIVES_NAME" Language="ko_KR">
+			<Text>스파이 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_CITIES_NAME" Language="ko_KR">
+			<Text>도시 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_GREATWORKS_NAME" Language="ko_KR">
+			<Text>거대 작품 거래 금지</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MPH_NO_TRADING_FAVOR_DESC" Language="ko_KR">
+			<Text>게임에서 호감도를 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_GOLD_DESC" Language="ko_KR">
+			<Text>게임에서 금을 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_STRATEGICS_DESC" Language="ko_KR">
+			<Text>게임에서 전략 자원을 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_LUXURIES_DESC" Language="ko_KR">
+			<Text>게임에서 럭셔리 자원을 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_AGREEMENTS_DESC" Language="ko_KR">
+			<Text>게임에서 협정을 체결할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_CAPTIVES_DESC" Language="ko_KR">
+			<Text>게임에서 스파이를 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_CITIES_DESC" Language="ko_KR">
+			<Text>게임에서 도시를 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_NO_TRADING_GREATWORKS_DESC" Language="ko_KR">
+			<Text>게임에서 거대 작품을 거래할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MPH_DIPLOMATIC_DEAL_NAME" Language="ko_KR">
+			<Text>외교 거래 금지</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_DIPLOMATIC_DEAL_DESC" Language="ko_KR">
+			<Text>게임에서 모든 외교 거래를 시작할 수 있는 기능을 제거합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_MILITARY_NAME" Language="ko_KR">
+			<Text>군사 동맹</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_MILITARY_DESC" Language="ko_KR">
+			<Text>게임에서 군사 동맹을 형성할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_CULTURAL_NAME" Language="ko_KR">
+			<Text>문화적 동맹</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_CULTURAL_DESC" Language="ko_KR">
+			<Text>게임에서 문화적 동맹을 형성할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_ECONOMIC_NAME" Language="ko_KR">
+			<Text>경제적 동맹</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_ECONOMIC_DESC" Language="ko_KR">
+			<Text>게임에서 경제적 동맹을 형성할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_RELIGIOUS_NAME" Language="ko_KR">
+			<Text>종교적 동맹</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_RELIGIOUS_DESC" Language="ko_KR">
+			<Text>게임에서 종교적 동맹을 형성할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_RESEARCH_NAME" Language="ko_KR">
+			<Text>연구적 동맹</Text>
+		</Replace>
+		<Replace Tag="LOC_MPH_ALLIANCE_RESEARCH_DESC" Language="ko_KR">
+			<Text>게임에서 연구적 동맹을 형성할 수 있는 기능을 제거하려면 선택하십시오.</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_NAME" Language="ko_KR">
+			<Text>프리셋</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_NONE_NAME" Language="ko_KR">
+			<Text>없음</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CWC_NAME" Language="ko_KR">
+			<Text>문명 월드컵</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CPLFFA_NAME" Language="ko_KR">
+			<Text>CPL FFA</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CIVFRTEAMER_NAME" Language="ko_KR">
+			<Text>Squadron CivFR</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CPLSQUADRON_NAME" Language="ko_KR">
+			<Text>CPL 프리미어 리그</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CPLSQUADRON_DESC" Language="ko_KR">
+			<Text>드래프팅 포함 4v4 프리미어 리그</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_1v1RR_NAME" Language="ko_KR">
+			<Text>1v1 로얄 럼블</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_NONE_DESC" Language="ko_KR">
+			<Text>기본 설정</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CWC_DESC" Language="ko_KR">
+			<Text>드래프팅 및 4v4 팀전</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CPLFFA_DESC" Language="ko_KR">
+			<Text>풍부한 자원을 갖춘 CPL 전형적인 설정</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="ko_KR">
+			<Text>팀전을 위한 CivFR 전형적인 설정</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_1v1RR_DESC" Language="ko_KR">
+			<Text>1v1 로얄 럼블을 위한 전용 선물</Text>
+		</Replace>
+		<Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="ko_KR">
+			<Text>[COLOR_RED]공식 토너먼트 게임[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="MPH_OFFICIAL_GAME_DESC" Language="ko_KR">
+			<Text>게임이 공식 토너먼트 게임의 일부인 경우 다른 모드가 추가 기능을 로드하거나 제거할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TIMER_2VI2_NAME" Language="ko_KR">
+			<Text>2VI2 HOT</Text>
+		</Replace>
+		<Replace Tag="TIMER_2VI2_DESC" Language="ko_KR">
+			<Text>15초에서 시작하여 턴 40에 이르기까지 점프로 60초까지 증가하는 매우 빠른 타이머입니다. 이후 선형으로 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_PPL_ARENA_NAME" Language="ko_KR">
+			<Text>PPL 아레나</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_PPL_ARENA_DESC" Language="ko_KR">
+			<Text>PPL 1v1 한 대륙 판게아</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_PPL_BATTLEGROUND_NAME" Language="ko_KR">
+			<Text>PPL 전장</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_PPL_BATTLEGROUND_DESC" Language="ko_KR">
+			<Text>PPL 1v1 두 대륙 판게아</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CIVFRFFA_NAME" Language="ko_KR">
+			<Text>FFA CivFr</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CIVFRFFA_DESC" Language="ko_KR">
+			<Text>FFA를 위한 CivFR 전형적인 설정</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="ko_KR">
+      <Text>CLC 중국 리그컵</Text>
+    </Replace>
+    <Replace Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="ko_KR">
+      <Text>중국 리그컵의 전형적인 설정</Text>
+    </Replace>
+		<Replace Tag="MPH_PRESET_2vi2_NAME" Language="ko_KR">
+			<Text>2대2</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_2vi2_DESC" Language="ko_KR">
+			<Text>CPL 2v2 리그 프리셋</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CPL_GOAT_DESC" Language="ko_KR">
+				<Text>CivPlayer 리그 GOAT 토너먼트 프리셋</Text>
+		</Replace>
+		<Replace Tag="MPH_PRESET_CPL_GOAT_NAME" Language="ko_KR">
+				<Text>CPL G.O.A.T</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

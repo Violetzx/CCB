@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d72b7aaa-76dd-4752-af0b-ef7bf56dbfd3" version="1">
+  <Properties>
+    <Name>JFD's [COLOR_FLOAT_GOLD]Macedon[ENDCOLOR]: Olympias</Name>
+    <Description>------------------------------------[NEWLINE]LEADER -- OLYMPIAS[NEWLINE][NEWLINE]TRAIT - CABEIRI MYSTERIES[NEWLINE]Receives an [ICON_ENVOY] Envoy from founding a Pantheon. Assigning [ICON_ENVOY] Envoys to City-States grants [ICON_GREATGENERAL] Great General and [ICON_GREATPROPHET] Great Prophet Points, doubling if to Militaristic and Religious City-States.[NEWLINE][NEWLINE]AGENDA - ORACLE OF THE CHTONICS[NEWLINE]Ensures she is high in [ICON_FAITH] Faith and [ICON_GREATPROPHET] Great Prophet Points whilst competing for City-States, and prefers other civilizations to be low in [ICON_FAITH] Faith if they are competing for the same City-States. She despises those civilizations that are high in [ICON_FAITH] Faith and competing for the same City-States.</Description>
+    <Created>1592833501</Created>
+    <Teaser>Adds Olympias of Macedon. Click for details.</Teaser>
+    <Authors>JFD</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="LOC_EXPANSION1_MOD_TITLE" />
+    <Mod id="E2749E9A-8056-45CD-901B-C368C8E83DEB" title="DLC: Persia and Macedon Civilization Pack" />
+  </Dependencies>
+  <References>
+    <Mod id="01159f41-7ca0-4181-84cf-2f2c912edfdd" title="DELIVERATOR STEEL AND THUNDER" />
+    <Mod id="8342b98d-80c7-4002-87bb-419646bd9b54" title="DELIVERATOR MOAR UNITS" />
+    <Mod id="514aaa88-ffd2-475f-ace6-ea49b34a100a" title="GEDEMON CORDIFORM EARTH FOR YNAEMP" />
+    <Mod id="36e88483-48fe-4545-b85f-bafc50dde315" title="GEDEMON YNAEMP" />
+    <Mod id="650ff782-47b4-4b46-93fb-00bef8da8b8e" title="JFD RULE WITH FAITH" />
+  </References>
+  <ActionCriteria>
+    <Criteria id="Expansion1">
+      <GameCoreInUse>Expansion1</GameCoreInUse>
+    </Criteria>
+  </ActionCriteria>
+  <FrontEndActions>
+    <UpdateDatabase id="UpdateDatabase">
+      <Properties>
+        <LoadOrder>10</LoadOrder>
+      </Properties>
+      <File>Core/MacedonOlympias_Config.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="UpdateText">
+      <File>Core/MacedonOlympias_GameText.xml</File>
+    </UpdateText>
+    <UpdateIcons id="UpdateIcons">
+      <File>Core/MacedonOlympias_IconDefinitions.sql</File>
+    </UpdateIcons>
+    <UpdateArt id="UpdateArt">
+      <File>JFD's Macedon - Olympias.dep</File>
+    </UpdateArt>
+    <UpdateColors id="UpdateColors">
+      <File>Core/MacedonOlympias_GameColors.sql</File>
+    </UpdateColors>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="UpdateDatabase">
+      <Properties>
+        <LoadOrder>10</LoadOrder>
+      </Properties>
+      <File>Core/MacedonOlympias_GameDefines.sql</File>
+      <File>Core/MacedonOlympias_ModSupport.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="UpdateText">
+      <File>Core/MacedonOlympias_GameText.xml</File>
+    </UpdateText>
+    <UpdateIcons id="UpdateIcons">
+      <File>Core/MacedonOlympias_IconDefinitions.sql</File>
+    </UpdateIcons>
+    <UpdateArt id="UpdateArt">
+      <File>JFD's Macedon - Olympias.dep</File>
+    </UpdateArt>
+    <AddGameplayScripts id="NewAction">
+      <File>Lua/JFD_MacedonOlympias_Functions.lua</File>
+    </AddGameplayScripts>
+    <UpdateColors id="UpdateColors">
+      <File>Core/MacedonOlympias_GameColors.sql</File>
+    </UpdateColors>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>ArtDefs/Leaders.artdef</File>
+    <File>Core/MacedonOlympias_Config.sql</File>
+    <File>Core/MacedonOlympias_GameColors.sql</File>
+    <File>Core/MacedonOlympias_GameDefines.sql</File>
+    <File>Core/MacedonOlympias_GameText.xml</File>
+    <File>Core/MacedonOlympias_IconDefinitions.sql</File>
+    <File>Credits.txt</File>
+    <File>JFD's Macedon - Olympias.dep</File>
+    <File>Lua/JFD_MacedonOlympias_Functions.lua</File>
+    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>Textures/FALLBACK_NEUTRAL_JFD_OLYMPIAS.dds</File>
+    <File>Textures/FALLBACK_NEUTRAL_JFD_OLYMPIAS.tex</File>
+    <File>Textures/JFD_OLYMPIAS_1.dds</File>
+    <File>Textures/JFD_OLYMPIAS_1.tex</File>
+    <File>Textures/JFD_OLYMPIAS_4.dds</File>
+    <File>Textures/JFD_OLYMPIAS_4.tex</File>
+    <File>Textures/LEADER_JFD_OLYMPIAS_NEUTRAL.dds</File>
+    <File>Textures/LEADER_JFD_OLYMPIAS_NEUTRAL.tex</File>
+    <File>Textures/Olympias256.dds</File>
+    <File>Textures/Olympias256.tex</File>
+    <File>Textures/Olympias32.dds</File>
+    <File>Textures/Olympias32.tex</File>
+    <File>Textures/Olympias45.dds</File>
+    <File>Textures/Olympias45.tex</File>
+    <File>Textures/Olympias48.dds</File>
+    <File>Textures/Olympias48.tex</File>
+    <File>Textures/Olympias50.dds</File>
+    <File>Textures/Olympias50.tex</File>
+    <File>Textures/Olympias55.dds</File>
+    <File>Textures/Olympias55.tex</File>
+    <File>Textures/Olympias64.dds</File>
+    <File>Textures/Olympias64.tex</File>
+    <File>Textures/Olympias80.dds</File>
+    <File>Textures/Olympias80.tex</File>
+    <File>XLPs/Icons.xlp</File>
+    <File>XLPs/LeaderFallbacks.xlp</File>
+  </Files>
+</Mod>

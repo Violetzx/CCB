@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UI/Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="KiviuqDave256"/>
+			<m_ObjectName text="KiviuqDave256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave80"/>
+			<m_ObjectName text="KiviuqDave80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave64"/>
+			<m_ObjectName text="KiviuqDave64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave55"/>
+			<m_ObjectName text="KiviuqDave55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave50"/>
+			<m_ObjectName text="KiviuqDave50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave48"/>
+			<m_ObjectName text="KiviuqDave48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ThuleKiviuqDave45"/>
+			<m_ObjectName text="ThuleKiviuqDave45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave45"/>
+			<m_ObjectName text="KiviuqDave45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="KiviuqDave32"/>
+			<m_ObjectName text="KiviuqDave32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_LIME_THULEDAVE_NEUTRAL"/>
+			<m_ObjectName text="LEADER_LIME_THULEDAVE_NEUTRAL"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LIME_THULE_DAVE_1"/>
+			<m_ObjectName text="LIME_THULE_DAVE_1"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LIME_THULE_DAVE_4"/>
+			<m_ObjectName text="LIME_THULE_DAVE_4"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ThuleKiviuqDave256"/>
+			<m_ObjectName text="ThuleKiviuqDave256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule256"/>
+			<m_ObjectName text="Thule256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule200"/>
+			<m_ObjectName text="Thule200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule128"/>
+			<m_ObjectName text="Thule128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule22"/>
+			<m_ObjectName text="Thule22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule30"/>
+			<m_ObjectName text="Thule30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule36"/>
+			<m_ObjectName text="Thule36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule44"/>
+			<m_ObjectName text="Thule44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule48"/>
+			<m_ObjectName text="Thule48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule50"/>
+			<m_ObjectName text="Thule50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule64"/>
+			<m_ObjectName text="Thule64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Thule80"/>
+			<m_ObjectName text="Thule80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Infrastructure_Lime_Thule_WBH"/>
+			<m_ObjectName text="Moment_Infrastructure_Lime_Thule_WBH"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_UniqueUnit_Lime_Thule_Dogsled"/>
+			<m_ObjectName text="Moment_UniqueUnit_Lime_Thule_Dogsled"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WBH_ICON_38"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WBH_ICON_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WBH_ICON_40"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WBH_ICON_40"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WBH_ICON_50"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WBH_ICON_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WBH_ICON_80"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WBH_ICON_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WBH_ICON_200"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WBH_ICON_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WBH_ICON_256"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WBH_ICON_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_ICON_22"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_ICON_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_ICON_32"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_ICON_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_ICON_80"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_ICON_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_ICON_256"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_ICON_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_38"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_50"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_70"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_70"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_95"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_95"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_200"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_256"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_UU_PORTRAIT_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WHALE_ICON_200"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WHALE_ICON_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WHALE_ICON_256"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WHALE_ICON_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WHALE_ICON_38"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WHALE_ICON_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WHALE_ICON_40"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WHALE_ICON_40"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WHALE_ICON_50"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WHALE_ICON_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_LIME_THULE_WHALE_ICON_80"/>
+			<m_ObjectName text="CIVILIZATION_LIME_THULE_WHALE_ICON_80"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

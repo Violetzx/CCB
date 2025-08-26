@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/tilebases"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="DIS_Lime_WBH"/>
+			<m_ObjectName text="DIS_Lime_WBH"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LIM_Archer_BowA"/>
+			<m_ObjectName text="LIM_Archer_BowA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LIM_Hoplite_SpearA"/>
+			<m_ObjectName text="LIM_Hoplite_SpearA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LIM_Horseman_SpearA"/>
+			<m_ObjectName text="LIM_Horseman_SpearA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LIM_Settler_Backpack"/>
+			<m_ObjectName text="LIM_Settler_Backpack"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Whalebonehouse"/>
+			<m_ObjectName text="Whalebonehouse"/>
+		</Element>
+		<Element>
+			<m_EntryID text="WhaleboneHouse_AST"/>
+			<m_ObjectName text="WhaleboneHouse_AST"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_LEU_WHALEBONE"/>
+			<m_ObjectName text="DIS_LEU_WHALEBONE"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

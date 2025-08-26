@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="Unit"/>
+	<m_PackageName text="units/units"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="Lime_Thule_Angakkuq_Spy"/>
+			<m_ObjectName text="Lime_Thule_Angakkuq_Spy"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Lime_Thule_Angakkuq_Wolfhead"/>
+			<m_ObjectName text="Lime_Thule_Angakkuq_Wolfhead"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Lime_Thule_Angakkuq_BarbScoutOutfit"/>
+			<m_ObjectName text="Lime_Thule_Angakkuq_BarbScoutOutfit"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Lime_Barb_scout_dog"/>
+			<m_ObjectName text="Lime_Barb_scout_dog"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LimeThule_Hunter_BarbScout"/>
+			<m_ObjectName text="LimeThule_Hunter_BarbScout"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LimeThule_Hunter_CrossbowmanArmor"/>
+			<m_ObjectName text="LimeThule_Hunter_CrossbowmanArmor"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LimeThule_Hunter_monkarmor"/>
+			<m_ObjectName text="LimeThule_Hunter_monkarmor"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+
