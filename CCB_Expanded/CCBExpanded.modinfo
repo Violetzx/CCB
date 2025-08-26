@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Release ModID-->
-<!-- <Mod id="2a0aa96a-a31c-4ce2-87ec-09152f6f3e00" version="110"> -->
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e300" version="110">
 <!-- WIP ModID-->
-<Mod id="2a0aa96a-a31c-4ce2-87ec-09144f6f3e00" version="110">
+<!-- <Mod id="2a0aa96a-a31c-4ce2-87ec-09144f6f3e00" version="110"> -->
   <Properties>
-    <Name>BBG Expanded WIP</Name>
-    <Description>Expansion of new civs</Description>
-    <Authors>Apeul, Calcifer, ChimpanG, Chrisy15, JFD, Leugi, Lime, Rıaın, SailorCat, SeelingCat, Sukritact, p0kiehl, thecrazyscotsman (alphabetical order)</Authors>
-    <SpecialThanks>Alexxis, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
+    <Name>CCB 文明拓展 v1.1</Name>
+    <Description>新文明拓展包</Description>
+    <Authors>CCB制作组</Authors>
+    <SpecialThanks>BBG制作组、BBG Expand</SpecialThanks>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
 <Dependencies>

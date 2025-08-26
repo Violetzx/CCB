@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e200" version="174">
+
+    <Properties>
+        <Name>CCB MPH 多人游戏助手 1.0.0</Name>
+        <Description>面向于电子竞技的模组，提升比赛、游戏的稳定性，并全面改善多人游戏的体验。[NEWLINE][NEWLINE][COLOR_RED]每次开启和关闭该模组时需要重启游戏以生效。[ENDCOLOR][NEWLINE][NEWLINE]否则模组中的一些功能会失效（例如征召功能）</Description>
+        <Created>1</Created>
+        <Version>174</Version>
+        <Teaser>面向于电子竞技的模组，提升比赛和游戏的稳定性。</Teaser>
+        <Authors>CCB制作组</Authors>
+        <SpecialThanks>MPH</SpecialThanks>
+        <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    </Properties>
+
+    <ActionCriteria>
+        <Criteria id="Expansion2">
+            <GameCoreInUse>Expansion2</GameCoreInUse>
+        </Criteria>
+        <Criteria id="Expansion1">
+            <GameCoreInUse>Expansion1</GameCoreInUse>
+        </Criteria>
+
+
+        <Criteria id="Anonymous_Mode_Expansion2">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>GAMEMODE_ANONYMOUS</ConfigurationId>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Sudden_Death_Mode_Expansion2">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>GAMEMODE_SUDDEN_DEATH</ConfigurationId>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Alliance_Military_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>ALLIANCE_MILITARY</ConfigurationId>
+                <Value>0</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Alliance_Cultural_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>ALLIANCE_CULTURAL</ConfigurationId>
+                <Value>0</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Alliance_Religious_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>ALLIANCE_RELIGIOUS</ConfigurationId>
+                <Value>0</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Alliance_Research_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>ALLIANCE_RESEARCH</ConfigurationId>
+                <Value>0</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Alliance_Economic_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>ALLIANCE_ECONOMIC</ConfigurationId>
+                <Value>0</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Diplomatic_Deals_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>DIPLOMATIC_DEAL</ConfigurationId>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Diplomatic_FS_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>NO_FRIENDSHIP</ConfigurationId>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Diplomatic_SW_Off">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>NO_SURPRISE_WAR</ConfigurationId>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+    </ActionCriteria>
+
+    <FrontEndActions>
+        <ImportFiles id="FrontEnd">
+            <Properties>
+                <LoadOrder>9999</LoadOrder>
+            </Properties>
+            <File>ui/gamesetuplogic.lua</File>
+            <File>ui/hostgame.lua</File>
+            <File>ui/hostgame.xml</File>
+            <File>ui/mainmenu.lua</File>
+            <File>ui/mainmenu.xml</File>
+            <File>ui/playertargetlogic.lua</File>
+            <File>ui/setupparameters.lua</File>
+            <File>ui/stagingroom.lua</File>
+            <File>ui/stagingroom.xml</File>
+
+        </ImportFiles>
+
+        <UpdateDatabase id="CPL_SETTINGS">
+            <File>configuration/config.sql</File>
+            <File>configuration/Config.xml</File>
+            <File>configuration/Config_BBG.xml</File>
+            <File>configuration/Config_BBS.xml</File>
+            <File>configuration/Config_BSM.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="MPH_TEXTS">
+            <File>lang/Text_EN.xml</File>
+            <File>lang/Text_FR.xml</File>
+            <File>lang/Text_CN.xml</File>
+            <File>lang/Text_RU.xml</File>
+            <File>lang/Text_BR.xml</File>
+            <File>lang/Text_KO.xml</File>
+            <File>lang/Text_JP.xml</File>
+            <File>lang/Text_DE.xml</File>
+        </UpdateText>
+
+
+        <UpdateIcons id="MPHIcons FrontEnd">
+            <File>icons/Anonymous_Icons.xml</File>
+            <File>icons/Sudden_Death_Icons.xml</File>
+        </UpdateIcons>
+
+
+        <ImportFiles id="FrontEnd_Arts_Icons_Import">
+            <Items>
+                <File>icons/Sudden_Death_44.dds</File>
+                <File>mode/sudden_death/Sudden_Death_Portrait.dds</File>
+                <File>mode/sudden_death/Sudden_Death_Background.dds</File>
+                <File>icons/Anonymous_44.dds</File>
+                <File>mode/anonymous/Anonymous_Portrait.dds</File>
+                <File>mode/anonymous/Anonymous_Background.dds</File>
+            </Items>
+        </ImportFiles>
+
+    </FrontEndActions>
+    <InGameActions>
+
+        <AddGameplayScripts id="CPL_Helper">
+            <File>data/MP_helper.lua</File>
+        </AddGameplayScripts>
+
+        <UpdateDatabase id="CPL_XML">
+            <File>data/Victories.xml</File>
+        </UpdateDatabase>
+
+        <!-- Database adjustment FrontEnd dependent -->
+        <UpdateDatabase id="MPH_Control_Military_Alliance_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Military_Off</Criteria>
+            <File>sql/mph_alliance_no_military.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Military_Alliance_Off_XP1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Military_Off</Criteria>
+            <Criteria>Expansion1</Criteria>
+            <File>sql/mph_alliance_no_military_xp1.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Military_Alliance_Off_XP2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Military_Off</Criteria>
+            <Criteria>Expansion2</Criteria>
+            <File>sql/mph_alliance_no_military_xp1.sql</File>
+        </UpdateDatabase>
+
+        <UpdateDatabase id="MPH_Control_Cultural_Alliance_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Cultural_Off</Criteria>
+            <File>sql/mph_alliance_no_cultural.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Cultural_Alliance_Off_XP1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Cultural_Off</Criteria>
+            <Criteria>Expansion1</Criteria>
+            <File>sql/mph_alliance_no_cultural_xp1.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Cultural_Alliance_Off_XP2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Cultural_Off</Criteria>
+            <Criteria>Expansion2</Criteria>
+            <File>sql/mph_alliance_no_cultural_xp1.sql</File>
+        </UpdateDatabase>
+
+        <UpdateDatabase id="MPH_Control_Economic_Alliance_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Economic_Off</Criteria>
+            <File>sql/mph_alliance_no_economic.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Economic_Alliance_Off_XP1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Economic_Off</Criteria>
+            <Criteria>Expansion1</Criteria>
+            <File>sql/mph_alliance_no_economic_xp1.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Economic_Alliance_Off_XP2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Economic_Off</Criteria>
+            <Criteria>Expansion2</Criteria>
+            <File>sql/mph_alliance_no_economic_xp1.sql</File>
+        </UpdateDatabase>
+
+
+        <UpdateDatabase id="MPH_Control_Religious_Alliance_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Religious_Off</Criteria>
+            <File>sql/mph_alliance_no_religious.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Religious_Alliance_Off_XP1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Religious_Off</Criteria>
+            <Criteria>Expansion1</Criteria>
+            <File>sql/mph_alliance_no_religious_xp1.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Religious_Alliance_Off_XP2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Religious_Off</Criteria>
+            <Criteria>Expansion2</Criteria>
+            <File>sql/mph_alliance_no_religious_xp1.sql</File>
+        </UpdateDatabase>
+
+        <UpdateDatabase id="MPH_Control_Research_Alliance_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Research_Off</Criteria>
+            <File>sql/mph_alliance_no_research.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Research_Alliance_Off_XP1">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Research_Off</Criteria>
+            <Criteria>Expansion1</Criteria>
+            <File>sql/mph_alliance_no_research_xp1.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Research_Alliance_Off_XP2">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Alliance_Research_Off</Criteria>
+            <Criteria>Expansion2</Criteria>
+            <File>sql/mph_alliance_no_research_xp1.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Diplomatic_Deals_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Diplomatic_Deals_Off</Criteria>
+            <File>sql/mph_diplomacy_no_deals.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Diplomatic_Frienship_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Diplomatic_FS_Off</Criteria>
+            <File>sql/mph_diplomacy_no_fs.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="MPH_Control_Diplomatic_Surprise_War_Off">
+            <Properties>
+                <LoadOrder>20000</LoadOrder>
+            </Properties>
+            <Criteria>Diplomatic_SW_Off</Criteria>
+            <File>sql/mph_diplomacy_no_sw.sql</File>
+        </UpdateDatabase>
+
+        <!-- General MPH Ingame Files -->
+        <UpdateText id="MPH_INGAME_TEXTS">
+            <File>lang/Text_EN.xml</File>
+            <File>lang/Text_FR.xml</File>
+            <File>lang/Text_CN.xml</File>
+            <File>lang/Text_RU.xml</File>
+            <File>lang/Text_BR.xml</File>
+            <File>lang/Text_KO.xml</File>
+            <File>lang/Text_JP.xml</File>
+            <File>lang/Text_DE.xml</File>
+        </UpdateText>
+
+
+        <!-- Master UI -->
+        <ImportFiles id="MPH_Ingame">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+            </Properties>
+            <File>ui/ingame.xml</File>
+            <File>ui/ingame.lua</File>
+        </ImportFiles>
+
+        <!-- Replacement UI -->
+        <ReplaceUIScript id="MPH_ChatPanel" criteria="Expansion2">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+                <LuaContext>ChatPanel</LuaContext>
+                <LuaReplace>ui/Replacements/chatpanel_MPH.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+
+        <ReplaceUIScript id="MPH_DiplomacyActionView" criteria="Expansion2">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+                <LuaContext>DiplomacyActionView</LuaContext>
+                <LuaReplace>ui/Replacements/diplomacyactionview_MPH.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="MPH_InGameTopOptionsMenu">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+                <LuaContext>InGameTopOptionsMenu</LuaContext>
+                <LuaReplace>ui/Replacements/ingametopoptionsmenu_MPH.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+
+
+        <ImportFiles id="MPH_UI_Replacements">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+            </Properties>
+            <File>ui/Replacements/chatpanel_MPH.lua</File>
+            <File>ui/Replacements/diplomacyactionview_MPH.lua</File>
+            <File>ui/Replacements/diplomacydealview_MPH.lua</File>
+            <File>ui/Replacements/endgamemenu.lua</File>
+            <File>ui/Replacements/endgamemenu.xml</File>
+            <File>ui/Replacements/ingametopoptionsmenu.xml</File>
+            <File>ui/Replacements/ingametopoptionsmenu_MPH.lua</File>
+            <File>ui/Replacements/mappinlistpanel.lua</File>
+            <File>ui/Replacements/mappinlistpanel.xml</File>
+            <File>ui/Replacements/pausepanel.lua</File>
+            <File>ui/Replacements/pausepanel.xml</File>
+            <File>ui/Replacements/statusmessagepanel.lua</File>
+            <File>ui/Replacements/statusmessagepanel.xml</File>
+        </ImportFiles>
+
+        <!-- UI Additions -->
+        <AddUserInterfaces id="MPH_DropControl">
+            <Properties>
+                <LoadOrder>99</LoadOrder>
+                <Context>InGame</Context>
+            </Properties>
+            <File>ui/Additions/DropControl.xml</File>
+        </AddUserInterfaces>
+        <AddUserInterfaces id="MPH_Options">
+            <Properties>
+                <LoadOrder>99</LoadOrder>
+                <Context>InGame</Context>
+            </Properties>
+            <File>ui/Additions/MPHOptions.xml</File>
+        </AddUserInterfaces>
+        <AddUserInterfaces id="MPH_Options">
+            <Properties>
+                <LoadOrder>99</LoadOrder>
+                <Context>InGame</Context>
+            </Properties>
+            <File>ui/Additions/VotePanel.xml</File>
+        </AddUserInterfaces>
+
+        <ImportFiles id="MPH_UI_Additions">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+            </Properties>
+            <File>ui/Additions/DropControl.xml</File>
+            <File>ui/Additions/DropControl.lua</File>
+            <File>ui/Additions/MPHOptions.xml</File>
+            <File>ui/Additions/MPHOptions.lua</File>
+            <File>ui/Additions/TurnProcessing.xml</File>
+            <File>ui/Additions/TurnProcessing.lua</File>
+            <File>ui/Additions/VotePanel.xml</File>
+            <File>ui/Additions/VotePanel.lua</File>
+        </ImportFiles>
+
+
+        <!-- Extra Icons For Modes -->
+        <ImportFiles id="AN_Import">
+            <Items>
+                <File>icons/Anonymous_44.dds</File>
+            </Items>
+        </ImportFiles>
+        <UpdateIcons id="Anonymous_Icon">
+            <File>icons/Anonymous_Icons.xml</File>
+        </UpdateIcons>
+
+        <ImportFiles id="SF_Import">
+            <Items>
+                <File>icons/Sudden_Death_44.dds</File>
+            </Items>
+        </ImportFiles>
+        <UpdateIcons id="Sudden_Death_Icon">
+            <File>icons/Sudden_Death_Icons.xml</File>
+        </UpdateIcons>
+
+        <!-- Sudden Death Only -->
+        <AddUserInterfaces id="SD_InGameUI" criteria="Sudden_Death_Mode_Expansion2">
+            <Properties>
+                <Context>InGame</Context>
+            </Properties>
+            <File>ui/Additions/SuddenDeathPanel.xml</File>
+        </AddUserInterfaces>
+
+        <ImportFiles id="SD_Import" criteria="Sudden_Death_Mode_Expansion2">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+            </Properties>
+            <File>ui/Additions/SuddenDeathPanel.lua</File>
+            <File>ui/Additions/SuddenDeathPanel.xml</File>
+        </ImportFiles>
+
+
+        <!-- Anonymous Only -->
+
+        <UpdateText id="AnonText" criteria="Anonymous_Mode_Expansion2">
+            <Properties>
+                <LoadOrder>9999</LoadOrder>
+            </Properties>
+            <File>mode/anonymous/text_anon.xml</File>
+        </UpdateText>
+
+        <ImportFiles id="Anon_Import" criteria="Anonymous_Mode_Expansion2">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+            </Properties>
+            <File>ui/Replacements/unitflagmanager.lua</File>
+        </ImportFiles>
+
+    </InGameActions>
+    <Files>
+        <File>data/MP_helper.lua</File>
+        <File>data/Victories.xml</File>
+        <File>lang/Text_EN.xml</File>
+        <File>lang/Text_FR.xml</File>
+        <File>lang/Text_CN.xml</File>
+        <File>lang/Text_RU.xml</File>
+        <File>lang/Text_BR.xml</File>
+        <File>lang/Text_KO.xml</File>
+        <File>lang/Text_JP.xml</File>
+        <File>lang/Text_DE.xml</File>
+        <File>license.txt</File>
+        <File>notice.txt</File>
+
+        <File>sql/mph_diplomacy_no_deals.sql</File>
+        <File>sql/mph_alliance_no_military.sql</File>
+        <File>sql/mph_alliance_no_military_xp1.sql</File>
+        <File>sql/mph_alliance_no_cultural.sql</File>
+        <File>sql/mph_alliance_no_cultural_xp1.sql</File>
+        <File>sql/mph_alliance_no_religious.sql</File>
+        <File>sql/mph_alliance_no_religious_xp1.sql</File>
+        <File>sql/mph_alliance_no_research.sql</File>
+        <File>sql/mph_alliance_no_research_xp1.sql</File>
+        <File>sql/mph_alliance_no_economic.sql</File>
+        <File>sql/mph_alliance_no_economic_xp1.sql</File>
+        <File>sql/mph_diplomacy_no_fs.sql</File>
+        <File>sql/mph_diplomacy_no_sw.sql</File>
+
+        <!-- FrontEnd UI -->
+        <File>ui/gamesetuplogic.lua</File>
+        <File>ui/hostgame.lua</File>
+        <File>ui/hostgame.xml</File>
+        <File>ui/mainmenu.lua</File>
+        <File>ui/mainmenu.xml</File>
+        <File>ui/playertargetlogic.lua</File>
+        <File>ui/setupparameters.lua</File>
+        <File>ui/stagingroom.lua</File>
+        <File>ui/stagingroom.xml</File>
+        <!-- InGame UI -->
+        <File>ui/ingame.xml</File>
+        <File>ui/ingame.lua</File>
+        <File>ui/Replacements/chatpanel_MPH.lua</File>
+        <File>ui/Replacements/diplomacyactionview_MPH.lua</File>
+        <File>ui/Replacements/diplomacydealview_MPH.lua</File>
+        <File>ui/Replacements/endgamemenu.lua</File>
+        <File>ui/Replacements/endgamemenu.xml</File>
+        <File>ui/Replacements/ingametopoptionsmenu.xml</File>
+        <File>ui/Replacements/ingametopoptionsmenu_MPH.lua</File>
+        <File>ui/Replacements/mappinlistpanel.lua</File>
+        <File>ui/Replacements/mappinlistpanel.xml</File>
+        <File>ui/Replacements/pausepanel.lua</File>
+        <File>ui/Replacements/pausepanel.xml</File>
+        <File>ui/Replacements/statusmessagepanel.lua</File>
+        <File>ui/Replacements/statusmessagepanel.xml</File>
+
+        <!-- Anon -->
+        <File>ui/Replacements/unitflagmanager.lua</File>
+
+        <File>ui/Additions/DropControl.xml</File>
+        <File>ui/Additions/DropControl.lua</File>
+        <File>ui/Additions/MPHOptions.xml</File>
+        <File>ui/Additions/MPHOptions.lua</File>
+        <File>ui/Additions/TurnProcessing.xml</File>
+        <File>ui/Additions/TurnProcessing.lua</File>
+        <File>ui/Additions/VotePanel.xml</File>
+        <File>ui/Additions/VotePanel.lua</File>
+        <!-- Sudden Death -->
+        <File>ui/Additions/SuddenDeathPanel.lua</File>
+        <File>ui/Additions/SuddenDeathPanel.xml</File>
+        <File>ui/Replacements/unitflagmanager.lua</File>
+
+        <File>configuration/config.sql</File>
+        <File>configuration/Config.xml</File>
+        <File>configuration/Config_BBG.xml</File>
+        <File>configuration/Config_BBS.xml</File>
+        <File>configuration/Config_BSM.xml</File>
+
+        <File>mode/sudden_death/Sudden_Death_Portrait.dds</File>
+        <File>mode/sudden_death/Sudden_Death_Background.dds</File>
+
+        <File>mode/anonymous/Anonymous_Portrait.dds</File>
+        <File>mode/anonymous/Anonymous_Background.dds</File>
+        <File>mode/anonymous/text_anon.xml</File>
+
+
+        <File>icons/Anonymous_Icons.xml</File>
+        <File>icons/Anonymous_44.dds</File>
+        <File>icons/Sudden_Death_Icons.xml</File>
+        <File>icons/Sudden_Death_44.dds</File>
+
+    </Files>
+</Mod>
