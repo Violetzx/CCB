@@ -234,9 +234,9 @@ VALUES
 		("LOC_UNIT_SUK_TIBET_RTA_PA_NAME",  
 		"投石重步兵"	),
 		("LOC_UNIT_SUK_TIBET_RTA_PA_DESCRIPTION",  
-		"一种特色近战单位"),
-		("LOC_PEDIA_UNITS_PAGE_UNIT_SUK_TIBET_RTA_PA_CHAPTER_HISTORY_PARA_1",  
 		"吐蕃特色中世纪近战单位，替代披甲战士。可以进行 [ICON_Range] 射程为1的远程攻击（近战 [ICON_Strength] 攻击力为46，远程攻击力为44）。从冻土或雪地单元格开始回合时，+1 [ICON_Movement] 移动力。"),
+		("LOC_PEDIA_UNITS_PAGE_UNIT_SUK_TIBET_RTA_PA_CHAPTER_HISTORY_PARA_1",  
+		"吐蕃特色中世纪近战单位。"),
 
 		("LOC_ABILITY_CCB_TBCSJ_ADD_MOVEMENT_NAME",
 		"雪中飞"	),

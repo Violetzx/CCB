@@ -3923,6 +3923,13 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SUK_CAPTURE_OF_CHANGAN_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>拥有祭祀建筑和军营的城市训练的陆地军事单位初始便拥有一次 [ICON_PROMOTION] 升级。</Text>
 		</Replace>
+		<!-- = Unique UNIT -->
+		<Replace Tag="LOC_UNIT_SUK_TIBET_RTA_PA_NAME" Language="zh_Hans_CN">
+			<Text>投石重步兵</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SUK_TIBET_RTA_PA_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>吐蕃特色中世纪近战单位，替代披甲战士。可以进行 [ICON_Range] 射程为1的远程攻击（近战 [ICON_Strength] 攻击力为46，远程攻击力为44）。从冻土或雪地单元格开始回合时，+1 [ICON_Movement] 移动力。</Text>
+		</Replace>
 		<!-- = Unique district -->
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_NAME" Language="zh_Hans_CN">
 			<Text>宗堡</Text>
