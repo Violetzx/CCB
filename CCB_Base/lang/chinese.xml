@@ -3923,13 +3923,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SUK_CAPTURE_OF_CHANGAN_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>拥有祭祀建筑和军营的城市训练的陆地军事单位初始便拥有一次 [ICON_PROMOTION] 升级。</Text>
 		</Replace>
-		<!-- = Unique unit -->
-		<Replace Tag="LOC_UNIT_SUK_TIBET_RTA_PA_NAME" Language="zh_Hans_CN">
-			<Text>藏巴弓骑</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_SUK_TIBET_RTA_PA_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>吐蕃特色文艺复兴远程骑兵单位，解锁于“天文学”科技。射程为1，攻击后可移动。在丘陵地形移动时不受移动力减益。</Text>
-		</Replace>
 		<!-- = Unique district -->
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_NAME" Language="zh_Hans_CN">
 			<Text>宗堡</Text>
