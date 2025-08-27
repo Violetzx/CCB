@@ -232,16 +232,16 @@ VALUES
 -- Unique Unit
 --========================================================================================================================
 		("LOC_UNIT_SUK_TIBET_RTA_PA_NAME",  
-		"Rta Pa"	),
+		"投石重步兵"	),
 		("LOC_UNIT_SUK_TIBET_RTA_PA_DESCRIPTION",  
-		"Tibetan unique Renaissance era ranged cavalry unit. Has a a [ICON_Range] Range of 1, but can move after attacking. No Movement penalty in hill terrain. Unlocks with Astronomy."),
+		"一种特色近战单位"),
 		("LOC_PEDIA_UNITS_PAGE_UNIT_SUK_TIBET_RTA_PA_CHAPTER_HISTORY_PARA_1",  
-		"Rta Pa is the Tibetan word for a Horseman. Horses and horsemanship were very important in Tibet, as they were among other nomadic peoples of Central Asia. As with the other people of the steppe, Tibet has a long tradition of mounted archery, but this evolved into mounted gunmanship as gunpowder was introduced during the sixteenth century. In Europe, the matchlock was primarily an infantry weapon, but in Tibet and Central Asia it was also used on horseback in the same way as the bow. As essential military training, and as part of various ceremonies and festivals, riders would shoot at targets while riding past them at a gallop. Tibetan government officials were periodically required to demonstrate proficiency on horseback with musket, bow and arrow, and spear until as late as the mid twentieth century."),
+		"吐蕃特色中世纪近战单位，替代披甲战士。可以进行 [ICON_Range] 射程为1的远程攻击（近战 [ICON_Strength] 攻击力为46，远程攻击力为44）。从冻土或雪地单元格开始回合时，+1 [ICON_Movement] 移动力。"),
 
-		("LOC_ABILITY_SUK_TIBET_RTA_PA_NAME",  
-		"Windhorse"	),
-		("LOC_ABILITY_SUK_TIBET_RTA_PA_DESCRIPTION",  
-		"Can move after attacking. No Movement penalty in hill terrain."),				
+		("LOC_ABILITY_CCB_TBCSJ_ADD_MOVEMENT_NAME",
+		"雪中飞"	),
+		("LOC_ABILITY_CCB_TBCSJ_ADD_MOVEMENT_DESCRIPTION",
+		"从冻土或雪地单元格开始回合时，+1 [ICON_Movement] 移动力。"),
 --========================================================================================================================
 -- Unique Infrastructure
 --========================================================================================================================

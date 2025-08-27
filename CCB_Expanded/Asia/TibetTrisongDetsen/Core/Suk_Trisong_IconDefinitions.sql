@@ -40,5 +40,5 @@ VALUES ('ICON_CIVILIZATION_SUK_TIBET', 'ICON_ATLAS_SUK_TIBET', 0),
 --==========================================================================================================================
 --==========================================================================================================================
 INSERT INTO IconAliases(Name,OtherName)VALUES
-('ICON_UNIT_SUK_TIBET_RTA_PA','ICON_UNIT_MONGOLIAN_KESHIG'),
-('ICON_UNIT_SUK_TIBET_RTA_PA_PORTRAIT','ICON_UNIT_MONGOLIAN_KESHIG_PORTRAIT');
+('ICON_UNIT_SUK_TIBET_RTA_PA','ICON_UNIT_PERSIAN_IMMORTAL'),
+('ICON_UNIT_SUK_TIBET_RTA_PA_PORTRAIT','ICON_UNIT_PERSIAN_IMMORTAL_PORTRAIT');
