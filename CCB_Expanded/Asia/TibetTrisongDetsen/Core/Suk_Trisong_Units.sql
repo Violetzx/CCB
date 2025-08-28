@@ -62,8 +62,8 @@ SELECT
 			FormationClass,
 			AdvisorType,
 
-			PrereqTech,
-			MandatoryObsoleteTech,
+			'TECH_MILITARY_TACTICS',
+			'TECH_GUNPOWDER',
 			PrereqCivic,
 			MandatoryObsoleteCivic,
 			'TRAIT_CIVILIZATION_UNIT_SUK_RTA_PA'
