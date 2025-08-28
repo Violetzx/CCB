@@ -69,7 +69,8 @@ SELECT
 			'TRAIT_CIVILIZATION_UNIT_SUK_RTA_PA'
 
 FROM Units WHERE UnitType = 'UNIT_MAN_AT_ARMS';
-
+INSERT INTO UnitReplaces(civuniqueunittype, replacesunittype) VALUES 
+('UNIT_SUK_TIBET_RTA_PA','UNIT_MAN_AT_ARMS');
 
 -- 风云变幻扩展包给Units表补充的额外信息
 INSERT INTO Units_XP2(UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb,
