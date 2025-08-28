@@ -134,7 +134,7 @@
 		</Criteria>
 		<!-- Other Mods and Integrations -->
 		<Criteria id="BBS">
-			<ModInUse>c88cba8b-8311-4d35-90c3-51a4a5d66550</ModInUse>
+			<ModInUse>8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10</ModInUse>
 		</Criteria>
 		<Criteria id="NoConflictingUIMod">
 			<ModInUse inverse="1">1d44b5e7-753e-405b-af24-5ee634ec8a01</ModInUse>
@@ -284,11 +284,11 @@
 		<!-- I don't know how to do an OR -->
 		<Criteria id="BBGExpanded_WIP">
 			<!-- WIP -->
-			<ModInUse>2a0aa96a-a31c-4ce2-87ec-09144f6f3e00</ModInUse>
+			<ModInUse>8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30</ModInUse>
 		</Criteria>
 		<Criteria id="BBGExpanded_Release">
 			<!-- Release -->
-			<ModInUse>2a0aa96a-a31c-4ce2-87ec-09152f6f3e00</ModInUse>
+			<ModInUse>8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30</ModInUse>
 		</Criteria>
 	</ActionCriteria>
 
