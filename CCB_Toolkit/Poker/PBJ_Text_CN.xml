@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_PBJ_OPEN_NAME" Language="zh_Hans_CN">
+			<Text>21点[NEWLINE][NEWLINE]来一场扑克游戏！</Text>
+		</Replace>
+		<Replace Tag="LOC_POKE_BLACKJACK_PANEL_HEADER_NAME" Language="zh_Hans_CN">
+			<Text>扑克游戏：21点</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HIT_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>加牌</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_RE_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>重新开始</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_STAND_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>停止</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_1_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_Bolt]21点介绍</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_1_TT" Language="zh_Hans_CN">
+			<Text>
+				使用4副扑克除大小王之外的208张牌，游戏者的目标是使手中的牌的点数之和不超过21点且尽量大。
+				[NEWLINE][NEWLINE]首先由玩家投入筹码，胜者会赢得双倍，平局则退还筹码,失败则失去所有筹码。
+				[NEWLINE][NEWLINE]玩家下注之后，先由庄家发两张牌，并盖住第一张，然后给玩家发两张。
+				[NEWLINE][NEWLINE]此时玩家可以选择加牌，或者停牌，如果玩家加牌后总点数超过21点，则算爆牌，庄家胜利。
+				[NEWLINE][NEWLINE]当选择停牌后玩家结束轮次。庄家揭示底牌，如果庄家的点数小于17，则必须加牌。当庄家点数大于等于17时必须停牌，比较双方点数大小，点数更大者获胜。
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_2_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_Bolt]获胜条件</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_2_TT" Language="zh_Hans_CN">
+			<Text>点数不超过21点，且比庄家点数更大。</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_3_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_Bolt]加牌</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_3_TT" Language="zh_Hans_CN">
+			<Text>玩家可以选择加牌，以增加自己的点数。[NEWLINE][NEWLINE][ICON_Goingto]A可以作为1点或者11点。[NEWLINE][ICON_Goingto]J、Q、K 视作10点</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_4_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_Bolt]停止</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_4_TT" Language="zh_Hans_CN">
+			<Text>不再拿新的卡牌，轮到庄家加牌。</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_5_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_Bolt]爆牌</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_5_TT" Language="zh_Hans_CN">
+			<Text>加牌后总点数大于21点，则算失败。</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_6_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_Bolt]翻倍</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_6_TT" Language="zh_Hans_CN">
+			<Text>每次胜利后的下一轮，可以选择翻倍下注。</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_20_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_GOLDLARGE]20</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_100_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_GOLDLARGE]100</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_500_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_GOLDLARGE]500</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_DOUBLE_BASE_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_GOLDLARGE]翻倍</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_DOUBLE_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_GOLDLARGE]翻倍({1_Num})</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_WAGER_NAME" Language="zh_Hans_CN">
+			<Text>下注 [icon_goldlarge]</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_FIRST_HIT_NAME" Language="zh_Hans_CN">
+			<Text>庄家隐藏第一张牌</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BUST_NAME" Language="zh_Hans_CN">
+			<Text>爆牌了</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PLAYERTURN_NAME" Language="zh_Hans_CN">
+			<Text>玩家的回合</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PLAYER_BUST_NAME" Language="zh_Hans_CN">
+			<Text>玩家爆牌了，庄家胜利</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_SHOW_DEALER_CARD_NAME" Language="zh_Hans_CN">
+			<Text>显示庄家手牌</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_HIT_NAME" Language="zh_Hans_CN">
+			<Text>庄家加牌</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_BUST_NAME" Language="zh_Hans_CN">
+			<Text>庄家爆牌了，玩家胜利</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PUSH_NAME" Language="zh_Hans_CN">
+			<Text>平手</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_WIN_NAME" Language="zh_Hans_CN">
+			<Text>庄家胜利</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PLAYER_WIN_NAME" Language="zh_Hans_CN">
+			<Text>玩家胜利</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_CHECKBOX_UNLIMIT_NAME" Language="zh_Hans_CN">
+			<Text>自由下注</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_CHECKBOX_UNLIMIT_TT" Language="zh_Hans_CN">
+			<Text>下注不受现金限制</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_JOIN_NAME" Language="zh_Hans_CN">
+			<Text>点击金币加入休闲游戏：21点</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

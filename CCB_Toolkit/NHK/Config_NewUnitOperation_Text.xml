@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_FAST_PROMOTE_NAME" Language="zh_Hans_CN">
+			<Text>随机升级</Text>
+		</Replace>
+		<Replace Tag="LOC_FAST_PROMOTE_DESC" Language="zh_Hans_CN">
+			<Text>快速随机选择一项升级，不需要点击升级树</Text>
+		</Replace>
+		<Replace Tag="LOC_CANCEL_ALL_NAME" Language="zh_Hans_CN">
+			<Text>全体取消命令</Text>
+		</Replace>
+		<Replace Tag="LOC_CANCEL_ALL_DESC" Language="zh_Hans_CN">
+			<Text>所有单位取消命令</Text>
+		</Replace>
+		<Replace Tag="LOC_FORTIFY_ALL_NAME" Language="zh_Hans_CN">
+			<Text>全体驻扎</Text>
+		</Replace>	
+		<Replace Tag="LOC_FORTIFY_ALL_DESC" Language="zh_Hans_CN">
+			<Text>所有单位驻扎</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_UNITCOMMAND_PROMOTE_OR_REPAIR_NAME" Language="zh_Hans_CN">
+			<Text>掠夺</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_UNITCOMMAND_PROMOTE_OR_REPAIR_DESC" Language="zh_Hans_CN">
+			<Text>掠夺或修理单元格</Text>
+		</Replace>												
+	</LocalizedText>
+</GameData>

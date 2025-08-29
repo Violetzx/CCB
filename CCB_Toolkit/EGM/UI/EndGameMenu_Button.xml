@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+        <GridButton ID="NewBackButton" Size="40,44" Style="MainButton" String="LOC_END_GAME_MENU_OBSERVE" SizeToText="40,28"/>
+</Context>

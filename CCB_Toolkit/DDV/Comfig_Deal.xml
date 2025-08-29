@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="SETTINGS_DIPLOMATIC_DEAL" Name="LOC_SETTINGS_DIPLOMATIC_DEAL_NAME" Description="LOC_SETTINGS_DIPLOMATIC_DEAL_DESC" Domain="Dealsettings" DefaultValue="SETTINGS_DEAL_NORM" ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2940" />
+
+		<Row ParameterId="TPT_NO_TRADING_CITIES"		Name="LOC_TPT_NO_TRADING_CITIES_NAME" 		Description="LOC_TPT_NO_TRADING_CITIES_DESC" 			Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_CITIES" 			GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2941" />
+		<Row ParameterId="TPT_NO_TRADING_GOLD" 			Name="LOC_TPT_NO_TRADING_GOLD_NAME" 		Description="LOC_TPT_NO_TRADING_GOLD_DESC" 				Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_GOLD" 				GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2942" />
+		<Row ParameterId="TPT_NO_TRADING_STRATEGICS" 	Name="LOC_TPT_NO_TRADING_STRATEGICS_NAME" 	Description="LOC_TPT_NO_TRADING_STRATEGICS_DESC" 		Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_STRATEGICS" 		GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2943" />
+		<Row ParameterId="TPT_NO_TRADING_LUXURIES" 		Name="LOC_TPT_NO_TRADING_LUXURIES_NAME" 	Description="LOC_TPT_NO_TRADING_LUXURIES_DESC" 			Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_LUXURIES" 			GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2944" />
+		<Row ParameterId="TPT_NO_TRADING_FAVOR" 		Name="LOC_TPT_NO_TRADING_FAVOR_NAME" 		Description="LOC_TPT_NO_TRADING_FAVOR_DESC" 			Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_FAVOR" 			GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2945" />
+		<Row ParameterId="TPT_NO_TRADING_GREATWORKS" 	Name="LOC_TPT_NO_TRADING_GREATWORKS_NAME" 	Description="LOC_TPT_NO_TRADING_GREATWORKS_DESC" 		Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_GREATWORKS" 		GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2946" />
+		<Row ParameterId="TPT_NO_TRADING_CAPTIVES" 		Name="LOC_TPT_NO_TRADING_CAPTIVES_NAME" 	Description="LOC_TPT_NO_TRADING_CAPTIVES_DESC" 			Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_CAPTIVES" 			GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2947" />
+		<Row ParameterId="TPT_NO_TRADING_AGREEMENTS" 	Name="LOC_TPT_NO_TRADING_AGREEMENTS_NAME" 	Description="LOC_TPT_NO_TRADING_AGREEMENTS_DESC" 		Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_TRADING_AGREEMENTS" 		GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2948" />
+		
+		<Row ParameterId="TPT_NO_DELEGATION" 			Name="LOC_TPT_NO_DELEGATION_NAME" 			Description="LOC_TPT_NO_DELEGATION_DESC" 				Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_NO_DELEGATION"  				GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2949" />
+	</Parameters>
+	<DomainValues>
+		<Row Domain="Dealsettings" Value="SETTINGS_DEAL_NORM" Name="LOC_SETTINGS_DEAL_NORM_NAME" Description="LOC_SETTINGS_DEAL_NORM_DESC" SortIndex="1"/>
+		<Row Domain="Dealsettings" Value="SETTINGS_DEAL_CLASSIC" Name="LOC_SETTINGS_DEAL_CLASSIC_NAME" Description="LOC_SETTINGS_DEAL_CLASSIC_DESC" SortIndex="2"/>
+		<Row Domain="Dealsettings" Value="SETTINGS_DEAL_ALONE" Name="LOC_SETTINGS_DEAL_ALONE_NAME" Description="LOC_SETTINGS_DEAL_ALONE_DESC" SortIndex="3"/>
+		<Row Domain="Dealsettings" Value="SETTINGS_DEAL_CUSTOM" Name="LOC_SETTINGS_DEAL_CUSTOM_NAME" Description="LOC_SETTINGS_DEAL_CUSTOM_DESC" SortIndex="4"/>
+	</DomainValues>
+	<ParameterDependencies>
+		<!-- 当自定义设置时，选项可见 -->
+		<Row ParameterId="TPT_NO_TRADING_CITIES"		ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_GOLD" 			ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_STRATEGICS" 	ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_LUXURIES" 		ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_FAVOR" 		ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_GREATWORKS" 	ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_CAPTIVES" 		ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		<Row ParameterId="TPT_NO_TRADING_AGREEMENTS" 	ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+		
+		<Row ParameterId="TPT_NO_DELEGATION" 			ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMATIC_DEAL" Operator="Equals" ConfigurationValue="SETTINGS_DEAL_CUSTOM"/>
+	</ParameterDependencies>
+</GameInfo>

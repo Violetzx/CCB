@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DIPLOMACY_WAR_MAKE_PEACE_CONFIG" Language="zh_Hans_CN">
+			<Text>和解设置</Text>
+		</Replace>	
+		<Replace Tag="LOC_DIPLOMACY_WAR_NO_MAKE_PEACE_NAME" Language="zh_Hans_CN">
+			<Text>无法和解</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLOMACY_WAR_NO_MAKE_PEACE_DESC" Language="zh_Hans_CN">
+			<Text>宣战后无法与其他文明或城邦和解</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLOMACY_WAR_CAN_MAKE_PEACE_NAME" Language="zh_Hans_CN">
+			<Text>允许和解</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLOMACY_WAR_CAN_MAKE_PEACE_DESC" Language="zh_Hans_CN">
+			<Text>允许在一段时间后和解</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLOMACY_WAR_DEFAULT_MAKE_PEACE_NAME" Language="zh_Hans_CN">
+			<Text>默认</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLOMACY_WAR_DEFAULT_MAKE_PEACE_DESC" Language="zh_Hans_CN">
+			<Text>根据其他模组的默认设置</Text>
+		</Replace>			
+	</LocalizedText>
+</GameData>

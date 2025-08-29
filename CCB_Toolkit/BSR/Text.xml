@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_NAME" Language="zh_Hans_CN">
+			<Text>欢迎订阅 Team PVP Tools 联机工具箱</Text>
+		</Replace>
+		<Replace Tag="LOC_TEAM_PVP_HELP" Language="zh_Hans_CN">
+			<Text>点击查阅更新内容</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_URL_INSTRUCTIONS" Language="zh_Hans_CN">
+			<Text>https://docs.qq.com/doc/DTGN0WGNlRWptRHNX</Text>
+		</Replace>			
+		<Replace Tag="LOC_OUTPUT_NAME" Language="zh_Hans_CN">
+			<Text>玩家名单工具</Text>
+		</Replace>		
+		<Replace Tag="LOC_OUTPUT_BUTTON_TOOLTIP" Language="zh_Hans_CN">
+			<Text>左键点击输出名字和SteamID的表到你的剪贴板,可以粘贴到Excel中[NEWLINE][NEWLINE]右键点击添加黑名单玩家!可填写备注描述[NEWLINE][NEWLINE]点击其他玩家的"准备按钮"可以快捷添加[NEWLINE][NEWLINE]如何申请[Icon_CapitalLarge]玩家标记？[NEWLINE][NEWLINE]步骤：[NEWLINE]打开创意工坊，给号码菌的任意6个模组点赞！[NEWLINE]（当然能赠送steam点数更好）[NEWLINE][NEWLINE]中键点击此按钮，填写申请信息。点确认后会复制到您的剪贴板当中。[NEWLINE][NEWLINE]将"6份点赞截图"以及自动生成的"申请信息"发送给千川白浪。[NEWLINE][NEWLINE]高级文本设计与艺术效果请私聊[NEWLINE][NEWLINE][Icon_Host]每月末上传一次</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_OUTPUT_HEEDER" Language="zh_Hans_CN">
+			<Text>玩家Steam主页:https://steamcommunity.com/profiles/7656119**********</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_OUTPUT_SUCCESS_NAME" Language="zh_Hans_CN">
+			<Text>[icon_CheckmarkBlue]获取ID成功</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_OUTPUT_SUCCESS_TT" Language="zh_Hans_CN">
+			<Text>已复制到剪贴板[Newline][newline][icon_You]</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_OUTPUT_ERROR_NAME" Language="zh_Hans_CN">
+			<Text>[icon_CheckFail]获取ID异常!</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_OUTPUT_ERROR_TT" Language="zh_Hans_CN">
+			<Text>无法获取正确的玩家ID，通常是因为玩家名称过长</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_CHECK_ERROR_NAME" Language="zh_Hans_CN">
+			<Text>[icon_Exclamation]无法获取ID</Text>
+		</Replace>							
+		<Replace Tag="LOC_CLOSEAI_NAME" Language="zh_Hans_CN">
+			<Text>开/关 空位</Text>
+		</Replace>	
+		<Replace Tag="LOC_CLOSEAI_BUTTON_TOOLTIP" Language="zh_Hans_CN">
+			<Text>左键关闭空位、右键增加大量个空位</Text>
+		</Replace>
+		<Replace Tag="LOC_AMOUNT_PLAYER_NAME" Language="zh_Hans_CN">
+			<Text>[Icon_Global]1</Text>
+		</Replace>		
+		<Replace Tag="LOC_AMOUNT_PLAYER_TOOLTIP" Language="zh_Hans_CN">
+			<Text>当前玩家数量</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_PLAYERINFO" Language="zh_Hans_CN">
+			<Text>添加黑名单玩家</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_STEAMID_NAME" Language="zh_Hans_CN">
+			<Text>输入SteamID</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_STEAMID_TT" Language="zh_Hans_CN">
+			<Text>输入17位的steamID,例如76561191234567890</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_DESC_NAME" Language="zh_Hans_CN">
+			<Text>备注描述</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_DESC_TT" Language="zh_Hans_CN">
+			<Text>会显示在提示标签中，可以为空</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_PLAYERDATA_BAN" Language="zh_Hans_CN">
+			<Text>[Icon_Exclamation]不良记录</Text>
+		</Replace>			
+		<Replace Tag="LOC_TPT_STEAM_HOMEPAGE_TT" Language="zh_Hans_CN">
+			<Text>打开Steam主页</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST" Language="zh_Hans_CN">
+			<Text>申请[Icon_CapitalLarge][COLOR:ResGoldLabelCS]玩家标记</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST_NAME_NAME" Language="zh_Hans_CN">
+			<Text>常用名称</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST_NAME_TT" Language="zh_Hans_CN">
+			<Text>如何称呼您？</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST_DESC_NAME" Language="zh_Hans_CN">
+			<Text>标记描述</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST_DESC_TT" Language="zh_Hans_CN">
+			<Text>非常重要，将显示在您的标记当中</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST_CONFIRM_TT" Language="zh_Hans_CN">
+			<Text>请将生成剪贴板本文私聊发送给号码菌</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_INPUT_PLAYEREQUEST_TIPS" Language="zh_Hans_CN">
+			<Text>点击确认后，将会生成信息到剪贴板中</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_RANDOM_TEAM_TT_1" Language="zh_Hans_CN">
+			<Text>自动分配队伍</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_RANDOM_TEAM_TT_2" Language="zh_Hans_CN">
+			<Text>左键：随机分配队伍</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_RANDOM_TEAM_TT_3" Language="zh_Hans_CN">
+			<Text>右键：顺序分配队伍</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_LEADERSTATS_OPEN_NAME" Language="zh_Hans_CN">
+			<Text>领袖使用统计</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_LEADERSTATS_OPEN_TT" Language="zh_Hans_CN">
+			<Text>查看领袖的出场率</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_STATS_HEADER" Language="zh_Hans_CN">
+			<Text>出场率统计</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_STATS_BUTTON_TT" Language="zh_Hans_CN">
+			<Text>累计出场次数：{1_Num}</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_MODCHECK_NAME" Language="zh_Hans_CN">
+			<Text>模组检测</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_MODCHECK_BUTTON_TOOLTIP" Language="zh_Hans_CN">
+			<Text>反作弊检查，检查自动下载的模组创意工坊主页。[NEWLINE][NEWLINE]如果创意工坊网页无法访问，物品被隐藏，或者名字不正确，订阅量极少，请谨慎进行游戏，可能来自作弊模组。</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_FREE_ABILITY_NAME" Language="zh_Hans_CN">
+			<Text>无限文明：储存</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_FREE_ABILITY_TT" Language="zh_Hans_CN">
+			<Text>使用方式：[NEWLINE]左键点击可以暂存当前无限文明配置（同时会复制序号到剪贴板中）[NEWLINE]选择无限文明后右键点击应用配置（或者直接聊天发送序号）</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_EXP_1_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]三移民开局</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_EXP_2_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]全新PVP玩法</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_EXP_TT" Language="zh_Hans_CN">
+			<Text>点击订阅：三移民开局~实验性玩法[NEWLINE][NEWLINE]高效开局，大战略格局[NEWLINE]平地补偿，扩张与征服[NEWLINE]PVP适配，联机全新玩法[NEWLINE][NEWLINE]立即加入我们：[NEWLINE]联机交流群[NEWLINE]QQ717919363[NEWLINE]QQ217648154</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_TRY_NEW_LEADER_CHARLEMAGNE_NAME" Language="zh_Hans_CN">
+			<Text>点击立即试玩新文明</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_NEW_PANTHEON_NAME" Language="zh_Hans_CN">
+			<Text>22种全新万神殿</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_NEW_PANTHEON_SUB_NAME" Language="zh_Hans_CN">
+			<Text>点我立即订阅</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_SETTING_NAME" Language="zh_Hans_CN">
+			<Text>修改名字和玩家标记可见性</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_CHANGE_NAME_TITLE" Language="zh_Hans_CN">
+			<Text>修改名字并退出房间</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_CHANGE_NAME_EDIT_TT" Language="zh_Hans_CN">
+			<Text>输入名字</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_HIDDEN_PLAYER_INFO_CHECK" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]显示玩家标记</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_FLAT_BALANCED_TT" Language="zh_Hans_CN">
+			<Text>
+			[size_24]平衡烂地产出，必备模组
+			[newline]
+			[newline]平地森林和雨林+1 [ICON_PRODUCTIONLARGE] 生产力
+			[newline]泛滥平原+1 [ICON_FOODLARGE] 食物
+			[newline]开拓者不会被俘虏（返回市中心）
+			[newline]第一回合开拓者 [ICON_MOVEMENT] 无视地形地貌与河流
+			[newline]第一回合开拓者视野能穿透地形与地貌
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_FLAT_TREE_SUB_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]平地补偿模组</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_FLAT_TREE_SUB_2_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]拯救烂地</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_TEAMPVPMAP_AD_TT" Language="zh_Hans_CN">
+			<Text>
+			[size_24]Team PVP 竖向大陆
+			[newline]
+			[newline]东西分布，一字排开
+			[newline]出生地均匀分布于轴线两侧
+			[newline]森林优先生成在丘陵上，拒绝烂地
+			[newline]近海岛屿群落，深海散布浮冰，海战更有策略性
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_TEAMPVPMAP_SUB_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]经典竞技地图</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_TEAMPVPMAP_SUB_2_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]竖向大陆</Text>
+		</Replace>
+		<Replace Tag="LOC_CLEAR_LEADER_STATS_TITLE" Language="zh_Hans_CN">
+			<Text>清除统计数据</Text>
+		</Replace>
+		<Replace Tag="LOC_CLEAR_LEADER_STATS_WARNING" Language="zh_Hans_CN">
+			<Text>此操作将清除所有领袖使用统计数据</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_YUE_CUP_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS][size_50]yue鸡积分赛</Text>
+		</Replace>
+		<Replace Tag="LOC_BSR_YUE_CUP1_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS][size_30]1000元奖金欢迎参加</Text>
+	</LocalizedText>
+</GameData>

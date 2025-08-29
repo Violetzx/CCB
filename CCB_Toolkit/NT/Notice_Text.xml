@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TPT_NOTIFICATION_NEW_HOTKEYS_MESSAGE" Language="zh_Hans_CN">
+			<Text>新快捷键可用</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NOTIFICATION_NEW_HOTKEYS_SUMMARY" Language="zh_Hans_CN">
+			<Text>晋升、掠夺、取消、升级！请在游戏设置中绑定快捷键！</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NOTIFICATION_NO_PINS_MESSAGE" Language="zh_Hans_CN">
+			<Text>地图钉已禁用</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NOTIFICATION_NO_PINS_SUMMARY" Language="zh_Hans_CN">
+			<Text>无法使用地图钉</Text>
+		</Replace>		
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="TPT_NO_FRIENDSHIP" 	Name="LOC_TPT_NO_FRIENDSHIP_NAME" 	Description="LOC_TPT_NO_FRIENDSHIP_DESC" 		Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="TPT_NO_FRIENDSHIP" 		GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2011" />
+	</Parameters>
+</GameInfo>

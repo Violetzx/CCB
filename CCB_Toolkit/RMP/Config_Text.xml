@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="CPL_NO_PINS_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]禁用地图钉[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="CPL_NO_PINS_DESC" Language="zh_Hans_CN">
+			<Text>启用此选项后地图钉将被禁用</Text>
+		</Replace>				
+	</LocalizedText>
+</GameData>

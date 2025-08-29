@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="TPT_BSM_compatible" Name="LOC_TPT_BSM_COMPATIBLE_NAME" Description="LOC_TPT_BSM_COMPATIBLE_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TPT_BSM_compatible" GroupId="GameOptions" ChangeableAfterGameStart="1"  SortIndex="8"/>
+	</Parameters>
+</GameInfo>

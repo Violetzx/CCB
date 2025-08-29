@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TURNTIME_ADD_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]快捷加时[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_ADD_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>加时20秒</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_REDUCE_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]快捷减时[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_REDUCE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>减时10秒</Text>
+		</Replace>
+		<Replace Tag="LOC_DMT_OPTIONS_HOTKEY_CATEGORY" Language="zh_Hans_CN">
+			<Text>地图钉</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_FORCED_TURNEND_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]强制结束回合[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_FORCED_TURNEND_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>下个回合开始时强制结束回合</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_ADD_BUTTON" Language="zh_Hans_CN">
+			<Text>立即加时20秒[NEWLINE][NEWLINE]输入 p+++ 可以无回合时间</Text>
+		</Replace>
+		<Replace Tag="LOC_TURNTIME_REDUCE_BUTTON" Language="zh_Hans_CN">
+			<Text>下回合减少20秒</Text>
+		</Replace>			
+	</LocalizedText>
+</GameData>

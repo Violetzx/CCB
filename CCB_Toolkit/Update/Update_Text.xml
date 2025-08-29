@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_HEADER" Language="zh_Hans_CN">
+			<Text>联机工具箱</Text>
+		</Replace>
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_SUBSCRIPTION_ID" Language="zh_Hans_CN">	<!-- 纯数字无法准确读取 -->
+			<Text>G3201341023</Text>
+		</Replace>
+		<Replace Tag="LOC_TEAM_PVP_VERSION" Language="zh_Hans_CN">
+			<Text>v1.61-II</Text>
+		</Replace>
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_UPDATE_HEADER" Language="zh_Hans_CN">
+			<Text>更新内容</Text>
+		</Replace>
+		<!-- 按顺序 LOC_TEAM_PVP_TOOLS_UPDATE_ 后面接1、2、3、4... 连续的 -->
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_UPDATE_1" Language="zh_Hans_CN">
+			<Text>允许在领袖图上游戏查看其他领袖能力</Text>
+		</Replace>
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_UPDATE_2" Language="zh_Hans_CN">
+			<Text>将灾害强度设置为-1以禁止灾害</Text>
+		</Replace>
+		<Replace Tag="LOC_TEAM_PVP_TOOLS_UPDATE_3" Language="zh_Hans_CN">
+			<Text>允许清除领袖使用统计了</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

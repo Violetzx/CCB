@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+    <InputActions>
+        <InsertOrIgnore ActionId="HotKey_DPR_TechCivisProgress" Name="LOC_DPR_TECHCIVIS_NAME" Description="LOC_DPR_TECHCIVIS_DESC" CategoryId="UI" ContextId="World"/>
+        <InsertOrIgnore ActionId="HotKey_DPR_Totalyield" Name="LOC_DPR_TOTALYIELD_NAME" Description="LOC_DPR_TOTALYIELD_DESC" CategoryId="UI" ContextId="World"/>    
+    </InputActions>
+    <InputActionDefaultGestures>
+        <InsertOrIgnore ActionId="HotKey_DPR_TechCivisProgress" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SEMICOLON"/>
+        <InsertOrIgnore ActionId="HotKey_DPR_Totalyield" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_QUOTE"/>
+    </InputActionDefaultGestures>
+</GameInfo>

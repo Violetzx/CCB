@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+	<!--	垄断与公司	-->
+		<Update>
+			<Where ParameterId="GameMode_Monopolies"/>
+			<Set DefaultValue="1"/>
+		</Update>
+	</Parameters>
+</GameInfo>

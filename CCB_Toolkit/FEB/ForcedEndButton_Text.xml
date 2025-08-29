@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+        <Replace Tag="LOC_FORCEEND_TT" language="zh_Hans_CN">
+            <Text>强制结束回合</Text>
+        </Replace>
+        <Replace Tag="LOC_FORCEEND_TT" language="en_US">
+            <Text>FORCE END OF TURN</Text>
+        </Replace>
+	</LocalizedText>
+</GameData>

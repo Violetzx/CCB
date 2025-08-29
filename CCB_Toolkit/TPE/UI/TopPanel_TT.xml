@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context>	
+	<ToolTipType Name="TooltipType_TopPanel_Production">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="L,T">
+			<Stack Offset="0,0" StackGrowth="Down" Anchor="C,T">
+				<Label ID="Production_Header" Anchor="C,T" Style="FontFlair18" Color="5,29,51,255" SmallCaps="20" SmallCapsType="EveryWord"  Offset="0,8"/>
+			<!--	<Label ID="Production_Desc" Anchor="C,T" Offset="0,4" String="LOC_TOPPANEL_PRODUCTION_TOOLTIP_DESC" Style="TTText" WrapWidth="260"/>	-->
+				<Stack ID="TopPanel_Production_Citys_Stack" StackGrowth="Down" Anchor="C,T" Offset="2,10" Padding="-6"/>
+				<Box Size="240,8" Color="0,0,0,0" Anchor="C,T"/>
+			</Stack>
+		</Grid>	
+	</ToolTipType>
+	
+	<Instance Name="TopPanel_ProductionInstance" >
+		<Grid ID="BG" Size="auto,auto" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" MinSize="220,45" InnerPadding="25,25" Anchor="L,C" InnerOffset="10,10" Color="255,255,255,50">
+			<Label	ID="CityName" Anchor="L,C" Offset="0,2" Size="126,16" Style="FontFlair16" Color="5,29,51,255" TruncateWidth="127" String="$CityName$"/>
+			<Label 	ID="CityProduction" Anchor="R,C" Offset="0,2" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2" KerningAdjustment="1" String="$987$"/>
+		</Grid>
+	</Instance>
+	
+	<ToolTipType Name="TooltipType_TopPanel_Food">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Stack Offset="0,0" StackGrowth="Down" Anchor="C,T">
+				<Label ID="Food_Header" Anchor="C,T" Style="FontFlair18" Color="5,29,51,255" SmallCaps="20" SmallCapsType="EveryWord"  Offset="0,8"/>
+		<!--		<Label ID="Food_Desc" Anchor="C,T" Offset="0,4" String="LOC_TOPPANEL_FOOD_TOOLTIP_DESC" Style="TTText" WrapWidth="260"/>		-->
+				<Stack ID="TopPanel_Food_Citys_Stack" StackGrowth="Down" Anchor="C,T" Offset="2,10" Padding="-6"/>
+				<Box Size="200,8" Color="0,0,0,0" Anchor="C,T"/>
+			</Stack>
+		</Grid>
+	</ToolTipType>
+
+	<Instance Name="TopPanel_FoodInstance" >
+		<Grid ID="BG" Size="auto,54" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" MinSize="220,45" InnerPadding="25,25" Anchor="L,C" InnerOffset="10,10" Color="255,255,255,50">
+			<Stack	ID="BGStack" Anchor="L,C" StackGrowth="Right" Padding="0" >
+			
+				<Image ID="PantheonBannerIconContainer" Anchor="L,C" Size="58,58"  Texture="Controls_CircleButton" Offset="-8,0" TextureOffset="0,174">
+					<Image			ID="CitizenGrowthStatus"				Anchor="C,C"	 Offset="0,3"			Size="50,50"			Texture="CityPanel_StatusIcon">
+						<Image		ID="CitizenGrowthStatusIcon"		Anchor="C,C" Offset="-2,-3"   Size="45,45"				  Texture="Stats45" Icon="ICON_CITIZEN"/>
+					</Image>
+				</Image>
+
+				<Stack Offset="0,2" StackGrowth="Down" Anchor="L,C" Padding="3">
+					<Label ID="CityName" Anchor="L,C" Style="FontFlair16" Color="5,29,51,255" String="$CityName$" TruncateWidth="201" Size="180,16"/>
+					<Line Start="0,0" End="180,0" Color="0,0,0,150"/>
+					<Container	Anchor="R,C" Offset="0,0" Size="180,auto">
+						<Label ID="GrowthModifier" Anchor="L,C" Offset="0,0" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2" String="$GrowthModifier$"/>
+						<Label ID="Food" Anchor="R,C" Offset="65,0" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2"  String="$Food$"/>
+						<Label ID="FoodSurplus" Anchor="R,C" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2"  String="$FoodSurplus$"/>
+					</Container>
+				</Stack>
+				
+			</Stack>
+		</Grid>
+	</Instance>
+	
+	<ToolTipType Name="TooltipType_TopPanel_Population">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Stack Offset="0,0" StackGrowth="Down" Anchor="C,T">
+				<Label ID="Population_Header" Anchor="C,T" String="$Header$" Style="FontFlair18" Color="5,29,51,255" SmallCaps="20" SmallCapsType="EveryWord"  Offset="0,8"/>
+	<!--			<Label ID="Population_Desc" Anchor="C,T" Offset="0,4" String="LOC_TOPPANEL_POPULATION_TOOLTIP_DESC" Style="TTText"/>		-->
+				<Stack ID="TopPanel_Population_Citys_Stack" StackGrowth="Down" Anchor="C,T" Offset="2,10" Padding="-6"/>
+				<Box Size="200,8" Color="0,0,0,0" Anchor="C,T"/>
+			</Stack>
+		</Grid>
+	</ToolTipType>	
+
+	<Instance Name="TopPanel_PopulationInstance" >
+		<Grid ID="BG" Size="auto,54" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" MinSize="220,45" InnerPadding="25,25" Anchor="L,C" InnerOffset="10,10" Color="255,255,255,50">
+			<Stack	ID="BGStack" Anchor="L,C" StackGrowth="Right" Padding="0" >
+				<Image ID="PantheonBannerIconContainer" Anchor="L,C" Size="58,58"  Texture="Controls_CircleButton" Offset="-8,0" TextureOffset="0,174">
+					<Image Texture="CityPanel_CitizenIcon" Size="32,32" Anchor="C,C" Offset="0,1" Color="255,255,255,150">
+						<Label	ID="Population"		Anchor="C,C" Style="FontFlair26"		FontStyle="Stroke"	Color="255,255,255,255" EffectColor="0,0,0,150" WrapWidth="70" String="999" Align="Center" KerningAdjustment="-1" Offset="-1,0"/>
+					</Image>
+				</Image>
+
+				<Stack Offset="0,2" StackGrowth="Down" Anchor="L,C" Padding="3">
+					<Label ID="CityName" Anchor="L,C" Style="FontFlair16" Color="5,29,51,255" String="$CityName$" TruncateWidth="161" Size="180,16"/>
+					<Line Start="0,0" End="180,0" Color="0,0,0,150"/>
+					<Container	Anchor="R,C" Offset="0,0" Size="180,auto">
+						<Label ID="YieldModifier" Anchor="L,C" Offset="0,0" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2" String="$YieldModifier$"/>
+						<Label ID="House" Anchor="R,C" Offset="65,0" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2"  KerningAdjustment="1" String="$House$"/>
+						<Label ID="Amenity" Anchor="R,C" Style="FontNormalMedium16" Color0="5,29,51,255" Color1="0,0,0,50" FontStyle="Shadow" LeadingOffset="2" KerningAdjustment="1" String="$Amenity$"/>
+					</Container>
+				</Stack>
+				
+			</Stack>
+		</Grid>
+	</Instance>
+	
+</Context>

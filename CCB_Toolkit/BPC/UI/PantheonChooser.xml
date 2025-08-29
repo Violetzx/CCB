@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\..\..\CivTech\Libs\ForgeUI\ForgeUI_Assets\Controls.xsd" Style="FontNormal20">
+  <!-- Left Panel -->
+  <SlideAnim ID="PantheonChooserSlideAnim" Size="auto,parent" Anchor="L,T" Begin="-940,0" End="0,0" Cycle="Once" Speed="5">
+    <Container ID="PantheonChooser" Size="auto,parent-54" Offset="-3,54">
+      <!-- Body container-->
+      <Container Size="940,parent" ConsumeAllMouse="1">
+        
+        <!-- Top Panel -->
+        <Image Size="parent,232" Offset="0,4" ConsumeAllMouse="1" Texture="Religion_BG" StretchMode="Tile">
+          <Grid ID="TopGrid" Anchor="C,C" Size="parent-36,parent-2" Texture="Religion_Panel" SliceCorner="24,30" SliceSize="0,0" SliceTextureSize="53,97" Color="255,255,255,178">
+            <Image ID="ReligionOrPatheonImage" Texture="Religion_Generic" Anchor="C,C" />
+
+            <Stack Anchor="C,C" StackGrowth="Down" StackPadding="6">
+              <Label ID="ReligionOrPatheonTitle" Anchor="C,C" Style="ReligionHeadingSmall" Align="Center" WrapWidth="400"/>
+              <GridButton	ID="SelectedBeliefGrid" Texture="Religion_BeliefButton" Size="450,auto" States="5" SliceCorner="96,36" SliceTextureSize="192,72" StateOffsetIncrement="0,72" AutoSizePadding="0,6" MinSize="192,72">
+                <Image ID="SelectedBeliefIcon" Size="64,64" Offset="6,0" Anchor="L,C" Texture="BeliefsPantheon64" />
+                <Stack StackGrowth="Down" Anchor="L,C" Offset="75,2" Padding="3">
+                  <Label ID="SelectedBeliefLabel" Style="ReligionSubHeadingSmallNoKern" String="BeliefLabel" />
+                  <Label ID="SelectedBeliefDescription" WrapWidth="325" Style="ReligionDescription" String="BeliefDescription" LeadingOffset="-1"/>
+                </Stack>
+              </GridButton>
+            </Stack>
+            
+
+            <Grid Anchor="L,C" AnchorSide="O,I" Offset="-5,0" Size="14,parent-4" Texture="Religion_BraceFlip" SliceCorner="0,24" SliceSize="14,120" SliceTextureSize="14,166"/>
+            <Image Texture="Religion_BraceDeco" Anchor="L,C" Offset="-16,0" FlipX="1"/>
+            <Grid Anchor="R,C" AnchorSide="O,I" Offset="-5,0" Size="14,parent-4" Texture="Religion_Brace" SliceCorner="0,24" SliceSize="14,120" SliceTextureSize="14,166"/>
+            <Image Texture="Religion_BraceDeco" Anchor="R,C" Offset="-16,0"/>
+          </Grid>
+        </Image>
+
+        <!-- Bottom Panel -->
+        <Grid ID="BottomGrid" Size="parent,parent-236" Offset="0,236" Texture="Controls_ContainerBlue" SliceStart="0,0" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16">
+          <Grid ID="ChooseBelief" Anchor="C,T" Offset="0,0" Size="935,parent" Texture="Religion_OverviewFrame" SliceCorner="15,15" SliceTextureSize="34,33">
+            <ScrollPanel Anchor="L,T" Offset="10,10" Size="auto,parent-20" AutoSizePadding="2,0" Style="ScrollPanelWithRightBar">
+              <Stack ID="BeliftStack" Anchor="C,T" StackGrowth="Right" WrapWidth="parent" WrapGrowth="Down"/>
+            </ScrollPanel>
+          </Grid>
+        </Grid>
+
+        <!-- Confirmation Panel -->
+        <Grid ID="ConfirmGrid" Size="parent,90" Anchor="C,B" Texture="Controls_DrawerUp" SliceCorner="5,4" SliceSize="3,2" SliceTextureSize="14,8">
+          <Stack Anchor="C,C">
+            <!-- Confirm Button -->
+            <GridButton ID="ConfirmPantheonButton" Size="350,41" Offset="0,4" Anchor="C,B">
+              <GridData Texture="Controls_Confirm" StateOffsetIncrement="0,41" SliceCorner="40,21" SliceSize="1,1" SliceTextureSize="80,41"/>
+              <Label Anchor="C,C" Offset="0,0" String="{LOC_UI_RELIGION_FOUND_PANTHEON:upper}" Style="FontFlair14" FontStyle="Shadows" TextOffset="0,2" SmallCaps="18" SmallCapsType="EveryWord"/>
+            </GridButton>
+
+            <!-- Cancel Button -->
+            <GridButton ID="CancelButton" Style="ButtonLightWeightGrid" Size="350,24" Offset="0,4" Anchor="C,B" String="{LOC_UI_RELIGION_RESELECT_PANTHEON:upper}" Style="FontFlair14" FontStyle="Shadows" EffectColor="0,0,0,255" TextOffset="0,2" EffectColor="0,0,0,255" SmallCaps="20" SmallCapsType="EveryWord"/>
+          </Stack>
+        </Grid>
+      </Container>
+
+      <!-- Header container-->
+      <Grid Size="953,60" Offset="3,-25" Style="HeaderBannerLeft" ConsumeAllMouse="1">
+        <Label ID="Header_OriginText" Size="200, 50" Offset="0,7" Anchor="C,T" Style="FontFlair16" Color0="0,59,77,255" SmallCaps="20" SmallCapsType="FirstOnly" String="{LOC_UI_RELIGION_CHOOSE_PANTHEON_BELIEF:upper}" TruncateWidth="380" TruncatedTooltip="1"/>
+        <Button ID="Header_CloseButton" Size="32,32" Offset="10,-2" Anchor="R,T" Texture="Controls_CloseButtonAlt"/>
+      </Grid>
+		
+    </Container>
+  </SlideAnim>
+
+  <!-- Instances -->
+  <Instance Name="BeliefSlot">
+    <GridButton	ID="BeliefButton" Texture="Religion_BeliefButton" Size="450,auto" States="5" SliceCorner="96,36" SliceTextureSize="192,72" StateOffsetIncrement="0,72" AutoSizePadding="0,6" MinSize="192,72">
+      <Image ID="BeliefIcon" Size="64,64" Offset="6,0" Anchor="L,C" Texture="BeliefsPantheon64" />
+      <Stack StackGrowth="Down" Anchor="L,C" Offset="75,2" Padding="3">
+        <Label ID="BeliefLabel" Style="ReligionSubHeadingSmallNoKern" String="BeliefLabel" />
+        <Label ID="BeliefDescription" WrapWidth="365" Style="ReligionDescription" String="BeliefDescription" LeadingOffset="-1"/>
+      </Stack>
+    </GridButton>
+  </Instance>
+</Context>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="AGPHK">
+	<Image ID="GPA_Icon"   Size="32,32"  Texture="Units32.dds" TextureOffset="96,0" Anchor="C,C" Offset="-1,-2" Color="255,255,255,255" Hidden="1"/>
+</Context>

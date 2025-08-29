@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContextDefaults ColorSet="BodyTextCool" Style="FontNormal22" FontStyle="Glow" Name="StagingRoom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\ForgeUI_Assets\Controls.xsd">
+
+	<Include File="PopupDialog" />
+
+	<AlphaAnim ID="CountdownTimerAnim" Size="1,1" AlphaStart="0" AlphaEnd="0" />	<!-- Animations always tick, even when hidden; use to update countdown timer -->
+	
+	<Box ID="MainGrid" Style="ShellBGBox">
+		<Container ID="MainWindow" Size="1024,768" Anchor="C,B"  >
+			<Grid ID="LogoContainer" Style="SubContainer4" Size="parent-10,116" Anchor="C,T" Color="7,28,50" AnchorSide="I,O" Offset="0,4" >
+      			<Image ID="Logo"				Anchor="C,C" Texture="MainLogo.dds" StretchMode="Auto"/>
+    		</Grid>
+
+
+			<Container ID="TopPanel" Style="ShellHeaderContainer"  >
+				<Grid Style="ShellHeaderButtonGrid">
+					<GridButton ID="BackButton" Style="ShellButtonOrnateFlat" Anchor="R,C" Offset="1,0" String="LOC_MULTIPLAYER_BACK"/>
+<!--!!	两个新按钮		-->					
+					<GridButton ID="OutputButton" Style="ShellButtonOrnateFlat" Anchor="R,C" Offset="110,0" Size="150,38" String="LOC_OUTPUT_NAME" Hidden="0" ToolTip="LOC_OUTPUT_BUTTON_TOOLTIP"/>
+					<Label ID="PlayerRequestTip" Anchor="R,C" Offset="300,-30" String="[icon_CityStateQuest]" Hidden="1"/>
+					
+					<GridButton ID="ModCheckButton" Style="ShellButtonOrnateFlat" Anchor="R,C" Offset="290,0" Size="120,38" String="LOC_TPT_MODCHECK_NAME" Hidden="0" ToolTip="LOC_TPT_MODCHECK_BUTTON_TOOLTIP"/>
+					<Label ID="ModCheckTip" Anchor="R,C" Offset="380,-20" String="[icon_CityStateQuest]" Hidden="1"/>
+					
+					<GridButton ID="CloseAIButton" Style="ShellButtonOrnateFlat" Anchor="L,C" Offset="1,0" Size="120,38" String="LOC_CLOSEAI_NAME" ToolTip="LOC_CLOSEAI_BUTTON_TOOLTIP"/>
+
+					<Stack ID="LeftTopButtonStack" Anchor="L,C" Offset="1,0" StackGrowth="Right" Padding="10">
+						<GridButton ID="EndGameButton" Style="ShellButtonOrnateFlat" Anchor="L,C" Offset="0,0" String="LOC_MULTIPLAYER_END_GAME" Hidden="1"/>
+						<GridButton ID="QuitGameButton" Style="ShellButtonOrnateFlat" Anchor="L,C" Offset="0,0" String="LOC_MULTIPLAYER_QUIT_GAME" Hidden="1"/>
+					</Stack>
+				</Grid>
+<!--!!	两个新标签		-->	
+				<Label ID="Amount" Style="ShellHeader" Anchor="L,C" Offset="180,0" String="LOC_AMOUNT_PLAYER_NAME"	ToolTip="LOC_AMOUNT_PLAYER_TOOLTIP"/>
+				<Label ID="Version" Style="FontNormal18" ColorSet="ResGoldLabelCS" Anchor="L,T" Offset="12,-23" String="LOC_TEAM_PVP_VERSION" ToolTipType="TooltipType_TPT_Update"/>		<!-- 版本显示 -->	
+				<Label ID="TitleLabel" Style="ShellHeader" Anchor="C,C" String="{LOC_MULTIPLAYER_STAGING_ROOM:upper}"/>
+			</Container>
+
+			<Stack ID="ShellTabs" Anchor="C,T" Offset="0,54" StackGrowth="Right" Size="940,70" Padding="10"/>
+
+			<!-- Players Stack -->
+			<Stack ID="PrimaryPanelStack" StackGrowth="Bottom" Anchor="L,T" Offset="3,114">
+				<Grid ID="PrimaryStackGrid" Style="SubContainer" Size="1020,310" Anchor="C,T"  Offset="0,-15">
+					<Box Color="0,0,0,50 " Size="parent,parent-15" Anchor="C,T" />
+					<ScrollPanel ID="PlayersScrollPanel" Anchor="L,T"  Vertical="1" Size="parent,parent-35" Offset="0,20">
+						<Container ID="GridContainer" Size="parent-10,parent" Anchor="C,T">
+							<!-- Vertical Grid Lines, Horizontal lines are generated in Lua -->
+							<Line ID="GridLine_1" Start="218,0" End="218,parent+200" Width="2" Color="20,55,70,255" />
+							<Line ID="GridLine_2" Start="287,0" End="287,parent+200" Width="2" Color="20,55,70,255" />
+							<Line ID="GridLine_3" Start="616,0" End="616,parent+200" Width="2" Color="20,55,70,255" />
+							<Line ID="GridLine_4" Start="760,0" End="760,parent+200" Width="2" Color="20,55,70,255" />
+							<Line ID="GridLine_5" Start="928,0" End="928,parent+200" Width="2" Color="20,55,70,255" />
+						</Container>
+						<!-- Scroll Controls -->
+						<ScrollBar Style="Slider_Blue" Length="parent" Offset="-3,0" Anchor="R,T" AnchorSide="O,I" />
+						<Stack ID="PlayerListStack" StackGrowth="Bottom" Anchor="L,T" Offset="4,0" Padding="1"/>
+					</ScrollPanel>
+					<Image Anchor="C,B" Offset="0,11" Size="parent+2,4" Texture="Controls_DecoMapScale" StretchMode="Tile" Color="20,55,70,255"/>
+				</Grid>
+			</Stack>
+
+			<Stack ID="HeaderStack" StackGrowth="Right" Anchor="L,T" Offset="2,92">
+				<Grid Anchor="L,T" Size="229,28" Style="ShellHeaderButton" ID="SortbyName" >
+					<GridButton Anchor="L,C" ID="SettingNameButton" Style="ShellHeaderButton" Offset="0,0" Size="parent,parent" Hidden="0" ToolTip="LOC_TPT_SETTING_NAME"/>
+					<Label Anchor="L,C" Offset="7,1" String="LOC_MULTIPLAYER_PLAYERS" Style="FontNormal14" FontStyle="Shadow" ColorSet="ServerColumnHeader" />
+				</Grid>
+
+				<Grid Anchor="L,T" Size="68,28" Style="ShellHeaderButton" ID="SortbyTeam" >
+					<GridButton Anchor="L,C" ID="RandomTeamButton" Style="ShellHeaderButton" Offset="0,0" Size="parent,parent" Hidden="0" ToolTipType="TooltipType_RandomTeam"/>
+					<Label ID="RandomTeamTip" Anchor="L,C" Offset="-10,-17" String="[icon_CityStateQuest]" Hidden="1"/>
+					<Label Anchor="L,C" Offset="7,1" String="LOC_MULTIPLAYER_TEAM_HEADER" Style="FontNormal14" FontStyle="Shadow" ColorSet="ServerColumnHeader"/>
+				</Grid>
+
+				<Grid Anchor="L,T" Size="330,28" Style="ShellHeaderButton" ID="SortbyCiv" >
+					<Label Anchor="L,C" Offset="7,1" String="LOC_MULTIPLAYER_CIV_LEADER_HEADER" Style="FontNormal14" FontStyle="Shadow" ColorSet="ServerColumnHeader" />
+				</Grid>
+
+				<Grid Anchor="L,T" Size="144,28" Style="ShellHeaderButton" ID="SortbyDifficulty" >
+					<Label Anchor="L,C" Offset="7,1" String="LOC_MULTIPLAYER_DIFFICULTY_HEADER" Style="FontNormal14" FontStyle="Shadow" ColorSet="ServerColumnHeader" />
+				</Grid>
+
+				<Grid  Anchor="L,T" Size="168,28"  Style="ShellHeaderButton" ID="SortbyReady">
+					<Label ID="ReadyColumnLabel" Anchor="L,C" Offset="7,1" String="LOC_MULTIPLAYER_READY_HEADER" Style="FontNormal14" FontStyle="Shadow" ColorSet="ServerColumnHeader" />
+				</Grid>
+
+				<Grid  Anchor="L,T" Size="80,28"  Style="ShellHeaderButton" ID="SortbyKickPlayer">
+					<Label Anchor="L,C" Offset="7,1" String="LOC_MP_KICK_PLAYER" Style="FontNormal14" FontStyle="Shadow" ColorSet="ServerColumnHeader" />
+				</Grid>
+			</Stack>
+
+			<!-- Decorations -->
+			<Grid  ID="LargeCompassDeco" Texture="Controls_CompassDecoLarge" Anchor="C,B" Alpha="0.1" Size="529,322" Offset="0,0" SliceTextureSize="529,322" SliceStart="0,0" SliceSize="529,322"/>
+
+			<!-- Chat Panel -->
+			<Container ID="ChatContainer" Anchor="R,B" Offset="10,10" Size="452,310" MinSize="452,310">
+				<Container ID="ChatBackground" Anchor="R,B" Offset="0,20" Size="parent,parent">
+					<Grid Style="SubContainer" Anchor="R,B" Offset="-2,0" Size="parent+4,parent"/>
+				</Container>
+
+				<Button	ID="TeamPVPHelpButton" Size="280,36" Anchor="C,T" Offset="0,-15" String="LOC_TEAM_PVP_TOOLS_NAME" Style="ShellButtonText" ToolTip="LOC_TEAM_PVP_HELP"/>
+
+				<Image Anchor="L,T" Offset="15,-7" Size="27,18" Texture="Controls_Deco3" Color="20,55,70,255"/>
+				<Image Anchor="R,T" Offset="15,-7" Size="27,18" Texture="Controls_Deco3" Color="20,55,70,255"/>
+				<Image Offset="0,19" Size="parent-4,4" Texture="Controls_DecoMapScale" StretchMode="Tile" Color="20,55,70,255"/>
+
+				<ScrollPanel		ID="ChatScroll"	Anchor="C,T" Offset="0,25" Size="parent-40,parent-82"  Vertical="1" AutoScrollBar="1" >
+					<ScrollBar Anchor="R,C" Style="Slider_Blue" Length="290" AnchorSide="O,I"/>
+					<Stack			ID="ChatStack" StackGrowth="B" Anchor="L,B" />
+				</ScrollPanel>
+
+				<!-- Text Chat Input -->
+				<Container							Anchor="L,B"	Offset="15,30"	Size="parent-40,28" Color="80,96,130,255">
+					<PullDown		ID="ChatPull"		Anchor="L,C"	Offset="0,0"	Size="420,26"		AutoSizePopup="1"  AutoFlip="1" >
+						<ButtonData>
+							<GridButton Style="ButtonControl" Anchor="L,C" Size="parent,parent" TextColor="0,0,0,0">
+								<Image Texture="Controls_ButtonExtendSmall2.dds" TextureOffset="0,0" Offset="3,0"  Size="20,16" Anchor="R,C"  />
+								<Image ShowOnMouseOver="1" Texture="Controls_ButtonExtendSmall2.dds" TextureOffset="0,16" Offset="3,0"  Size="20,16" Anchor="R,C"  />
+								<Label ID="ChatIcon" Offset="5,2" String="[ICON_Global]" Style="FontNormal22"/>
+								<Box Offset="30,0" Anchor="L,C" Size="parent-52,parent" Color="0,0,0,0" ConsumeMouse="1">
+									<Box Anchor="L,C" Size="parent,parent-10" Color="0,0,0,60">
+										<EditBox	ID="ChatEntry" Anchor="C,C" Offset="1,0"	Size="parent,16" MaxLength="250" KeepFocus="1" Style="FontNormal14"		FontStyle="glow"		Color0="208,212,217,255"	Color1="16,43,67,100" CursorColor="194,194,204"/>
+										<Box Size="1,parent" Anchor="R,C" Color="0,0,0,150" />
+										<Box Size="1,parent" Anchor="L,C" Color="0,0,0,150" />
+									</Box>
+								</Box>
+							</GridButton>
+						</ButtonData>
+						<GridData Offset="0,24" Texture="Controls_DropdownPanel" InnerPadding="0,6" SliceCorner="10,10" SliceTextureSize="22,22"/>
+						<ScrollPanelData Anchor="C,C" Vertical="1" Size="parent,parent" AutoScrollBar="1" >
+							<ScrollBar Style="Slider_Blue" Anchor="R,C" AnchorSide="O,I"   />
+						</ScrollPanelData>
+						<ScrollPanelData Anchor="C,C" Vertical="1" Size="parent,parent" AutoScrollBar="1" >
+							<ScrollBar Style="Slider_Blue" Anchor="R,C" AnchorSide="O,I"   />
+						</ScrollPanelData>
+						
+						<InstanceData Name="InstanceOne" >
+							<GridButton Style="ButtonControl" ID="Button" Anchor="C,T"	Size="185,27"  FontStyle="glow" ColorSet="BlueGlow" TextAnchor="L,C" TextOffset="30,0">
+								<Label ID="ChatIcon" Offset="5,3" String="[ICON_Global]" Style="FontNormal22"/>
+							</GridButton>
+						</InstanceData>
+						
+					</PullDown>					
+				</Container>
+			</Container>
+
+			<!-- Friends Panel -->
+			<Container ID="InfoContainer" Anchor="L,B" Offset="10,10" Size="452,310" MinSize="452,310">
+				<Container ID="InfoBackground" Anchor="L,B" Offset="0,20" Size="parent,parent">
+					<Grid Style="SubContainer" Anchor="L,B" Offset="-2,0" Size="parent+4,parent"/>
+				</Container>
+
+				<Image Offset="0,19" Size="parent-4,4" Texture="Controls_DecoMapScale" StretchMode="Tile" Color="20,55,70,255"/>
+
+				<Container ID="Friends" Size="parent,parent" Hidden="1">
+					<ScrollPanel ID="FriendsScrollPanel" Offset="8,25" Size="437,parent-65" Vertical="1" AutoScrollBar="1">
+						<Stack ID="FriendsStack" Anchor="L,T" Size="parent" StackPadding="0" StackGrowth="Right" WrapWidth="472" />
+						<ScrollBar Style="Slider_Blue" Offset="-9,0" Anchor="R,T"/>
+						<Image Anchor="C,B" AnchorSide="I,O" Size="parent+14,4" Texture="Controls_DecoMapScale" StretchMode="Tile" Color="20,55,70,255"/>
+					</ScrollPanel>
+					<!-- Invite Button -->
+					<GridButton ID="InviteButton" Offset="0,27" Size="175,25" Anchor="C,B" Style="ShellButton" String="LOC_INVITE_BUTTON" ToolTip="LOC_INVITE_BUTTON_TT"/>
+				</Container>
+
+				<!-- Parameters Panel -->
+				<ScrollPanel ID="ParametersScrollPanel" Offset="8,25" Size="437,parent-65" Vertical="1" AutoScrollBar="1" Hidden="0">
+
+					<!-- Scroll Controls -->
+					<ScrollBar Style="Slider_Blue" Length="420" Offset="-4,0" Anchor="R,T"/>
+
+
+					<Stack ID="GameSummaryStack" Anchor="C,T" Offset="0,0" Padding="10" StackGrowth="Bottom" >
+						<!-- Game Mode Indicator-->
+						<Label ID="GameStateText" Anchor="C,C" Style="ShellHeader" WrapWidth="320"/>
+
+						<!-- Join Code, an edit box that the user can copy/paste from.-->
+						<Stack ID="JoinCodeRoot" StackGrowth="Bottom" EndPadding="10">
+							<Container Size="auto,auto">
+								<Container Size="auto,auto">
+									<Box Size="186,50" Color="0,0,0,0"/>
+									<Label ID="JoinCodeLabel" Anchor="R,C" Style="ShellHeader" String="LOC_STAGING_ROOM_JOIN_CODE"/>
+								</Container>
+								<Container Size="auto,auto" Offset="185,0">
+									<Grid Style="EditTextArea" Size="208,54">
+										<TextButton ID="JoinCodeText"		Anchor="L,C" Offset="6,0"		Size="248,46" Style="FontFlair30" ColorSet="ShellHeader"/>
+										<Label ID="JoinCodeClickToCopy" Anchor="C,B" Offset="0,-18" Size="300,30" Style="FontNormal14" Color="ShellControl" String="LOC_STAGING_ROOM_COPY_JOIN_CODE" />
+									</Grid>
+								</Container>
+							</Container>
+						</Stack>
+
+						<!-- Game Parameter Header -->
+						<Grid Size="parent,21" Texture="Shell_SectionHeader" SliceCorner="154,10" SliceTextureSize="308,21" Color="20,144,140,100" Offset="0,8">
+							<Image Texture="Controls_Gradient_HalfRadial" Color="20,144,140,100" FlipY="1" Anchor="C,T" Size="225,94"/>
+							<Label Anchor="C,C" Style="ShellOptionText" WrapWidth="320" String="LOC_MP_GAME_SUMMARY_GAME_SETTINGS"/>
+						</Grid>
+
+						<!-- Parameter stacks (controlled by game setup logic) -->
+						<Stack ID="ParametersStack" Anchor="C,T" Offset="0,0" Padding="0" StackGrowth="Bottom" >
+							<!-- Primary Parameters Stack -->
+							<Stack Anchor="C,T" Padding="0" StackGrowth="Bottom" ID="PrimaryParametersStack"/>
+							<Stack Anchor="C,T" Padding="0" StackGrowth="Bottom" ID="VictoryParameterStack" />
+							<Stack Anchor="C,T" Padding="0" StackGrowth="Bottom" ID="SecondaryParametersStack"/>
+						</Stack>
+
+						<!-- Additional Content Header -->
+						<Grid Size="parent,21" Texture="Shell_SectionHeader" SliceCorner="154,10" SliceTextureSize="308,21" Color="20,144,140,100" Offset="0,8">
+							<Image Texture="Controls_Gradient_HalfRadial" Color="20,144,140,100" FlipY="1" Anchor="C,T" Size="225,94"/>
+							<Label Anchor="C,C" Style="ShellOptionText" WrapWidth="320" String="LOC_MP_GAME_SUMMARY_ADDITIONAL_CONTENT"/>
+						</Grid>
+
+						<Stack ID="AdditionalContentStack" Anchor="C,T" Offset="0,0" Padding="0" StackGrowth="Bottom"/>
+					</Stack>
+
+					<Image Anchor="C,B" AnchorSide="I,O" Size="parent+14,4" Texture="Controls_DecoMapScale" StretchMode="Tile" Color="20,55,70,255"/>
+				</ScrollPanel>
+
+				<!-- Friends / Game Setup Tabs -->
+				<Stack ID="InfoTabs" Anchor="C,T" Offset="0,-14" StackGrowth="Right" Size="940,70" Padding="10"/>
+			</Container>
+
+			<!-- Ready Button  -->
+			<AlphaAnim		ID="FadeAnim"						Anchor="C,C"								Size="parent,parent"	AlphaBegin="0" AlphaEnd="1" Cycle="Once" Speed=".5" Stopped="0" Pause="1" Function="Root">
+				<Container ID="ReadyContainer"						Anchor="C,B" Offset="0,-5"	Size="300,130" Hidden="0">
+					<Image															Anchor="C,B" Offset="0,35"	Size="130,23"	Texture="Diplomacy_PortraitBacking" />
+					<Image															Anchor="C,B" Offset="0,0" Size="305,58" Texture="Controls_BannerBlueSmall">
+						<Label		ID="StartLabel"					Anchor="C,C" Offset="0,6" Align="Center" String="{LOC_START:upper}" Style="BannerHeaderText" />
+					</Image>
+
+					<Container  ID="ReadyButtonContainer" Size="300,130" Hidden="1">
+						<Image ID="TurnTimerHotseatBG"		Anchor="C,C" Offset="0,-17"		Size="91,92"	Texture="Shell_BeginButtonBacking"/>
+						<Image ID="TurnTimerBG"						Anchor="C,C" Offset="0,-17"		Size="109,110"	Texture="Shell_CountdownTimerBacking"/>
+						<Meter ID="TurnTimerMeter" Anchor="C,C" Offset="0,-19"	Size="93,94" Texture="Shell_CountdownTimerFill" Speed="0"/>
+						<!-- Making this into a grid button so that I can set the size of the font - can't do that with a normal button right now-->
+						<GridButton	ID="ReadyButton"				SliceCorner="40,40" SliceTextureSize="80,80" Anchor="C,C" Offset="0,-16"	Size="80,80"	Texture="Shell_BeginButton" StateOffsetIncrement="0,80" FontSize="40"/>
+					</Container>
+
+					<Container  ID="ReadyCheckContainer" Size="300,130" Hidden="0">
+						<Button	ID="ReadyCheck"		Anchor="C,C" Offset="-1,-13"	Size="80,80"	Texture="Shell_ReadyCheckboxLarge" StateOffsetIncrement="0,80"/>
+					</Container>
+
+				</Container>
+			</AlphaAnim>
+
+			<Container ID="TooltipContainer" Size="420,720" Anchor="R,C" Offset="-10,10"/>
+		</Container>
+	</Box>
+	<!-- 组名输入框 -->
+	<Box ID="NameModGroupPopup" Color="0,0,0,150" Size="parent,parent" ConsumeMouseOver="1" Hidden="1" IgnoreTutorial="1">
+		<AlphaAnim ID="NameModGroupPopupAlpha" AlphaBegin="0" AlphaEnd="1" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+			<SlideAnim ID="NameModGroupPopupSlide" Start="0,-20" End="0,0" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+				<Grid Size="500,250" Anchor="C,C" Offset="0,-50" Style="DropShadow2"  Hidden="0" Color="255,255,255,200">
+					<Grid ID="NameModGroupPopupWindow" Size="parent-50,auto" Anchor="C,C" SizePadding="0,20" Style="WindowFrameTitle" Hidden="0">
+						<Label ID="BindingTitle" Anchor="C,T" String="LOC_TPT_INPUT_PLAYERINFO" Align="Center" Style="BlueGlow" Offset="0,15"/>	
+						<Stack Offset="0,40" Size="parent,0" StackGrowth="Down" Anchor="C,T" Padding="5">
+							<Label ID="SteamIDInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_STEAMID_NAME"  Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="SteamIDInputEditBox" ToolTip="LOC_TPT_INPUT_STEAMID_TT" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+								<GridButton ID="SteamHomePageButton" Anchor="R,C" Size="20,20" Offset="-24,0" String="[icon_Whisper]" ToolTip="LOC_TPT_STEAM_HOMEPAGE_TT"/>
+							</Grid>
+							<Label ID="DescInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_DESC_NAME"  Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="DescInputEditBox" ToolTip="LOC_TPT_INPUT_DESC_TT" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+							</Grid>							
+							<Container Size="parent,50" Anchor="C,T" Offset="0,10">
+								<GridButton ID="CancelBindingButton" Style="ButtonRed" Size="160,41" Offset="50,0" Anchor="R,T" String="LOC_CANCEL"/>
+								<GridButton ID="CreateModGroupButton" Style="MainButton" Size="160,41" Offset="50,0" Anchor="L,T" String="LOC_WORLDBUILDER_ADD_BUTTON"/>
+								<GridButton ID="RemoveGroupButton" Style="MainButton" Size="160,41" Offset="50,40" Anchor="L,T" String="LOC_WORLDBUILDER_REMOVE_BUTTON" Hidden="1"/>
+							</Container>
+						</Stack>
+					</Grid>
+				</Grid>
+			</SlideAnim>
+		</AlphaAnim>
+	</Box>
+
+	<!-- 玩家名单申请输入框 -->
+	<Box ID="PlayerRequestPopup" Color="0,0,0,150" Size="parent,parent" ConsumeMouseOver="1" Hidden="1" IgnoreTutorial="1">
+		<AlphaAnim ID="PlayerRequestPopupAlpha" AlphaBegin="0" AlphaEnd="1" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+			<SlideAnim ID="PlayerRequestPopupSlide" Start="0,-20" End="0,0" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+				<Grid Size="500,250" Anchor="C,C" Offset="0,-50" Style="DropShadow2"  Hidden="0" Color="255,255,255,200">
+					<Grid ID="PlayerRequestPopupWindow" Size="parent-50,auto" Anchor="C,C" SizePadding="0,20" Style="WindowFrameTitle" Hidden="0">
+						<Label ID="PlayerRequestBindingTitle" Anchor="C,T" String="LOC_TPT_INPUT_PLAYEREQUEST" Align="Center" Style="BlueGlow" Offset="0,15"/>	
+						<Stack Offset="0,40" Size="parent,0" StackGrowth="Down" Anchor="C,T" Padding="5">
+							<Label ID="PlayerRequestSteamIDInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_STEAMID_NAME" ToolTip="LOC_TPT_INPUT_STEAMID_TT" Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="PlayerRequestSteamIDInputEditBox" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+							</Grid>
+							<Label ID="PlayerRequestNameInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_PLAYEREQUEST_NAME_NAME" ToolTip="LOC_TPT_INPUT_PLAYEREQUEST_NAME_TT" Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="PlayerRequestNameInputEditBox" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+							</Grid>								
+							<Label ID="PlayerRequestDescInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_PLAYEREQUEST_DESC_NAME" ToolTip="LOC_TPT_INPUT_PLAYEREQUEST_DESC_TT" Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="PlayerRequestDescInputEditBox" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+							</Grid>							
+							<Container Size="parent,50" Anchor="C,T" Offset="0,10">
+								<GridButton ID="PlayerRequestCancelButton" Style="ButtonRed" Size="160,41" Offset="50,0" Anchor="R,T" String="LOC_CANCEL"/>
+								<GridButton ID="PlayerRequestConfirmButton" Style="MainButton" Size="160,41" Offset="50,0" Anchor="L,T" String="LOC_CONFIRM" ToolTip="LOC_TPT_INPUT_PLAYEREQUEST_CONFIRM_TT"/>
+							</Container>
+							<Label Anchor="C,T" String="LOC_TPT_INPUT_PLAYEREQUEST_TIPS" Style="FontNormal20" Color="255,215,0,255" Offset="0,10"/>
+						</Stack>
+					</Grid>
+				</Grid>
+			</SlideAnim>
+		</AlphaAnim>
+	</Box>	
+
+	<!-- 改名按钮 -->
+	<Box ID="ChangeNamePopup" Color="0,0,0,150" Size="parent,parent" ConsumeMouseOver="1" Hidden="1" IgnoreTutorial="1">
+		<AlphaAnim ID="ChangeNamePopupAlpha" AlphaBegin="0" AlphaEnd="1" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+			<SlideAnim ID="ChangeNamePopupSlide" Start="0,-20" End="0,0" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+				<Grid Size="500,250" Anchor="C,C" Offset="0,-50" Style="DropShadow2"  Hidden="0" Color="255,255,255,200">
+					<Grid ID="ChangeNamePopupWindow" Size="parent-50,auto" Anchor="C,C" SizePadding="0,20" Style="WindowFrameTitle" Hidden="0">
+						<Label ID="ChangeNameTitle" Anchor="C,T" String="LOC_TPT_CHANGE_NAME_TITLE" Align="Center" Style="BlueGlow" Offset="0,15"/>	
+						<Stack Offset="0,56" Size="parent,0" StackGrowth="Down" Anchor="C,T" Padding="5">
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="ChangeNameEditBox" ToolTip="LOC_TPT_CHANGE_NAME_EDIT_TT" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+							</Grid>
+							
+							<CheckBox ID="HiddenPlayerInfoCheck" Anchor="L,C" ConsumeMouseOver="1" Offset="45,10" ButtonSize="35,35" BoxOnLeft="1" ButtonTexture="Controls_CheckboxCircle" CheckTexture="Controls_CheckboxCircle" CheckSize="35,35" CheckTextureOffset="0,35"  Style="FontNormal16" NoStateChange="1">
+								<Label Offset="32,0" Anchor="L,C" String="LOC_TPT_HIDDEN_PLAYER_INFO_CHECK" Style="FontNormal16"/>
+							</CheckBox>
+												
+							<Container Size="parent,20" Anchor="C,T" Offset="0,10">
+								<GridButton ID="ChangeNameCancelButton" Style="ButtonRed" Size="170,41" Offset="50,0" Anchor="R,T" String="LOC_CANCEL"/>
+								<GridButton ID="ChangeNameConfirmButton" Style="MainButton" Size="170,41" Offset="50,0" Anchor="L,T" String="LOC_CONFIRM"/>
+							</Container>
+						</Stack>
+					</Grid>
+				</Grid>
+			</SlideAnim>
+		</AlphaAnim>
+	</Box>
+
+	<!-- Hotseat bottom deco -->
+	<Image ID="HotseatDeco" Anchor="C,B" Size="963,45" Offset="0,55" Texture="Controls_BorderDeco" StretchMode="Tile" Color="255,255,255,20"/>
+
+
+
+
+	<!-- Children Contexts -->
+	<LuaContext FileName="UI/FrontEnd/Multiplayer/ConfirmKick" ID="ConfirmKick" Hidden="1" />
+	<LuaContext FileName="UI/FrontEnd/Multiplayer/EditHotseatPlayer" ID="EditHotseatPlayer" Hidden="1" />
+
+	<!-- Instances -->
+	<Instance Name="ShellTab">
+		<Container ID="TopControl" Size="1,1">
+			<GridButton ID="Button" Anchor="C,T" Style="ShellTab"/>
+			<AlphaAnim ID="Selected" Anchor="C,T" Speed="5" AlphaBegin="0" AlphaEnd="1" Cycle="Once" Function="Root" Hidden="1" >
+				<GridButton ID="SelectedButton" Style="ShellTabSelected" Anchor="C,T"/>
+			</AlphaAnim>
+		</Container>
+	</Instance>
+
+	<!-- Instance for a boolean parameters -->
+	<Instance Name="BooleanParameterInstance">
+		<GridButton ID="CheckBox" Anchor="C,T" Style="CheckBoxControl"  Size="340,24" States="8"/>
+	</Instance>
+
+	<!-- Slider with number display -->
+	<Instance Name="SliderParameterInstance">
+		<Container ID="Root" Size="450,55" Anchor="C,T">
+			<Container Size="250,55" Anchor="C,T">
+				<Label ID="OptionTitle" Style="ShellOptionText" AnchorSide="O,I" Anchor="L,C" String=""/>
+				<Stack StackGrowth="Right" Anchor="C,T">
+					<Slider ID="OptionSlider" Style="SliderControl" Size="198,13" Anchor="L,C" />
+					<Image Texture="Controls_CircleCompass" Size="52,53" Color="ShellControl">
+						<Label ID="NumberDisplay" Style="FontFlair40" String="10" Anchor="C,C" FontStyle="stroke" Color0="208,212,217,255"	Color1="0,0,0,50"/>
+					</Image>
+				</Stack>
+			</Container>
+		</Container>
+	</Instance>
+
+
+	<!-- Instance for a string parameters -->
+	<Instance Name="StringParameterInstance">
+		<Container Size="auto,auto" ID="StringRoot">
+			<Container Size="auto,auto">
+				<Box Size="140,30" Color="0,0,0,0"/>
+				<Label ID="StringName" Anchor="R,C" Offset="0,0" Style="FontNormal14" ColorSet="ShellOptionText" FontStyle="stroke" WrapWidth="180" String="UNKNOWN_EDIT_BOX"/>
+			</Container>
+			<Container Size="auto,auto" Offset="145,0">
+				<Grid Style="EditTextArea" Size="160,30">
+					<EditBox ID="StringEdit" Anchor="L,C" Offset="6,0" Size="248,23" EditMode="1" Style="FontNormal18" ColorSet="BodyTextCool" FontStyle="stroke" MaxLength="10"/>
+				</Grid>
+			</Container>
+		</Container>
+	</Instance>
+
+	<!-- Instance for a parameter that has multiple choices for the value, displayed as a dropdown -->
+	<!-- Instance for a parameter that has multiple choices for the value, displayed as a dropdown -->
+	<Instance Name="PullDownParameterInstance">
+		<Container ID="Root" Anchor="C,T" Size="450,32" Offset="0,0">
+			<PullDown Anchor="C,T" ID="PullDown" Style="PullDownBlue" Size="250,24" Offset="0,0">
+				<Label Style="ShellOptionText" ID="StringName" AnchorSide="O,I" Anchor="L,C" String=""/>
+			</PullDown>
+		</Container>
+	</Instance>
+
+	<!-- Instance for a parameter that has a button to launch a popup (e.g., map-select) -->
+	<Instance Name="ButtonParameterInstance">
+		<Container		ID="ButtonRoot" Anchor="L,T" Size="parent,32" Offset="0,0">
+			<GridButton ID="Button"			Anchor="R,T" Style="ButtonControl" Size="300,24" Offset="40,0">
+				<Label		ID="StringName"	Anchor="L,C" Style="ShellOptionText" AnchorSide="O,I" String="$Name$"/>
+			</GridButton>
+		</Container>
+	</Instance>
+
+	<Instance Name="TeamListEntry">
+		<Stack ID="Root" StackGrowth="Bottom">
+			<Stack StackGrowth="Right" ID="TeamHeaderStack">
+				<Box Size="200,30" Color="0,0,0,128" ID="TeamBox">
+					<Label Anchor="L,C" Offset="0,0" Style="FontNormal18" ColorSet="BodyTextCool" FontStyle="Shadow" String="Team Name" ID="TeamName"/>
+				</Box>
+				<GridButton Anchor="R,B" Size="75,32" Style="TabButton" ID="JoinButton" String="LOC_JOIN" />
+			</Stack>
+			<Stack StackGrowth="Right" ID="TeamLineStack">
+				<Stack Anchor="L,T" Offset="0,0" StackGrowth="Bottom" ID="PlayerListStack" />
+			</Stack>
+		</Stack>
+	</Instance>
+
+	<!-- Player List Instances -->
+	<Instance Name="PlayerListEntry">
+		<Container ID="Root" Size="1016,50" Offset="12,0">
+
+			<!-- Player Name -->
+			<Box ID="PlayerNameBox" Color="0,255,0,0" Anchor="L,C" Offset="-12,0" Size="218,50">
+				<!-- Overlapping slot type pulldown for when the entry isn't occupied by an active civ. -->
+				<PullDown ID="SlotTypePulldown" Style="PullDownPlayerSlot" ScrollThreshold="110" Hidden="0">
+					<Label ID="ConnectionStatus" Anchor="L,T" Offset="4,3" String="[ICON_OnlinePip]" Style="FontNormal22"/>
+					<Label ID="PlayerName" Anchor="C,T" Offset="0,7" Style="WhiteSemiBold14" String="PlayerName" TruncateWidth="210"/>
+					<Label ID="PlayerStatus" Anchor="L,B" Offset="10,7" Style="WhiteSemiBold12" String="PlayerStatus"/>
+				</PullDown>
+
+				<!-- This shows up for Hotseat and non-human players for online games -->
+				<GridButton ID="AlternateEditButton" Size="214,23" Offset="2,1" Style="ButtonControl" Disabled="1" Hidden="0"/>
+				<GridButton ID="HotseatEditButton" Style="EditTextButton" Offset="-2,0" Size="222,26" Hidden="1" ToolTip="LOC_HOTSEAT_EDIT_PLAYER_TT"/>
+				<PullDown ID="AlternateSlotTypePulldown" Style="PullDownBlue" Size="218" Offset="0,22" ScrollThreshold="110" Hidden="0">
+					<Label ID="AlternateName" Anchor="C,T" Offset="0,-15" Style="WhiteSemiBold14" String="PlayerName" TruncateWidth="210"/>
+					<Label ID="AlternateStatus" Anchor="L,B" Offset="10,7" Style="WhiteSemiBold12" String="PlayerStatus"/>
+				</PullDown>
+
+			</Box>
+
+			<!-- Team -->
+			<PullDown ID="TeamPullDown" Offset="210,1" Anchor="L,T" ScrollThreshold="210" Size="65,46" AutoSizePopUp="1" SpaceForScroll="1" AutoFlip="1">
+				<ButtonData>
+					<GridButton  Size="194,28" Style="TabFont">
+						<GridData Texture="Controls_DropDownControlLarge" StateOffsetIncrement="0,45"	SliceCorner="10,15" SliceTextureSize="45,45" />
+						<Image ID="ButtonSelectedTeam" Anchor="C,C" Offset="-9,0" Texture="TeamNumbered38" Size="38,38" Hidden="1"/>
+						<Image ID="ButtonNoTeam" Anchor="C,C" Offset="-9,0" Texture="Controls_SlotCircle28" Size="29,29" Hidden="0"/>
+					</GridButton>
+				</ButtonData>
+				<GridData Offset="0,45" Texture="Controls_DropdownPanel" InnerPadding="0,6" SliceCorner="10,10" SliceTextureSize="22,22"/>
+				<ScrollPanelData Anchor="C,C" Vertical="1" Size="parent,parent" AutoScrollBar="1" >
+					<ScrollBar Style="Slider_Blue" Anchor="R,C" AnchorSide="O,I"   />
+				</ScrollPanelData>
+				<StackData StackGrowth="Bottom" Anchor="C,T"/>
+				<InstanceData Name="InstanceOne">
+					<GridButton Style="ButtonControl" ID="Button" Anchor="L,T"	Offset="10,0" Size="190,42" FontStyle="glow" ColorSet="BlueGlow">
+						<Image ID="ButtonImage" Anchor="C,C" Texture="Controls_SlotCircle28" Size="29,29"/>
+					</GridButton>
+				</InstanceData>
+			</PullDown>
+
+			<!-- Color Scheme -->
+			<PullDown ID="ColorPullDown" Offset="277,1" Anchor="L,T" Style="ColorSchemePullDown" ScrollThreshold="350" Size="75,46" AutoSizePopUp="1" SpaceForScroll="1" />
+
+			<!-- Civilization -->
+			<PullDown ID="PlayerPullDown" Offset="349,1" Anchor="L,T" Style="PlayerSelectPullDownMP" ScrollThreshold="350" Size="255,46" AutoSizePopUp="1" SpaceForScroll="1">
+				<!-- This is just a cut/paste of the PlayerSelectPullDown except for the addition of DisabledMouseMoveCallbacks="1".  
+					We need the DisabledMouseMoveCallbacks so we can display the leader tooltip for remote clients (who have disabled pulldowns)-->
+				<ButtonData>
+					<GridButton  Size="325,45" Style="TabFont" DisabledMouseMoveCallbacks="1">
+						<GridData Texture="Controls_DropDownControlLarge" StateOffsetIncrement="0,45"	SliceCorner="10,15" SliceTextureSize="45,45" />
+						<Container Size="62,62" Offset="-3,0" Anchor="L,C">
+							<Image Texture="Controls_CircleBacking45" Size="51,51" Anchor="C,C" Offset="0,1"/>
+							<Image ID="LeaderIcon" Texture="Leaders45" Size="45,45" Anchor="C,C"/>
+						</Container>
+                        <ScrollTextField ID="ScrollText" Size="170,50" Offset="60,0" Style="TabFont"  Anchor="L,C"/>
+					</GridButton>
+				</ButtonData>
+			</PullDown>
+
+			<!-- Difficulty -->
+			<PullDown ID="HandicapPullDown" Hidden="1" Offset="608,0" Anchor="L,C" Style="PullDownBlue" ScrollThreshold="400" Size="140,24" AutoSizePopUp="1"/>
+
+			<!-- Host Icon -->
+
+			<!-- Voice Chat Icon -->
+			<!--
+			<Box ID="VoiceChatBox" Color="0,255,0,0" Anchor="L,C" Offset="0,0" Size="24,24">
+				<Image Anchor="C,C"  Offset="0,0" ID="VoiceChatIcon" Size="32,32" Texture="assets/UI/Art/Icons/ChatIcons32.dds" Hidden="1" />
+			</Box>
+			-->
+			<!-- Ready Button -->
+			<Button Anchor="L,C" Offset="755,0" Texture="Shell_ReadyCheckbox" Size="34,34" NoStateChange="1" StateOffsetIncrement="0,34" ID="ReadyImage"/>
+
+			<Label ID="StatusLabel" Anchor="L,C" Offset="793,0" Style="FontNormalMedium14" Color="36,100,105" String="LOC_NOT_READY" WrapWidth="120"/>
+
+			<!-- Kick Button -->
+			<Button Anchor="L,C" Offset="935,0" Texture="Shell_XButton" Size="37,37" ID="KickButton" ToolTip="LOC_MP_KICK_PLAYER"/>
+
+			<!-- Mod Download Progress Bar -->
+			<!-- Prototype Mod Status Progress Bars
+			<Stack ID="PlayerModProgressStack" Anchor="L,C" Offset="5,0" StackGrowth="Right" Padding="10">
+				<Bar ID="ModProgressBar" Anchor="L,C" Size="150,20" BGColor="0,0,155,255" Direction ="Right" Speed="1"/>
+				<Box ID="BytesRemainingBox" Color="255,0,0,0" Anchor="L,C" Offset="0,0" Size="120,32">
+					<Label ID="BytesRemaining" Anchor="L,C" Style="FontNormal16" TruncateWidth ="120" String="?b/?b" Align="Right" />
+				</Box>
+				<Box ID="ModProgressRemainingBox" Color="0,255,0,0" Anchor="L,C" Offset="0,0" Size="32,32">
+					<Label ID="ModProgressRemaining" Anchor="L,C" Style="FontNormal16" TruncateWidth ="32" String="?/?" Align="left" />
+				</Box>
+			</Stack>
+			-->
+
+			<GridButton ID="AddPlayerButton" Style="ShellButtonControlLarge" Anchor="L,B" Offset="-12,0" Size="parent-14,parent" ToolTip="LOC_SETUP_ADD_PLAYER_TT" String="{LOC_SETUP_ADD_PLAYER:upper}">
+				<Image Anchor="R,C" Offset="18,-2" Texture="Shell_Add" Size="37,37" ConsumeMouse="0"/>
+			</GridButton>
+
+			<Grid ID="YouIndicatorLine" Size="parent-3,parent+4" Offset="-20,-3" Hidden="1" SliceTextureSize="60,60" SliceCorner="20,20" SliceSize="20,20" Texture="Controls_YouIndicatorLine"/>
+
+		</Container>
+	</Instance>
+
+	<Instance		Name="ChatEntry" >
+		<Box		ID="ChatRoot"			Anchor="L,T" Size="430,22" Color="0,0,0,0"  >
+			<Label	ID="String"			Anchor="L,C" Offset="0,0" WrapWidth="412" Color1="0,0,0,150" Style="FontNormal12" />
+		</Box>
+	</Instance>
+
+	<!-- Friend Instance -->
+	<Instance Name="FriendInstance">
+
+		<Container ID="RootContainer" Size="218,46">
+			<PullDown ID="FriendPulldown" Style="PullDownPlayerSlot" ScrollThreshold="110">
+				<Label ID="OnlineIndicator" Anchor="L,T" Offset="4,3" String="[ICON_OnlinePip]"/>
+				<Label ID="PlayerName" Anchor="C,T" Offset="0,7" Style="WhiteSemiBold14" String="PlayerName" TruncateWidth="210"/>
+				<Label ID="PlayerStatus" Anchor="L,B" Offset="10,7" Style="WhiteSemiBold12" String="PlayerStatus"/>
+			</PullDown>
+			<Box ID="FriendBox" Size="218,46" Color="0,0,0,0">
+				<Image Texture="Shell_PlayerCard" Size="218,46"/>
+				<Image Texture="Shell_PlayerCard" TextureOffset="184,24" Size ="16,18" Offset="198,24"/>
+				<Label ID="Simple_OnlineIndicator" Anchor="L,T" Offset="4,3" String="[ICON_OnlinePip]"/>
+				<Label ID="Simple_PlayerName" Anchor="C,T" Offset="0,7" Style="WhiteSemiBold14" String="PlayerName" TruncateWidth="200" />
+				<Label ID="Simple_PlayerStatus" Anchor="L,B" Offset="10,7" Style="WhiteSemiBold12" String="PlayerStatus"/>
+			</Box>
+		</Container>
+
+	</Instance>
+
+	<Instance Name="GameSetupParameter">
+		<Container ID="Root" Size="1,17">
+			<Label ID="Label" Anchor="R,T" Offset="5,0" Style="FontNormal12" ColorSet="ShellOptionText" FontStyle="stroke" String="UNKNOWN_EDIT_BOX" TruncateWidth="210" TruncatedTooltip="1"/>
+			<Label ID="Value" Anchor="L,T" Offset="5,0" Style="WhiteSemiBold12" ColorSet="ShellControl" FontStyle="stroke" String="UNKNOWN_EDIT_BOX" TruncateWidth="210" TruncatedTooltip="1"/>
+		</Container>
+	</Instance>
+
+	<Instance Name="AdditionalContentInstance">
+		<Container ID="Root" Size="1,17">
+			<Label ID="ModTitle" Anchor="C,T" Offset="5,0" Style="WhiteSemiBold12" ColorSet="ShellControl" FontStyle="stroke" String="UNKNOWN_EDIT_BOX" TruncateWidth="375" TruncatedTooltip="1"/>
+		</Container>
+	</Instance>
+
+	<Instance Name="HorizontalGridLine">
+		<Line ID="Control" Start="5,-1" End="1000,-1" Width="2" Color="20,55,70,255" />
+	</Instance>
+
+	<!-- Dialog Support -->
+	<MakeInstance Name="PopupDialog" />
+
+	<Instance			Name="IconInfoInstance">
+		<Container	ID="Top"				 Size="400,auto">
+			<Image    Texture="Controls_CircleCompass" Size="52,53" Offset="0,-2" Color="34,58,80,150">
+				<Image		ID="Icon"					Size="38,38" Anchor="C,C" />
+			</Image>
+			<Stack		ID="TextStack"		StackGrowth="Bottom" StackPadding="4" Offset="55,0">
+				<Label	ID="Header"				WrapWidth="324" SmallCapsType="EveryWord" SmallCaps="20" Style="FontFlair14"		String="$Header$" ColorSet="ShellHeader"/>
+				<Label	ID="Description"	WrapWidth="324"	Style="DawnText"	String="$Description$"/>
+			</Stack>
+		</Container>
+	</Instance>
+
+	<Instance		Name="HeaderInstance">
+		<Grid     ID="Top" Style="DivHeader" Anchor="C,T">
+			<Label  ID="Header"    Style="FontFlair18" FontStyle="glow" ColorSet="ShellHeader" SmallCaps="22" SmallCapsLeading="0" SmallCapsType="EveryWord" Anchor="C,C" Align="Center" Offset="0,1" WrapWidth="340"/>
+		</Grid>
+	</Instance>
+
+	<Instance			Name="IconInstance">
+		<Container	ID="Top"				 Size="400,auto">
+			<Image    Texture="Controls_CircleBacking45" Size="51,51" Offset="0,-2">
+				<Image		ID="Icon"					Size="45,45" Anchor="C,C" Offset="0,-1" />
+			</Image>
+			<Stack		ID="TextStack"		StackGrowth="Bottom" StackPadding="4" Offset="55,0">
+				<Label	ID="Header"				WrapWidth="324" SmallCapsType="EveryWord" SmallCaps="20" Style="FontFlair14"		String="$Header$" ColorSet="ShellHeader"/>
+				<Label	ID="Description"	WrapWidth="324"	Style="DawnText"	String="$Description$"/>
+			</Stack>
+		</Container>
+	</Instance>
+
+	<Instance Name="CivIconInstance">
+		<Container	ID="Top"						Size="400,auto">
+			<Image		ID="IconBG"					Size="44,44" Texture="CircleBacking44">
+				<Image	ID="IconShadows"		Size="44,44" Texture="Circle44_Darker"  Color="0,0,0,50" />
+				<Image	ID="IconHighlights"	Size="44,44" Texture="Circle44_Lighter" Color="255,255,255,100" />
+				<Image	ID="Icon"						Size="44,44" Anchor="C,C" />
+			</Image>
+			<Stack		ID="TextStack"		StackGrowth="Bottom" StackPadding="4" Offset="55,0">
+				<Label	ID="Header"				WrapWidth="324" SmallCapsType="EveryWord" SmallCaps="20" Style="FontFlair14"		String="$Header$" ColorSet="ShellHeader"/>
+				<Label	ID="Description"	WrapWidth="324"	Style="DawnText"	String="$Description$"/>
+			</Stack>
+		</Container>
+	</Instance>
+
+	<Instance Name="CivToolTip">
+		<AlphaAnim    ID="CivToolTipAlpha" AlphaBegin="0" AlphaEnd="1" Speed="4" Function="Root" Cycle="Once" Size="parent,parent" Stopped="1">
+			<SlideAnim  ID="CivToolTipSlide" Start="-20,0" End="0,0" Speed="4" Function="Root" Cycle="Once" Size="parent,parent">
+				<Grid Style="EnhancedToolTip" Size="parent,parent">
+					<ScrollPanel  ID="InfoScrollPanel" Vertical="1" Size="parent-12,parent-25" AutoScrollBar="1" Anchor="C,T" Offset="0,9">
+						<Stack ID="InfoStack" StackGrowth="Down" Padding="8"  Anchor="C,T" Offset="10,25"/>
+						<ScrollBar Style="Slider_Light" Anchor="R,C" Offset="2,0" />
+					</ScrollPanel>
+				</Grid>
+			</SlideAnim>
+		</AlphaAnim>
+	</Instance>
+
+	<ToolTipType Name="TooltipType_RandomTeam">
+		<Grid	ID="BG" Size="auto,auto" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" InnerPadding="25,25" InnerOffset="10,10" Color="116,163,243,255">
+			<Label	Offset="0,10" Anchor="C,T" ColorSet="ResGoldLabelCS" Style="FontNormal20" String="LOC_TPT_RANDOM_TEAM_TT_1"/>	
+			<Stack Anchor="C,T" StackGrowth="Down" Padding="4" Offset="2,40">
+				<Grid ID="Top" Size="160,40" Texture="Controls_Tooltip" SliceCorner="10,10" SliceTextureSize="33,32" InnerOffset="-3,-3" Color="255,255,255,255">
+					<Label Anchor="C,C"Style="TTText" String="LOC_TPT_RANDOM_TEAM_TT_2" Offset="0,0" WrapWidth="parent-10"/>
+				</Grid>
+				<Grid ID="Top" Size="160,40" Texture="Controls_Tooltip" SliceCorner="10,10" SliceTextureSize="33,32" InnerOffset="-3,-3" Color="255,255,255,255">
+					<Label Anchor="C,C"Style="TTText" String="LOC_TPT_RANDOM_TEAM_TT_3" Offset="0,0" WrapWidth="parent-10"/>
+				</Grid>						
+			</Stack>			
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_TPT_Update">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Stack Offset="0,0" StackGrowth="Down" Anchor="C,T">
+				<Label Anchor="C,T" Anchor="L,T" Style="FontFlair20" Color="5,29,51,255" String="LOC_TEAM_PVP_TOOLS_UPDATE_HEADER" SmallCaps="20" SmallCapsType="EveryWord"  Offset="0,8"/>
+				<Label Anchor="C,T" Offset="0,4" String="LOC_TEAM_PVP_VERSION" Style="TTText" WrapWidth="260"/>
+				<Stack ID="TPT_Update_Stack" StackGrowth="Down" Anchor="C,T" Offset="2,10"/>
+				<Box Size="280,8" Color="0,0,0,0" Anchor="C,T"/>
+			</Stack>
+		</Grid>
+	</ToolTipType>
+
+	<Instance Name="TPT_UpdateInstance" >
+		<Grid ID="BG" Size="260,auto" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" MinSize="220,45" InnerPadding="25,25" Anchor="L,C" InnerOffset="10,10" Color="255,255,255,50">
+			<Stack	ID="BGStack" Anchor="L,C" StackGrowth="Right" Padding="8" >
+				<Label	ID="SerialNumber" Anchor="C,C" Offset="0,2" String="123" Style="FontFlair26" Color="5,29,51,255" KerningAdjustment="-3" />
+				<Image ID="ReligionBannerIconContainer" Anchor="L,C"	Size="30,30"  Texture="Religion_FollowersSlot" Hidden="0">
+					<Image ID="ReligionIcon" Anchor="C,C" Offset="0,0" Size="22,22" Texture="Religions22"/>
+				</Image>
+				<Label ID="UpdateText" Anchor="L,T" Style="TTText" String="UpdateText" WrapWidth="180"/>
+			</Stack>
+		</Grid>
+	</Instance>	
+<!--
+	<ToolTipType Name="TooltipType_NorthernContinent">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="Northern_Continent" Size="889,500" Texture="Northern_Continent.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_RingContinent">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="Northern_Continent" Size="889,500" Texture="Ring_Continent.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_QQ_LIANJING">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="QQ_Lianjing_Image" Size="512,512" Texture="QQ_Lianjing.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_QQ_QingTian_1">
+		<Stack Anchor="L,C" StackGrowth="Up" Padding="0">
+			<Grid ID="BG" Texture="Controls_PanelBlue"  SliceCorner="25,28" SliceSize="33,18" SliceTextureSize="83,75" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Anchor="R,C">
+				<Label Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_BSR_QQ_QINGTIAN_1_TOOLTIP"/>
+			</Grid>
+			<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="L,C">
+				<Image Anchor="L,C"  Offset="0,0" ID="QQ_QingTian_Image" Size="400,533" Texture="QQ_QingTian.dds" Hidden="0" />
+			</Grid>
+		</Stack>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_QQ_QingTian_2">
+		<Stack Anchor="L,C" StackGrowth="Up" Padding="0">
+			<Grid ID="BG" Texture="Controls_PanelBlue"  SliceCorner="25,28" SliceSize="33,18" SliceTextureSize="83,75" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Anchor="R,C">
+				<Label Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_BSR_QQ_QINGTIAN_2_TOOLTIP"/>
+			</Grid>
+			<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="L,C">
+				<Image Anchor="L,C"  Offset="0,0" ID="QQ_QingTian_Image" Size="400,533" Texture="QQ_QingTian.dds" Hidden="0" />
+			</Grid>
+		</Stack>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_QQ_QingTian_3">
+		<Stack Anchor="L,C" StackGrowth="Up" Padding="0">
+			<Grid ID="BG" Texture="Controls_PanelBlue"  SliceCorner="25,28" SliceSize="33,18" SliceTextureSize="83,75" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Anchor="R,C">
+				<Label Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_BSR_QQ_QINGTIAN_3_TOOLTIP"/>
+			</Grid>
+			<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="L,C">
+				<Image Anchor="L,C"  Offset="0,0" ID="QQ_QingTian_Image" Size="400,533" Texture="QQ_QingTian.dds" Hidden="0" />
+			</Grid>
+		</Stack>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_ChaoRenBei">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="Northern_Continent" Size="600,800" Texture="ChaoRenBei_Info.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_ZHUQUEMOD">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="Northern_Continent" Size="600,800" Texture="ZHUQUE_Tooltip.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+
+	<ToolTipType Name="TooltipType_Charlemagne">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="IMG_Charlemagne" Size="600,715" Texture="Charlemagne_DESC_600_715.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_Pantheon_AD">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="IMG_Charlemagne" Size="1087,1009" Texture="Pantheon_AD.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_LianJing_AD">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="IMG_Charlemagne" Size="320,400" Texture="LianJing_AD_TT.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_LianJingCup_AD">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<FlipAnim FrameCount="2" Texture="lianJingCup_DESC_1928_720.dds" Columns="2" Speed="0.07" Anchor="C,C" Size="964,720" Offset="0,0" Stopped="0"/>
+		</Grid>
+	</ToolTipType>
+-->
+	<ToolTipType Name="TooltipType_yue_AD">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="IMG_yue" Size="349,439" Texture="AD_desc_yue_cup.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<ToolTipType Name="TooltipType_LianJing_5th_AD">
+		<Grid ID="BG" AutoSize="1" Anchor="C,C">
+			<Image Anchor="L,C"  Offset="0,0" ID="IMG_yue" Size="720,645" Texture="Lianjing_5th_desc_637_637.dds" Hidden="0" />
+		</Grid>
+	</ToolTipType>
+
+	<Stack	ID="BGStack" Anchor="L,B" StackGrowth="Up" Padding="8" Offset="0,55">
+		<!-- 文明统计 -->
+		<Button ID="LeaderStatsButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_LEADERSTATS_OPEN_TT">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_LEADERSTATS_OPEN_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+		<!-- 无限文明UI -->
+		<Button ID="FreeChooseAbilityCivilizationButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_FREE_ABILITY_TT">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_FREE_ABILITY_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+		
+		<Button ID="ExperimentalButton" Anchor="L,C" Size="256,144" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_EXP_TT" Hidden="1">
+			<FlipAnim FrameCount="60" Texture="Neon256_144.dds" Columns="10" Anchor="L,C" Size="256,144" Offset="0,0" Stopped="0"/>
+			<Label Anchor="C,C" String="LOC_BSR_EXP_1_NAME" Align="Center" Offset="0,-18"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+			<Label Anchor="C,C" String="LOC_BSR_EXP_2_NAME" Align="Center" Offset="0,18"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Container	ID="Top" Size="1,50" Hidden="1">
+
+		</Container>
+	<!--
+		<Button ID="CharlemagneButton" Anchor="L,C" Size="300,300" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_Charlemagne" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="Charlemagne_Image" Size="300,300" Texture="CharlemagneICON_300.dds"/>
+			<Label Anchor="C,B" String="LOC_BSR_TRY_NEW_LEADER_CHARLEMAGNE_NAME" Align="Center" Offset="0,-20"  Style="FontNormal28" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Button ID="Pantheon_AD_Button" Anchor="L,C" Size="256,256" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_Pantheon_AD" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="Pantheon_Image" Size="256,256" TextureOffset="1280,0" Texture="BeliefsPantheon256.dds"/>
+			<Label Anchor="C,B" String="LOC_BSR_NEW_PANTHEON_NAME" Align="Center" Offset="0,40"  Style="FontNormal28" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+			<Label Anchor="C,B" String="LOC_BSR_NEW_PANTHEON_SUB_NAME" Align="Center" Offset="0,10"  Style="FontNormal24" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Button ID="Flat_Balanced_AD_Button" Anchor="L,C" Size="256,256" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_FLAT_BALANCED_TT" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="Flat_Balanced_AD_Image" Size="256,256" TextureOffset="256,0" Texture="Terrain256.dds"/>
+			<Label Anchor="C,B" String="LOC_BSR_FLAT_TREE_SUB_NAME" Align="Center" Offset="0,70"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+			<Label Anchor="C,B" String="LOC_BSR_FLAT_TREE_SUB_2_NAME" Align="Center" Offset="0,40"  Style="FontNormal28" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+		-->
+		<Container	ID="Top" Size="1,10" Hidden="0">
+
+		</Container>
+		
+		<Button ID="TeamPVPMap_AD_Button" Anchor="L,C" Size="200,210" Offset="20,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_TEAMPVPMAP_AD_TT" Hidden="1">
+			<Grid ID="BG" AutoSize="1" Anchor="C,C">
+				<Stack	Anchor="L,T" StackGrowth="Down" Padding="-20" >
+					<Stack	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="200,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+					<Stack Offset="17,0"	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="200,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+					<Stack	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+					<Stack Offset="17,0"	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="200,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+					<Stack	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+					<Stack Offset="17,0"	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="200,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+					<Stack	Anchor="L,T" StackGrowth="Right" Padding="-16" >
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="200,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="0,0"	  Texture="Terrain50"/>
+						<Image	Anchor="L,T" Offset="0,0"   Size="50,50"      TextureOffset="350,50"	  Texture="Terrain50"/>
+					</Stack>
+				</Stack>	
+			</Grid>
+			<Label Anchor="C,B" String="LOC_BSR_TEAMPVPMAP_SUB_NAME" Align="Center" Offset="0,100"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+			<Label Anchor="C,B" String="LOC_BSR_TEAMPVPMAP_SUB_2_NAME" Align="Center" Offset="0,70"  Style="FontNormal28" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Button ID="yue_AD_Button" Anchor="L,C" Size="300,400" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_yue_AD" Hidden="0">
+			<FlipAnim FrameCount="33" Texture="yuejicpu_AD_33_300_300.dds" Columns="33" Speed="30" Anchor="C,C" Size="300,300" Offset="0,0" Stopped="0"/>
+			<Label Anchor="C,C" String="LOC_BSR_YUE_CUP_NAME" Align="Center" Offset="0,180"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+			<Label Anchor="C,C" String="LOC_BSR_YUE_CUP1_NAME" Align="Center" Offset="0,220"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+		
+		<Button ID="LianJing_5th_Button" Anchor="L,C" Size="300,268" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJing_5th_AD" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="LianJing_5th_AD_Image" Size="300,268" Texture="Lianjing_5th_300_268.dds"/>
+		</Button>
+<!--	
+		<Button ID="LianJing_AD_Button" Anchor="L,C" Size="256,256" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJing_AD" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="LianJing_AD_Image" Size="256,256" Texture="LianJing_AD.dds"/>
+		</Button>
+
+		<Button ID="LianJingCup_AD_Button" Anchor="L,C" Size="300,300" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJingCup_AD" Hidden="0">
+			<FlipAnim FrameCount="2" Texture="lianJingCup_Icon_600_300.dds" Columns="2" Speed="0.07" Anchor="C,C" Size="300,300" Offset="0,0" Stopped="0"/>
+		</Button>
+			
+		<Button ID="ChaoRenBeiButton" Anchor="L,C" Size="256,267" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_ChaoRenBei" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="QQ_QingTian_Image" Size="256,267" Texture="ChaoRenBei_Icon.dds"/>
+		</Button>
+
+		<Button ID="ZHUQUEButton" Anchor="L,C" Size="256,267" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_ZHUQUEMOD" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" ID="QQ_QingTian_Image" Size="256,144" Texture="ZHUQUE_Icon.dds"/>
+		</Button>
+
+
+		<Button ID="NorthernContinentButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_NorthernContinent" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_NORTH_CONTINENT_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Button ID="RingContinentButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_RingContinent" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_RING_CONTINENT_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Button ID="FarmAndExpansionButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_FARM_AND_EXPANSION_TT">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_FARM_AND_EXPANSION_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Button>
+
+		<Button ID="QQ_LIANJING_Button" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_QQ_LIANJING" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_QQ_LIANJING_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" ToolTipType="TooltipType_QQ_LIANJING"/>
+		</Button>
+
+		<Button ID="QQ_QingTian_1_Button" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_QQ_QingTian_1" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_QQ_QINGTIAN_1_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" ToolTipType="TooltipType_QQ_QingTian_1"/>
+		</Button>
+
+		<Button ID="QQ_QingTian_2_Button" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_QQ_QingTian_2" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_QQ_QINGTIAN_2_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" ToolTipType="TooltipType_QQ_QingTian_2"/>
+		</Button>
+
+		<Button ID="QQ_QingTian_3_Button" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_QQ_QingTian_3" Hidden="1">
+			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
+			<Label Anchor="L,C" String="LOC_BSR_QQ_QINGTIAN_3_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" ToolTipType="TooltipType_QQ_QingTian_3"/>
+		</Button>
+		-->
+	</Stack>
+
+	<Include File="TPT_ToolTipType" />
+	<Include File="Poker_Blackjack_21" />
+
+  <SlideAnim ID="LeaderStatsSlideAnim" Size="auto,parent" Anchor="L,T" Begin="-350,0" End="0,0" Cycle="Once" Speed="1" Function="OutQuint" Hidden="1" ConsumeMouse="1">
+    <Container ID="RouteChooser" Size="auto,parent" Offset="-3,54">
+		<Grid ID="BottomGrid" Size="300,parent" Offset="0,-40" Texture="Controls_ContainerBlue" SliceStart="0,0" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16">
+          <ScrollPanel ID="LeaderStatsScrollPanel" Offset="14,20" Size="parent,parent-38" Vertical="1" AutoScrollBar="1">
+            <Stack ID="LeaderStatsStack" Offset="0,0" StackGrowth="Down"/>
+          </ScrollPanel>
+		</Grid>
+      <!-- Header container-->
+      <Grid Size="310,60" Offset="3,-54" Style="HeaderBannerLeft" ConsumeAllMouse="1">
+        <Label ID="Header_OriginText" Offset="-16,7" Anchor="C,T" Style="FontFlair16" Color0="0,59,77,255" SmallCaps="20" SmallCapsType="FirstOnly" String="LOC_BSR_STATS_HEADER" TruncateWidth="230" TruncatedTooltip="1"/>
+        <Button ID="Header_CloseButton" Size="32,32" Offset="10,-2" Anchor="R,T" Texture="Controls_CloseButtonAlt"/>
+      </Grid>
+    </Container>
+  </SlideAnim>
+  
+	<Instance Name="LeaderStats_Instance" >
+		<Container ID="BGRoot" Size="282,52"  Anchor="L,C">
+			<GridButton ID="Settings_Box" Anchor="L,C" Offset="-10,0" Size="parent+10,parent" Texture="Controls_ButtonControl" SliceCorner="12,12" SliceTextureSize="24,24" StateOffsetIncrement="0,24">
+				<Bar ID="StatsAmountBar"		Anchor="L,C"	Offset="2,1"	Size="parent-4,parent-2" Direction="Right" FGColor="255,255,255,64" Percent="0.7" />
+				<Image Texture="Controls_CircleBacking45" Size="51,51" Anchor="L,C" Offset="0,1">
+					<Image ID="StatsLeaderIcon" Texture="Leaders45" Size="45,45" Anchor="C,C"/>
+				</Image>
+				<ScrollTextField ID="LeaderIcon_Label" Size="162,40" Style="FontFlair18" Offset="54,2" FontStyle="stroke" String="Name" Anchor="L,C"/>
+				<Label ID="StatsPercent_Label" Style="FontFlair20" Offset="10,2" FontStyle="stroke" String="0%" Anchor="R,C"/>
+			</GridButton>
+		</Container>
+ 	</Instance>
+</ContextDefaults>

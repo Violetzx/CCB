@@ -1,0 +1,3 @@
+DELETE from DiplomaticActions 		WHERE DiplomaticActionType='DIPLOACTION_DIPLOMATIC_DELEGATION';
+DELETE from DiplomaticStateActions 	WHERE DiplomaticActionType='DIPLOACTION_DIPLOMATIC_DELEGATION';
+DELETE from AiFavoredItems 			WHERE Item='DIPLOACTION_DIPLOMATIC_DELEGATION';

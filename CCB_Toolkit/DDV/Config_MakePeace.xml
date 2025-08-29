@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="TPT_NO_MAKE_PEACE" 	Name="LOC_DIPLOMACY_WAR_MAKE_PEACE_CONFIG" 	Domain="MAKE_PEACE_TPT" 	DefaultValue="DEFAULT_MAKE_PEACE" 	ConfigurationGroup="Game" ConfigurationId="TPT_NO_MAKE_PEACE" 	GroupId="AdvancedOptions" 	ChangeableAfterGameStart="0" 	SortIndex="2002" />
+	</Parameters>
+	
+	<DomainValues>
+		<Row Domain="MAKE_PEACE_TPT" Value="NO_MAKE_PEACE" Name="LOC_DIPLOMACY_WAR_NO_MAKE_PEACE_NAME" Description="LOC_DIPLOMACY_WAR_NO_MAKE_PEACE_DESC" SortIndex="1"/>
+		<Row Domain="MAKE_PEACE_TPT" Value="CAN_MAKE_PEACE" Name="LOC_DIPLOMACY_WAR_CAN_MAKE_PEACE_NAME" Description="LOC_DIPLOMACY_WAR_CAN_MAKE_PEACE_DESC" SortIndex="2"/>
+		<Row Domain="MAKE_PEACE_TPT" Value="DEFAULT_MAKE_PEACE" Name="LOC_DIPLOMACY_WAR_DEFAULT_MAKE_PEACE_NAME" Description="LOC_DIPLOMACY_WAR_DEFAULT_MAKE_PEACE_DESC" SortIndex="3"/>
+	</DomainValues>	
+</GameInfo>

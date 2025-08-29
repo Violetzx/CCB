@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <GameData>
+	<LocalizedText>	
+		<Replace Tag="LOC_TPT_NO_FRIENDSHIP_NAME" Language="zh_Hans_CN">
+			<Text>无友谊</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_FRIENDSHIP_DESC" Language="zh_Hans_CN">
+			<Text>启用此选项后无法宣布友谊</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

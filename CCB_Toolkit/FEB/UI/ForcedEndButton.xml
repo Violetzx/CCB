@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>	  
+     <Button ID="ForcedEnd_Button"		Offset="0,0"	Anchor="R,B"	Size="50,50"	Texture="ActionPanel_Notification2" NoStateChange="1">
+		<Image ID="Icon"   Size="32,32"  Texture="Units32.dds" TextureOffset="96,0" Anchor="C,C" Color="208,208,208,255" />
+    </Button>   
+</Context>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+	<Button ID="PokerOpenButton" Anchor="L,B" Size="49,49"  Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_PBJ_OPEN_NAME">
+		<Image	ID="GoldIcon"		Anchor="C,C"	Offset="0,0"		Size="64,64"	TextureOffset="128,256"	Texture="YieldAtlas.dds"/>
+		<Label Anchor="L,C" String="LOC_PBJ_JOIN_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" String="AAAAAAAAAAAAAA"/>
+	</Button>
+
+	<Box ID="Main_Poker" Anchor="C,C" Size="Parent,Parent" Color="11,27,40,255" ConsumeMouse="1" Hidden="1">
+		<Image Anchor="C,B" Size="Parent,Parent" Texture="Wood_Pattern"/>
+		<Box Anchor="C,T" Color="0,0,0,128" Size="parent,44"/>
+		<Grid Anchor="C,C" Size="parent+9,parent+9" Style="WindowFrameTopOnly"/>
+		<Button ID="CloseButton" Anchor="R,T" Offset="-3,-1" Size="44,44" Texture="Controls_CloseLarge"/>
+		<Image Anchor="C,T" Size="parent,44" Color="61,112,154,255" Texture="Controls_Gradient_HalfRadial"/>
+		<Label Anchor="C,T" Offset="0,14" Style="FontFlair24" String="LOC_POKE_BLACKJACK_PANEL_HEADER_NAME" FontStyle="Glow" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" SmallCaps="28" SmallCapsType="EveryWord"/>
+		<Grid Anchor="C,T" Offset="0,44" Size="parent-6,8" Style="Divider3Grid" />
+		<!-- 无限制模式 -->
+<!--		<CheckBox ID="NoCashLimitCheck" Anchor="L,T" ConsumeMouseOver="1" Offset="25,8" ButtonSize="35,35" BoxOnLeft="1" ButtonTexture="Controls_CheckboxCircle" CheckTexture="Controls_CheckboxCircle" CheckSize="35,35" CheckTextureOffset="0,35" String="LOC_PBJ_CHECKBOX_UNLIMIT_NAME" Style="FontNormal18" NoStateChange="1" ToolTip="LOC_PBJ_CHECKBOX_UNLIMIT_TT"/>		-->
+		<!-- 金币显示 -->	
+		<Image Anchor="L,T" Size="282,80" Offset="10,58">
+			<Image Anchor="L,T" Size="141,40" Offset="0,0" Texture="Governments_Backing"/>
+			<Image Anchor="L,B" Size="141,40" Offset="0,0" TextureOffset="0,95" Texture="Governments_Backing"/>
+			<Image Anchor="R,T" Size="141,40" Offset="0,0" TextureOffset="211,0" Texture="Governments_Backing"/>
+			<Image Anchor="R,B" Size="141,40" Offset="0,0" TextureOffset="211,95" Texture="Governments_Backing"/>
+			<Stack		ID="YieldButtonStack" Anchor="L,T" Offset="20,12"	StackGrowth="Right">
+				<Image	ID="GoldIcon"		Anchor="L,C"	Offset="-5,-2"		Size="64,64"	TextureOffset="128,256"	Texture="YieldAtlas.dds"/>
+				<Label	ID="YieldPerTurn" Anchor="C,C" Style="FontNormal30" ColorSet="ResGoldLabelCS" FontStyle="Stroke" String="0"/>
+			</Stack>
+		</Image>
+		<!-- 其他玩家金币显示 -->
+		<ScrollPanel	ID="OtherPlayerGoldList"		Anchor="L,T" Size="300,Parent-208"	Offset="10,155" Vertical="1" AutoScrollBar="1" >
+			<ScrollBar		Anchor="L,C"	Offset="-3,0"		AnchorSide="O,I"	Style="ScrollVerticalBarAlt" />
+			<Stack ID="OtherPlayerGoldStack" Anchor="L,T" StackGrowth="Down" Padding="18" Offset="0,0"/>
+		</ScrollPanel>
+		<!-- 提示区 -->
+		<Grid			ID="KeyPanel"		Anchor="R,T"	Offset="10,56" Size="195,auto"	AutoSizePadding="0,10" Texture="Controls_PanelBlue"  SliceCorner="25,28" SliceSize="33,18" SliceTextureSize="83,75">
+			<Line			Start="20,16"			End="174,16"		Color="55,95,126,255" Width="2" />
+			<Label			Anchor="C,T"			Offset="0,20"		Style="FontFlair16" SmallCaps="20" String="LOC_TREE_KEY" Color0="78,119,151,255" Color1="0,0,0,0" Color2="25,65,96,255" />
+			<Line			Start="20,40"			End="174,40"		Color="55,95,126,255" Width="2" />
+			<ScrollPanel ID="KeyScrollPanel" Offset="16,54" Size="150,204" Style="ScrollPanelWithRightBar">
+				<Stack ID="KeyStack" StackGrowth="Down" StackPadding="14" Offset="0,5">
+					<Label ID="KeyBonusLabel_1" Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_PBJ_HELPER_1_NAME" ToolTip="LOC_PBJ_HELPER_1_TT"/>
+					<Label ID="KeyBonusLabel_2" Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_PBJ_HELPER_2_NAME" ToolTip="LOC_PBJ_HELPER_2_TT"/>
+					<Label ID="KeyBonusLabel_3" Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_PBJ_HELPER_3_NAME" ToolTip="LOC_PBJ_HELPER_3_TT"/>
+					<Label ID="KeyBonusLabel_4" Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_PBJ_HELPER_4_NAME" ToolTip="LOC_PBJ_HELPER_4_TT"/>
+					<Label ID="KeyBonusLabel_5" Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_PBJ_HELPER_5_NAME" ToolTip="LOC_PBJ_HELPER_5_TT"/>
+					<Label ID="KeyBonusLabel_6" Offset="5,0" Anchor="L,C" Style="FontNormal20" String="LOC_PBJ_HELPER_6_NAME" ToolTip="LOC_PBJ_HELPER_6_TT"/>
+				</Stack>
+			</ScrollPanel>
+		</Grid>
+		<!--			卡牌放置区			-->
+		<Image ID="HandCardBG" Offset="0,350" Anchor="C,C" Size="975,340" Texture="Governments_CardSlot">
+			<Box ID="WildcardBlocker" Anchor="C,B" Color="0,0,0,32" Size="parent-20,parent-10" Hidden="0"/>
+			<Image Anchor="C,C" Offset="0,9" Texture="Governments_WatermarkWildcard" Color="GovWaterMark"/>
+		</Image>
+		<!-- 进度提醒 -->
+		<ScrollPanel	ID="ProgressList"			Anchor="C,C" Size="600,290"	Offset="0,-15" Vertical="1" AutoScrollBar="1" >
+			<Stack ID="ProgressLabelsStack" Anchor="C,T" StackGrowth="Up" Padding="4" Offset="0,0"/>
+			<ScrollBar		Anchor="R,C"	Offset="0,0"		AnchorSide="O,I"	Style="ScrollVerticalBarAlt" />
+		</ScrollPanel>
+		<!-- 玩家手牌 -->
+		<Stack ID="CardStack" Anchor="C,C" StackGrowth="Right" Padding="4" Offset="0,381"/>
+		<!-- 玩家手牌计数 -->
+		<Label ID="TotalNumLabel" Style="FontFlair28"	Color0="255,255,255,255" Color1="0,0,0,255" FontStyle="stroke" Anchor="C,C" Offset="0,236"/>
+		<!-- 庄家手牌 -->
+		<Stack ID="DeclarerCardStack" Anchor="C,C" StackGrowth="Right" Padding="4" Offset="0,-327"/>
+		<!-- 庄家手牌计数 -->
+		<Label ID="DeclarerTotalNumLabel" Style="FontFlair28"	Color0="255,255,255,255" Color1="0,0,0,255" FontStyle="stroke" Anchor="C,C" Offset="0,-186"/>
+		<!-- 操作按钮 -->
+		<Stack ID="OperateButtons" Anchor="C,C" StackGrowth="Down" Padding="4" Offset="858,0">
+			<GridButton ID="RestartButton"	Anchor="C,C" String="LOC_PBJ_RE_BUTTON_NAME"	Size="160,54" Style="TabButton" FontSize="20" TextOffset="0,2"/>
+			<GridButton Anchor="C,C" Disabled="1" Size="160,54"/>
+			<GridButton	ID="HITButton" Disabled="1"	Anchor="C,C" String="LOC_PBJ_HIT_BUTTON_NAME"	Size="160,54" Style="TabButton" FontSize="20" TextOffset="0,2"/>
+			<GridButton	ID="StandButton" Disabled="1"	Anchor="C,C" String="LOC_PBJ_STAND_BUTTON_NAME"	Size="160,54" Style="TabButton" FontSize="20" TextOffset="0,2"/>
+		</Stack>
+		<!--  下注按钮 -->
+		<Stack ID="BetButtons" Anchor="C,C" StackGrowth="Right" Padding="8" Offset="0,163">
+			<GridButton ID="Bet_20_Button" Disabled="1"		Anchor="C,C" String="LOC_PBJ_BET_20_BUTTON_NAME"	Size="160,54" Style="TabButton" FontSize="20" TextOffset="0,2"/>
+			<GridButton	ID="Bet_100_Button" Disabled="1"	Anchor="C,C" String="LOC_PBJ_BET_100_BUTTON_NAME"	Size="160,54" Style="TabButton" FontSize="20" TextOffset="0,2"/>
+			<GridButton	ID="Bet_500_Button" Disabled="1"	Anchor="C,C" String="LOC_PBJ_BET_500_BUTTON_NAME"	Size="160,54" Style="TabButton" FontSize="20" TextOffset="0,2"/>
+			<GridButton	ID="Bet_Double_Button" Disabled="1"	Anchor="C,C" MinSize="160,54"  Size="160,54" Style="TabButton" FontSize="20">
+				<Label	ID="Bet_Double_Label" Offset="0,2" 	Anchor="C,C" Style="FontNormal20" FontStyle="Stroke" String="LOC_PBJ_BET_DOUBLE_BASE_BUTTON_NAME"/>
+			</GridButton>
+		</Stack>
+	</Box>
+	<!-- ==================================================================	-->
+	<!--	Instances														-->
+	<!-- ==================================================================	-->
+
+	<!-- 卡牌 -->
+	<Instance Name="HandCardInstance">
+		<Container ID="Content" Size="140,226">
+			<Container ID="LiftableContainer" Size="parent,parent">
+				<Container ID="TypeIcon" Size="parent,parent">
+					<!-- 卡牌变形 -->
+					<Container ID="BG" Size="parent,parent">
+						<Image ID="TypeIcon_C1" Anchor="C,T" Size="parent,7" TextureOffset="0,22" 	Texture="Governments_EmptyCard"	Offset="0,28"/>
+						<Image ID="TypeIcon_C2" Anchor="C,T" Size="parent,7" TextureOffset="0,22" 	Texture="Governments_EmptyCard"	Offset="0,35"/>
+						<Image ID="TypeIcon_C3" Anchor="C,T" Size="parent,7" TextureOffset="0,22" 	Texture="Governments_EmptyCard"	Offset="0,42"/>
+						<Image ID="TypeIcon_C4" Anchor="C,T" Size="parent,7" TextureOffset="0,22" 	Texture="Governments_EmptyCard"	Offset="0,49"/>
+						<Image ID="TypeIcon_T" Anchor="C,T" Size="parent,28" TextureOffset="0,0" 	Texture="Governments_EmptyCard"/>	
+						<Image ID="TypeIcon_B" Anchor="C,B" Size="parent,7"  TextureOffset="0,118" 	Texture="Governments_EmptyCard" Offset="0,28"/>
+						<Image ID="TypeIcon_B" Anchor="C,B" Size="parent,7"  TextureOffset="0,118" 	Texture="Governments_EmptyCard" Offset="0,35"/>
+						<Image ID="TypeIcon_B" Anchor="C,B" Size="parent,7"  TextureOffset="0,118" 	Texture="Governments_EmptyCard" Offset="0,42"/>
+						<Image ID="TypeIcon_B" Anchor="C,B" Size="parent,7"  TextureOffset="0,118" 	Texture="Governments_EmptyCard" Offset="0,49"/>
+						<Image ID="TypeIcon_B" Anchor="C,B" Size="parent,28" TextureOffset="0,122" 	Texture="Governments_EmptyCard"/>
+						<Image ID="TypeIcon_C" Anchor="C,C" Size="parent,114" TextureOffset="0,18" 	Texture="Governments_EmptyCard"/>
+					</Container>
+
+					<Image ID="DropTargetGlow" StretchMode="Fill" Size="parent,parent" Texture="Governments_PolicySlotGlow" Hidden="1"/>
+					<Label ID="NumLabel1" Align="Center" Anchor="L,T" Offset="22,24"  Style="FontNormal20"  Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" String="?"/>
+					<Label ID="NumLabel2" Align="Center" Anchor="R,B" Offset="22,24"  Style="FontNormal20"  Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" String="?"/>
+				</Container>
+			</Container>
+		</Container>
+	</Instance>
+
+	<!-- 游戏进程文本 -->
+	<Instance Name="ProgressInstance">
+		<Container ID="Content" Size="parent,25" Anchor="L,T">
+			<Label ID="DeclarerLogicLabel" Align="Center" Anchor="L,C" Offset="0,0"  Style="FontNormal20" WrapWidth="parent" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
+		</Container>
+	</Instance>
+
+	<Instance Name="OtherPlayerGoldInstance">
+		<Container ID="Content" Anchor="L,T" Size="210,80">
+			<Label	ID="Player_Name" Anchor="L,T" Align="Center" Offset="10,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" String="AAAAAAAAAAAAAA"/>
+			<Container ID="OtherPlayerGold" Anchor="L,B" Size="210,60" Offset="0,0">
+				<Image Anchor="L,T" Size="105,30" Offset="0,0" Texture="Governments_Backing"/>
+				<Image Anchor="L,B" Size="105,30" Offset="0,0" TextureOffset="0,105" Texture="Governments_Backing"/>
+				<Image Anchor="R,T" Size="105,30" Offset="0,0" TextureOffset="247,0" Texture="Governments_Backing" Hidden="0"/>
+				<Image Anchor="R,B" Size="105,30" Offset="0,0" TextureOffset="247,105" Texture="Governments_Backing"/>
+				<Stack		ID="YieldButtonStack" Anchor="L,T" Offset="10,0"	Padding="-14"	StackGrowth="Right">
+					<Image	ID="GoldIcon"		Anchor="L,C"	Offset="0,-1"		Size="64,64"	TextureOffset="128,0"	Texture="YieldAtlas.dds"/>
+					<Label	ID="YieldGold" Anchor="C,C" Style="FontNormal22" ColorSet="ResGoldLabelCS" FontStyle="Stroke" String="0"/>
+				</Stack>
+			</Container>
+		</Container>
+	</Instance>
+
+</Context>

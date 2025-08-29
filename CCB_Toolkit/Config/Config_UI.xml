@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="SETTINGS_UI" Name="LOC_SETTINGS_UI_NAME" Description="LOC_SETTINGS_UI_DESC" Domain="UIsettings" DefaultValue="SETTINGS_UI_ENABLE_ALL" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1904" />
+		
+		<Row ParameterId="SETTINGS_UI_BGP" Name="LOC_SETTINGS_UI_BGP_NAME" Description="LOC_SETTINGS_UI_BGP_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI_BGP" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1905" />
+		<Row ParameterId="SETTINGS_UI_TPE" Name="LOC_SETTINGS_UI_TPE_NAME" Description="LOC_SETTINGS_UI_TPE_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI_TPE" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1906" />
+		<Row ParameterId="SETTINGS_UI_BCS" Name="LOC_SETTINGS_UI_BCS_NAME" Description="LOC_SETTINGS_UI_BCS_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI_BCS" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1907" />
+		<Row ParameterId="SETTINGS_UI_BTS" Name="LOC_SETTINGS_UI_BTS_NAME" Description="LOC_SETTINGS_UI_BTS_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI_BTS" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1908" />
+		<Row ParameterId="SETTINGS_UI_TCP" Name="LOC_SETTINGS_UI_TCP_NAME" Description="LOC_SETTINGS_UI_TCP_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI_TCP" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1909" />
+		<Row ParameterId="SETTINGS_UI_DPR" Name="LOC_SETTINGS_UI_DPR_NAME" Description="LOC_SETTINGS_UI_DPR_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI_DPR" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="1910" />
+
+	</Parameters>
+	<DomainValues>
+		<Row Domain="UIsettings" Value="SETTINGS_UI_ENABLE_ALL" Name="LOC_SETTINGS_UI_ENABLE_ALL_NAME" Description="LOC_SETTINGS_UI_ENABLE_ALL_DESC" SortIndex="1"/>
+		<Row Domain="UIsettings" Value="SETTINGS_UI_CUSTOM" Name="LOC_SETTINGS_UI_CUSTOM_NAME" Description="LOC_SETTINGS_UI_CUSTOM_DESC" SortIndex="2"/>
+	</DomainValues>
+	<ParameterDependencies>
+		<!-- 当自定义设置时，选项可见 -->
+		<Row ParameterId="SETTINGS_UI_BGP" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" Operator="Equals" ConfigurationValue="SETTINGS_UI_CUSTOM"/>
+		<Row ParameterId="SETTINGS_UI_TPE" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" Operator="Equals" ConfigurationValue="SETTINGS_UI_CUSTOM"/>
+		<Row ParameterId="SETTINGS_UI_BCS" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" Operator="Equals" ConfigurationValue="SETTINGS_UI_CUSTOM"/>
+		<Row ParameterId="SETTINGS_UI_BTS" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" Operator="Equals" ConfigurationValue="SETTINGS_UI_CUSTOM"/>
+		<Row ParameterId="SETTINGS_UI_TCP" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" Operator="Equals" ConfigurationValue="SETTINGS_UI_CUSTOM"/>
+		<Row ParameterId="SETTINGS_UI_DPR" ConfigurationGroup="Game" ConfigurationId="SETTINGS_UI" Operator="Equals" ConfigurationValue="SETTINGS_UI_CUSTOM"/>
+	</ParameterDependencies>
+</GameInfo>

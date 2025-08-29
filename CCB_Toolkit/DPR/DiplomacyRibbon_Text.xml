@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DPR_TOTAL_POPULATION" Language="zh_Hans_CN">
+			<Text>人口总量</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_TOTAL_POPULATION" Language="en_US">
+			<Text>Total population</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_FOOD_SURPLUS_YIELD" Language="zh_Hans_CN">
+			<Text>每回合余粮累积</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_FOOD_SURPLUS_YIELD" Language="en_US">
+			<Text>Food Surplus per Turn</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_PRODUCTION_YIELD" Language="zh_Hans_CN">
+			<Text>每回合生产力</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_PRODUCTION_YIELD" Language="en_US">
+			<Text>Production per Turn</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_GOLD_PERTURN" Language="zh_Hans_CN">
+			<Text>每回合金币产出</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_GOLD_PERTURN" Language="en_US">
+			<Text>Gold per Turn</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_FAITH_PERTURN" Language="zh_Hans_CN">
+			<Text>每回合信仰产出</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_FAITH_PERTURN" Language="en_US">
+			<Text>Faith per Turn</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_FAVOR_PERTURN" Language="zh_Hans_CN">
+			<Text>每回合外交支持</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_FAVOR_PERTURN" Language="en_US">
+			<Text>Favor per Turn</Text>
+		</Replace>		
+	</LocalizedText>
+</GameData>

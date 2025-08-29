@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Context xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\CivTech\Libs\ForgeUI\ForgeUI_Assets\Controls.xsd">
+
+	<Include File="LeaderIcon"/>
+  <Include File="CongressButton"/>
+
+  <AlphaAnim ID="ChatIndicatorWaitTimer" Cycle="Once" Speed="0.5" AlphaBegin="0.0" AlphaEnd="1.0" Stopped="1"/>	
+  <Container				ID="RibbonContainer" Size="auto,60" Anchor="R,T" Offset="0,27" >
+    <Container			ID="ScrollContainer" Anchor="R,T" Size="10,90" >
+      <ScrollPanel	ID="LeaderScroll" Size="parent,parent" >
+        <Stack			ID="LeaderStack" Anchor="R,T" StackGrowth="Left" StackPadding="0" Offset="3,4"/>
+      </ScrollPanel>
+
+			<Image				ID="NextButtonContainer" Anchor="R,B" Offset="-12,-13" Size="40,37"  Texture="ActionPanel_Badge" >
+        <Button			ID="NextButton" Anchor="R,B" Offset="4,2" Style="ArrowButtonRight"/>
+      </Image>      
+			<Container		ID="PreviousButtonContainer" Size="40,parent" Anchor="L,T" AnchorSide="O,I">
+        <Image																	 Size="62,34" Offset="8,2" Texture="DiploRibbon_Separator" />
+        <Image			ID="PreviousButtonBacking"	 Size="40,37" Anchor="L,B" Offset="29,-13" Texture="ActionPanel_Badge" FlipX="1">
+          <Button		ID="PreviousButton" Anchor="L,B" Offset="4,2" Style="ArrowButtonLeft" />
+        </Image>
+      </Container>			
+    </Container>
+	  
+	  <Tutorial   		ID="TutDiploRibbon"	Style="TutorialContainer"	Offset="80,90" Anchor="R,T" TriggerBy="TutorialDiploRibbon">
+		  <SlideAnim		Anchor="R,T" Start="0,0"	EndOffset="0,-20" Cycle="Bounce" Function="OutQuad" >
+			  <Image									 Size="44,58"		Texture="Tutorial_ArrowV" FlipY="1" />
+		  </SlideAnim>
+	  </Tutorial>
+
+	  <Tutorial   		ID="TutSelectLeaderIcon"	Style="TutorialContainer"	Anchor="R,T" Offset="200,12"  TriggerBy="TutorialSelectLeaderIcon">
+		  <Grid					Style="TutorialEndTurnCalloutGrid">
+			  <Label			Style="TutorialEndTurnHeaderText"		String="LOC_META_158b_HEAD" />
+			  <Label			Style="TutorialEndTurnBodyText"			String="LOC_META_158b_BODY" />
+		  </Grid>
+		  <SlideAnim		Anchor="R,T" Start="0,0"		EndOffset="-20,0" Cycle="Bounce" Function="OutQuad" >
+			  <Image									 Size="58,44"		Texture="Tutorial_ArrowH" />
+		  </SlideAnim>
+	  </Tutorial>
+  </Container>
+
+
+	<!-- ==== [ Instances	]================================================	-->
+  
+	<Instance Name="LeaderInstance">
+		<Container				ID="LeaderContainer"									Size="74,80" Offset="10,0" ConsumeMouseOver="1">
+			<Grid						ID="StatBacking"		Style="Subheader" Size="74,auto" Offset="0,-3" Color="HUDRIBBON_STATS_SHOW">
+				<SlideAnim		ID="ActiveSlide"											Size="74,auto" EndOffset="0,16" Speed="3" Cycle="Once" Stopped="1">
+					<AlphaAnim	ID="ActiveLeaderAndStats"							Size="10,10" AlphaBegin="0" AlphaEnd="1" Speed="2" Cycle="Once" Stopped="1">
+						<Box								Offset="2,4"								Size="parent,parent"	Color="128,128,0,128"  />
+						<Box								Offset="3,4"								Size="2,parent-2"			Color="128,128,0,200"  />
+						<Box								Offset="-1,4" Anchor="R,T"	Size="2,parent-2"			Color="128,128,0,200"  />
+					</AlphaAnim>
+					<MakeInstance Name="LeaderIcon45" Anchor="C,T" Offset="0,1" />
+					<AlphaAnim	ID="ChatIndicatorFade" Cycle="Once" AlphaBegin="0.0" AlphaEnd="1.0" Speed="3" Stopped="1">
+						<Image		ID="ChatIndicator" Offset="35,0" Size="22,22" Texture="DiploRibbon_TypingIndicator"/>
+					</AlphaAnim>
+					<Container				ID="LogoContainer"										Anchor="R,T"									Size="parent,parent" Hidden="1">
+						<Image				ID="LogoCircle"		Anchor="R,T"									Size="22,22"	Offset="3,1"			Texture="CircleBacking22" Alpha="1" >
+							<Image			ID="Logo"							Anchor="R,T"									Size="22,22"	Offset="0,0"			Texture="CivSymbols22"		 Alpha="1" />
+						</Image>
+					</Container>
+					<Stack			ID="StatStack" StackGrowth="Bottom" Offset="1,60" StackPadding="3" EndPadding="6"  >
+						<Label		ID="PlayerNameLen"	Style="FontNormal12" Offset="0,0"  FontStyle="shadow" Anchor="C" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"	Hidden="1"	EffectColor="0,0,0,255" String="Test"	 />
+						<ScrollTextField    ID="Name"  Offset="0,0" Anchor="L" Size="70,12" Style="FontNormal12" FontStyle="shadow" Color="White" String="PlayerName" Hidden="0"/>
+						<Label		ID="Score"			Style="FontNormal14" FontStyle="shadow" Color0="255,200,0,255" Color2="180,130,200,255"		EffectColor="0,0,0,255" String="[ICON_Capital]-"	ToolTip="LOC_HUD_RIBBON_SCORE"		Hidden="1"  />
+						<Label		ID="Military"		Style="FontNormal14" FontStyle="shadow" ColorSet="ResMilitaryLabelCS"	EffectColor="0,0,0,255" String="[ICON_Strength]-"	ToolTip="LOC_HUD_RIBBON_STRENGTH" Hidden="1"/>
+						<Label		ID="Science"		Style="FontNormal14" FontStyle="shadow" ColorSet="ResScienceLabelCS"	EffectColor="0,0,0,255" String="[ICON_Science]-"	ToolTip="LOC_HUD_RIBBON_SCIENCE"  Hidden="1"/>
+						<Label		ID="Culture"		Style="FontNormal14" FontStyle="shadow" ColorSet="ResCultureLabelCS"	EffectColor="0,0,0,255" String="[ICON_Culture]-"	ToolTip="LOC_HUD_RIBBON_CULTURE"  Hidden="1"/>
+						<Label		ID="GoldperTurn"				Style="FontNormal14" FontStyle="shadow" ColorSet="ResGoldLabelCS"			EffectColor="0,0,0,255" String="[ICON_Gold]-"	    Hidden="1"/>
+						<Label		ID="Gold"				Style="FontNormal14" FontStyle="shadow" ColorSet="ResGoldLabelCS"			EffectColor="0,0,0,255" String="[ICON_Gold]-"			ToolTip="LOC_HUD_RIBBON_GOLD"     Hidden="1"/>
+						<Label		ID="FaithperTurn"			Style="FontNormal14" FontStyle="shadow" ColorSet="ResFaithLabelCS" 		EffectColor="0,0,0,255" String="[ICON_Faith]-"	  Hidden="1" />
+						<Label		ID="Faith"			Style="FontNormal14" FontStyle="shadow" ColorSet="ResFaithLabelCS" 		EffectColor="0,0,0,255" String="[ICON_Faith]-"		ToolTip="LOC_HUD_RIBBON_FAITH"   Hidden="1" />
+						<Label		ID="Cities_Prod"			Style="FontNormal14" FontStyle="shadow" ColorSet="ResFavorLabelCS" 		EffectColor="0,0,0,255" String="[ICON_Production]-"	  Hidden="1" />
+						<Label		ID="Cities_Food"			Style="FontNormal14" FontStyle="shadow" ColorSet="ResFavorLabelCS" 		EffectColor="0,0,0,255" String="[ICON_Food]-"	  Hidden="1" />
+						<Label		ID="Favor"			Style="FontNormal14" FontStyle="shadow" ColorSet="ResFavorLabelCS" 		EffectColor="0,0,0,255" String=" [ICON_Favor] -"  ToolTip="LOC_HUD_RIBBON_FAVOR"  Hidden="1" />
+						<Label		ID="Data0"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Tes0"		Hidden="1"	  />
+						<Button 	ID="SpecControl_1"  Texture="Controls_ButtonSmall" Offset="2,0" Size="50,25" Anchor="L,C" Style="FontNormal11" FontStyle="shadow" Align="center" String="LOC_BSM_DIPLOMACY_SCORE" Hidden="1">
+						</Button>
+						<Button 	ID="SpecControl_5"  Texture="Controls_ButtonSmall" Offset="2,0" Size="50,25" Anchor="L,C" Style="FontNormal11" FontStyle="shadow" Align="center" String="LOC_BSM_DIPLOMACY_YIELD" Hidden="1">
+						</Button>
+						<Button 	ID="SpecControl_6"  Texture="Controls_ButtonSmall" Offset="2,0" Size="50,25" Anchor="L,C" Style="FontNormal11" FontStyle="shadow" Align="center" String="LOC_BSM_DIPLOMACY_TOTAL" Hidden="1">
+						</Button>
+						<Label		ID="Data1"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test1"			Hidden="1"  />
+						<Label		ID="Data2"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test2"			Hidden="1"  />
+						<Button 	ID="SpecControl_2"  Texture="Controls_ButtonSmall" Offset="2,0" Size="50,25" Anchor="L,C" Style="FontNormal11" FontStyle="shadow" Align="center" String="LOC_BSM_DIPLOMACY_TECHS" Hidden="1">
+						</Button>
+						<Label		ID="Data3"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test3"		Hidden="1"	  />
+						<Label		ID="Data4"			Style="FontNormal12" FontStyle="shadow"Anchor="L"  Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test4"		Hidden="1"	  />
+						<Button 	ID="SpecControl_3"  Texture="Controls_ButtonSmall" Offset="2,0" Size="50,25" Anchor="L,C" Style="FontNormal11" FontStyle="shadow" Align="center" String="LOC_BSM_DIPLOMACY_ERAS" Hidden="1">
+						</Button>
+						<Label		ID="Data5"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test5"		Hidden="1"	  />
+						<Label		ID="Data6"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test6"		Hidden="1"	  />
+						<Button 	ID="SpecControl_4"  Texture="Controls_ButtonSmall" Offset="2,0" Size="50,25" Anchor="L,C" Style="FontNormal11" FontStyle="shadow" Align="center" String="LOC_BSM_DIPLOMACY_ARMY" Hidden="1">
+						</Button>
+						<Label		ID="Data7"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test7"		Hidden="1"	  />
+						<Label		ID="Data8"			Style="FontNormal12" FontStyle="shadow" Anchor="L" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test7"		Hidden="1"	  />
+						<!--- Eras / Empire -->
+						<Label		ID="Governement"			Style="FontNormal12" FontStyle="shadow" Anchor="L,C" Offset="0,10" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Governe."	Hidden="1"/>
+						<Label		ID="Cities"			Style="FontNormal12" FontStyle="shadow" Offset="1,0" Anchor="L,C" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="[ICON_City]-"	Hidden="1"/>
+						
+						
+						<Label		ID="CurrentAge0"			Style="FontNormal12" FontStyle="shadow" Anchor="L,C" Offset="0,10" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Current:"	Hidden="1"/>
+						<Label		ID="CurrentAge"			Style="FontNormal12" FontStyle="shadow" Anchor="L,C" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Normal Age"	Hidden="1"/>
+						<Label		ID="EraScore0"			Style="FontNormal12" FontStyle="shadow" Anchor="L,C" Offset="0,10" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Next:"	Hidden="1"/>
+						<Label		ID="EraScore"			Style="FontNormal12" FontStyle="shadow" Anchor="L,C" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="DD 140/170"	Hidden="1"/>
+						<!--- Army -->
+						<Label		ID="LandUnit"			Style="FontNormal12" FontStyle="shadow"  Offset="3,0" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Land: 000"	Hidden="1"/>
+						<Label		ID="NavyUnit"			Style="FontNormal12" FontStyle="shadow"  Offset="3,0" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Navy: 000"	Hidden="1"/>
+						<Label		ID="AirUnit"			Style="FontNormal12" FontStyle="shadow" Offset="3,0" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Air: 000"	Hidden="1"/>
+						<Label		ID="Strategic1"			Style="FontNormal12" FontStyle="shadow"  Offset="1,0" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="XX: 00 XX: 00"	Hidden="1"/>
+						<Label		ID="Nukes"			Style="FontNormal12" FontStyle="shadow" Anchor="L,C" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="XX: 00 XX: 00"	Hidden="1"/>
+						<Label		ID="Data"			Style="FontNormal12" FontStyle="shadow" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Tes0"			Hidden="1"  />
+						<!-- Accumulated -->
+						<Label		ID="Total_Science"		Style="FontNormal14" FontStyle="shadow" ColorSet="ResScienceLabelCS"	EffectColor="0,0,0,255" String="[ICON_Science]-"	ToolTip="LOC_HUD_RIBBON_SCIENCE"  Hidden="1"/>
+						<Label		ID="Total_Culture"		Style="FontNormal14" FontStyle="shadow" ColorSet="ResCultureLabelCS"	EffectColor="0,0,0,255" String="[ICON_Culture]-"	ToolTip="LOC_HUD_RIBBON_CULTURE" Hidden="1" />
+						<Label		ID="Total_Gold"				Style="FontNormal14" FontStyle="shadow" ColorSet="ResGoldLabelCS"			EffectColor="0,0,0,255" String="[ICON_Gold]-"			ToolTip="LOC_HUD_RIBBON_GOLD"   Hidden="1"  />
+						<Label		ID="Total_Faith"			Style="FontNormal14" FontStyle="shadow" ColorSet="ResFaithLabelCS" 		EffectColor="0,0,0,255" String="[ICON_Faith]-"	 Hidden="1"  />
+
+
+						<Button ID="ScienceButton" Anchor="L" Offset="3,6" Size="51,51" Texture="LaunchBar_Hook_ScienceButton" Style="ButtonNormalText" TextureOffset="4,9" StateOffsetIncrement="0,60" Hidden="1">
+        					<Image ID="ResearchIcon" Anchor="C,T" Offset="0,4" Size="38,38" Texture="LaunchBar_Hook_TechTree"/>
+        					<Image ID="ScienceHookWithMeter" Anchor="C,C" Offset="0,-5" Size="57,57" Hidden="1" Texture="LaunchBar_Hook_ScienceMeter_Backing.dds">
+								<Meter 	ID="ScienceBoostMeter"			Anchor="C,C"	Size="55,55" Offset="0,0"	Texture="ResearchPanel_BoostMeter"  Percent=".4"	 	Speed="1.0" Follow="1"/>
+								<Meter 	ID="ScienceMeter"		Anchor="C,C"	Size="55,55" Offset="0,0"	Texture="ResearchPanel_Meter"		Percent="0"	Speed="1.0" Follow="1"/>
+        					</Image>
+      					</Button>
+						<Label		ID="ScienceText" Anchor="L"	Offset="0,-5"		Style="FontNormal12" FontStyle="shadow" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test" Hidden="1"/>
+						<Label		ID="ScienceTurnsLeft"									Anchor="L"	Offset="0,0"		Style="FontNormal12" String="33"  Hidden="1"/>
+						
+						<Button ID="CultureButton" Anchor="L" Offset="3,2" Size="51,51" Texture="LaunchBar_Hook_CultureButton" Style="ButtonNormalText" TextureOffset="4,9" StateOffsetIncrement="0,60" Hidden="1">
+        					<Image ID="CultureIcon" Anchor="C,T" Offset="0,4" Size="38,38" Texture="LaunchBar_Hook_CivicsTree"/>
+       						<Image ID="CultureHookWithMeter" Anchor="C,C" Offset="0,-5" Size="57,57" Hidden="1" Texture="LaunchBar_Hook_CultureMeter_Backing.dds">
+								<Meter	ID="CultureBoostMeter"		Anchor="C,C"	Size="55,55" Offset="0,0"	Texture="CivicPanel_BoostMeter"  	Percent=".4"		Speed="1.0" Follow="1"/>
+								<Meter	ID="CultureMeter"	Anchor="C,C"	Size="55,55" Offset="0,0"	Texture="CivicPanel_Meter"			Percent="0"	Speed="1.0" Follow="1"/>
+        					</Image>
+     					</Button>
+						<Label		ID="CultureText" Anchor="L" Offset="0,-5"			Style="FontNormal12" FontStyle="shadow" Align="center" Color0="255,255,255,255" Color2="0,0,0,0"		EffectColor="0,0,0,255" String="Test" Hidden="1"/>
+						<Label		ID="CultureTurnsLeft"									Anchor="L"	Offset="0,0"		Style="FontNormal12" String="33" Hidden="1"/>
+					</Stack>
+				</SlideAnim>
+			</Grid>
+		</Container>
+  </Instance>
+  
+</Context>

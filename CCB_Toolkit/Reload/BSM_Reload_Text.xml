@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TPT_BSM_COMPATIBLE_NAME" Language="zh_Hans_CN">
+			<Text>观察者兼容v.7</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_BSM_COMPATIBLE_DESC" Language="zh_Hans_CN">
+			<Text>通过二次载入实现加载不同UI[NEWLINE][NEWLINE]第二版本测试中</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

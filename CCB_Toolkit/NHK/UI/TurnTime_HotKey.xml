@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Context  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\..\..\CivTech\Libs\ForgeUI\ForgeUI_Assets\Controls.xsd"
+					ColorSet="Beige_Black" Style="FontNormal16" FontStyle="Shadow" >
+
+  <GridButton ID="AddTimeButton" Anchor="R,T" Offset="60,1" Size="50,24" Texture="Controls_ButtonControl" SliceCorner="12,12" SliceTextureSize="24,24" StateOffsetIncrement="0,24" ToolTip="LOC_TURNTIME_ADD_BUTTON">
+	<Label Style="FontNormal16" FontStyle="stroke" ColorSet="ResGoldLabelCS" Anchor="C,C" String="P++" Offset="0,1"/>
+  </GridButton>
+  <GridButton ID="ReduceTimeButton" Anchor="R,T" Offset="8,1" Size="50,24" Texture="Controls_ButtonControl" SliceCorner="12,12" SliceTextureSize="24,24" StateOffsetIncrement="0,24" ToolTip="LOC_TURNTIME_REDUCE_BUTTON">
+	<Label Style="FontNormal16" FontStyle="stroke" ColorSet="ResGoldLabelCS" Anchor="C,C" String="P--" Offset="0,1" KerningAdjustment="1"/>
+  </GridButton>
+					
+	<AlphaAnim        ID="AlphaIn"      Size="parent,parent"  AlphaBegin="0"  AlphaEnd="1"  Speed="9" Function="Root" Cycle="Once" Hidden="1">
+		<Box																	Color="0,0,0,0" Size="parent,parent" ConsumeMouse="0">
+			<Image															Texture="Controls_Vignette" Size="500,500"   Color="0,0,0,255" Anchor="R,B"/>
+			<Image															Texture="Controls_Vignette" Size="500,500"   Color="0,0,0,255" Anchor="R,T" FlipY="1"/>
+			<Image															Texture="Controls_Vignette" Size="500,500"   Color="0,0,0,255" Anchor="L,T" FlipY="1" FlipX="1"/>
+			<Image															Texture="Controls_Vignette" Size="500,500"   Color="0,0,0,255" Anchor="L,B" FlipX="1"/>
+			<Image															Texture="Controls_Gradient" Size="150,parent"  Color="0,0,0,255" Anchor="L,T" Rotate="90"/>
+			<Image															Texture="Controls_Gradient" Size="150,parent"  Color="0,0,0,255" Anchor="R,T" Rotate="270"/>
+			<Image															Texture="Controls_Gradient" Size="parent,150"  Color="0,0,0,255" Anchor="L,T" FlipY="1"/>
+			<Image															Texture="Controls_Gradient" Size="parent,150"  Color="0,0,0,255" Anchor="L,B"/>
+		</Box>
+
+		<Label			ID="Processing_Text"	ColorSet="ResGoldLabelCS"		Style="FontNormal30" 	Anchor="C,B" String="LOC_TURNTIME_FORCED_TURNEND_DESCRIPTION" Offset="0,75"/>
+	</AlphaAnim>  
+</Context>

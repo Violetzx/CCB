@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DMT_OPTIONS_HOTKEY_CATEGORY" Language="zh_Hans_CN">
+			<Text>地图钉</Text>
+		</Replace>
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_TOGGLE_MAP_TACK_VISIBILITY_NAME" Language="zh_Hans_CN">
+            <Text>[COLOR:ResGoldLabelCS]显示/隐藏所有地图钉[ENDCOLOR]</Text>
+        </Replace>	
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_TOGGLE_MAP_TACK_VISIBILITY_DESC" Language="zh_Hans_CN">
+            <Text>显示/隐藏所有地图钉</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_ADD_MAP_TACK" Language="zh_Hans_CN">
+            <Text>[COLOR:ResGoldLabelCS]添加地图钉[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_DELETE_MAP_TACK" Language="zh_Hans_CN">
+            <Text>[COLOR:ResGoldLabelCS]删除地图钉[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_ADD_MESSAGE_TACK" Language="zh_Hans_CN">
+            <Text>[COLOR:ResGoldLabelCS]发送聊天坐标[ENDCOLOR]</Text>
+        </Replace>
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Parameters>
+		<Row ParameterId="CPL_NO_PINS" Name="CPL_NO_PINS_NAME" Description="CPL_NO_PINS_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="CPL_NO_PINS" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2902" />
+	</Parameters>
+</GameData>

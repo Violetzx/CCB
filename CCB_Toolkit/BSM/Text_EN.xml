@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+	
+	<!-- New entries -->
+	<Replace Tag="BSM_SP_NAME" language="en_US">
+		<Text>Spectator Auto-End Turn</Text>
+	</Replace>
+	<Replace Tag="BSM_SP_DESC" language="en_US">
+		<Text>Turns would automatically switch over once all the AI have played (Default = On).</Text>
+	</Replace>
+	<Replace Tag="LOC_ONE_OBS_NAME" language="en_US">
+		<Text>Gathering Storm: [COLOR_Civ6Green]One Observer[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_ONE_OBS_DESCRIPTION" language="en_US">
+		<Text>Adjust Gathering Storm settings to balance the prescence of one Observer. (BBG settings would be detected as well)</Text>
+	</Replace>
+	<Replace Tag="LOC_TWO_OBS_NAME" language="en_US">
+		<Text>Gathering Storm: [COLOR_Civ6Green]Two Observers[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_TWO_OBS_DESCRIPTION" language="en_US">
+		<Text>Adjust Gathering Storm settings to balance the prescence of two Observers. (BBG settings would be detected as well)</Text>
+	</Replace>
+	<Replace Tag="LOC_THREE_OBS_NAME" language="en_US">
+		<Text>Gathering Storm: [COLOR_Civ6Green]Three Observers[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_THREE_OBS_DESCRIPTION" language="en_US">
+		<Text>Adjust Gathering Storm settings to balance the prescence of three Observers. (BBG settings would be detected as well)</Text>
+	</Replace>
+	<Replace Tag="LOC_FOUR_OBS_NAME" language="en_US">
+		<Text>Gathering Storm: [COLOR_Civ6Green]Four Observers[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_FOUR_OBS_DESCRIPTION" language="en_US">
+		<Text>Adjust Gathering Storm settings to balance the prescence of four Observers. (BBG settings would be detected as well)</Text>
+	</Replace>
+		<Replace Tag="BSM_TOURNAMENT_NAME" language="en_US">
+		<Text>Tournament Name</Text>
+	</Replace>
+		<Replace Tag="BSM_TEAM1_NAME" language="en_US">
+		<Text>Team 1 Name</Text>
+	</Replace>
+		<Replace Tag="BSM_TEAM2_NAME" language="en_US">
+		<Text>Team 2 Name</Text>
+	</Replace>
+	<Replace Tag="BSM_TEAM3_NAME" language="en_US">
+		<Text>Team 3 Name</Text>
+	</Replace>
+		<Replace Tag="BSM_TEAM4_NAME" language="en_US">
+		<Text>Team 4 Name</Text>
+	</Replace>
+	
+	
+		<!-- Civilization -->
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_NAME" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_DESCRIPTION" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_ADJECTIVE" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+		
+		<!-- Leader Name -->
+		<Row Tag="LOC_LEADER_SPECTATOR_NAME" Language="en_US">
+			<Text>[COLOR_Civ6Green]Spectator[ENDCOLOR]</Text>
+		</Row>
+
+		<!-- Civilization Traits -->
+		<Row Tag="LOC_TRAIT_CIVILIZATION_SPECTATOR_NAME" Language="en_US">
+			<Text></Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_SPECTATOR_DESCRIPTION" Language="en_US">
+			<Text>You can mouse over the buttons under your portrait to access more information.[NEWLINE]New reports accessible from the report menu.</Text>
+		</Row>
+
+		<!-- Leader Traits -->
+		<Row Tag="LOC_TRAIT_LEADER_SPECTATOR_NAME" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_SPECTATOR_DESCRIPTION" Language="en_US">
+			<Text>Click on a leader's portrait to get his vision.[NEWLINE]You would be able to then see his/her Tech tree, Governement choices and more.</Text>
+		</Row>
+
+		<!-- DOM_TEXT -->
+		<Row Tag="LOC_LEADER_SPECTATOR_DOM_TEXT" Language="en_US">
+			<Text>"I am here to watch."[NEWLINE]  [NEWLINE]          D. / Jack the Narrator</Text>
+		</Row>
+
+
+		<!-- Civlization Citizen Names -->
+		<Row Tag="LOC_CITIZEN_SPECTATOR_MALE_1" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_SPECTATOR_FEMALE_1" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+
+
+		<!-- Civilization City Names-->
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_CITY_1" Language="en_US">
+			<Text>Spectator</Text>
+		</Row>
+		
+		<!-- Notifications, Message is the Tag, Summary the description-->
+		<Row Tag="LOC_BSM_NOTIFICATION_DELAYED_B1_MESSAGE" Language="en_US">
+			<Text>Delayed B1</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_DELAYED_B1_SUMMARY" Language="en_US">
+			<Text>Delayed First City</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B2_MESSAGE" Language="en_US">
+			<Text>B2 Settled</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B2_SUMMARY" Language="en_US">
+			<Text>Second Settlement</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B3_MESSAGE" Language="en_US">
+			<Text>B3 Settled</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B3_SUMMARY" Language="en_US">
+			<Text>Third Settlement</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B10_MESSAGE" Language="en_US">
+			<Text>B10 Settled!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B10_SUMMARY" Language="en_US">
+			<Text>This player has just put down his/her 10th city</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B20_MESSAGE" Language="en_US">
+			<Text>B20 Settled!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B20_SUMMARY" Language="en_US">
+			<Text>This player has just put down his/her 20th city !!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_GOODY_MESSAGE" Language="en_US">
+			<Text>Goody Hut Taken</Text>
+		</Row>		
+		<Row Tag="LOC_BSM_NOTIFICATION_GOV_CHANGE_MESSAGE" Language="en_US">
+			<Text>Governement Change</Text>
+		</Row>		
+		<Row Tag="LOC_BSM_NOTIFICATION_WONDER_STARTED_MESSAGE" Language="en_US">
+			<Text>Wonder Started</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_PANTHEON_MESSAGE" Language="en_US">
+			<Text>Pantheon Founded</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_SETTLER_MESSAGE" Language="en_US">
+			<Text>Settler Lost</Text>
+		</Row>				
+		<Row Tag="LOC_BSM_NOTIFICATION_SETTLER_SUMMARY" Language="en_US">
+			<Text>Settler has been captured!!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_FIRST_UNIT_MESSAGE" Language="en_US">
+			<Text>First World Unit</Text>
+		</Row>			
+		<Row Tag="LOC_BSM_NOTIFICATION_STRONG_GP_MESSAGE" Language="en_US">
+			<Text>Key Great-Person</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_FIRST_DISTRICT_MESSAGE" Language="en_US">
+			<Text>First District</Text>
+		</Row>
+		
+		<Row Tag="LOC_BSM_DIPLOMACY_SCORE" Language="en_US">
+			<Text>Score</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_DIPLOMACY_YIELD" Language="en_US">
+			<Text>Yield</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_TOTAL" Language="en_US">
+			<Text>Total</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_TECHS" Language="en_US">
+			<Text>Techs</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_ERAS" Language="en_US">
+			<Text>Eras</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_ARMY" Language="en_US">
+			<Text>Army</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_DIPLOMACY_OBSERVER" Language="en_US">
+			<Text>Observer</Text>
+		</Row>									
+  </LocalizedText>
+</GameData>

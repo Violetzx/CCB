@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ _____                      ______     ______    _____           _     
+|_   _|__  __ _ _ __ ___   |  _ \ \   / /  _ \  |_   _|__   ___ | |___ 
+  | |/ _ \/ _` | '_ ` _ \  | |_) \ \ / /| |_) |   | |/ _ \ / _ \| / __|
+  | |  __/ (_| | | | | | | |  __/ \ V / |  __/    | | (_) | (_) | \__ \
+  |_|\___|\__,_|_| |_| |_| |_|     \_/  |_|       |_|\___/ \___/|_|___/
+  2023.05.04	号码菌
+-->
+<Mod id="00000000-62F8-5A2D-B71C-24D31788D3BE" version="20240805">
+	<Properties>
+		<Name>LOC_TPT_NAME</Name>
+		<Description>LOC_TPT_DESCRIPTION</Description>
+		<Teaser>LOC_TPT_TEASER</Teaser>
+		<Authors>LOC_TPT_AUTHORS</Authors>
+		<SpecialThanks>LOC_TPT_THANKS</SpecialThanks>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<CompatibleVersions>1.2,2.0</CompatibleVersions>
+	</Properties>
+
+	<LocalizedText>
+		<Text id="LOC_TPT_NAME">
+			<en_US>[ENDCOLOR][ENDCOLOR]Team PVP Tools [COLOR:ResGoldLabelCS]1.61[ENDCOLOR]</en_US>
+			<zh_Hans_CN>[ENDCOLOR][ENDCOLOR]Team PVP Tools[COLOR:ResGoldLabelCS] 联机工具箱 1.61[ENDCOLOR]</zh_Hans_CN>
+		</Text>
+		<Text id="LOC_TPT_DESCRIPTION">
+			<en_US>[ICON_Bolt][COLOR:ResGoldLabelCS]Team PVP Tools : Designed for Multiplayer[ENDCOLOR][NEWLINE][NEWLINE][icon_Exclamation]Frontend improvements[NEWLINE][NEWLINE][icon_You]Net Connection Icon Logic Fix[NEWLINE][NEWLINE][icon_You]Stagingroom tools[NEWLINE][NEWLINE][icon_You]LAN player name limit increased: 22[icon_GoingTo]128[NEWLINE][NEWLINE][icon_Exclamation]UI Enhancements[NEWLINE][NEWLINE][icon_You]Better Great People Panel[NEWLINE][NEWLINE][icon_You]Top Panel Extension Pro[NEWLINE][NEWLINE][icon_You]Better City States Lite[NEWLINE][NEWLINE][icon_You]Better Trade Screen Lite[NEWLINE][NEWLINE][icon_You]Extended Policy Cards[NEWLINE][NEWLINE][icon_You]Expandable Mods In Use Area[NEWLINE][NEWLINE][icon_You]Tech Civic Boost Ratio Fix[NEWLINE][NEWLINE][icon_You]Hide Stats Evolved Pro[NEWLINE][NEWLINE][icon_Exclamation]Auxiliary Tools[NEWLINE][NEWLINE][icon_You]Notification Panel Quick Clear[NEWLINE][NEWLINE][icon_You]Forced End Button[NEWLINE][NEWLINE][icon_You]Auto Place Map Pins on the Poles[NEWLINE][NEWLINE][icon_You]New unit hotkeys[NEWLINE][NEWLINE][icon_You]Remove Map pin option[NEWLINE][NEWLINE][icon_You]Remove Create City Confirm Popup[NEWLINE][NEWLINE][icon_You]Better Builder Charges Tracking[NEWLINE][NEWLINE][icon_You]Chat Commands (/help)[NEWLINE][NEWLINE][icon_You]Observer button for the defeated[NEWLINE][NEWLINE][icon_You]No friendship and trading options[NEWLINE][NEWLINE][icon_You]Multiplayer Resource Visibility Sharing[NEWLINE][NEWLINE][icon_You]Blacklist Management[NEWLINE][NEWLINE][icon_You]Goody huts Boost Reminder[NEWLINE][NEWLINE][icon_Exclamation]Automatic updates
+			</en_US>
+			<zh_Hans_CN>
+			[ICON_Bolt][COLOR:ResGoldLabelCS]Team PVP Tools 联机工具箱 为多人联机增加全新功能[ENDCOLOR]
+			[NEWLINE][NEWLINE][icon_Exclamation]前端功能
+			[NEWLINE][NEWLINE][icon_You]优化延迟显示，使延迟小于1ms的玩家显示黑灯
+			[NEWLINE][NEWLINE][icon_You]准备房间顶部工具：快捷开关位置、显示房间人数、玩家名单工具
+			[NEWLINE][NEWLINE][icon_You]本地网络玩家名称上限提升：22[icon_GoingTo]128
+			[NEWLINE][NEWLINE][icon_Exclamation]UI增强
+			[NEWLINE][NEWLINE][icon_You]伟人界面调整优化：拉伸伟人点数排名区域，增强伟人点数显示
+			[NEWLINE][NEWLINE][icon_You]顶部面板拓展：粮食、生产力、人口、奢侈品，显示队友额外资源
+			[NEWLINE][NEWLINE][icon_You]城邦界面优化：显示城邦任务，使者排名颜色增强
+			[NEWLINE][NEWLINE][icon_You]贸易路线视图优化：可按资源收益排序
+			[NEWLINE][NEWLINE][icon_You]政策卡扩展：显示政策卡收益
+			[NEWLINE][NEWLINE][icon_You]可展开的"使用中的模组"界面
+			[NEWLINE][NEWLINE][icon_You]真实科文进度：修正了尤里卡比例显示
+			[NEWLINE][NEWLINE][icon_You]外交能见度模式：显示更多数据细节
+			[NEWLINE][NEWLINE][icon_Exclamation]辅助工具
+			[NEWLINE][NEWLINE][icon_You]清理通知按钮
+			[NEWLINE][NEWLINE][icon_You]强制结束回合按钮
+			[NEWLINE][NEWLINE][icon_You]使小地图以全球比例显示，更好的判断出生位置
+			[NEWLINE][NEWLINE][icon_You]为单位操作增加7个全新快捷键！为调整回合时间新增2个快捷键
+			[NEWLINE][NEWLINE][icon_You]禁用地图钉功能：避免互联网游戏中卡顿
+			[NEWLINE][NEWLINE][icon_You]移除了建立城市的确认弹窗
+			[NEWLINE][NEWLINE][icon_You]工人劳动力查看助手
+			[NEWLINE][NEWLINE][icon_You]聊天指令功能：输入 /help 查看具体内容
+			[NEWLINE][NEWLINE][icon_You]战败观战优化：即使没有城市也能继续观战
+			[NEWLINE][NEWLINE][icon_You]自定义禁用交易和无友谊选项
+			[NEWLINE][NEWLINE][icon_You]团队资源能见度共享
+			[NEWLINE][NEWLINE][icon_You]黑名单管理工具
+			[NEWLINE][NEWLINE][icon_You]村庄尤里卡提示
+			[NEWLINE][NEWLINE][icon_Exclamation]自动更新工具
+			</zh_Hans_CN>
+		</Text>
+		<Text id="LOC_TPT_TEASER">
+			<en_US>[size_32][COLOR:ResGoldLabelCS]Team PVP Tools[ENDCOLOR]</en_US>
+			<zh_Hans_CN>[size_32][COLOR:ResGoldLabelCS]联机工具箱[ENDCOLOR]</zh_Hans_CN>
+		</Text>
+		<Text id="LOC_TPT_AUTHORS">
+			<en_US>[COLOR:ResGoldLabelCS]Azukii[ENDCOLOR]</en_US>
+			<zh_Hans_CN>[COLOR:ResGoldLabelCS]号码菌[ENDCOLOR]</zh_Hans_CN>
+		</Text>
+		<Text id="LOC_TPT_THANKS">
+			<en_US>CHS, MPH, PPK, Zpod, 红魔族首席魔法师, 336tarot, Maple_Leaves, [COLOR_FLOAT_CULTURE]墨香书挽风[ENDCOLOR]</en_US>
+			<zh_Hans_CN>CHS, MPH, 皮皮凯, Zpod, 红魔族首席魔法师, 336tarot, 枫叶, [COLOR_FLOAT_CULTURE]墨香书挽风[ENDCOLOR]</zh_Hans_CN>
+		</Text>
+	</LocalizedText>
+
+	<ActionCriteria>
+		<!-- 禁止和解 -->
+		<Criteria id="Diplomatic_MP_Off">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TPT_NO_MAKE_PEACE</ConfigurationId>
+				<Value>NO_MAKE_PEACE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!-- 允许和解 -->
+		<Criteria id="Diplomatic_MP_ON">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TPT_NO_MAKE_PEACE</ConfigurationId>
+				<Value>CAN_MAKE_PEACE</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!-- 禁止宣布友谊 -->
+		<Criteria id="Diplomatic_FS_Off">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TPT_NO_FRIENDSHIP</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!-- 无代表团 -->
+		<Criteria id="Diplomatic_delegation_Off">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TPT_NO_DELEGATION</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--禁用地图钉(RMP)-->
+		<Criteria id="No_Map_Pins">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>CPL_NO_PINS</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--更多快捷键(NHK)-->
+		<Criteria id="TPT_NEW_HOTKEYS">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>NEW_HOTKEYS</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--更好的伟人界面(BGP)-->
+		<Criteria id="SETTINGS_UI_GreatPeoplePopup" any="1">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI_BGP</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI</ConfigurationId>
+				<Value>SETTINGS_UI_ENABLE_ALL</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--顶部面板扩展(TPE)-->
+		<Criteria id="SETTINGS_UI_TopPanelExtension" any="1">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI_TPE</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI</ConfigurationId>
+				<Value>SETTINGS_UI_ENABLE_ALL</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--城邦面板视图优化(BCS)-->
+		<Criteria id="SETTINGS_UI_CityStates" any="1">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI_BCS</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI</ConfigurationId>
+				<Value>SETTINGS_UI_ENABLE_ALL</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--贸易路线视图优化(BTS)-->
+		<Criteria id="SETTINGS_UI_BetterTradeScreen" any="1">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI_BTS</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI</ConfigurationId>
+				<Value>SETTINGS_UI_ENABLE_ALL</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--真实科文进度(TCP)-->
+		<Criteria id="SETTINGS_UI_TechCivicProgressPro" any="1">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI_TCP</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI</ConfigurationId>
+				<Value>SETTINGS_UI_ENABLE_ALL</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--外交能见度模式(DPR)-->
+		<Criteria id="SETTINGS_UI_DiplomacyRibbon" any="1">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI_DPR</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>SETTINGS_UI</ConfigurationId>
+				<Value>SETTINGS_UI_ENABLE_ALL</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<!--观察者模组二次加载兼容-->
+		<!--
+		<Criteria id="BSM_Compatible_Reload">
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>TPT_BSM_compatible</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		-->
+		<!-- 魔女结社 -->
+		<Criteria id="TP_SECRETSOCIETIES">
+			<ModInUse>ebbe3fc5-f230-4b4a-a529-e288c0bfaacd</ModInUse>	<!--	Team PVP Balanced mod 结社 3.89	-->
+		</Criteria>
+		<!-- 魔女行业 -->
+		<Criteria id="TP_MONOPOLIES">
+			<ModInUse>5ae72daa-fffe-4c91-b76e-fbe5777946ff</ModInUse>	<!--	Team PVP Balanced mod 行业 1.01	-->
+		</Criteria>
+		<!-- 覆盖城邦UI -->
+		<Criteria id="ModInUse_BSM" any="1">
+			<ModInUse>c6e5ad32-0600-4a98-a7cd-5854a1abcaaf</ModInUse>	<!--	Better Spectator Mod v1.2.6	-->
+			<ModInUse>00006850-2C54-980B-79C9-681BB42FCDB5</ModInUse>	<!--	Better Spectator Mod Plus v1.2.7	-->
+		</Criteria>	
+		<!--不兼容Multiplayer Helper模组MPH-->
+		<Criteria id="Disable_MPH">
+			<ModInUse inverse="1">619ac86e-d99d-4bf3-b8f0-8c5b8c402567</ModInUse>	<!--	Multiplayer Helper 1.7.2	-->
+		</Criteria>
+		<!--不兼容高级地图钉模组DMT-->
+		<Criteria id="Disable_DMT">
+			<ModInUse inverse="1">4ecfcc62-5471-4435-b295-590df213e8d8</ModInUse>	<!--	DetailedMapTacks	-->
+		</Criteria>
+		<!--不兼容独立的外交能见度模式DPR-->
+		<Criteria id="Disable_DPR">
+			<ModInUse inverse="1">00000000-0000-1103-34FC-80A16F3198D3</ModInUse>	<!--	Team PVP 外交能见度模式	-->
+		</Criteria>
+		<!-- Better Report Screen(BRS)-->
+		<Criteria id="Expansion1">
+			<GameCoreInUse>Expansion1</GameCoreInUse>
+		</Criteria>
+		<Criteria id="Expansion2">
+			<GameCoreInUse>Expansion2</GameCoreInUse>
+		</Criteria>
+	</ActionCriteria>
+
+	<FrontEndActions>
+	<!--
+		<ImportFiles id="QQ_dds_2">
+			<File>Update/QQ_QingTian.dds</File>
+		</ImportFiles>
+		<ImportFiles id="QQ_dds">
+			<File>Update/QQ_Lianjing.dds</File>
+		</ImportFiles>	
+		<ImportFiles id="Map_dds">
+			<File>Update/Northern_Continent.dds</File>
+			<File>Update/Ring_Continent.dds</File>
+		</ImportFiles>	
+		-->
+		<!-- 禁用灾害 -->
+		<UpdateDatabase id="DD_Config">
+			<Properties>
+				<LoadOrder>99999</LoadOrder>
+			</Properties>
+			<File>DD/DD_Config.sql</File>
+		</UpdateDatabase>
+		<!-- 万神殿不排队 -->
+		<UpdateText id="BetterPantheonChooser_TEXT">
+			<File>BPC/BetterPantheonChooser_Config_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="BetterPantheonChooser_CFG">
+			<File>BPC/BetterPantheonChooser_Config.xml</File>
+		</UpdateDatabase>
+		<ImportFiles id="AD_dds">
+			<File>Update/AD_desc_yue_cup.dds</File>
+			<File>Update/yuejicpu_AD_33_300_300.dds</File>
+			<File>Update/Lianjing_5th_300_268.dds</File>
+			<File>Update/Lianjing_5th_desc_637_637.dds</File>
+		</ImportFiles>	
+		<ImportFiles id="Texture_dds">
+			<File>Update/Neon256_144.dds</File>
+		</ImportFiles>
+		<!-- 玩家标记图片 -->
+		<ImportFiles id="PlayerData_dds">
+			<File>Update/PlayerData_Texture/AnDe_Desc_Texture.dds</File>
+			<File>Update/PlayerData_Texture/QingTian_Desc_Texture.dds</File>
+			<File>Update/PlayerData_Texture/HuaMing_Desc_Texture.dds</File>
+		</ImportFiles>
+		<!-- 扑克游戏(poker) -->
+		<UpdateText id="Poker_Text">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>Poker/PBJ_Text_CN.xml</File>
+			<File>Poker/PBJ_Text_EN.xml</File>
+		</UpdateText>		
+		<ImportFiles id="Poker_UI">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>Poker/UI/Poker_Blackjack_21.lua</File>
+			<File>Poker/UI/Poker_Blackjack_21.xml</File>
+		</ImportFiles>		
+		<!-- 观察者模组优化(BSM) -->
+		<UpdateText id="BSM_Text" criteria="ModInUse_BSM">
+			<Properties>
+				<LoadOrder>10000</LoadOrder>
+			</Properties>
+			<File>BSM/Text_EN.xml</File>
+			<File>BSM/Text_CN.xml</File>
+		</UpdateText>
+		<!-- 观察者模组二次加载(Reload) -->
+		<!--
+		<UpdateDatabase id="BSM_Compatible" criteria="ModInUse_BSM">
+			<File>Reload/BSM_Reload_Config.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="Reload_Replace_Text">
+			<File>Reload/BSM_Reload_Text.xml</File>
+		</UpdateText>
+		-->
+		<!-- 玩家名单 -->
+		<UpdateDatabase id="PlayerData">
+			<File>Update/PlayerData.sql</File>
+		</UpdateDatabase>
+		<!--自动更新工具(Update)-->
+		<UpdateText id="Update_Text">
+			<File>Update/Update_Text.xml</File>
+		</UpdateText>
+		<!--外交能见度模式(DPR)-->
+		<UpdateDatabase id="Cfg_DPR" criteria="Disable_DPR">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>DPR/Config_DPR.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="Config_Text" criteria="Disable_DPR">
+			<File>DPR/Config_DPR_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="Hotkeys_DPR_Configs" criteria="Disable_DPR">
+			<File>DPR/Config_Hotkeys_DPR.xml</File>
+		</UpdateDatabase>
+		<!--局域网名解锁上限128(Option)-->
+		<ImportFiles id="Replace_Options">
+			<Properties>
+				<LoadOrder>1000</LoadOrder>
+			</Properties>
+			<File>Option/Options.xml</File>
+		</ImportFiles>
+		<!-- Better Report Screen(BRS)-->
+		<UpdateDatabase id="BRS_FrontEnd_Database">
+			<File>BRS/Config/BRS_Config.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="BRS_FrontEnd_Text">
+			<File>BRS/Config/BRS_Config_Text.xml</File>
+		</UpdateText>
+		<!--游戏配置(Config)-->
+		<UpdateDatabase id="Config_base">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>Config/GameConfig_BASE.xml</File>
+			<File>Config/Config_UI.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="Config_Text">
+			<File>Config/Config_UI_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="Config_MONOPOLIES" criteria="TP_MONOPOLIES">
+			<Properties>
+				<LoadOrder>5</LoadOrder>
+			</Properties>
+			<File>Config/GameConfig_MONOPOLIES.xml</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="Config_SECRETSOCIETIES" criteria="TP_SECRETSOCIETIES">
+			<Properties>
+				<LoadOrder>5</LoadOrder>
+			</Properties>
+			<File>Config/GameConfig_SECRETSOCIETIES.xml</File>
+		</UpdateDatabase>
+		<!--交易配置(DDV)-->
+		<UpdateDatabase id="Cfg_DDV" criteria="Disable_MPH">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>DDV/Comfig_Deal.xml</File>
+			<File>DDV/Comfig_Friendship.xml</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="Cfg_MP">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>DDV/Config_MakePeace.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="Config_Text" criteria="Disable_MPH">
+			<File>DDV/Comfig_Deal_Text.xml</File>
+			<File>DDV/Comfig_Friendship_Text.xml</File>
+		</UpdateText>
+		<UpdateText id="Config_Text">
+			<File>DDV/Config_MakePeace_Text.xml</File>
+		</UpdateText>
+		<!--更多准备房间功能(BSR)-->	<!--加载要在9999之后，不然会被其他模组覆盖-->
+		<ReplaceUIScript id="StagingRoom" criteria="Disable_MPH">
+			<Properties>
+				<LoadOrder>100000</LoadOrder>
+				<LuaContext>StagingRoom</LuaContext>
+				<LuaReplace>BSR/UI/StagingRoom.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_StagingRoom" criteria="Disable_MPH">
+			<Properties>
+				<LoadOrder>100010</LoadOrder>
+			</Properties>
+			<File>BSR/UI/StagingRoom.xml</File>
+			<File>BSR/UI/StagingRoom.lua</File>
+			<File>BSR/UI/TPT_ToolTipType.xml</File>
+		</ImportFiles>
+		<UpdateText id="Replace_Text" criteria="Disable_MPH">
+			<File>BSR/Text.xml</File>
+		</UpdateText>
+		<!--聊天栏指令(CC)-->
+		<UpdateText id="Replace_Text">
+			<File>CC/Config_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="NewAction">
+			<File>CC/Config.xml</File>
+		</UpdateDatabase>
+		<!--网络延迟逻辑优化(BNL)-->
+		<ImportFiles id="Replace_NetConnectionIconLogic">
+			<Properties>
+				<LoadOrder>20</LoadOrder>
+			</Properties>
+			<File>BNL/NetConnectionIconLogic.lua</File>
+		</ImportFiles>
+		<!--禁用地图钉(RMP)-->
+		<UpdateText id="Replace_Text">
+			<File>RMP/Config_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="NewAction">
+			<File>RMP/Config.xml</File>
+		</UpdateDatabase>
+		<!--更多快捷键(NHK)-->
+		<UpdateDatabase id="NewAction">
+			<File>NHK/GameCfg.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="Replace_Text">
+			<File>NHK/GameCfg_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="ExtraHotkeys_Configs">
+			<File>NHK/SQL/QueriesConfiguration.sql</File>
+		</UpdateDatabase>
+		<UpdateText id="Replace_Text">
+			<File>NHK/Config_TurnTime_Text.xml</File>
+			<File>NHK/Config_Mappin_Text.xml</File>
+			<File>NHK/Config_NewUnitOperation_Text.xml</File>
+			<File>NHK/Config_GreatPeople_Recruit_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="NewAction">
+			<File>NHK/Config_TurnTime.xml</File>
+			<File>NHK/Config_Mappin.xml</File>
+			<File>NHK/Config_NewUnitOperation.xml</File>
+			<File>NHK/Config_GreatPeople_Recruit.xml</File>
+		</UpdateDatabase>
+	</FrontEndActions>
+
+	<InGameActions>
+		<!-- 万神殿不排队 -->
+		<UpdateText id="BetterPantheonChooser_TEXT">
+			<File>BPC/BetterPantheonChooser_Config_Text.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="PantheonChooserR">
+			<Properties>
+				<LoadOrder>10000</LoadOrder>
+				<LuaContext>PantheonChooser</LuaContext>
+				<LuaReplace>BPC/UI/PantheonChooser_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="PantheonChooser">
+			<Properties>
+				<LoadOrder>10000</LoadOrder>
+			</Properties>
+			<File>BPC/UI/PantheonChooser.xml</File>
+			<File>BPC/UI/PantheonChooser_TPT.lua</File>
+		</ImportFiles>
+		<!-- 村庄尤里卡提示(GBR) -->
+		<AddGameplayScripts id="goody_huts_GP">
+			<File>GBR/Goodyhuts_Boost_GP.lua</File>
+		</AddGameplayScripts>
+		<!-- 交易通知提醒(NDR) -->
+		<ImportFiles id="NotificationDeal_Import">
+			<Properties>
+				<LoadOrder>101</LoadOrder>
+			</Properties>
+			<File>NDR/NotificationPanel_DealRemind.lua</File>
+		</ImportFiles>
+		<!--黑名单面板(BLS)-->
+		<UpdateText id="UpdateText">
+			<File>BLS/Blacklist_Text.xml</File>
+		</UpdateText>
+		<AddUserInterfaces id="BlacklistPanel">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+				<Context>InGame</Context>
+			</Properties>
+			<File>BLS/UI/BlacklistPanel.xml</File>
+		</AddUserInterfaces>
+		<ReplaceUIScript id="ChatPanel">
+			<Properties>
+				<LoadOrder>5</LoadOrder>
+				<LuaContext>ChatPanel</LuaContext>
+				<LuaReplace>BLS/UI/ChatPanel_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="ChatPanel_Replacement_UI">
+			<Properties>
+				<LoadOrder>6</LoadOrder>
+			</Properties>
+			<File>BLS/UI/ChatPanel.xml</File>
+			<File>BLS/UI/ChatPanel_TPT.lua</File>
+		</ImportFiles>
+		<!-- 观察者模组优化(BSM) -->
+		<UpdateText id="BSM_Text" criteria="ModInUse_BSM">
+ 			<Properties>
+				<LoadOrder>11000</LoadOrder>
+			</Properties>
+			<File>BSM/Text_EN.xml</File>
+			<File>BSM/Text_CN.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="Spectator_DiplomacyRibbon" criteria="ModInUse_BSM">
+			<Properties>
+				<LoadOrder>11001</LoadOrder>
+				<LuaContext>DiplomacyRibbon</LuaContext>
+				<LuaReplace>BSM/UI/diplomacyribbon_spec.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Spectator_Replacement_UI" criteria="ModInUse_BSM">
+			<Properties>
+				<LoadOrder>11002</LoadOrder>
+			</Properties>
+			<File>BSM/UI/diplomacyribbon.xml</File>
+			<File>BSM/UI/diplomacyribbon_spec.lua</File>
+		</ImportFiles>
+		<!--大将军时代提示(BER)-->
+		<ReplaceUIScript id="GreatGeneralEraReminder_Replace">
+			<Properties>
+				<LoadOrder>10001</LoadOrder>
+				<LuaContext>UnitFlagManager</LuaContext>
+				<LuaReplace>BER/UnitFlagManager_GreatGeneralEraReminder.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="GreatGeneralEraReminder_Import">
+			<File>BER/UnitFlagManager_GreatGeneralEraReminder.lua</File>
+		</ImportFiles>
+		<!--强制结束回合按钮(FEB)-->
+		<UpdateText id="UpdateText">
+			<File>FEB/ForcedEndButton_Text.xml</File>
+		</UpdateText>
+		<AddUserInterfaces id="ForcedEnd">
+			<Properties>
+				<LoadOrder>1200</LoadOrder>
+				<Context>InGame</Context>
+			</Properties>
+			<File>FEB/UI/ForcedEndButton.xml</File>
+		</AddUserInterfaces>
+		<!--显示队友可见资源(STR)-->
+		<ReplaceUIScript id="WorldViewIconsManager">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+				<LuaContext>WorldViewIconsManager</LuaContext>
+				<LuaReplace>STR/UI/WorldViewIconsManager_STR.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_WorldViewIconsManager">
+			<Properties>
+				<LoadOrder>21000</LoadOrder>
+			</Properties>
+			<File>STR/UI/WorldViewIconsManager_STR.lua</File>
+		</ImportFiles>
+		<!--城市横幅刷新修复(PCF)-->
+		<ImportFiles id="CityBannerManager_PCF">
+			<Properties>
+				<LoadOrder>7</LoadOrder>
+			</Properties>
+			<File>PCF/UI/CityBannerManager_PCF.lua</File>
+		</ImportFiles>
+		<!-- 观察者模组二次加载(Reload) -->
+		<!--
+		<AddUserInterfaces id="BSM_Reload" criteria="ModInUse_BSM">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>Reload/UI/BSM_Reload.xml</File>
+		</AddUserInterfaces>
+		<UpdateText id="Reload_Replace_Text">
+			<File>Reload/BSM_Reload_Text.xml</File>
+		</UpdateText>
+		-->
+		<!-- 调整城墙射击按钮(CSB) -->
+		<ImportFiles id="Replace_UI_CityBannerInstances">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<File>CSB/UI/CityBannerManager_TPT.lua</File>
+		</ImportFiles>
+		<!-- 设置面板(Settings) -->
+		<UpdateDatabase id="SettingsData">
+			<File>Settings/TPT_Settings.sql</File>
+		</UpdateDatabase>
+		<UpdateText id="Settings_Text">
+			<File>Settings/TPT_Settings_Text.xml</File>
+		</UpdateText>
+		<AddUserInterfaces id="Settings">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>Settings/UI/TPT_SettingsPanel.xml</File>
+		</AddUserInterfaces>
+		<!-- 玩家名单 -->
+		<UpdateDatabase id="PlayerData">
+			<File>Update/PlayerData.sql</File>
+		</UpdateDatabase>
+		<!-- 清理通知按钮(NOC) -->
+		<ImportFiles id="NotificationClear_Import">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<File>NOC/NotificationPanel_QuickClear.lua</File>
+		</ImportFiles>
+		<!-- 自动更新程序 -->
+		<UpdateText id="Update_Text">
+			<File>Update/Update_Text.xml</File>
+		</UpdateText>
+		<AddUserInterfaces id="AutoUpdate">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>Update/UI/AutoUpdate.xml</File>
+		</AddUserInterfaces>
+		<!--外交能见度模式(DPR)-->
+		<ReplaceUIScript id="WorldRankings" criteria="SETTINGS_UI_DiplomacyRibbon">		<!-- 禁用世界排名 -->
+			<Properties>
+				<LoadOrder>120</LoadOrder>
+				<LuaContext>WorldRankings</LuaContext>
+				<LuaReplace>DPR/UI/WorldRankings_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_WorldRankings" criteria="SETTINGS_UI_DiplomacyRibbon">
+			<Properties>
+				<LoadOrder>121</LoadOrder>
+			</Properties>
+			<File>DPR/UI/WorldRankings.xml</File>
+			<File>DPR/UI/WorldRankings_TPT.lua</File>
+		</ImportFiles>
+		<UpdateText id="Config_Text" criteria="Disable_DPR">
+			<File>DPR/Config_DPR_Text.xml</File>
+		</UpdateText>
+		<UpdateText id="UpdateText" criteria="SETTINGS_UI_DiplomacyRibbon">
+			<File>DPR/DiplomacyRibbon_Text.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="DiplomacyRibbon" criteria="SETTINGS_UI_DiplomacyRibbon">
+			<Properties>
+				<LoadOrder>101</LoadOrder>
+				<LuaContext>DiplomacyRibbon</LuaContext>
+				<LuaReplace>DPR/UI/DiplomacyRibbon_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_DiplomacyRibbon" criteria="SETTINGS_UI_DiplomacyRibbon">
+			<Properties>
+				<LoadOrder>102</LoadOrder>
+			</Properties>
+			<File>DPR/UI/DiplomacyRibbon.xml</File>
+			<File>DPR/UI/DiplomacyRibbon_TPT.lua</File>
+		</ImportFiles>
+		<!-- 二次加载兼容模式 --><!-- 加载顺序大于11200 -->
+		<!--
+		<UpdateText id="UpdateText" criteria="BSM_Compatible_Reload">
+			<File>DPR/DiplomacyRibbon_Text.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="DiplomacyRibbon" criteria="BSM_Compatible_Reload">
+			<Properties>
+				<LoadOrder>11900</LoadOrder>
+				<LuaContext>DiplomacyRibbon</LuaContext>
+				<LuaReplace>DPR/UI/DiplomacyRibbon_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_DiplomacyRibbon" criteria="BSM_Compatible_Reload">
+			<Properties>
+				<LoadOrder>11901</LoadOrder>
+			</Properties>
+			<File>DPR/UI/DiplomacyRibbon.xml</File>
+			<File>DPR/UI/DiplomacyRibbon_TPT.lua</File>
+		</ImportFiles>
+		-->
+		<!--真实科文进度(TCP)-->
+		<UpdateText id="Text_TCP" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<File>TCP/Text_TCP.xml</File>
+		</UpdateText>
+		<ImportFiles id="Replace_TechAndCivicSupport" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>2001</LoadOrder>
+			</Properties>
+			<File>TCP/TechAndCivicSupport.lua</File>
+		</ImportFiles>   
+		<ReplaceUIScript id="TechTree" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+				<LuaContext>TechTree</LuaContext>
+				<LuaReplace>TCP/UI/TechTree_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_TechTree" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<File>TCP/UI/TechTree_TPT.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="CivicsTree" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+				<LuaContext>CivicsTree</LuaContext>
+				<LuaReplace>TCP/UI/CivicsTree_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_CivicsTree" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<File>TCP/UI/CivicsTree_TPT.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="ResearchChooser" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+				<LuaContext>ResearchChooser</LuaContext>
+				<LuaReplace>TCP/UI/ResearchChooser_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_ResearchChooser" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<File>TCP/UI/ResearchChooser_TPT.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="CivicsChooser" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+				<LuaContext>CivicsChooser</LuaContext>
+				<LuaReplace>TCP/UI/CivicsChooser_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_CivicsChooser" criteria="SETTINGS_UI_TechCivicProgressPro">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<File>TCP/UI/CivicsChooser_TPT.lua</File>
+		</ImportFiles>
+		<!--可展开的"使用者的模组"界面(TOM)-->
+		<UpdateText id="Update_Text">
+			<File>TOM/TOM_Text.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="InGameTopOptionsMenu" criteria="Disable_MPH">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+				<LuaContext>InGameTopOptionsMenu</LuaContext>
+				<LuaReplace>TOM/UI/InGameTopOptionsMenu_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_InGameTopOptionsMenu" criteria="Disable_MPH">
+			<Properties>
+				<LoadOrder>20010</LoadOrder>
+			</Properties>
+			<File>TOM/UI/InGameTopOptionsMenu.xml</File>
+			<File>TOM/UI/InGameTopOptionsMenu_TPT.lua</File>
+		</ImportFiles>
+		<!--禁止交易模式(DDV)-->
+		<UpdateText id="Config_Text" criteria="Disable_MPH">
+			<File>DDV/Comfig_Deal_Text.xml</File>
+			<File>DDV/Comfig_Friendship_Text.xml</File>
+		</UpdateText>
+		<UpdateText id="Config_Text">
+			<File>DDV/Config_MakePeace_Text.xml</File>
+		</UpdateText>
+		<ImportFiles id="DiplomacyDealView" criteria="Disable_MPH">
+			<Properties>
+				<LoadOrder>1010</LoadOrder>
+			</Properties>
+			<File>DDV/UI/DiplomacyDealView_TPT.lua</File>
+		</ImportFiles>
+		<UpdateDatabase id="Frienship_Off" criteria="Diplomatic_FS_Off">
+			<Properties>
+				<LoadOrder>20001</LoadOrder>
+			</Properties>
+			<File>DDV/SQL/mph_diplomacy_no_fs.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="Frienship_Off" criteria="Diplomatic_delegation_Off">
+			<Properties>
+				<LoadOrder>20001</LoadOrder>
+			</Properties>
+			<File>DDV/SQL/TPT_Diplomacy_No_delegation.sql</File>
+		</UpdateDatabase>  
+		<UpdateDatabase id="MakePeace_ON" criteria="Diplomatic_MP_ON">
+			<Properties>
+				<LoadOrder>999999</LoadOrder>
+			</Properties>
+			<File>DDV/SQL/MAKE_PEACE.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="MakePeace_Off" criteria="Diplomatic_MP_Off">
+			<Properties>
+				<LoadOrder>999999</LoadOrder>
+			</Properties>
+			<File>DDV/SQL/MAKE_PEACE_Disable.sql</File>
+		</UpdateDatabase>  
+		<!--游戏配置(Config)-->
+		<UpdateText id="Config_Text">
+			<File>Config/Config_UI_Text.xml</File>
+		</UpdateText>
+		<!-- Better Report Screen(BRS)-->
+		<UpdateDatabase id="BRS_UpdateDatabase">
+			<Properties><LoadOrder>1</LoadOrder></Properties>
+			<File>BRS/BetterReportScreen_Database.sql</File>
+		</UpdateDatabase>
+		<AddUserInterfaces id="RMA_Main">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>BRS/RealModifierAnalysis.xml</File>
+		</AddUserInterfaces>
+		<ImportFiles id="BRS_ImportFiles">
+			<Properties>
+				<LoadOrder>1001</LoadOrder>
+			</Properties>
+			<Items>
+				<File>BRS/reportscreen.lua</File>
+				<File>BRS/reportscreen.xml</File>
+				<File>BRS/BRSPage_Yields.lua</File>
+				<File>BRS/BRSPage_Resources.lua</File>
+				<File>BRS/BRSPage_CityStatus.lua</File>
+				<File>BRS/BRSPage_Gossip.lua</File>
+				<File>BRS/BRSPage_Deals.lua</File>
+				<File>BRS/BRSPage_Units.lua</File>
+				<File>BRS/BRSPage_Policy.lua</File>
+				<File>BRS/BRSPage_Minor.lua</File>
+				<File>BRS/BRSPage_Cities2.lua</File>
+			</Items>
+		</ImportFiles>
+		<UpdateText id="BRS_UpdateText">
+			<File>BRS/Config/BRS_Config_Text.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_de_DE.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_es_ES.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_fr_FR.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_it_IT.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_ja_JP.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_ko_KR.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_pl_PL.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_pt_BR.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_ru_RU.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_zh_Hans_CN.xml</File>
+			<File>BRS/Text/BetterReportScreen_Text_zh_Hant_HK.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="BRS_ReplaceUI_ReportScreen_XP1" criteria="Expansion1">
+			<Properties>
+				<LoadOrder>1011</LoadOrder>
+				<LuaContext>ReportScreen</LuaContext>
+				<LuaReplace>BRS/reportscreen.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ReplaceUIScript id="BRS_ReplaceUI_ReportScreen_XP2" criteria="Expansion2">
+			<Properties>
+				<LoadOrder>1021</LoadOrder>
+				<LuaContext>ReportScreen</LuaContext>
+				<LuaReplace>BRS/reportscreen.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="RMI_Imports">
+			<File>BRS/Icons/FontIconsRMI.dds</File>
+		</ImportFiles>
+		<UpdateIcons id="RMI_Icons">
+			<Properties><LoadOrder>2</LoadOrder></Properties>
+			<File>BRS/Icons/FontIconsRMI.xml</File>
+		</UpdateIcons>
+		<UpdateDatabase id="RLL_Database">
+			<File>BRS/RLL/ReportsListLoader.sql</File>
+		</UpdateDatabase>
+		<ImportFiles id="RLL_Imports">
+			<File>BRS/RLL/ReportsListLoader.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="RLL_ReplaceUI_ReportsList">
+			<Properties>
+				<LoadOrder>100000</LoadOrder>
+				<LuaContext>ReportsList</LuaContext>
+				<LuaReplace>BRS/RLL/ReportsListLoader.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="EPC_IMPORT_FILES">
+		  <Properties>
+			<LoadOrder>12001</LoadOrder>
+		  </Properties>
+		  <Items>
+			<File>BRS/UI/GovernmentScreen.lua</File>
+			<File>BRS/UI/GovernmentScreen.xml</File>
+		  </Items>
+		</ImportFiles>
+		<!--城邦面板视图优化(BCS)--><!-- 必须大于9999覆盖obs模组 -->
+		<ReplaceUIScript id="CityStates" criteria="SETTINGS_UI_CityStates">
+			<Properties>
+				<LoadOrder>1000</LoadOrder>
+				<LuaContext>CityStates</LuaContext>
+				<LuaReplace>BCS/UI/CityStates_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_CityStates" criteria="SETTINGS_UI_CityStates">
+			<Properties>
+				<LoadOrder>1010</LoadOrder>
+			</Properties>
+			<File>BCS/UI/CityStates.xml</File>
+			<File>BCS/UI/CityStates_TPT.lua</File>
+		</ImportFiles>
+		<!-- 兼容obs -->
+		<ReplaceUIScript id="CityStates" criteria="ModInUse_BSM">
+			<Properties>
+				<LoadOrder>11000</LoadOrder>
+				<LuaContext>CityStates</LuaContext>
+				<LuaReplace>BCS/UI/CityStates_SPEC.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_CityStates" criteria="ModInUse_BSM">
+			<Properties>
+				<LoadOrder>11100</LoadOrder>
+			</Properties>
+			<File>BCS/UI/CityStates.xml</File>
+			<File>BCS/UI/CityStates_SPEC.lua</File>
+		</ImportFiles>
+		<!--贸易路线视图优化(BTS)-->
+		<UpdateDatabase id="BTS_SETTINGS_DB" criteria="SETTINGS_UI_BetterTradeScreen">
+			<Properties>
+				<LoadOrder>11008</LoadOrder>
+			</Properties>
+			<Items>
+				<File>BTS/Settings/BTS_SettingsSchema.sql</File>
+			</Items>
+		</UpdateDatabase>
+		<UpdateDatabase id="BTS_SETTINGS" criteria="SETTINGS_UI_BetterTradeScreen">
+			<Properties>
+				<LoadOrder>11009</LoadOrder>
+			</Properties>
+			<Items>
+				<File>BTS/Settings/BTS_Settings.sql</File>
+			</Items>
+		</UpdateDatabase>
+		<AddUserInterfaces id="BTS_SETTINGS_PANEL" criteria="SETTINGS_UI_BetterTradeScreen">
+			<Properties>
+				<Context>InGame</Context>
+			<LoadOrder>11010</LoadOrder>
+			</Properties>
+			<Items>
+				<File>BTS/Settings/BTS_SettingsPanel.xml</File>
+			</Items>
+		</AddUserInterfaces>
+		<ImportFiles id="BTS_IMPORT_FILES" criteria="SETTINGS_UI_BetterTradeScreen">
+			<Properties>
+				<LoadOrder>11011</LoadOrder>
+			</Properties>
+			<Items>
+				<File>BTS/UI/TradeOverview.xml</File>
+				<File>BTS/UI/TradeOverview.lua</File>
+				<File>BTS/UI/TradeSupport.lua</File>
+				<File>BTS/UI/Choosers/TradeRouteChooser.xml</File>
+				<File>BTS/UI/Choosers/TradeRouteChooser.lua</File>
+				<File>BTS/UI/Choosers/TradeOriginChooser.xml</File>
+				<File>BTS/UI/Choosers/TradeOriginChooser.lua</File>
+			</Items>
+		</ImportFiles>
+		<LocalizedText id="BTS_TEXT" criteria="SETTINGS_UI_BetterTradeScreen">
+			<Properties>
+				<LoadOrder>11012</LoadOrder>
+			</Properties>
+			<Items>
+				<File>BTS/Text/BTS_Text_EN.xml</File>
+				<File>BTS/Text/BTS_Text_Hans_CN.xml</File>
+			</Items>
+		</LocalizedText>
+		<!--游戏功能提示(NT)-->
+		<AddGameplayScripts id='Notice.lua'>
+			<File>NT/Notice.lua</File>
+		</AddGameplayScripts>
+		<UpdateText id="Replace_Text">
+			<File>NT/Notice_Text.xml</File>
+		</UpdateText>
+		<!--更好的伟人界面(BGP)-->
+		<ReplaceUIScript id="GreatPeoplePopup" criteria="SETTINGS_UI_GreatPeoplePopup">
+			<Properties>
+				<LoadOrder>1000</LoadOrder>
+				<LuaContext>GreatPeoplePopup</LuaContext>
+				<LuaReplace>BGP/UI/GreatPeoplePopup.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_GreatPeoplePopup" criteria="SETTINGS_UI_GreatPeoplePopup">
+			<Properties>
+				<LoadOrder>1010</LoadOrder>
+			</Properties>
+			<File>BGP/UI/GreatPeoplePopup.xml</File>
+			<File>BGP/UI/GreatPeoplePopup.lua</File>
+		</ImportFiles>
+		<!--顶部面板扩展(TPE)-->
+		<UpdateText id="UpdateText" criteria="SETTINGS_UI_TopPanelExtension">
+			<File>TPE/TopPanel_Text.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="TopPanel" criteria="SETTINGS_UI_TopPanelExtension">
+			<Properties>
+				<LoadOrder>20010</LoadOrder>
+				<LuaContext>TopPanel</LuaContext>
+				<LuaReplace>TPE/UI/TopPanelExtension.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="ImportFiles" criteria="SETTINGS_UI_TopPanelExtension">
+			<Properties>
+				<LoadOrder>20020</LoadOrder>
+			</Properties>
+			<File>TPE/UI/TopPanelExtension.lua</File>
+		</ImportFiles>
+		<AddUserInterfaces id="TopPanel_TT" criteria="SETTINGS_UI_TopPanelExtension">
+			<Properties>
+				<LoadOrder>20030</LoadOrder>
+				<Context>InGame</Context>
+			</Properties>
+			<File>TPE/UI/TopPanel_TT.xml</File>
+		</AddUserInterfaces>
+		<!--战败后观战(EGM)-->
+		<AddUserInterfaces id="AddUserInterfaces">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>EGM/UI/EndGameMenu_Button.xml</File>
+		</AddUserInterfaces>
+		<!--聊天栏指令(CC)-->
+		<UpdateText id="Replace_Text">
+			<File>CC/Config_Text.xml</File>
+			<File>CC/InGame_Text.xml</File>
+		</UpdateText>
+		<AddUserInterfaces id="P+_UI">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>CC/Timer/TimerPro.xml</File>
+		</AddUserInterfaces>
+		<AddUserInterfaces id="NetHelper">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>CC/NetHelper/Network_TPT.xml</File>
+		</AddUserInterfaces>
+		<!--网络延迟逻辑优化(BNL)-->
+		<ImportFiles id="InGameActions_Replace_NetConnectionIconLogic">
+			<Properties>
+				<LoadOrder>110</LoadOrder>
+			</Properties>
+			<File>BNL/NetConnectionIconLogic.lua</File>
+		</ImportFiles>
+		<!--显示地图角落，以便小地图以全球比例显示(RMC)-->
+		<AddUserInterfaces id="AutoMapPinsonPoles">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+				<Context>InGame</Context>
+			</Properties>
+			<File>RMC/UI/RevealMapCorners.xml</File>
+		</AddUserInterfaces>
+		<!--禁用地图钉(RMP)-->
+		<UpdateText id="Replace_Text">
+			<File>RMP/Config_Text.xml</File>
+		</UpdateText>
+		<ReplaceUIScript id="MapPinListPanel" criteria="No_Map_Pins">
+			<Properties>
+				<LoadOrder>2010</LoadOrder>
+				<LuaContext>MapPinListPanel</LuaContext>
+				<LuaReplace>RMP/UI/MapPinListPanel.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_MapPinListPanel" criteria="No_Map_Pins">
+			<Properties>
+				<LoadOrder>2020</LoadOrder>
+			</Properties>
+			<File>RMP/UI/MapPinListPanel.xml</File>
+			<File>RMP/UI/MapPinListPanel.lua</File>
+		</ImportFiles>
+		<AddUserInterfaces id="Hide_MapPinListButton" criteria="No_Map_Pins">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>RMP/UI/Hide_MapPinListButton.xml</File>
+		</AddUserInterfaces>
+		<!--移除建立城市弹窗(RCT)-->
+		<ReplaceUIScript id="UnitPanel">
+			<Properties>
+				<LoadOrder>11000</LoadOrder>
+				<LuaContext>UnitPanel</LuaContext>
+				<LuaReplace>RCT/UI/UnitPanel_TPT.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="Replace_UI_UnitPanel">
+			<Properties>
+				<LoadOrder>11030</LoadOrder>
+			</Properties>
+			<File>RCT/UI/UnitPanel_TPT.lua</File>
+		</ImportFiles>
+		<!--更多快捷键(NHK)-->
+		<UpdateDatabase id="ExtraHotkeys_Gameplay" criteria="TPT_NEW_HOTKEYS">
+			<File>NHK/SQL/QueriesGameplay.sql</File>
+		</UpdateDatabase>
+		<UpdateText id="Replace_Text">
+			<File>NHK/GameCfg_Text.xml</File>
+		</UpdateText>
+		<UpdateText id="Replace_Text">
+			<File>NHK/Config_TurnTime_Text.xml</File>
+			<File>NHK/Config_Mappin_Text.xml</File>
+			<File>NHK/Config_NewUnitOperation_Text.xml</File>
+			<File>NHK/Config_GreatPeople_Recruit_Text.xml</File>
+		</UpdateText>
+		<AddUserInterfaces id="AddTime">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>NHK/UI/TurnTime_HotKey.xml</File>
+		</AddUserInterfaces>
+		<AddUserInterfaces id="MapPin" criteria="Disable_DMT">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>NHK/UI/MapPin_HotKey.xml</File>
+		</AddUserInterfaces>
+		<AddUserInterfaces id="UnitOperation" criteria="TPT_NEW_HOTKEYS">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>NHK/UI/NewUnitOperation.xml</File>
+		</AddUserInterfaces>
+		<AddUserInterfaces id="AGPHK">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>NHK/UI/AutoRecruit_GreatPerson_HotKey.xml</File>
+		</AddUserInterfaces>
+		<ImportFiles id="CityBannerManager_CSA">
+			<Properties>
+				<LoadOrder>1000</LoadOrder>
+			</Properties>
+			<File>NHK/UI/CityBannerManager_CSA.lua</File>
+		</ImportFiles>
+		<!--工人劳动力查看助手(BCT)-->
+		<ReplaceUIScript id="BuilderChargesUnitFlagManager">
+			<Properties>
+				<LoadOrder>4000</LoadOrder>
+				<LuaContext>UnitFlagManager</LuaContext>
+				<LuaReplace>BCT/UnitFlagManager_BuilderCharges.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="BuilderChargesUnitFlagManager_Import">
+			<File>BCT/UnitFlagManager_BuilderCharges.lua</File>
+		</ImportFiles>
+	</InGameActions>
+	<Files>
+		<File>Update/Lianjing_5th_300_268.dds</File>
+		<File>Update/Lianjing_5th_desc_637_637.dds</File>
+		<File>Update/AD_desc_yue_cup.dds</File>
+		<File>Update/yuejicpu_AD_33_300_300.dds</File>
+		<File>DD/DD_Config.sql</File>
+		<File>BPC/BetterPantheonChooser_Config_Text.xml</File>
+		<File>BPC/BetterPantheonChooser_Config.xml</File>		
+		<File>BPC/UI/PantheonChooser.xml</File>
+		<File>BPC/UI/PantheonChooser_TPT.lua</File>
+		<File>Update/Neon256_144.dds</File>
+		<File>Update/PlayerData_Texture/AnDe_Desc_Texture.dds</File>
+		<File>Update/PlayerData_Texture/QingTian_Desc_Texture.dds</File>
+		<File>Update/PlayerData_Texture/HuaMing_Desc_Texture.dds</File>
+		<File>Poker/PBJ_Text_CN.xml</File>
+		<File>Poker/PBJ_Text_EN.xml</File>
+		<File>Poker/UI/Poker_Blackjack_21.lua</File>
+		<File>Poker/UI/Poker_Blackjack_21.xml</File>
+		<File>GBR/Goodyhuts_Boost_GP.lua</File>
+		<File>NDR/NotificationPanel_DealRemind.lua</File>
+		<File>BLS/Blacklist_Text.xml</File>
+		<File>BLS/UI/BlacklistPanel.xml</File>
+		<File>BLS/UI/BlacklistPanel.lua</File>
+		<File>BLS/UI/ChatPanel.xml</File>
+		<File>BLS/UI/ChatPanel_TPT.lua</File>
+		<File>BSM/UI/diplomacyribbon.xml</File>
+		<File>BSM/UI/diplomacyribbon_spec.lua</File>
+		<File>BSM/Text_EN.xml</File>
+		<File>BSM/Text_CN.xml</File>
+		<File>BER/UnitFlagManager_GreatGeneralEraReminder.lua</File>
+		<File>FEB/ForcedEndButton_Text.xml</File>
+		<File>FEB/UI/ForcedEndButton.lua</File>
+		<File>FEB/UI/ForcedEndButton.xml</File>
+		<File>STR/UI/WorldViewIconsManager_STR.lua</File>
+		<File>PCF/UI/CityBannerManager_PCF.lua</File>
+		<!--
+		<File>Reload/UI/BSM_Reload.xml</File>
+		<File>Reload/UI/BSM_Reload.lua</File>
+		<File>Reload/BSM_Reload_Text.xml</File>
+		<File>Reload/BSM_Reload_Config.xml</File>
+		-->
+		<File>CSB/UI/CityBannerManager_TPT.lua</File>
+		<File>Settings/TPT_Settings.sql</File>
+		<File>Settings/TPT_Settings_Text.xml</File>
+		<File>Settings/UI/TPT_SettingsPanel.lua</File>
+		<File>Settings/UI/TPT_SettingsPanel.xml</File>
+		<File>NOC/NotificationPanel_QuickClear.lua</File>
+		<File>Update/PlayerData.sql</File>
+		<File>Update/Update_Text.xml</File>
+		<File>Update/UI/AutoUpdate.lua</File>
+		<File>Update/UI/AutoUpdate.xml</File>
+		<File>DPR/Config_DPR.xml</File>
+		<File>DPR/Config_DPR_Text.xml</File>
+		<File>DPR/Config_Hotkeys_DPR.xml</File>
+		<File>DPR/DiplomacyRibbon_Text.xml</File>
+		<File>DPR/UI/DiplomacyRibbon.xml</File>
+		<File>DPR/UI/DiplomacyRibbon_TPT.lua</File>
+		<File>DPR/UI/WorldRankings.xml</File>
+		<File>DPR/UI/WorldRankings_TPT.lua</File>
+		<File>TCP/Text_TCP.xml</File>
+		<File>TCP/TechAndCivicSupport.lua</File>
+		<File>TCP/UI/TechTree_TPT.lua</File>
+		<File>TCP/UI/CivicsTree_TPT.lua</File>
+		<File>TCP/UI/ResearchChooser_TPT.lua</File>
+		<File>TCP/UI/CivicsChooser_TPT.lua</File>
+		<File>TOM/TOM_Text.xml</File>
+		<File>TOM/UI/InGameTopOptionsMenu.xml</File>
+		<File>TOM/UI/InGameTopOptionsMenu_TPT.lua</File>
+		<File>DDV/Comfig_Deal.xml</File>
+		<File>DDV/Comfig_Deal_Text.xml</File>
+		<File>DDV/Comfig_Friendship.xml</File>
+		<File>DDV/Comfig_Friendship_Text.xml</File>
+		<File>DDV/Config_MakePeace.xml</File>
+		<File>DDV/Config_MakePeace_Text.xml</File>
+		<File>DDV/UI/DiplomacyDealView_TPT.lua</File>
+		<File>DDV/SQL/mph_diplomacy_no_fs.sql</File>
+		<File>DDV/SQL/TPT_Diplomacy_No_delegation.sql</File>
+		<File>DDV/SQL/MAKE_PEACE.sql</File>
+		<File>DDV/SQL/MAKE_PEACE_Disable.sql</File>
+		<File>Option/Options.xml</File>
+		<File>BRS/UI/GovernmentScreen.lua</File>
+		<File>BRS/UI/GovernmentScreen.xml</File>
+		<File>BRS/Config/BRS_Config.xml</File>
+		<File>BRS/Config/BRS_Config_Text.xml</File>
+		<File>BRS/BetterReportScreen_Database.sql</File>
+		<File>BRS/reportscreen.lua</File>
+		<File>BRS/reportscreen.xml</File>
+		<File>BRS/BRSPage_Yields.lua</File>
+		<File>BRS/BRSPage_Resources.lua</File>
+		<File>BRS/BRSPage_CityStatus.lua</File>
+		<File>BRS/BRSPage_Gossip.lua</File>
+		<File>BRS/BRSPage_Deals.lua</File>
+		<File>BRS/BRSPage_Units.lua</File>
+		<File>BRS/BRSPage_Policy.lua</File>
+		<File>BRS/BRSPage_Minor.lua</File>
+		<File>BRS/BRSPage_Cities2.lua</File>
+		<File>BRS/RealModifierAnalysis.lua</File>
+		<File>BRS/RealModifierAnalysis.xml</File>
+		<File>BRS/Text/BetterReportScreen_Text.xml</File>
+		<File>BRS/Text/BetterReportScreen_Text_zh_Hans_CN.xml</File>
+		<File>BRS/Text/BetterReportScreen_Text_zh_Hant_HK.xml</File>
+		<File>BRS/Icons/FontIconsRMI.dds</File>
+		<File>BRS/Icons/FontIconsRMI.xml</File>
+		<File>BRS/RLL/ReportsListLoader.sql</File>
+		<File>BRS/RLL/ReportsListLoader.lua</File>
+		<File>BCS/UI/CityStates.xml</File>
+		<File>BCS/UI/CityStates_TPT.lua</File>
+		<File>BCS/UI/CityStates_SPEC.lua</File>
+		<File>Config/GameConfig_MONOPOLIES.xml</File>
+		<File>Config/GameConfig_SECRETSOCIETIES.xml</File>
+		<File>Config/GameConfig_BASE.xml</File>
+		<File>Config/Config_UI.xml</File>
+		<File>Config/Config_UI_Text.xml</File>
+		<File>BTS/UI/TradeOverview.xml</File>
+		<File>BTS/UI/TradeOverview.lua</File>
+		<File>BTS/UI/TradeSupport.lua</File>
+		<File>BTS/UI/Choosers/TradeRouteChooser.xml</File>
+		<File>BTS/UI/Choosers/TradeRouteChooser.lua</File>
+		<File>BTS/UI/Choosers/TradeOriginChooser.xml</File>
+		<File>BTS/UI/Choosers/TradeOriginChooser.lua</File>
+		<File>BTS/Settings/BTS_SettingsPanel.xml</File>
+		<File>BTS/Settings/BTS_SettingsPanel.lua</File>
+		<File>BTS/Settings/BTS_SettingsSchema.sql</File>
+		<File>BTS/Settings/BTS_Settings.sql</File>
+		<File>BTS/Text/BTS_Text_EN.xml</File>
+		<File>BTS/Text/BTS_Text_Hans_CN.xml</File>
+		<File>NT/Notice.lua</File>
+		<File>NT/Notice_Text.xml</File>
+		<File>BGP/UI/GreatPeoplePopup.xml</File>
+		<File>BGP/UI/GreatPeoplePopup.lua</File>
+		<File>TPE/TopPanel_Text.xml</File>
+		<File>TPE/UI/TopPanelExtension.lua</File>
+		<File>TPE/UI/TopPanel_TT.lua</File>
+		<File>TPE/UI/TopPanel_TT.xml</File>
+		<File>BSR/UI/StagingRoom.xml</File>
+		<File>BSR/UI/StagingRoom.lua</File>
+		<File>BSR/UI/TPT_ToolTipType.xml</File>
+		<File>BSR/Text.xml</File>
+		<File>EGM/UI/EndGameMenu_Button.lua</File>
+		<File>EGM/UI/EndGameMenu_Button.xml</File>
+		<File>CC/Config_Text.xml</File>
+		<File>CC/InGame_Text.xml</File>
+		<File>CC/Config.xml</File>
+		<File>CC/Timer/TimerPro.xml</File>
+		<File>CC/Timer/TimerPro.lua</File>
+		<File>CC/NetHelper/Network_TPT.xml</File>
+		<File>CC/NetHelper/Network_TPT.lua</File>
+		<File>RMC/UI/RevealMapCorners.xml</File>
+		<File>RMC/UI/RevealMapCorners.lua</File>
+		<File>BNL/NetConnectionIconLogic.lua</File>
+		<File>RMP/Config_Text.xml</File>
+		<File>RMP/Config.xml</File>
+		<File>RMP/UI/MapPinListPanel.xml</File>
+		<File>RMP/UI/MapPinListPanel.lua</File>
+		<File>RMP/UI/Hide_MapPinListButton.xml</File>
+		<File>RMP/UI/Hide_MapPinListButton.lua</File>
+		<File>RCT/UI/UnitPanel_TPT.lua</File>
+		<File>NHK/GameCfg.xml</File>
+		<File>NHK/GameCfg_Text.xml</File>
+		<File>NHK/SQL/QueriesConfiguration.sql</File>
+		<File>NHK/SQL/QueriesGameplay.sql</File>
+		<File>NHK/Config_Mappin.xml</File>
+		<File>NHK/Config_Mappin_Text.xml</File>
+		<File>NHK/Config_TurnTime.xml</File>
+		<File>NHK/Config_TurnTime_Text.xml</File>
+		<File>NHK/Config_NewUnitOperation.xml</File>
+		<File>NHK/Config_NewUnitOperation_Text.xml</File>
+		<File>NHK/Config_GreatPeople_Recruit.xml</File>
+		<File>NHK/Config_GreatPeople_Recruit_Text.xml</File>
+		<File>NHK/UI/MapPin_HotKey.xml</File>
+		<File>NHK/UI/MapPin_HotKey.lua</File>
+		<File>NHK/UI/TurnTime_HotKey.xml</File>
+		<File>NHK/UI/TurnTime_HotKey.lua</File>
+		<File>NHK/UI/NewUnitOperation.xml</File>
+		<File>NHK/UI/NewUnitOperation.lua</File>
+		<File>NHK/UI/CityBannerManager_CSA.lua</File>
+		<File>NHK/UI/AutoRecruit_GreatPerson_HotKey.xml</File>
+		<File>NHK/UI/AutoRecruit_GreatPerson_HotKey.lua</File>
+		<File>BCT/UnitFlagManager_BuilderCharges.lua</File>
+	</Files>
+</Mod>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TPT_SUBSCRIBE_NAME" Language="zh_Hans_CN">
+			<Text>订阅联机工具箱</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_SUBSCRIBE_TOOLTIP" Language="zh_Hans_CN">
+			<Text>喜欢就点个订阅吧</Text>
+		</Replace>													
+	</LocalizedText>
+</GameData>

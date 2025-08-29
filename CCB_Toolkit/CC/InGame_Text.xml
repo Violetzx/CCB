@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_CHAT_HELP_COMMAND_TEXT" Language="zh_Hans_CN">
+			<Text>
+			[COLOR:ChatMessage_Help][ICON_Bolt]聊天指令
+			[NEWLINE][icon_You]p+   加时20秒(每回合1次)
+			[NEWLINE][icon_You]p+++   无回合时间
+			[NEWLINE][icon_You]p--   下回合减时20秒
+			[NEWLINE][icon_You]
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_TOOLS_15_TIME_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]15秒计时提醒[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_TOOLS_15_TIME_DESC" Language="zh_Hans_CN">
+			<Text>从15秒开始倒计时声响</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
