@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Vanadium -->
+<!-- DateCreated: 8/26/2025 11:30:21 AM -->
+<GameData>
+	<IconTextureAtlases>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior" IconSize="22" Filename="icon_unit_tibetan_warrior_22"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior" IconSize="32" Filename="icon_unit_tibetan_warrior_32"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior" IconSize="38" Filename="icon_unit_tibetan_warrior_38"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior" IconSize="50" Filename="icon_unit_tibetan_warrior_50"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior" IconSize="80" Filename="icon_unit_tibetan_warrior_80"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior" IconSize="256" Filename="icon_unit_tibetan_warrior_256"/>
+	</IconTextureAtlases>
+	<IconDefinitions>
+		<Row Name="ICON_UNIT_SUK_TIBET_RTA_PA" Atlas="ATLAS_icon_unit_tibetan_warrior" index="0"/>
+	</IconDefinitions>
+	<IconTextureAtlases>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior_portraits" IconSize="38" Filename="icon_unit_tibetan_warrior_portraits_38"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior_portraits" IconSize="50" Filename="icon_unit_tibetan_warrior_portraits_50"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior_portraits" IconSize="70" Filename="icon_unit_tibetan_warrior_portraits_70"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior_portraits" IconSize="95" Filename="icon_unit_tibetan_warrior_portraits_95"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior_portraits" IconSize="200" Filename="icon_unit_tibetan_warrior_portraits_200"/>
+		<Row Name="ATLAS_icon_unit_tibetan_warrior_portraits" IconSize="256" Filename="icon_unit_tibetan_warrior_portraits_256"/>
+	</IconTextureAtlases>
+	<IconDefinitions>
+		<Row Name="ICON_UNIT_SUK_TIBET_RTA_PA_PORTRAIT" Atlas="ATLAS_icon_unit_tibetan_warrior_portraits" index="0"/>
+	</IconDefinitions>
+
+</GameData>

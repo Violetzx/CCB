@@ -33,12 +33,14 @@
         <LoadOrder>100</LoadOrder>
       </Properties>
       <File>Sukritact's Trisong Detsen (Tibet).dep</File>
+      <File>tibet_unit_icon_rework.dep</File>
     </UpdateArt>
     <UpdateIcons id="UpdateIcons">
       <Properties>
         <LoadOrder>100</LoadOrder>
       </Properties>
       <File>Core/Suk_Trisong_IconDefinitions.sql</File>
+      <File>Core/Suk_Trisong_IconDefinitions.xml</File>
     </UpdateIcons>
     <UpdateColors id="UpdateColors">
       <Properties>
@@ -62,12 +64,14 @@
         <LoadOrder>100</LoadOrder>
       </Properties>
       <File>Sukritact's Trisong Detsen (Tibet).dep</File>
+      <File>tibet_unit_icon_rework.dep</File>
     </UpdateArt>
     <UpdateIcons id="UpdateIcons">
       <Properties>
         <LoadOrder>100</LoadOrder>
       </Properties>
       <File>Core/Suk_Trisong_IconDefinitions.sql</File>
+      <File>Core/Suk_Trisong_IconDefinitions.xml</File>
     </UpdateIcons>
     <UpdateText id="UpdateText">
       <Properties>
@@ -105,11 +109,13 @@
     <File>ArtDefs/Overlay.artdef</File>
     <File>ArtDefs/Units.artdef</File>
     <File>ArtDefs/Unit_Bins.artdef</File>
+    <File>ArtDefs/buildings.artdef</File>
     <File>Core/Suk_Trisong_Civilizations.sql</File>
     <File>Core/Suk_Trisong_Color.sql</File>
     <File>Core/Suk_Trisong_Config.sql</File>
     <File>Core/Suk_Trisong_Districts.sql</File>
     <File>Core/Suk_Trisong_IconDefinitions.sql</File>
+    <File>Core/Suk_Trisong_IconDefinitions.xml</File>
     <File>Core/Suk_Trisong_Leaders.sql</File>
     <File>Core/Suk_Trisong_Localisation.sql</File>
     <File>Core/Suk_Trisong_Units.sql</File>
@@ -117,6 +123,7 @@
     <File>Lua/Suk_Dzong.lua</File>
     <File>Platforms/MacOS/BLPs/landmarks/tilebases.blp</File>
     <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/tibet_unit.blp</File>
     <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_CavalryHorse_AttackA</File>
     <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_CavalryHorse_BraceA</File>
     <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_CavalryHorse_BraceB</File>
@@ -228,6 +235,7 @@
     <File>Platforms/MacOS/BLPs/units/units.blp</File>
     <File>Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/tibet_unit.blp</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_CavalryHorse_AttackA</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_CavalryHorse_BraceA</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_CavalryHorse_BraceB</File>
@@ -338,5 +346,7 @@
     <File>Platforms/Windows/BLPs/UITextures.blp</File>
     <File>Platforms/Windows/BLPs/units/units.blp</File>
     <File>Sukritact's Trisong Detsen (Tibet).dep</File>
+    <File>tibet_unit_icon_rework.dep</File>
+
   </Files>
 </Mod>
