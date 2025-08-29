@@ -3154,7 +3154,7 @@
 
 		<!-- === COMBAT DESCRIPTIONS === -->
 		<Row Tag="LOC_BBG_ABILITY_NO_SUPPORT_BONUS_DESC" Language="zh_Hans_CN">
-			<Text>陆地和海洋远程单位不会受到支援加成。</Text>
+			<Text>单位不会受到支援加成。</Text>
 		</Row>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_COMBAT_7_CHAPTER_CONTENT_PARA_4" Language="zh_Hans_CN">
 			<Text>夹击和支援加成：要成为战场中的常胜将军，重要的是以计谋制敌、让作战单位获得队友的支援。在《文明VI》中，模拟此战术的则是夹击和支援加成。完成“军事传统”市政后，军队便可获得此类加成。[NEWLINE][NEWLINE]夹击：如在战斗中2个或以上的相邻友方近战单位包围敌方近战单位，则视为对敌方形成夹击；每个额外夹击的近战单位可使发起进攻的近战单位战斗力+2。[NEWLINE][NEWLINE]支援：防御敌方近战攻击时，每个相邻的友方单位可使防御单位战斗力+2。（[COLOR_RED]陆地和海洋远程单位除外 - BBG[ENDCOLOR]）[NEWLINE][NEWLINE]空中单位和防空单位从每个相邻单位获得战斗力加成，该加成类似于支援加成但是不需要完成“军事传统”市政。[NEWLINE][NEWLINE]防空单位从每个具有防空能力的相邻单位获得+5战斗力加成。</Text>
