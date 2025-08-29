@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Release ModID-->
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="110">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="120">
   <!-- WIP ModID-->
   <!-- <Mod id="2a0aa96a-a31c-4ce2-87ec-09144f6f3e00" version="110"> -->
   <Properties>
-    <Name>CCB 文明拓展 1.0</Name>
+    <Name>CCB 文明拓展 1.2</Name>
     <Teaser>中国特色新文明拓展模组，取代BBG Expand。</Teaser>
     <Description>新文明拓展包</Description>
     <Authors>CCB制作组</Authors>
