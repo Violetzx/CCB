@@ -4046,7 +4046,7 @@
         	</Replace>
         	<!-- = unique building = -->
         	<Replace Tag="LOC_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>替代图书馆，每招募一个 [ICON_GREATADMIRAL] 海军统帅+0.5点基础 [ICON_SCIENCE] 科技值，提供等同于该区域相邻加成的 [ICON_GOLD] 金币。 [NEWLINE] 没有维护费。</Text>
+			<Text>替代图书馆，基础0 [ICON_SCIENCE] 科技值，每招募一个 [ICON_GREATADMIRAL] 海军统帅+1点基础 [ICON_SCIENCE] 科技值。没有维护费。</Text>
 		</Replace>
         	<Replace Tag="LOC_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_NAME" Language="zh_Hans_CN">
 	        	<Text>皇家陵墓</Text>
