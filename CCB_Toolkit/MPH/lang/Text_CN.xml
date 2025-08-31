@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+
+        <!-- New entries -->
+        <Replace Tag="LOC_MAP_RICH_HIGHTLANDS_NANME" language="zh_Hans_CN">
+            <Text>丰富高地</Text>
+        </Replace>
+        <Replace Tag="LOC_MAP_RICH_HIGHTLANDS_DESCRIPTION" language="zh_Hans_CN">
+            <Text>带有更多资源的高地。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TURN_IS_PROCESSED" language="zh_Hans_CN">
+            <Text>正在处理当前回合，请稍候</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_MODCHECK_BUTTON_TOOLTIP" language="zh_Hans_CN">
+            <Text>检查各玩家本地客户端中所安装的模组版本（支持：BBS，BBG，MPH）[NEWLINE]需要房主和其他玩家提前加载完成MPH。</Text>
+        </Replace>
+        <Replace Tag="CPL_SYNCTURN_NAME" language="zh_Hans_CN">
+            <Text>回合同步</Text>
+        </Replace>
+        <Replace Tag="CPL_SYNCTURN_DESC" language="zh_Hans_CN">
+            <Text>玩家们会同时开始和结束回合。</Text>
+        </Replace>
+        <Replace Tag="CPL_CWC_NAME" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]正式CWC模式[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="CPL_CWC_DESC" language="zh_Hans_CN">
+            <Text>设定各项设置为文明世界杯预设。</Text>
+        </Replace>
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_NAME" language="zh_Hans_CN">
+            <Text>准备不足</Text>
+        </Replace>
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_DESCRIPTION" language="zh_Hans_CN">
+            <Text>进攻时-20 [ICON_Strength] 战斗力。</Text>
+        </Replace>
+        <Replace Tag="LOC_MOD_LAST_MOVED_DESCRIPTION" language="zh_Hans_CN">
+            <Text>回合开始时数秒内进攻时-20 [ICON_Strength] 战斗力。</Text>
+        </Replace>
+
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_READY_NAME" language="zh_Hans_CN">
+            <Text>准备就绪！</Text>
+        </Replace>
+        <Replace Tag="LOC_ABILITY_LAST_MOVED_READY_DESCRIPTION" language="zh_Hans_CN">
+            <Text>已从上次行动后恢复完成。</Text>
+        </Replace>
+        <Replace Tag="CPL_FS_NAME" language="zh_Hans_CN">
+            <Text>友好条约</Text>
+        </Replace>
+        <Replace Tag="CPL_FS_DESC" language="zh_Hans_CN">
+            <Text>设置每名玩家同盟与友好条约的数量上限。（默认值=2）</Text>
+        </Replace>
+        <Replace Tag="CPL_CS_NAME" language="zh_Hans_CN">
+            <Text>占领城邦</Text>
+        </Replace>
+        <Replace Tag="CPL_CS_DESC" language="zh_Hans_CN">
+            <Text>设置每名玩家占领城邦的数量上限，额外占领的城邦会由系统自动夷为平地。（默认值=1）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_IRONMAN_NAME" language="zh_Hans_CN">
+            <Text>铁人模式</Text>
+        </Replace>
+        <Replace Tag="CPL_IRONMAN_DESC" language="zh_Hans_CN">
+            <Text>没有投降投票，战斗至最后一刻！（默认值=关闭）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_NO_PINS_NAME" language="zh_Hans_CN">
+            <Text>禁止地图钉</Text>
+        </Replace>
+        <Replace Tag="CPL_NO_PINS_DESC" language="zh_Hans_CN">
+            <Text>禁止玩家使用地图钉，减少性能问题。（默认值=关闭）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_SUDDENDEATH_NAME" language="zh_Hans_CN">
+            <Text>突然死亡</Text>
+        </Replace>
+        <Replace Tag="CPL_SUDDENDEATH_DESC" language="zh_Hans_CN">
+            <Text>每过一段时间，分数最低的玩家会被淘汰！（默认值=关闭）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_FREECITY_STRONGER_NAME" language="zh_Hans_CN">
+            <Text>加强自由城市</Text>
+        </Replace>
+        <Replace Tag="CPL_FREECITY_STRONGER_DESC" language="zh_Hans_CN">
+            <Text>自由城市会更快建造城墙。（默认值=关闭）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_LASTMOVE_OPT_NAME" language="zh_Hans_CN">
+            <Text>卡秒减益</Text>
+        </Replace>
+        <Replace Tag="CPL_LASTMOVE_OPT_DESC" language="zh_Hans_CN">
+            <Text>最后10秒钟攻击的单位会在下回合开始时获得一个减益，使其无法先手进攻。（默认值=关闭） </Text>
+        </Replace>
+        <Replace Tag="CPL_FREECITY_OPT_NAME" language="zh_Hans_CN">
+            <Text>无关玩家自由城市</Text>
+        </Replace>
+        <Replace Tag="CPL_FREECITY_OPT_DESC" language="zh_Hans_CN">
+            <Text>在混战中，无关玩家的城市会变为自由城市，中断之前存在的同盟/友好关系。（默认值=关闭）</Text>
+        </Replace>
+
+
+        <Replace Tag="CPL_RULES_NAME" language="zh_Hans_CN">
+            <Text>CPL规则</Text>
+        </Replace>
+        <Replace Tag="CPL_RULES_DESC" language="zh_Hans_CN">
+            <Text>使用CPL（Civ Player League）的游戏内规则，包括投降投票、否决权等。（默认值=开启）</Text>
+        </Replace>
+
+        <Replace Tag="CPL_SMARTTIMER_NAME" language="zh_Hans_CN">
+            <Text>智能回合时间</Text>
+        </Replace>
+        <Replace Tag="CPL_SMARTTIMER_DESC" language="zh_Hans_CN">
+            <Text>覆盖原版游戏，改为动态时间设置。</Text>
+        </Replace>
+
+        <Replace Tag="CPL_TRADING_CITY_NAME" language="zh_Hans_CN">
+            <Text>交易城市</Text>
+        </Replace>
+
+        <Replace Tag="CPL_TRADING_CITY_DESC" language="zh_Hans_CN">
+            <Text>允许玩家交易城市。（默认值=关闭）</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_GOLD_NAME" language="zh_Hans_CN">
+            <Text>交易金币</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_GOLD_DESC" language="zh_Hans_CN">
+            <Text>允许玩家交易金币。（默认值=开启）</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_LUXURY_NAME" language="zh_Hans_CN">
+            <Text>交易奢侈品</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_LUXURY_DESC" language="zh_Hans_CN">
+            <Text>允许玩家交易奢侈品资源。（默认值=开启）</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_STRATEGIC_NAME" language="zh_Hans_CN">
+            <Text>交易战略</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_STRATEGIC_DESC" language="zh_Hans_CN">
+            <Text>允许玩家交易战略资源。（默认值=开启）</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_NONE_NAME" language="zh_Hans_CN">
+            <Text>禁止</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_NONE_DESC" language="zh_Hans_CN">
+            <Text>禁止这种交易在游戏内进行。</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLOWED_NAME" language="zh_Hans_CN">
+            <Text>允许</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLOWED_DESC" language="zh_Hans_CN">
+            <Text>允许这种交易在游戏内进行。</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLIED_NAME" language="zh_Hans_CN">
+            <Text>仅盟友</Text>
+        </Replace>
+        <Replace Tag="CPL_TRADING_ALLIED_DESC" language="zh_Hans_CN">
+            <Text>仅允许这种交易在盟友间进行。</Text>
+        </Replace>
+
+        <Replace Tag="LOC_SETUP_ERROR_NO_BANNED_LEADERS" language="zh_Hans_CN">
+            <Text>禁用领袖</Text>
+        </Replace>
+        <Replace Tag="LOC_SETUP_ERROR_NO_RANDOM_LEADERS" language="zh_Hans_CN">
+            <Text>无随机领袖</Text>
+        </Replace>
+
+        <Replace Tag="CPL_BAN_FORMAT_NAME" language="zh_Hans_CN">
+            <Text>征召模式</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_FORMAT_DESC" language="zh_Hans_CN">
+            <Text>禁用特定的领袖。（默认值=无随机领袖）</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NOBAN_NAME" language="zh_Hans_CN">
+            <Text>无</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NOBAN_DESC" language="zh_Hans_CN">
+            <Text>同原版游戏，无限制选择领袖。</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NORANDOM_NAME" language="zh_Hans_CN">
+            <Text>无随机领袖</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_NORANDOM_DESC" language="zh_Hans_CN">
+            <Text>玩家必须要选择领袖。</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_6BANS_NAME" language="zh_Hans_CN">
+            <Text>非正式6禁用</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_6BANS_DESC" language="zh_Hans_CN">
+            <Text>房主可以禁用6个领袖。</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_TOURNAMENT_NAME" language="zh_Hans_CN">
+            <Text>比赛</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_TOURNAMENT_DESC" language="zh_Hans_CN">
+            <Text>禁用和选取领袖会按顺序依次进行。</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_VOTEDRAFT_NAME" language="zh_Hans_CN">
+            <Text>投票征召</Text>
+        </Replace>
+        <Replace Tag="BAN_FORMAT_VOTEDRAFT_DESC" language="zh_Hans_CN">
+            <Text>根据玩家投票决定征召模式。[未完成]</Text>
+        </Replace>
+
+        <Replace Tag="CPL_BAN_01_NAME" language="zh_Hans_CN">
+            <Text>第1个禁用</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_02_NAME" language="zh_Hans_CN">
+            <Text>第2个禁用</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_03_NAME" language="zh_Hans_CN">
+            <Text>第3个禁用</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_04_NAME" language="zh_Hans_CN">
+            <Text>第4个禁用</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_05_NAME" language="zh_Hans_CN">
+            <Text>第5个禁用</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_06_NAME" language="zh_Hans_CN">
+            <Text>第6个禁用</Text>
+        </Replace>
+        <Replace Tag="CPL_BAN_DESC" language="zh_Hans_CN">
+            <Text>选择领袖以禁用。</Text>
+        </Replace>
+        <Replace Tag="LOC_LEADER_NONE_NAME" language="zh_Hans_CN">
+            <Text>无</Text>
+        </Replace>
+        <Replace Tag="LOC_BAN_OPTIONS" language="zh_Hans_CN">
+            <Text>征召及禁用设置。</Text>
+        </Replace>
+        <Replace Tag="LOC_BAN_POOL_OPTIONS" language="zh_Hans_CN">
+            <Text>地图池选择</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_GAME_REFRESH_SEED_CONFIG" language="zh_Hans_CN">
+            <Text>刷新随机种子</Text>
+        </Replace>
+        <Replace Tag="TIMER_DEFAULT_NAME" language="zh_Hans_CN">
+            <Text>竞技</Text>
+        </Replace>
+        <Replace Tag="TIMER_DEFAULT_DESC" language="zh_Hans_CN">
+            <Text>根据单位数量、城市数量、战斗状态、游戏类型、事件数量调节。适合比赛使用。</Text>
+        </Replace>
+        <Replace Tag="TIMER_NONE_NAME" language="zh_Hans_CN">
+            <Text>关闭</Text>
+        </Replace>
+        <Replace Tag="TIMER_NONE_DESC" language="zh_Hans_CN">
+            <Text>禁用Lua智能回合时间以启用原版游戏回合时间或基于SQL的回合时间。</Text>
+        </Replace>
+        <Replace Tag="TIMER_LEGE_NAME" language="zh_Hans_CN">
+            <Text>疯狂</Text>
+        </Replace>
+        <Replace Tag="TIMER_LEGE_DESC" language="zh_Hans_CN">
+            <Text>来自Lege的压力：前15回合时间为15秒，15-70回合为45秒，之后为75秒。</Text>
+        </Replace>
+        <Replace Tag="TIMER_CIVLAN_NAME" language="zh_Hans_CN">
+            <Text>CivLan / CWC 2025</Text>
+        </Replace>
+        <Replace Tag="TIMER_CIVLAN_DESC" language="zh_Hans_CN">
+            <Text>用于 CWC + CivLan 2025 的动态计时器。</Text>
+        </Replace>
+        <Replace Tag="TIMER_SEPHI_NAME" language="zh_Hans_CN">
+            <Text>适中</Text>
+        </Replace>
+        <Replace Tag="TIMER_SEPHI_DESC" language="zh_Hans_CN">
+            <Text>Sephi的回合时间：起始30秒，每回合增加1秒。</Text>
+        </Replace>
+        <Replace Tag="TIMER_CASUAL_NAME" language="zh_Hans_CN">
+            <Text>休闲</Text>
+        </Replace>
+        <Replace Tag="TIMER_CASUAL_DESC" language="zh_Hans_CN">
+            <Text>适合新手和主播。</Text>
+        </Replace>
+        <Replace Tag="TIMER_PHYPHY_NAME" language="zh_Hans_CN">
+            <Text>闪电</Text>
+        </Replace>
+        <Replace Tag="TIMER_PHYPHY_DESC" language="zh_Hans_CN">
+            <Text>起始15秒，每15/20回合增加几秒。</Text>
+        </Replace>
+        <Replace Tag="FC_NOTHING_NAME" language="zh_Hans_CN">
+            <Text>无</Text>
+        </Replace>
+        <Replace Tag="FC_NOTHING_DESC" language="zh_Hans_CN">
+            <Text>复制于S1aL的动态回合时间模组</Text>
+        </Replace>
+        <Replace Tag="FC_FREE_NAME" language="zh_Hans_CN">
+            <Text>自由城市</Text>
+        </Replace>
+        <Replace Tag="FC_FREE_DESC" language="zh_Hans_CN">
+            <Text>在混战中，无关玩家的城市会变为自由城市。</Text>
+        </Replace>
+        <Replace Tag="FC_RAZE_NAME" language="zh_Hans_CN">
+            <Text>夷平城市</Text>
+        </Replace>
+        <Replace Tag="FC_RAZE_DESC" language="zh_Hans_CN">
+            <Text>在混战中，无关玩家的城市会被夷平。</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_PLAYER_OPTIONS" language="zh_Hans_CN">
+            <Text>MPH：玩家</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ADMIN_OPTIONS" language="zh_Hans_CN">
+            <Text>MPH：房主</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OTHER_OPTIONS" language="zh_Hans_CN">
+            <Text>多人游戏助手：其他指令</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_TITLE_REMAP_TEXT" language="zh_Hans_CN">
+            <Text>重随地图投票</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_VOTEPANEL_TITLE_REMAP_ADMIN_TEXT" language="zh_Hans_CN">
+            <Text>房主强制重随地图</Text>
+        </Replace>
+		 <Replace Tag="LOC_MPH_VOTEPANEL_GAME_RANDOM_SEED" language="zh_Hans_CN">
+            <Text>游戏速度</Text>
+        </Replace>
+		<Replace Tag="LOC_MPH_VOTEPANEL_MAP_RANDOM_SEED" language="zh_Hans_CN">
+            <Text>地图随机种子</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_LABEL_REMAP_TEXT" language="zh_Hans_CN">
+            <Text>已进行在新的随机种子地图上重新开始游戏的投票。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_DEFAULT_TEXT" language="zh_Hans_CN">
+            <Text>若过半数玩家同意则投票通过。[NEWLINE][COLOR_Grey]灰色[ENDCOLOR]的玩家无法投票。[NEWLINE]已经完成投票的玩家会显示为[COLOR_Civ6Green]绿色[ENDCOLOR]。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_PASS_TEXT" language="zh_Hans_CN">
+            <Text>投票结果为同意。表决已完成，游戏会在房主验证完成后自动重新加载至新地图。[NEWLINE][COLOR_Civ6Green]绿色[ENDCOLOR]的玩家选择了同意。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTEPANEL_FEEDBACK_REMAP_FAIL_TEXT" language="zh_Hans_CN">
+            <Text>投票结果为反对。表决已完成，游戏会在该地图继续进行。[NEWLINE][COLOR_Civ6Red]红色[ENDCOLOR]的玩家选择了反对。 </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTELEFT_BUTTON_1_REMAP_TEXT" language="zh_Hans_CN">
+            <Text>同意</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTERIGHT_BUTTON_1_REMAP_TEXT" language="zh_Hans_CN">
+            <Text>反对</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_CONFIRM_BUTTON_1_REMAP_TEXT" language="zh_Hans_CN">
+            <Text>确认</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_CONFIRM_BUTTON_HOST_REMAP_TEXT" language="zh_Hans_CN">
+            <Text>确认</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_CONFIRM_BUTTON_HOST_REMAP_CANCEL_TEXT" language="zh_Hans_CN">
+            <Text>取消</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAPPANEL_LABEL_TEXT" language="zh_Hans_CN">
+            <Text>在新地图中重新开始游戏，可以选择在下方输入自定义地图随机种子。游戏将会[COLOR_Civ6Red]取消暂停[ENDCOLOR]以发送数据。然后，游戏会自动暂停以防止改变当前状态，其他玩家会重新载入新地图。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_VOTE_TEXT" language="zh_Hans_CN">
+            <Text>重随地图投票</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_VOTE_TOOLTIP" language="zh_Hans_CN">
+            <Text>开启重新随机一张地图的投票，过半数通过。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_ADMIN_TEXT" language="zh_Hans_CN">
+            <Text>房主强制重随地图</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_REMAP_ADMIN_TOOLTIP" language="zh_Hans_CN">
+            <Text>重新随机一张地图。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_IRR_VOTE_TEXT" language="zh_Hans_CN">
+            <Text>无关玩家投票</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_TITLE_TEXT" language="zh_Hans_CN">
+            <Text>网络管理</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_LABEL_TEXT" language="zh_Hans_CN">
+            <Text>以下玩家从游戏中断开。游戏状态已被冻结。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_HOST_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>将控制权给予AI</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_HOST_WARNING_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]如果你选择继续游戏，断线的玩家会被AI控制，在重新连接至游戏之前单位可能会被AI移动。[ENDCOLOR] </Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DROP_NORMAL_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>明白了……</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_HELPER_BUTTON_TOOLTIP" language="zh_Hans_CN">
+            <Text>选择MPH自定义功能，包括重随地图投票等。</Text>
+        </Replace>
+        <Replace Tag="LOC_VICTORY_CONCEDE_NAME" language="zh_Hans_CN">
+            <Text>胜利</Text>
+        </Replace>
+        <Replace Tag="LOC_VICTORY_CONCEDE_TEXT" language="zh_Hans_CN">
+            <Text>您的所有敌人已投降！</Text>
+        </Replace>
+
+
+        <Replace Tag="LOC_DEFEAT_CONCEDE_NAME" language="zh_Hans_CN">
+            <Text>投降</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_RANDOM_TOOLTIP" language="zh_Hans_CN">
+            <Text>混战：随机选择第一个B/P玩家，然后根据楼层每个玩家依次进行。[NEWLINE]组队：随机选择第一个B/P玩家，每个队伍轮流根据楼层依次进行。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_SLOT_TOOLTIP" language="zh_Hans_CN">
+            <Text>混战：根据楼层每个玩家依次进行（跳过观察者），每个阶段重置。[NEWLINE]组队：禁用地图时根据楼层选择第一个队伍，然后依次进行。B/P根据楼层进行。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_CWC_TOOLTIP" language="zh_Hans_CN">
+            <Text>[NEWLINE]传统CWC模式：禁用地图/领袖从第一个楼层开始，然后根据A/B/A/B/A/B顺序依次进行。[NEWLINE]选择领袖根据楼层顺序进行，4v4时应为A/B/B/A/A/B/A/B。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_CWC_NEW_TOOLTIP" language="zh_Hans_CN">
+            <Text>[NEWLINE]正式CWC模式：禁用领袖从第一个楼层开始，然后根据A/B/A/B/A/B、B/A/B/A顺序依次进行。[NEWLINE]选择领袖根据楼层顺序进行，4v4时应为A/B/B/A、B/A/A/B。</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_SWAP_DISABLED_TITLE" language="zh_Hans_CN">
+            <Text>无法更改玩家设置</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SWAP_DISABLED_TEXT" language="zh_Hans_CN">
+            <Text>您不能在该征召阶段更改楼层位置。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SLOT_DISABLED_TITLE" language="zh_Hans_CN">
+            <Text>无法更改玩家设置</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SLOT_DISABLED_TEXT" language="zh_Hans_CN">
+            <Text>您不能在该征召阶段更改楼层位置。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SLOT_HOST_DISABLED_TEXT" language="zh_Hans_CN">
+            <Text>您不能在该征召阶段更改楼层位置。[NEWLINE]更改征召模式或重置征召以更改玩家设置。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ADD_DISABLED_TEXT" language="zh_Hans_CN">
+            <Text>您不能在该征召阶段更改楼层位置。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ADD_HOST_DISABLED_TEXT" language="zh_Hans_CN">
+            <Text>您不能在该征召阶段添加新玩家。[NEWLINE]更改征召模式或重置征召以添加新玩家。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_KICK_DISABLED_TITLE" language="zh_Hans_CN">
+            <Text>无法更改玩家设置</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_KICK_DISABLED_TEXT" language="zh_Hans_CN">
+            <Text>您不能在该征召阶段踢出玩家。[NEWLINE]更改征召模式或重置征召以踢出玩家。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_TEXT" language="zh_Hans_CN">
+            <Text>比赛征召：请选择您的队伍、楼层、观察者。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_HINT_TEXT" language="zh_Hans_CN">
+            <Text>步骤：禁用地图 —— 禁用6个领袖 —— 按顺序选择领袖 —— 开始游戏（更改楼层）</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_HOST_HINT_TEXT" language="zh_Hans_CN">
+            <Text>在游戏设置中选择征召模式，然后点击“开始”启动征召。[NEWLINE]您可以在任意时间点击“重置”重置征召过程，点击“跳过”略过当前步骤。[NEWLINE]该模组需要所有玩家在Steam创意工坊中订阅以使用完整功能，而不能跟随房主自动下载。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_TEXT" language="zh_Hans_CN">
+            <Text>投票征召：请选择您的队伍、楼层、观察者。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_HINT_TEXT" language="zh_Hans_CN">
+            <Text>步骤：投票选择地图设置 —— 禁用6个领袖 —— 按顺序选择领袖 —— 开始游戏（更改楼层）</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_HOST_HINT_TEXT" language="zh_Hans_CN">
+            <Text>在游戏设置中选择征召模式，然后点击“开始”启动征召。[NEWLINE]您可以在任意时间点击“重置”重置征召过程，点击“跳过”略过当前步骤。[NEWLINE]该模组需要所有玩家在Steam创意工坊中订阅以使用完整功能，而不能跟随房主自动下载。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_HOST_TEXT" language="zh_Hans_CN">
+            <Text>等待房主中</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_LAUNCH_HOST_TEXT" language="zh_Hans_CN">
+            <Text>点击“开始”启动征召</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_PHASE_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Green]开始[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_0_PHASE_BUTTON_NOT_READY_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]开始[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_0_PHASE_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>开始</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_1_PHASE_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>跳过</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_1_PHASE_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>跳过</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_2_PHASE_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>跳过</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_3_PHASE_BUTTON_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Green]解锁[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTE_BUTTON" language="zh_Hans_CN">
+            <Text>发送投票</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_11_TEXT" language="zh_Hans_CN">
+            <Text>地图设置选择</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_11_HINT_TEXT" language="zh_Hans_CN">
+            <Text>投票选择地图设置，得票最多的设置会被采用。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_12_TEXT" language="zh_Hans_CN">
+            <Text>禁用领袖阶段</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_VOTING_PHASE_12_HINT_TEXT" language="zh_Hans_CN">
+            <Text>每个玩家拥有3次机会投票禁用领袖。[NEWLINE]得票最多的6个领袖会被从选择领袖阶段中移除。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_MAP_VOTE_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]确认您的地图设置[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_MAP_BAN_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]确认您的禁用地图[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_BAN_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]确认您的禁用领袖[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_PICK_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Red]确认您的领袖选择[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_MAP_BAN_FFA_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Green]等待玩家完成地图禁用[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_BAN_FFA_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Green]等待玩家完成领袖禁用[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_WAITING_LEADER_PICK_FFA_TEXT" language="zh_Hans_CN">
+            <Text>[COLOR_Civ6Green]等待玩家完成领袖选择[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_READY_THANKS_TEXT" language="zh_Hans_CN">
+            <Text>谢谢</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_TEXT" language="zh_Hans_CN">
+            <Text>组队：地图禁用阶段</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_TEXT" language="zh_Hans_CN">
+            <Text>混战：地图禁用阶段</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_RAND_HINT_TEXT" language="zh_Hans_CN">
+            <Text>组队：每队中第一个玩家需要轮流从地图池中禁用一张地图，直至仅剩一张地图。[NEWLINE]随机选择先进行禁用的队伍。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_TEAM_SLOT_HINT_TEXT" language="zh_Hans_CN">
+            <Text>组队：每队中第一个玩家需要轮流从地图池中禁用一张地图，直至仅剩一张地图。[NEWLINE]根据楼层选择先进行禁用的队伍。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_RAND_HINT_TEXT" language="zh_Hans_CN">
+            <Text>混战：每个玩家需要轮流从地图池中禁用一张地图，直至仅剩一张地图。[NEWLINE]随机选择先进行禁用的玩家。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_TOURNAMENT_PHASE_7_FFA_SLOT_HINT_TEXT" language="zh_Hans_CN">
+            <Text>混战：每个玩家需要轮流从地图池中禁用一张地图，直至仅剩一张地图。[NEWLINE]根据楼层选择先进行禁用的玩家。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_GAME_OPTIONS" language="zh_Hans_CN">
+            <Text>地图和游戏设置</Text>
+        </Replace>
+        <Replace Tag="LOC_SETUP_ERROR_NOT_DRAFTED_LEADERS" language="zh_Hans_CN">
+            <Text>被禁用领袖</Text>
+        </Replace>
+        <Replace Tag="CPL_ANONYMOUS_NAME" language="zh_Hans_CN">
+            <Text>匿名模式</Text>
+        </Replace>
+        <Replace Tag="CPL_ANONYMOUS_DESC" language="zh_Hans_CN">
+            <Text>[未完成]所有玩家的名字不会被显示，以匿名身份进行游戏。</Text>
+        </Replace>
+        <Replace Tag="CPL_NO_PM_NAME" language="zh_Hans_CN">
+            <Text>禁止私聊</Text>
+        </Replace>
+        <Replace Tag="CPL_NO_PM_DESC" language="zh_Hans_CN">
+            <Text>[未完成]禁止玩家发送一对一信息进行私聊。</Text>
+        </Replace>
+        <Replace Tag="CPL_RESTRICTED_DRAFT_NAME" language="zh_Hans_CN">
+            <Text>限制领袖池</Text>
+        </Replace>
+        <Replace Tag="CPL_RESTRICTED_DRAFT_DESC" language="zh_Hans_CN">
+            <Text>[未完成]每名玩家只能从5个领袖中选择，而不是全部领袖。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_SPECTATOR_TOOLTIP" language="zh_Hans_CN">
+            <Text>允许观察者参与游戏，适合解说比赛。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_PLAYER_TOOLTIP" language="zh_Hans_CN">
+            <Text>确认您是以玩家身份参与游戏，并非观察者。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_SPECTATOR_NAME" language="zh_Hans_CN">
+            <Text>以观察者身份参与</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_OBSERVER_PLAYER_NAME" language="zh_Hans_CN">
+            <Text>以普通玩家身份参与</Text>
+        </Replace>
+        <Replace Tag="LOC_SETUP_ERROR_NO_SPECTATOR_LEADERS" language="zh_Hans_CN">
+            <Text>非观察者</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RESET_BUTTON_TOOLTIP" language="zh_Hans_CN">
+            <Text>重新进行征召，有人出现问题时使用</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_START_BUTTON_TOOLTIP" language="zh_Hans_CN">
+            <Text>（仅限房主）[NEWLINE]立即开始游戏。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_LAUNCH_BUTTON_TOOLTIP" language="zh_Hans_CN">
+            <Text>（仅限房主）[NEWLINE]开始：启动征召[NEWLINE]跳过：略过当前步骤[NEWLINE]解锁：允许玩家更改楼层</Text>
+        </Replace>
+
+        <Replace Tag="LOC_GAMESPEED_FAST_NAME" Language="zh_Hans_CN">
+            <Text>联机+</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMESPEED_FAST_HELP" Language="zh_Hans_CN">
+            <Text>比联机速度略快，可以在标准纪元/标准资源中使用。</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_TITLE" Language="zh_Hans_CN">
+            <Text>更改死亡倒计时</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_LABEL" Language="zh_Hans_CN">
+            <Text>请输入多少秒后玩家会被清除？（例：1200 = 20分钟）</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_BOX" Language="zh_Hans_CN">
+            <Text>剩余秒数：</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RETIME_BUTTON" Language="zh_Hans_CN">
+            <Text>确认</Text>
+        </Replace>
+        <Replace Tag="LOC_SUDDEN_DEATH_TOP_BOX" Language="zh_Hans_CN">
+            <Text>[ICON_TURN]突然死亡：</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_SUDDEN_DEATH_NAME" Language="zh_Hans_CN">
+            <Text>突然死亡模式</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_SUDDEN_DEATH_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>玩家们会逐个被清除，时间在一分一秒地减少……经受住时间的考验！</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RETIME_ADMIN_TEXT" Language="zh_Hans_CN">
+            <Text>突然死亡时间</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RETIME_ADMIN_TOOLTIP" Language="zh_Hans_CN">
+            <Text>调整下一个玩家被清除前的剩余时间。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_TIMER_TOOLTIP" Language="zh_Hans_CN">
+            <Text>比赛征召的每个阶段都会有时间限制：[NEWLINE]禁用地图：30秒[NEWLINE]禁用领袖：60秒[NEWLINE]选择领袖：90秒[NEWLINE]当倒计时结束时，玩家会失去禁用资格/由系统随机选择领袖。</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_TITLE" Language="zh_Hans_CN">
+            <Text>更改名称</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_LABEL" Language="zh_Hans_CN">
+            <Text>请输入您的新名称，游戏中也会使用该名称。</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_BOX" Language="zh_Hans_CN">
+            <Text>新名称：</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RENAME_BUTTON" Language="zh_Hans_CN">
+            <Text>确认名称</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_EDIT_PLAYER_NAME_TT" Language="zh_Hans_CN">
+            <Text>选择以更改您在这局游戏中的名称</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_ANONYMOUS_NAME" Language="zh_Hans_CN">
+            <Text>匿名模式</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_ANONYMOUS_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>全部玩家都是匿名！[NEWLINE]不再会有任何偏袒。</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_LASTMOVE_NAME" Language="zh_Hans_CN">
+            <Text>卡秒——先手模式</Text>
+        </Replace>
+        <Replace Tag="LOC_GAMEMODE_LASTMOVE_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>臭名昭著的卡秒先手在此终结！[NEWLINE][NEWLINE]在回合最后的15秒中移动或攻击会使单位[COLOR_Civ6Red]准备不足[ENDCOLOR]。[NEWLINE][COLOR_Civ6Red]准备不足[ENDCOLOR]的单位进攻时-20 [ICON_Strength] 战斗力。[NEWLINE]在下一回合中，[COLOR_Civ6Red]准备不足[ENDCOLOR]的单位会在攻击或10秒后恢复正常状态。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PHASE_BUTTON_TOOLTIP_ERROR" Language="zh_Hans_CN">
+            <Text>目前无法开始征召，可能是因为[NEWLINE]有玩家的模组版本不正确，或并未订阅模组。[NEWLINE]房主仍在等待其他客户端的数据（应该需要不到10秒）。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PHASE_BUTTON_TOOLTIP" Language="zh_Hans_CN">
+            <Text>点击开始征召。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RESYNC_ADMIN_TEXT" language="zh_Hans_CN">
+            <Text>全部重载</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_RESYNC_ADMIN_TOOLTIP" language="zh_Hans_CN">
+            <Text>强制所有玩家自动重新载入当前游戏，房主不可在此过程中取消暂停。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PAUSE_COUNDOWN_TEXT" language="zh_Hans_CN">
+            <Text>开启倒计时</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_PAUSE_COUNDOWN_LABEL_TEXT" language="zh_Hans_CN">
+            <Text>游戏即将继续！</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_FORCEEND_ADMIN_TEXT" language="zh_Hans_CN">
+            <Text>强制结束回合</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_FORCEEND_ADMIN_TOOLTIP" language="zh_Hans_CN">
+            <Text>强制所有玩家结束当前回合。</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RESYNC_TITLE" language="zh_Hans_CN">
+            <Text>全部重载请求</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RESYNC_LABEL" language="zh_Hans_CN">
+            <Text>确定要强制所有玩家重新载入当前游戏吗？</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_RESYNC_BUTTON" language="zh_Hans_CN">
+            <Text>重新载入</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_FORCEEND_TITLE" language="zh_Hans_CN">
+            <Text>强制结束回合</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_FORCEEND_LABEL" language="zh_Hans_CN">
+            <Text>确定要强制所有玩家结束当前回合吗？</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_FORCEEND_BUTTON" language="zh_Hans_CN">
+            <Text>结束回合</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_UI_REFRESH_TEXT" Language="zh_Hans_CN">
+            <Text>重置用户界面</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_UI_REFRESH_TOOLTIP" Language="zh_Hans_CN">
+            <Text>强制重置用户界面环境</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_UI_REFRESH_TITLE" Language="zh_Hans_CN">
+            <Text>重置用户界面</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_UI_REFRESH_LABEL" Language="zh_Hans_CN">
+            <Text>确定要强制重置用户界面吗？</Text>
+        </Replace>
+        <Replace Tag="LOC_GAME_MENU_UI_REFRESH_BUTTON" Language="zh_Hans_CN">
+            <Text>重置</Text>
+        </Replace>
+
+
+        <!--  Tournament Settings -->
+        <Replace Tag="LOC_MPH_TOURNAMENT_PARAMETERS_OPTIONS" Language="zh_Hans_CN">
+            <Text>比赛与征召设置</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_SLOT_ORDER_NAME" Language="zh_Hans_CN">
+            <Text>征召种类</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_TIMER_NAME" Language="zh_Hans_CN">
+            <Text>限时征召</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_MAP_NAME" Language="zh_Hans_CN">
+            <Text>限制地图池</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_SLOT_ORDER_DESC" Language="zh_Hans_CN">
+            <Text>征召种类</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_TIMER_DESC" Language="zh_Hans_CN">
+            <Text>取消勾选以禁用征召时的倒计时。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DRAFT_MAP_DESC" Language="zh_Hans_CN">
+            <Text>勾选时，征召会由地图选择阶段开始，地图池由下方选择确定。</Text>
+        </Replace>
+
+        <Replace Tag="DRAFT_NONE_NAME" Language="zh_Hans_CN">
+            <Text>随机</Text>
+        </Replace>
+        <Replace Tag="DRAFT_SLOT_NAME" Language="zh_Hans_CN">
+            <Text>楼层顺序</Text>
+        </Replace>
+        <Replace Tag="DRAFT_4V4T_NAME" Language="zh_Hans_CN">
+            <Text>4v4组队6禁用</Text>
+        </Replace>
+        <Replace Tag="DRAFT_CWCT_NAME" Language="zh_Hans_CN">
+            <Text>文明世界杯</Text>
+        </Replace>
+
+        <Replace Tag="DRAFT_NONE_DESC" Language="zh_Hans_CN">
+            <Text>玩家征召顺序会被随机选择。</Text>
+        </Replace>
+        <Replace Tag="DRAFT_SLOT_DESC" Language="zh_Hans_CN">
+            <Text>玩家征召顺序会被由楼层顺序确定。</Text>
+        </Replace>
+        <Replace Tag="DRAFT_4V4T_DESC" Language="zh_Hans_CN">
+            <Text>组队征召，分为2个阶段，禁用6个领袖</Text>
+        </Replace>
+        <Replace Tag="DRAFT_CWCT_DESC" Language="zh_Hans_CN">
+            <Text>配合电竞使用的征召模式，包含4个阶段：1.禁用6个领袖 2.选择领袖 3.禁用4个领袖 4.选择剩余领袖</Text>
+        </Replace>
+
+
+        <!--  Trading Settings -->
+        <Replace Tag="LOC_MPH_TRADING_PARAMETERS_OPTIONS" Language="zh_Hans_CN">
+            <Text>交易与外交设置</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_FRIENDSHIP_NAME" Language="zh_Hans_CN">
+            <Text>禁止宣友</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_FRIENDSHIP_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止玩家之间宣布友谊。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SURPRISE_WAR_NAME" Language="zh_Hans_CN">
+            <Text>禁止突袭战争</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_SURPRISE_WAR_DESC" Language="zh_Hans_CN">
+            <Text>勾选后，玩家需要先进行谴责或使用战争借口来宣战。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_FAVOR_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易外交支持</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GOLD_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易金币</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_STRATEGICS_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易战略</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_LUXURIES_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易奢侈</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_AGREEMENTS_NAME" Language="zh_Hans_CN">
+            <Text>禁止外交进程</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CAPTIVES_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易间谍</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CITIES_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易城市</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GREATWORKS_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易巨作</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_NO_TRADING_FAVOR_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易外交支持。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GOLD_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易金币。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_STRATEGICS_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易战略资源。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_LUXURIES_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易奢侈品资源。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_AGREEMENTS_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止外交进程。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CAPTIVES_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易间谍。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_CITIES_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易城市。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_NO_TRADING_GREATWORKS_DESC" Language="zh_Hans_CN">
+            <Text>勾选以禁止交易巨作。</Text>
+        </Replace>
+
+        <Replace Tag="LOC_MPH_DIPLOMATIC_DEAL_NAME" Language="zh_Hans_CN">
+            <Text>禁止交易</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_DIPLOMATIC_DEAL_DESC" Language="zh_Hans_CN">
+            <Text>禁止进行任何种类的交易。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_MILITARY_NAME" Language="zh_Hans_CN">
+            <Text>军事同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_MILITARY_DESC" Language="zh_Hans_CN">
+            <Text>取消勾选以禁止签署军事同盟。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_CULTURAL_NAME" Language="zh_Hans_CN">
+            <Text>文化同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_CULTURAL_DESC" Language="zh_Hans_CN">
+            <Text>取消勾选以禁止签署文化同盟。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_ECONOMIC_NAME" Language="zh_Hans_CN">
+            <Text>经济同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_ECONOMIC_DESC" Language="zh_Hans_CN">
+            <Text>取消勾选以禁止签署经济同盟。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RELIGIOUS_NAME" Language="zh_Hans_CN">
+            <Text>宗教同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RELIGIOUS_DESC" Language="zh_Hans_CN">
+            <Text>取消勾选以禁止签署宗教同盟。</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RESEARCH_NAME" Language="zh_Hans_CN">
+            <Text>研究同盟</Text>
+        </Replace>
+        <Replace Tag="LOC_MPH_ALLIANCE_RESEARCH_DESC" Language="zh_Hans_CN">
+            <Text>取消勾选以禁止签署研究同盟。</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_NAME" Language="zh_Hans_CN">
+            <Text>预设</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_NONE_NAME" Language="zh_Hans_CN">
+            <Text>无</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CWC_NAME" Language="zh_Hans_CN">
+            <Text>CWC 文明世界杯</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLFFA_NAME" Language="zh_Hans_CN">
+            <Text>CPL FFA 混战</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRTEAMER_NAME" Language="zh_Hans_CN">
+            <Text>Squadron CivFR 中队战</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLSQUADRON_NAME" Language="zh_Hans_CN">
+            <Text>CPL Premier League 超级联赛</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_1v1RR" Language="zh_Hans_CN">
+            <Text>1v1皇家混战</Text>
+        </Replace>
+		<Replace Tag="MPH_PRESET_NONE_DESC" Language="zh_Hans_CN">
+            <Text>默认设置</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CWC_DESC" Language="zh_Hans_CN">
+            <Text>4v4组队战征召模式。</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPLFFA_DESC" Language="zh_Hans_CN">
+            <Text>CPL（CivPlayer League）常用设置，资源丰富。</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="zh_Hans_CN">
+            <Text>CivFR组队战常用设置。</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_1v1RR_DESC" Language="zh_Hans_CN">
+            <Text>1v1皇家混战的专用礼物。</Text>
+        </Replace>
+        <Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="zh_Hans_CN">
+            <Text>[COLOR_RED]正式比赛[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Tag="MPH_OFFICIAL_GAME_DESC" Language="zh_Hans_CN">
+            <Text>如果该游戏是一场正式比赛，其他模组可以加载/卸载额外特性。</Text>
+        </Replace>
+		<Replace Tag="TIMER_2VI2_NAME" Language="zh_Hans_CN">
+            <Text>2VI2 HOT</Text>
+        </Replace>
+        <Replace Tag="TIMER_2VI2_DESC" Language="zh_Hans_CN">
+            <Text>极短的回合时间，起始15秒，40回合前逐次陡增至60秒，然后线性增长。</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_ARENA_NAME" Language="zh_Hans_CN">
+            <Text>PPL竞技场</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_ARENA_DESC" Language="zh_Hans_CN">
+            <Text>PPL 1v1 一个大陆盘古大陆</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_BATTLEGROUND_NAME" Language="zh_Hans_CN">
+            <Text>PPL战场</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_PPL_BATTLEGROUND_DESC" Language="zh_Hans_CN">
+            <Text>PPL 1v1 两个大陆盘古大陆</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRFFA_NAME" Language="zh_Hans_CN">
+            <Text>FFA CivFr 混战</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CIVFRFFA_DESC" Language="zh_Hans_CN">
+            <Text>CivFR混战常用设置。</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="zh_Hans_CN">
+            <Text>CLC 中国联赛杯 (国人杯)</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="zh_Hans_CN">
+            <Text>国人杯常用设置</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_2vi2_NAME" Language="zh_Hans_CN">
+            <Text>2对2</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_2vi2_DESC" Language="zh_Hans_CN">
+            <Text>CPL 2v2 联赛的预设</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPL_GOAT_DESC" Language="zh_Hans_CN">
+            <Text>文明玩家联盟 GOAT 锦标赛预设</Text>
+        </Replace>
+        <Replace Tag="MPH_PRESET_CPL_GOAT_NAME" Language="zh_Hans_CN">
+            <Text>CPL G.O.A.T</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>

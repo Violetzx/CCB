@@ -458,6 +458,7 @@
 			<File>NHK/Config_NewUnitOperation.xml</File>
 			<File>NHK/Config_GreatPeople_Recruit.xml</File>
 		</UpdateDatabase>
+
 		<!--CCB 适配配置-->
 		<UpdateText id="Config_CCB">
 			<Properties>
@@ -465,6 +466,18 @@
 			</Properties>
 			<File>MPH/Config.sql</File>
 		</UpdateText>
+
+		<!--地图预设-->
+        <UpdateDatabase id="CPL_SETTINGS">
+            <File>MPH/configuration/config.sql</File>
+            <File>MPH/configuration/Config.xml</File>
+            <File>MPH/configuration/Config_BBG.xml</File>
+            <File>MPH/configuration/Config_BBS.xml</File>
+            <File>MPH/configuration/Config_BSM.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="MPH_TEXTS">
+            <File>MPH/lang/Text_CN.xml</File>
+        </UpdateText>
 	</FrontEndActions>
 
 	<InGameActions>
@@ -1165,6 +1178,17 @@
         <AddGameplayScripts id="no_more_stack">
             <File>MPH/data/no_more_stack.lua</File>
         </AddGameplayScripts>
+		<!--CCB 适配配置-->
+		<UpdateText id="Config_CCB">
+			<Properties>
+				<LoadOrder>100020</LoadOrder>
+			</Properties>
+			<File>MPH/Config.sql</File>
+		</UpdateText>
+
+        <UpdateText id="MPH_TEXTS">
+            <File>MPH/lang/Text_CN.xml</File>
+        </UpdateText>
 	</InGameActions>
 	<Files>
 		<File>Update/Lianjing_5th_300_268.dds</File>
@@ -1349,5 +1373,12 @@
 		<!--下面是 CCB 适配文件-->
 		<File>MPH/data/no_more_stack.lua</File>
 		<File>MPH/Config.sql</File>
+
+        <File>MPH/configuration/config.sql</File>
+        <File>MPH/configuration/Config.xml</File>
+        <File>MPH/configuration/Config_BBG.xml</File>
+        <File>MPH/configuration/Config_BBS.xml</File>
+        <File>MPH/configuration/Config_BSM.xml</File>
+		<File>MPH/lang/Text_CN.xml</File>
 	</Files>
 </Mod>
