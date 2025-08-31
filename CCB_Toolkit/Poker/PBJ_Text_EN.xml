@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_PBJ_OPEN_NAME" Language="en_US">
+			<Text>Blackjack[NEWLINE][NEWLINE]Let's play a game of poker!</Text>
+		</Replace>
+		<Replace Tag="LOC_POKE_BLACKJACK_PANEL_HEADER_NAME" Language="en_US">
+			<Text>Poker Game: Blackjack</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HIT_BUTTON_NAME" Language="en_US">
+			<Text>Hit</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_RE_BUTTON_NAME" Language="en_US">
+			<Text>Restart</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_STAND_BUTTON_NAME" Language="en_US">
+			<Text>Stand</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_1_NAME" Language="en_US">
+			<Text>[ICON_Bolt]Blackjack</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_1_TT" Language="en_US">
+			<Text>With 4 decks of 208 cards in poker except for the king, the player's goal is to make the sum of the cards in their hand not exceed 21 points and be as high as possible.[NEWLINE][NEWLINE]The player puts in the chips first, and the winner wins double, the tie returns the chips, and the loser loses all the chips.[NEWLINE][NEWLINE]After the player has placed his bet, the dealer deals two cards first, covers the first one, and then deals two cards to the player.[NEWLINE][NEWLINE]At this time, the player can choose to hit, or stand, if the total number of points after the player hits the card exceeds 21 points, then it is considered a bust and the dealer wins.[NEWLINE][NEWLINE]When the player chooses to stand, the player ends the round. The dealer reveals the hole cards, and if the dealer's value is less than or equal to 17, the dealer must draw the card. When the dealer has a point greater than 17, the hand must stand. Compare the points of both sides, and the higher number of points wins.</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_2_NAME" Language="en_US">
+			<Text>[ICON_Bolt]Winning</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_2_TT" Language="en_US">
+			<Text>The number of points does not exceed 21 and is greater than the dealer's points.</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_3_NAME" Language="en_US">
+			<Text>[ICON_Bolt]Hit</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_3_TT" Language="en_US">
+			<Text>Players can choose Hit to get more cards.[NEWLINE][NEWLINE]Ace can be used as 1 or 11 points.[NEWLINE]J, Q, K are counted as 10 points</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_4_NAME" Language="en_US">
+			<Text>[ICON_Bolt]Stand</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_4_TT" Language="en_US">
+			<Text>No new cards are drawn, and the dealer starts his turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_5_NAME" Language="en_US">
+			<Text>[ICON_Bolt]Bust</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_5_TT" Language="en_US">
+			<Text>If the total number of points is greater than 21, it fails</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_6_NAME" Language="en_US">
+			<Text>[ICON_Bolt]Double</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_HELPER_6_TT" Language="en_US">
+			<Text>The next round after each win, there is an option to double the bet.</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_20_BUTTON_NAME" Language="en_US">
+			<Text>[ICON_GOLDLARGE]20</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_100_BUTTON_NAME" Language="en_US">
+			<Text>[ICON_GOLDLARGE]100</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_500_BUTTON_NAME" Language="en_US">
+			<Text>[ICON_GOLDLARGE]500</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_DOUBLE_BASE_BUTTON_NAME" Language="en_US">
+			<Text>[ICON_GOLDLARGE]Double</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_DOUBLE_BUTTON_NAME" Language="en_US">
+			<Text>[ICON_GOLDLARGE]Double({1_Num})</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BET_WAGER_NAME" Language="en_US">
+			<Text>Wager [icon_goldlarge]</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_FIRST_HIT_NAME" Language="en_US">
+			<Text>Dealer hide the first card</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_BUST_NAME" Language="en_US">
+			<Text>Busted</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PLAYERTURN_NAME" Language="en_US">
+			<Text>Player's turn</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PLAYER_BUST_NAME" Language="en_US">
+			<Text>Player busted, dealer win</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_SHOW_DEALER_CARD_NAME" Language="en_US">
+			<Text>Show dealer cards</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_HIT_NAME" Language="en_US">
+			<Text>Dealer Hit</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_BUST_NAME" Language="en_US">
+			<Text>Dealer busted, player win</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PUSH_NAME" Language="en_US">
+			<Text>Push</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_DEALER_WIN_NAME" Language="en_US">
+			<Text>Dealer win</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_PLAYER_WIN_NAME" Language="en_US">
+			<Text>Player win</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_CHECKBOX_UNLIMIT_NAME" Language="en_US">
+			<Text>No limit bets</Text>
+		</Replace>
+		<Replace Tag="LOC_PBJ_CHECKBOX_UNLIMIT_TT" Language="en_US">
+			<Text>No cash limit for betting</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

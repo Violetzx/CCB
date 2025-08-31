@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+	<!-- <GridButton ID="HidePinButton" Anchor="C,T" Size="280,24" Offset="200,0" String="LOC_HUD_REPORTS_COLLAPSE_ALL" ToolTip="LOC_DMT_OPTIONS_HOTKEY_TOGGLE_MAP_TACK_VISIBILITY_DESC" Style="ButtonControl"/> -->
+</Context>

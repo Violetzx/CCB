@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+        <Replace Tag="LOC_TPT_TOP_PANEL_LUXURY_RESOURCES" Language="zh_Hans_CN">
+            <Text>[ICON_RESOURCE_TOYS] 拥有的奢侈品:({1_Type} 种类)</Text>
+        </Replace>
+        <Replace Tag="LOC_TPT_TOP_PANEL_LUXURY_RESOURCES" Language="en_US">
+            <Text>[ICON_RESOURCE_TOYS] Number of Luxury Resources Owned: ({1_Type} type)</Text>
+        </Replace>
+        <Replace Tag="LOC_TPT_TOP_PANEL_LUXURY_RESOURCES" Language="fr_FR">
+            <Text>[ICON_RESOURCE_TOYS] Nombre de ressource de luxe possédé : ({1_Type} différentes)</Text>
+        </Replace>      
+        <Replace Tag="LOC_TOP_PANEL_MORE_LUXURY_NAME" Language="zh_Hans_CN">
+            <Text>[NEWLINE][NEWLINE]自己的额外奢侈品[NEWLINE]</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_MORE_LUXURY_NAME" Language="en_US">
+            <Text>[NEWLINE][NEWLINE]Own Extra Luxury Resources[NEWLINE]</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_MORE_LUXURY_NAME" Language="fr_FR">
+            <Text>[NEWLINE][NEWLINE]Ressource de luxe en double[NEWLINE]</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_TEAM_MORE_LUXURY_NAME" Language="zh_Hans_CN">
+            <Text>[NEWLINE][NEWLINE]其他玩家的重复奢侈品</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_TEAM_MORE_LUXURY_NAME" Language="en_US">
+            <Text>[NEWLINE][NEWLINE]Surplus luxury resources of other players</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_TEAM_MORE_LUXURY_NAME" Language="fr_FR">
+            <Text>[NEWLINE][NEWLINE]Ressources de luxe excédentaires des autres joueurs</Text>
+        </Replace>      
+        <Replace Tag="LOC_TOP_PANEL_TEAM_MORE_STRATEGIC_NAME" Language="zh_Hans_CN">
+            <Text>[NEWLINE]队友可用的战略[NEWLINE]</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_TEAM_MORE_STRATEGIC_NAME" Language="en_US">
+            <Text>[NEWLINE][NEWLINE]Team Strategic Resources</Text>
+        </Replace>
+        <Replace Tag="LOC_TOP_PANEL_TEAM_MORE_STRATEGIC_NAME" Language="fr_FR">
+            <Text>[NEWLINE][NEWLINE]Ressource stratégique de l'équipe</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_PRODUCTION_TOOLTIP_HEADER" Language="zh_Hans_CN">
+            <Text>+{1_Num} [Icon_ProductionLarge] 生产力</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_PRODUCTION_TOOLTIP_HEADER" Language="en_US">
+            <Text>+{1_Num} [Icon_ProductionLarge] Production</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_PRODUCTION_TOOLTIP_HEADER" Language="fr_FR">
+            <Text>+{1_Num} [Icon_ProductionLarge] Production</Text>
+        </Replace>
+        <!--
+        <Replace Tag="LOC_TOPPANEL_PRODUCTION_TOOLTIP_DESC" Language="zh_Hans_CN">
+            <Text>帝国的总生产力</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_PRODUCTION_TOOLTIP_DESC" Language="en_US">
+            <Text>Total Production of the Empire</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_PRODUCTION_TOOLTIP_DESC" Language="fr_FR">
+            <Text>Production totale</Text>
+        </Replace>
+        -->
+        <Replace Tag="LOC_TOPPANEL_FOOD_TOOLTIP_HEADER" Language="zh_Hans_CN">
+            <Text>+{1_Num} [Icon_FoodLarge] 食物</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_FOOD_TOOLTIP_HEADER" Language="en_US">
+            <Text>+{1_Num} [Icon_FoodLarge] Food</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_FOOD_TOOLTIP_HEADER" Language="fr_FR">
+            <Text>+{1_Num} [Icon_FoodLarge] Nourriture</Text>
+        </Replace>
+        <!--
+        <Replace Tag="LOC_TOPPANEL_FOOD_TOOLTIP_DESC" Language="zh_Hans_CN">
+            <Text>帝国的总食物产出</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_FOOD_TOOLTIP_DESC" Language="en_US">
+            <Text>Total Food of the Empire</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_FOOD_TOOLTIP_DESC" Language="fr_FR">
+            <Text>Production de nourriture totale</Text>
+        </Replace>
+        -->
+        <Replace Tag="LOC_TOPPANEL_POPULATION_TOOLTIP_HEADER" Language="zh_Hans_CN">
+            <Text>{1_Num} [Icon_Citizen] 人口</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_POPULATION_TOOLTIP_HEADER" Language="en_US">
+            <Text>{1_Num} [Icon_Citizen] Population</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_POPULATION_TOOLTIP_HEADER" Language="fr_FR">
+            <Text>{1_Num} [Icon_Citizen] Population</Text>
+        </Replace>
+        <!--
+        <Replace Tag="LOC_TOPPANEL_POPULATION_TOOLTIP_DESC" Language="zh_Hans_CN">
+            <Text>帝国公民总数</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_POPULATION_TOOLTIP_DESC" Language="en_US">
+            <Text>Total Citizen of the Empire</Text>
+        </Replace>
+        <Replace Tag="LOC_TOPPANEL_POPULATION_TOOLTIP_DESC" Language="fr_FR">
+            <Text>Population totale</Text>
+        </Replace>
+        -->
+    </LocalizedText>
+</GameData>

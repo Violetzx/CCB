@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="TOOLS_COMMAND" Name="TOOLS_COMMAND_NAME" Description="TOOLS_COMMAND_DESC" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="TOOLS_COMMAND" GroupId="GameOptions" ChangeableAfterGameStart="1"  SortIndex="7" />	
+		<Row ParameterId="TOOLS_15_TIME" Name="LOC_TOOLS_15_TIME_NAME" Description="LOC_TOOLS_15_TIME_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Game" ConfigurationId="TOOLS_15_TIME" GroupId="GameOptions" ChangeableAfterGameStart="1"  SortIndex="6" />
+	</Parameters>
+</GameInfo>

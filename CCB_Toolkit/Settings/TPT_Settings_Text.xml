@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TPT_SETTINGS_UI_TT" Language="zh_Hans_CN">
+			<Text>自定义设置</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_SETTINGS_UI_DPR_PLAYERINFO_PLAYERNAME_NAME" Language="zh_Hans_CN">
+			<Text>显示玩家名称</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_SETTINGS_UI_DPR_PLAYERINFO_PLAYERNAME_TT" Language="zh_Hans_CN">
+			<Text>在右上角外交信息显示玩家名称</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_SETTINGS_UI_DPR_PLAYERINFO_CIVINAME_NAME" Language="zh_Hans_CN">
+			<Text>显示文明名称</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_SETTINGS_UI_DPR_PLAYERINFO_CIVINAME_TT" Language="zh_Hans_CN">
+			<Text>在右上角外交信息显示文明名称</Text>
+		</Replace>			
+		<Replace Tag="LOC_TPT_SETTINGS_UI_NOC_DISABLE_NAME" Language="zh_Hans_CN">
+			<Text>禁用清理消息按钮</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_SETTINGS_UI_NOC_DISABLE_TT" Language="zh_Hans_CN">
+			<Text>不再显示右下角清理消息的按钮</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_SETTINGS_UI_CSB_DISABLE_NAME" Language="zh_Hans_CN">
+			<Text>恢复城市远程攻击按钮位置</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_SETTINGS_UI_CSB_DISABLE_TT" Language="zh_Hans_CN">
+			<Text>将城市远程攻击按钮位置恢复到原版状态</Text>
+		</Replace>
+		<Replace Tag="LOC_SHOW_FEB_NAME" Language="zh_Hans_CN">
+			<Text>显示强制结束回合按钮</Text>
+		</Replace>
+		<Replace Tag="LOC_SHOW_FEB_TT" Language="zh_Hans_CN">
+			<Text>显示按钮</Text>
+		</Replace>
+		<Replace Tag="LOC_SHOW_BER_NAME" Language="zh_Hans_CN">
+			<Text>固定显示大将军时代</Text>
+		</Replace>
+		<Replace Tag="LOC_SHOW_BER_TT" Language="zh_Hans_CN">
+			<Text>在大将军下面显示所属时代标签</Text>
+		</Replace>
+		<Replace Tag="LOC_SHOW_BER_NAME" Language="zh_Hans_CN">
+			<Text>固定显示大将军时代</Text>
+		</Replace>
+		<Replace Tag="LOC_SHOW_BER_TT" Language="zh_Hans_CN">
+			<Text>在大将军下面显示所属时代标签</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NDR_SOUND_NAME" Language="zh_Hans_CN">
+			<Text>交易声音提醒</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NDR_SOUND_TT" Language="zh_Hans_CN">
+			<Text>其他玩家与您进行交易时会响铃</Text>
+		</Replace>					
+	</LocalizedText>
+</GameData>

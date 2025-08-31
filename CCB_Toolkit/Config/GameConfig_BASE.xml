@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+	<!--	启动位置(标准)	-->
+	<!--
+		<Update>
+			<Where ParameterId="StartPosition"/>
+			<Set DefaultValue="2"/>
+		</Update>	
+	-->
+	<!--	无蛮族(开启)	-->
+		<Update>
+			<Where ParameterId="NoBarbarians"/>
+			<Set DefaultValue="1"/>
+		</Update>
+	<!-- 	默认回合时间预设	-->
+		<Update>
+			<Where ParameterId="TurnTimerTime"/>
+			<Set DefaultValue="60"/>
+		</Update>	
+	<!-- 	无重复文明(关闭)	-->	
+		<Update>
+			<Where ParameterId="NoDupeCivilizations"/>
+			<Set DefaultValue="0"/>
+		</Update>		
+	<!--	无重复领袖(关闭)	-->
+		<Update>
+			<Where ParameterId="NoDupeLeaders"/>
+			<Set DefaultValue="0"/>
+		</Update>	
+	</Parameters>
+</GameInfo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="TPT_NEW_HOTKEYS_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]更多快捷键[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TPT_NEW_HOTKEYS_DESC" Language="zh_Hans_CN">
+			<Text>启用此选项后5个额外单位快捷键可使用</Text>
+		</Replace>			
+	</LocalizedText>
+</GameData>

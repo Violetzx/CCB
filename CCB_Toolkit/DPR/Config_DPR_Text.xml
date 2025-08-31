@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_NAME" Language="zh_Hans_CN">
+			<Text>外交能见度</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_NAME" Language="en_US">
+			<Text>Hide Stats Evolved</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_DESC" Language="zh_Hans_CN">
+			<Text>设置外交信息能见度</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_DESC" Language="en_US">
+			<Text>Set up Hide Stats Evolved</Text>
+		</Replace>		
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_NORM_NAME" Language="zh_Hans_CN">
+			<Text>标准(推荐)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_NORM_NAME" Language="en_US">
+			<Text>Standard(Recommend)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_NORM_DESC" Language="zh_Hans_CN">
+			<Text>标准的规则[NEWLINE][NEWLINE][icon_You]不显示非团队玩家的军事实力、总人口、总生产力、总粮食</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_NORM_DESC" Language="en_US">
+			<Text>Standard Rules[NEWLINE][NEWLINE][icon_You]Does not show the military strength, total population, total productivity, and total food of players who are not on your team</Text>
+		</Replace>	
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM_NAME" Language="zh_Hans_CN">
+			<Text>外交能见度模式([COLOR:ResGoldLabelCS]团队[ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM_NAME" Language="en_US">
+			<Text>Hide Stats Evolved Mode([COLOR:ResGoldLabelCS]Team[ENDCOLOR])</Text>
+		</Replace>		
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM_DESC" Language="zh_Hans_CN">
+			<Text>外交能见度模式[NEWLINE][NEWLINE][icon_You]团队成员之间互相公开信息，非团队玩家需要更高能见度才能查看</Text>
+		</Replace>		
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM_DESC" Language="en_US">
+			<Text>Hide Stats Evolved Mode[NEWLINE][NEWLINE][icon_You]Team members share information with each other, and other players need a higher visibility level to view it</Text>
+		</Replace>			
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_PUBLIC_NAME" Language="zh_Hans_CN">
+			<Text>公开(完全透明)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_PUBLIC_NAME" Language="en_US">
+			<Text>Public(Fully Visible)</Text>
+		</Replace>		
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_PUBLIC_DESC" Language="zh_Hans_CN">
+			<Text>所有玩家的信息都是公开的[NEWLINE][NEWLINE][icon_You]谨慎开启，适合PVE种地</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMACYRIBBON_PUBLIC_DESC" Language="en_US">
+			<Text>All players' information is public[NEWLINE][NEWLINE][icon_You]Open cautiously, suitable for PVE games</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_TECHCIVIS_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]显示/隐藏研究进度[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_TECHCIVIS_NAME" Language="en_US">
+			<Text>[COLOR:ResGoldLabelCS]Show/hide researching progress[ENDCOLOR]</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_TECHCIVIS_DESC" Language="zh_Hans_CN">
+			<Text>显示其他玩家正在研究的科技与市政的进度</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_TECHCIVIS_DESC" Language="en_US">
+			<Text>Shows the Tech Civic Progress of other players</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_TOTALYIELD_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]切换统计显示[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_DPR_TOTALYIELD_NAME" Language="en_US">
+			<Text>[COLOR:ResGoldLabelCS]Toggle the stats display[ENDCOLOR]</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_TOTALYIELD_DESC" Language="zh_Hans_CN">
+			<Text>切换常规数据和其他统计数据</Text>
+		</Replace>		
+		<Replace Tag="LOC_DPR_TOTALYIELD_DESC" Language="en_US">
+			<Text>Toggle between general stats and other stats</Text>
+		</Replace>			
+	</LocalizedText>
+</GameData>

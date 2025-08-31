@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Parameters>
+		<Row ParameterId="NEW_HOTKEYS" Name="TPT_NEW_HOTKEYS_NAME" Description="TPT_NEW_HOTKEYS_DESC" Domain="bool" DefaultValue="1" ConfigurationGroup="Game" ConfigurationId="NEW_HOTKEYS" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2903" />
+	</Parameters>
+</GameData>

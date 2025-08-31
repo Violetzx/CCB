@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_HOTKEY_AUTO_RECRUIT_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]切换自动招募伟人[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_HOTKEY_AUTO_RECRUIT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>切换至自动招募模式，符合条件时自动招募伟人[newline][newline]你是唯一可招募或点数最高时</Text>
+		</Replace>
+		<Replace Tag="LOC_HOTKEY_RECRUIT_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS]招募伟人[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_HOTKEY_RECRUIT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>招募所有伟人</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

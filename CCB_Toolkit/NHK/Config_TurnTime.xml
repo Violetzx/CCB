@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+    <InputActions>
+        <InsertOrIgnore ActionId="HotKey_TPT_TurnTimeAdd" Name="LOC_TURNTIME_ADD_NAME" Description="LOC_TURNTIME_ADD_DESCRIPTION" CategoryId="ONLINE" ContextId="World"/>
+        <InsertOrIgnore ActionId="HotKey_TPT_TurnTimeReduce" Name="LOC_TURNTIME_REDUCE_NAME" Description="LOC_TURNTIME_REDUCE_DESCRIPTION" CategoryId="ONLINE" ContextId="World"/>     
+        <InsertOrIgnore ActionId="HotKey_TPT_ForcedTurnEnd" Name="LOC_TURNTIME_FORCED_TURNEND_NAME" Description="LOC_TURNTIME_FORCED_TURNEND_DESCRIPTION" CategoryId="ONLINE" ContextId="World"/>   
+    </InputActions>
+    <InputActionDefaultGestures>
+        <InsertOrIgnore ActionId="HotKey_TPT_TurnTimeAdd" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_RBRACKET"/>
+        <InsertOrIgnore ActionId="HotKey_TPT_TurnTimeReduce" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_LBRACKET"/>
+        <InsertOrIgnore ActionId="HotKey_TPT_ForcedTurnEnd" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SHIFT+LOC_OPTIONS_KEY_F"/>
+    </InputActionDefaultGestures>
+</GameInfo>

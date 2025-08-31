@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_SETTINGS_DIPLOMATIC_DEAL_NAME" Language="zh_Hans_CN">
+			<Text>交易设置</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DIPLOMATIC_DEAL_DESC" Language="zh_Hans_CN">
+			<Text>可禁止玩家交易</Text>
+		</Replace>	
+		<Replace Tag="LOC_SETTINGS_DEAL_NORM_NAME" Language="zh_Hans_CN">
+			<Text>常规(推荐)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_NORM_DESC" Language="zh_Hans_CN">
+			<Text>仅禁止交易城市</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_CLASSIC_NAME" Language="zh_Hans_CN">
+			<Text>经典[icon_Gold]</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_CLASSIC_DESC" Language="zh_Hans_CN">
+			<Text>仅禁止交易金币和城市</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_ALONE_NAME" Language="zh_Hans_CN">
+			<Text>独立[icon_Not]</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_ALONE_DESC" Language="zh_Hans_CN">
+			<Text>禁止所有交易，除了奢侈品(你仍然可以同盟)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_CUSTOM_NAME" Language="zh_Hans_CN">
+			<Text>自定义</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_DEAL_CUSTOM_DESC" Language="zh_Hans_CN">
+			<Text>选择要禁用的交易内容</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_CITIES_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易城市</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_CITIES_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易城市</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_GOLD_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易金币</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_GOLD_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易金币</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_STRATEGICS_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易战略资源</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_STRATEGICS_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易战略资源</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_LUXURIES_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易奢侈品</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_LUXURIES_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易奢侈品</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_FAVOR_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易外交支持</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_FAVOR_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易外交支持</Text>
+		</Replace>		
+		<Replace Tag="LOC_TPT_NO_TRADING_GREATWORKS_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易巨作</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_GREATWORKS_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易巨作</Text>
+		</Replace>	
+		<Replace Tag="LOC_TPT_NO_TRADING_CAPTIVES_NAME" Language="zh_Hans_CN">
+			<Text>禁止交易俘虏</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_CAPTIVES_DESC" Language="zh_Hans_CN">
+			<Text>禁止交易俘虏(间谍)</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_AGREEMENTS_NAME" Language="zh_Hans_CN">
+			<Text>禁止外交协议</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_TRADING_AGREEMENTS_DESC" Language="zh_Hans_CN">
+			<Text>禁止外交协议(开放边界,加入战争)</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_DELEGATION_NAME" Language="zh_Hans_CN">
+			<Text>无代表团</Text>
+		</Replace>
+		<Replace Tag="LOC_TPT_NO_DELEGATION_DESC" Language="zh_Hans_CN">
+			<Text>无法派遣代表团（仍然可以建立大使馆）</Text>
+		</Replace>				
+	</LocalizedText>
+</GameData>

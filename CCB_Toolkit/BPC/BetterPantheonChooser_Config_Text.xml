@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_NO_WAIT_PANTHEON_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR:ResGoldLabelCS][ICON_FAITH]万神殿不排队[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_NO_WAIT_PANTHEON_DESC" Language="zh_Hans_CN">
+			<Text>启用此选项后当信仰足够时可以立即创建万神殿，而不用等待回合玩家排序</Text>
+		</Replace>			
+	</LocalizedText>
+</GameData>

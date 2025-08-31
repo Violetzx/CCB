@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="AutoUpdate">
+	<ToolTipType Name="TooltipType_TPT_Update">
+		<Grid ID="BG" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" AutoSize="1" InnerPadding="25,25" InnerOffset="10,10" Color="255,255,255,255" Anchor="C,C">
+			<Stack Offset="0,0" StackGrowth="Down" Anchor="C,T">
+				<Label Anchor="C,T" Anchor="L,T" Style="FontFlair20" Color="5,29,51,255" String="LOC_TEAM_PVP_TOOLS_UPDATE_HEADER" SmallCaps="20" SmallCapsType="EveryWord"  Offset="0,8"/>
+				<Label Anchor="C,T" Offset="0,4" String="LOC_TEAM_PVP_VERSION" Style="TTText" WrapWidth="260"/>
+				<Stack ID="TPT_Update_Stack" StackGrowth="Down" Anchor="C,T" Offset="2,10"/>
+				<Box Size="280,8" Color="0,0,0,0" Anchor="C,T"/>
+			</Stack>
+		</Grid>
+	</ToolTipType>
+
+	<Instance Name="TPT_UpdateInstance" >
+		<Grid ID="BG" Size="260,auto" SliceCorner="10,10" SliceTextureSize="33,32" Texture="Controls_Tooltip" MinSize="220,45" InnerPadding="25,25" Anchor="L,C" InnerOffset="10,10" Color="255,255,255,50">
+			<Stack	ID="BGStack" Anchor="L,C" StackGrowth="Right" Padding="8" >
+				<Label	ID="SerialNumber" Anchor="C,C" Offset="0,2" String="123" Style="FontFlair26" Color="5,29,51,255" KerningAdjustment="-3" />
+				<Image ID="ReligionBannerIconContainer" Anchor="L,C"	Size="30,30"  Texture="Religion_FollowersSlot" Hidden="0">
+					<Image ID="ReligionIcon" Anchor="C,C" Offset="0,0" Size="22,22" Texture="Religions22"/>
+				</Image>
+				<Label ID="UpdateText" Anchor="L,T" Style="TTText" String="UpdateText" WrapWidth="180"/>
+			</Stack>
+		</Grid>
+	</Instance>
+</Context>

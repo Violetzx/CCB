@@ -1,0 +1,22 @@
+<GameInfo>
+	<ConfigurationUpdates>
+		<!--  CWC Default Tournament Name  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="1" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="Civilization World Cup" Hash="0" />
+		<!--  Squadron CivFR Default Name  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="3" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="Squadron CivFR" Hash="0" />
+		<!--  CPL Premier League Default Name  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="CPL Premier League" Hash="0" />
+		<!--  1v1 Default Name  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="1v1 Royal Rumble" Hash="0" />
+		<!-- Chinese League Cup Default Name -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="Chinese League Cup" Hash="0" />
+		<!-- PPL Arena Default Name -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="PPL Arena" Hash="0" />
+		<!-- PPL Battleground Default Name -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="PPL Battleground" Hash="0" />
+		<!-- 2vi2 Default Name -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="10" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="2vi2 " Hash="0" />
+		<!-- GOAT Default Name -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="11" TargetGroup="Game" TargetId="BSM_TOURNAMENT" TargetValue="G.O.A.T. Tournament" Hash="0" />
+	</ConfigurationUpdates>
+</GameInfo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<InsertOrIgnore ParameterId="SETTINGS_DIPLOMACYRIBBON_TPT" Name="LOC_SETTINGS_DIPLOMACYRIBBON_NAME" Description="LOC_SETTINGS_DIPLOMACYRIBBON_DESC" Domain="DPRsettings" DefaultValue="SETTINGS_DIPLOMACYRIBBON_NORM" ConfigurationGroup="Game" ConfigurationId="SETTINGS_DIPLOMACYRIBBON_TPT" GroupId="AdvancedOptions" ChangeableAfterGameStart="0" SortIndex="2950" />
+	</Parameters>
+	<DomainValues>
+		<InsertOrIgnore Domain="DPRsettings" Value="SETTINGS_DIPLOMACYRIBBON_NORM" Name="LOC_SETTINGS_DIPLOMACYRIBBON_NORM_NAME" Description="LOC_SETTINGS_DIPLOMACYRIBBON_NORM_DESC" SortIndex="1"/>
+		<InsertOrIgnore Domain="DPRsettings" Value="SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM" Name="LOC_SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM_NAME" Description="LOC_SETTINGS_DIPLOMACYRIBBON_VISIBILITY_TEAM_DESC" SortIndex="2"/>
+		<InsertOrIgnore Domain="DPRsettings" Value="SETTINGS_DIPLOMACYRIBBON_PUBLIC" Name="LOC_SETTINGS_DIPLOMACYRIBBON_PUBLIC_NAME" Description="LOC_SETTINGS_DIPLOMACYRIBBON_PUBLIC_DESC" SortIndex="3"/>
+	</DomainValues>
+</GameInfo>	

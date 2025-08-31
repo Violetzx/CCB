@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+    <InputActions>
+        <InsertOrIgnore ActionId="HotKey_TPT_AutoRecruit" Name="LOC_HOTKEY_AUTO_RECRUIT_NAME" Description="LOC_HOTKEY_AUTO_RECRUIT_DESCRIPTION" CategoryId="UI" ContextId="World"/>
+  <!--      <InsertOrIgnore ActionId="HotKey_TPT_Recruit" Name="LOC_HOTKEY_RECRUIT_NAME" Description="LOC_HOTKEY_RECRUIT_DESCRIPTION" CategoryId="UI" ContextId="World"/>	-->
+    </InputActions>
+    <InputActionDefaultGestures>
+        <InsertOrIgnore ActionId="HotKey_TPT_AutoRecruit" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SHIFT+LOC_OPTIONS_KEY_K"/>
+ <!--       <InsertOrIgnore ActionId="HotKey_TPT_Recruit" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SHIFT+LOC_OPTIONS_KEY_L"/>		-->
+    </InputActionDefaultGestures>
+</GameInfo>

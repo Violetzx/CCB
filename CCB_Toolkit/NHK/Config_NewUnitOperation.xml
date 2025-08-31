@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+    <InputActions>
+        <InsertOrIgnore ActionId="HotKey_TPT_FastPromote" Name="LOC_FAST_PROMOTE_NAME" Description="LOC_FAST_PROMOTE_DESC" CategoryId="UNIT" ContextId="World"/>
+        <!--
+        <InsertOrIgnore ActionId="HotKey_TPT_CancelAll" Name="LOC_CANCEL_ALL_NAME" Description="LOC_CANCEL_ALL_DESC" CategoryId="UNIT" ContextId="World"/>     
+        <InsertOrIgnore ActionId="HotKey_TPT_FortifyAll" Name="LOC_FORTIFY_ALL_NAME" Description="LOC_FORTIFY_ALL_DESC" CategoryId="UNIT" ContextId="World"/>
+        -->
+    </InputActions>
+    <InputActionDefaultGestures>
+        <InsertOrIgnore ActionId="HotKey_TPT_FastPromote" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SHIFT+LOC_OPTIONS_KEY_W"/>
+        <!--
+        <InsertOrIgnore ActionId="HotKey_TPT_CancelAll" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SHIFT+LOC_OPTIONS_KEY_S"/>
+        <InsertOrIgnore ActionId="HotKey_TPT_FortifyAll" Index="0" GestureType="KBMouse" GestureData="LOC_OPTIONS_KEY_SHIFT+LOC_OPTIONS_KEY_D"/>
+        -->
+    </InputActionDefaultGestures>
+</GameInfo>

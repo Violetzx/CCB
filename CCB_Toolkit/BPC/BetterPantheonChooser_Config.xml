@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Parameters>
+		<Row ParameterId="NO_WAIT_PANTHEON" Name="LOC_NO_WAIT_PANTHEON_NAME" Description="LOC_NO_WAIT_PANTHEON_DESC" Domain="bool""0" ConfigurationGroup="Game" ConfigurationId="NO_WAIT_PANTHEON" GroupId="AdvancedOptions" ChangeableAfterGameStart="0"  SortIndex="2904" />	
+	</Parameters>
+</GameInfo>

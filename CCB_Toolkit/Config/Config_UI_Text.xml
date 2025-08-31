@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_SETTINGS_UI_NAME" Language="zh_Hans_CN">
+			<Text>自定义设置</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_DESC" Language="zh_Hans_CN">
+			<Text>选择你想使用的UI功能</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_ENABLE_ALL_NAME" Language="zh_Hans_CN">
+			<Text>全部启用(推荐)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_ENABLE_ALL_DESC" Language="zh_Hans_CN">
+			<Text>全部功能启用(推荐)</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_CUSTOM_NAME" Language="zh_Hans_CN">
+			<Text>自定义</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_CUSTOM_DESC" Language="zh_Hans_CN">
+			<Text>选择你想开启的功能</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_BGP_NAME" Language="zh_Hans_CN">
+			<Text>伟人UI增强</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_BGP_DESC" Language="zh_Hans_CN">
+			<Text>更大的伟人点数显示区域，每回合点数</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_TPE_NAME" Language="zh_Hans_CN">
+			<Text>顶部面板拓展</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_TPE_DESC" Language="zh_Hans_CN">
+			<Text>显示粮食、生产力、人口、奢侈品和额外资源</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_BCS_NAME" Language="zh_Hans_CN">
+			<Text>城邦UI增强</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_BCS_DESC" Language="zh_Hans_CN">
+			<Text>显示城邦任务，使者排名颜色增强</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_BTS_NAME" Language="zh_Hans_CN">
+			<Text>商路UI增强</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_BTS_DESC" Language="zh_Hans_CN">
+			<Text>商路收益排序功能</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_TCP_NAME" Language="zh_Hans_CN">
+			<Text>真实科文进度</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_TCP_DESC" Language="zh_Hans_CN">
+			<Text>修正了尤里卡的显示比例，修正科技所需回合数，增加尤里卡提示，增加研究进度实际数值</Text>
+		</Replace>	
+		<Replace Tag="LOC_SETTINGS_UI_DPR_NAME" Language="zh_Hans_CN">
+			<Text>外交能见度模式</Text>
+		</Replace>
+		<Replace Tag="LOC_SETTINGS_UI_DPR_DESC" Language="zh_Hans_CN">
+			<Text>增加了3种模式，通过提升能见度获取外交情报</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

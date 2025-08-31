@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+	<Container Style="FullScreenVignetteConsumer" Size="parent,parent-29" />
+  <Box	ID="Main"	Anchor="C,C"	Size="620,789"		Color="11,27,40,255" >
+    <Grid		Anchor="C,C"		Size="parent+9,parent+9"	Style="WindowFrameTopOnly" />
+    <Button		ID="CloseButton"		Anchor="R,T"	Offset="-3,-1"	Size="44,44"	Texture="Controls_CloseLarge"  />
+    <Image		Anchor="C,T"		Size="parent,44"	Color="61,112,154,255"	Texture="Controls_Gradient_HalfRadial"  />
+    <Label		Anchor="C,T"	Offset="0,14"	Style="FontFlair24"			String="LOC_BLACKLIST_MANAGER" FontStyle="Glow" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" SmallCaps="28" SmallCapsType="EveryWord" />
+    <Grid		Anchor="C,T"	Offset="0,44"		Size="parent-6,8"		Style="Divider3Grid" />
+	<Grid		Anchor="C,T"	Offset="0,88"		Size="parent-6,8"		Style="Divider3Grid" />
+
+	<Grid Style="SubContainer" Size="254,parent-112"  Anchor="L,T" Offset="12,100"  >
+		<Label		Anchor="C,T"	Offset="0,-45"	Style="FontFlair20"			String="LOC_BLACKLIST_PLAYERLIST" 	FontStyle="Glow" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" SmallCaps="28" SmallCapsType="EveryWord" />
+		<ScrollPanel	ID="Listings1"			Anchor="C,T" Size="parent,parent-30"	Offset="0,15" Vertical="1" AutoScrollBar="1" >
+			<Stack ID="PlayerListStack" Anchor="C,T" StackGrowth="Down" Padding="5" Offset="0,0"/>
+		</ScrollPanel>
+	</Grid>
+
+	<Grid Style="SubContainer" Size="332,parent-112"  Anchor="R,T" Offset="12,100"  >
+		<Label		Anchor="C,T"	Offset="0,-45"		Style="FontFlair20"			String="LOC_BLACKLIST_HISTORY" 	FontStyle="Glow" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" SmallCaps="28" SmallCapsType="EveryWord" />
+		<ScrollPanel	ID="Listings2"			Anchor="C,T" Size="parent,parent-30"	Offset="0,15" Vertical="1" AutoScrollBar="1" >
+			<Stack ID="BlackListStack" Anchor="C,T" StackGrowth="Down" Padding="5" Offset="0,0"/>
+		</ScrollPanel>
+	</Grid>
+  </Box>
+
+	<!-- 组名输入框 -->
+	<Box ID="NameModGroupPopup" Color="0,0,0,150" Size="parent,parent" ConsumeMouseOver="1" Hidden="1" IgnoreTutorial="1">
+		<AlphaAnim ID="NameModGroupPopupAlpha" AlphaBegin="0" AlphaEnd="1" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+			<SlideAnim ID="NameModGroupPopupSlide" Start="0,-20" End="0,0" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+				<Grid Size="500,250" Anchor="C,C" Offset="0,-50" Style="DropShadow2"  Hidden="0" Color="255,255,255,200">
+					<Grid ID="NameModGroupPopupWindow" Size="parent-50,auto" Anchor="C,C" SizePadding="0,20" Style="WindowFrameTitle" Hidden="0">
+						<Label ID="BindingTitle" Anchor="C,T" String="LOC_TPT_INPUT_PLAYERINFO" Align="Center" Style="BlueGlow" Offset="0,15"/>	
+						<Stack Offset="0,40" Size="parent,0" StackGrowth="Down" Anchor="C,T" Padding="5">
+							<Label ID="SteamIDInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_STEAMID_NAME" Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="SteamIDInputEditBox" ToolTip="LOC_TPT_INPUT_STEAMID_TT" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+								<GridButton ID="SteamHomePageButton" Anchor="R,C" Size="32,40" Offset="-28,8" String="[NEWLINE][ICON_ICON_UNITCOMMAND_ENTER_FORMATION]" ToolTip="LOC_TPT_STEAM_HOMEPAGE_TT"/>
+							</Grid>
+							<Label ID="DescInputTitle" Anchor="C,T" String="LOC_TPT_INPUT_DESC_NAME"  Align="Center" Style="BlueGlow" Offset="0,15"/>
+							<Grid Style="EditTextButton" Anchor="C,T" Size="parent-100,26">
+								<EditBox ID="DescInputEditBox" ToolTip="LOC_TPT_INPUT_DESC_TT" Style="FontNormal16" Anchor="L,C" Offset="24,0" Size="parent-10,16" MaxLength="128" String="" CallOnChar="1" />
+							</Grid>							
+							<Container Size="parent,50" Anchor="C,T" Offset="0,10">
+								<GridButton ID="CancelBindingButton" Style="ButtonRed" Size="160,41" Offset="50,0" Anchor="R,T" String="LOC_CANCEL"/>
+								<GridButton ID="CreateModGroupButton" Style="MainButton" Size="160,41" Offset="50,0" Anchor="L,T" String="LOC_WORLDBUILDER_ADD_BUTTON"/>
+								<GridButton ID="RemoveGroupButton" Style="MainButton" Size="160,41" Offset="50,40" Anchor="L,T" String="LOC_WORLDBUILDER_REMOVE_BUTTON" Hidden="1"/>
+							</Container>
+						</Stack>
+					</Grid>
+				</Grid>
+			</SlideAnim>
+		</AlphaAnim>
+	</Box>
+
+	<Instance	Name="PlayerListEntry">
+		<Container ID="RootContainer" Size="218,46">
+			<Label ID="PlayerNameLen" Anchor="C,T"  Style="WhiteSemiBold14" Hidden="1"/>
+			<PullDown ID="PlayerListPull" Style="PullDownPlayerSlot" ScrollThreshold="110" Disabled="1">
+				<ScrollTextField ID="PlayerName" Anchor="L,T" Offset="0,7" Size="148,14" Style="WhiteSemiBold14" String="PlayerName"/>
+				<Label ID="ConnectionLabel" Anchor="C,B" Offset="0,7" Style="WhiteSemiBold12" String="PlayerStatus"/>
+			</PullDown>
+			<Label ID="LeaderIcon" Style="FontNormal13" Anchor="L,T" Offset="0,21"  String="[ICON_ICON_LEADER_DEFAULT]"/>
+			<Button ID="AddBlackListButton" Anchor="R,C" Offset="10,0" Style="ArrowButtonRight"/>
+		</Container>
+	</Instance>
+	
+	<Instance	Name="BlackListEntry">
+		<Container ID="RootContainer" Size="300,46">
+			<GridButton ID="BlackListPlayerButton" Anchor="C,T" Offset="0,0" Size="300,46" Texture="Controls_ButtonControl" SliceCorner="12,12" SliceTextureSize="24,24" StateOffsetIncrement="0,24" >
+				<Label ID="BlackListPlayerLabel" Offset="0,5"	Anchor="C,B"  FontStyle="stroke" ColorSet="BodyTextCool" Style="FontNormal13" String="LOC_BLACKLIST_BUTTON_NAME"/>
+				<Label ID="DescLen" Anchor="C,T"  Style="WhiteSemiBold14" Hidden="1"/>
+				<ScrollTextField ID="DescLabel" Anchor="L,T" Offset="0,10" Size="280,18" Style="FontFlair16"/>
+			</GridButton>
+		</Container>
+	</Instance>
+</Context>

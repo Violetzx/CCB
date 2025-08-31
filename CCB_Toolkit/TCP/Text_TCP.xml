@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TCP_PROGRESS_TOOLTIP" Language="zh_Hans_CN">
+			<Text>研究进度：{1_Progress} / {2_Cost}</Text>
+		</Replace>
+		<Replace Tag="LOC_TCP_PROGRESS_TOOLTIP" Language="en_US">
+			<Text>Progress: {1_Progress} / {2_Cost}</Text>
+		</Replace>			
+		<Replace Tag="LOC_TCP_ESTIMATES_TOOLTIP" Language="zh_Hans_CN">
+			<Text>[Newline]获得提升后：{1_Estimates} / {2_Cost}</Text>
+		</Replace>	
+		<Replace Tag="LOC_TCP_ESTIMATES_TOOLTIP" Language="en_US">
+			<Text>[Newline]Progress after boost: {1_Estimates} / {2_Cost}</Text>
+		</Replace>				
+		<Replace Tag="LOC_TCP_PROGRESS_ENOUGH_TOOLTIP" Language="zh_Hans_CN">
+			<Text>[Newline][icon_You]可通过获得提升而完成</Text>
+		</Replace>	
+		<Replace Tag="LOC_TCP_PROGRESS_ENOUGH_TOOLTIP" Language="en_US">
+			<Text>[Newline][icon_You]Can be completed by gaining a boost</Text>
+		</Replace>			
+	</LocalizedText>
+</GameData>		

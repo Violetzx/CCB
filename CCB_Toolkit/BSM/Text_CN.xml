@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+	
+	<!-- New entries -->
+	<Replace Tag="BSM_SP_NAME" language="zh_Hans_CN">
+		<Text>观察者自动结束回合</Text>
+	</Replace>
+	<Replace Tag="BSM_SP_DESC" language="zh_Hans_CN">
+		<Text>一旦所有电脑玩家都回合结束了，观察者就会自动结束回合 (默认开启).</Text>
+	</Replace>
+	<Replace Tag="LOC_ONE_OBS_NAME" language="zh_Hans_CN">
+		<Text>风云变幻: [COLOR_Civ6Green]一名观察者[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_ONE_OBS_DESCRIPTION" language="zh_Hans_CN">
+		<Text>平衡风云变幻的设置当一个观察者玩家时的存在时 (BBG 设置也将被检测到)</Text>
+	</Replace>
+	<Replace Tag="LOC_TWO_OBS_NAME" language="zh_Hans_CN">
+		<Text>风云变换: [COLOR_Civ6Green]两名观察者[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_TWO_OBS_DESCRIPTION" language="zh_Hans_CN">
+		<Text>平衡风云变幻的设置当两个观察者玩家时的存在时 (BBG 设置也将被检测到)</Text>
+	</Replace>
+	<Replace Tag="LOC_THREE_OBS_NAME" language="zh_Hans_CN">
+		<Text>风云变换: [COLOR_Civ6Green]三名观察者[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_THREE_OBS_DESCRIPTION" language="zh_Hans_CN">
+		<Text>平衡风云变幻的设置当三个观察者玩家时的存在时 (BBG 设置也将被检测到)</Text>
+	</Replace>
+	<Replace Tag="LOC_FOUR_OBS_NAME" language="zh_Hans_CN">
+		<Text>风云变换: [COLOR_Civ6Green]四名观察者[ENDCOLOR]</Text>
+	</Replace>
+	<Replace Tag="LOC_FOUR_OBS_DESCRIPTION" language="zh_Hans_CN">
+		<Text>平衡风云变幻的设置当三个观察者玩家时的存在时 (BBG 设置也将被检测到)</Text>
+	</Replace>
+		<Replace Tag="BSM_TOURNAMENT_NAME" language="zh_Hans_CN">
+		<Text>比赛名称</Text>
+	</Replace>
+		<Replace Tag="BSM_TEAM1_NAME" language="zh_Hans_CN">
+		<Text>队伍1名字</Text>
+	</Replace>
+		<Replace Tag="BSM_TEAM2_NAME" language="zh_Hans_CN">
+		<Text>队伍2名字</Text>
+	</Replace>
+	<Replace Tag="BSM_TEAM3_NAME" language="zh_Hans_CN">
+		<Text>队伍3名字</Text>
+	</Replace>
+		<Replace Tag="BSM_TEAM4_NAME" language="zh_Hans_CN">
+		<Text>队伍4名字</Text>
+	</Replace>
+	
+	
+		<!-- Civilization -->
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_NAME" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_ADJECTIVE" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+		
+		<!-- Leader Name -->
+		<Row Tag="LOC_LEADER_SPECTATOR_NAME" Language="zh_Hans_CN">
+			<Text>[COLOR_Civ6Green]观察者[ENDCOLOR]</Text>
+		</Row>
+
+		<!-- Civilization Traits -->
+		<Row Tag="LOC_TRAIT_CIVILIZATION_SPECTATOR_NAME" Language="zh_Hans_CN">
+			<Text></Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_SPECTATOR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>您可以将鼠标悬停在其他玩家领袖头像上以访问更多信息[NEWLINE][NEWLINE]点击按钮以切换不同的统计报告</Text>
+		</Row>
+
+		<!-- Leader Traits -->
+		<Row Tag="LOC_TRAIT_LEADER_SPECTATOR_NAME" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_SPECTATOR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>你将作为观察者进入游戏中[NEWLINE][NEWLINE]点击其他领袖的头像切换视角[NEWLINE][NEWLINE]您将能够看到他的科技树选择或者使用的政策卡</Text>
+		</Row>
+
+		<!-- DOM_TEXT -->
+		<Row Tag="LOC_LEADER_SPECTATOR_DOM_TEXT" Language="zh_Hans_CN">
+			<Text>"我是来观看的"[NEWLINE]  [NEWLINE]          D. / Jack the Narrator</Text>
+		</Row>
+
+
+		<!-- Civlization Citizen Names -->
+		<Row Tag="LOC_CITIZEN_SPECTATOR_MALE_1" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_SPECTATOR_FEMALE_1" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+
+
+		<!-- Civilization City Names-->
+		<Row Tag="LOC_CIVILIZATION_SPECTATOR_CITY_1" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>
+		
+		<!-- Notifications, Message is the Tag, Summary the description-->
+		<Row Tag="LOC_BSM_NOTIFICATION_DELAYED_B1_MESSAGE" Language="zh_Hans_CN">
+			<Text>首个城市建立</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_DELAYED_B1_SUMMARY" Language="zh_Hans_CN">
+			<Text>世界首座城市</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B2_MESSAGE" Language="zh_Hans_CN">
+			<Text>第2座城市建立</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B2_SUMMARY" Language="zh_Hans_CN">
+			<Text>第2个定居点</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B3_MESSAGE" Language="zh_Hans_CN">
+			<Text>第3座城市建立</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B3_SUMMARY" Language="zh_Hans_CN">
+			<Text>第3个定居点</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B10_MESSAGE" Language="zh_Hans_CN">
+			<Text>第10个定居点!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B10_SUMMARY" Language="zh_Hans_CN">
+			<Text>这位玩家刚刚建立了他的第10个城市 !!</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_B20_MESSAGE" Language="zh_Hans_CN">
+			<Text>第20个定居点!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_B20_SUMMARY" Language="zh_Hans_CN">
+			<Text>这位玩家刚刚建立了他的第20个城市 !!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_GOODY_MESSAGE" Language="zh_Hans_CN">
+			<Text>访问村庄</Text>
+		</Row>		
+		<Row Tag="LOC_BSM_NOTIFICATION_GOV_CHANGE_MESSAGE" Language="zh_Hans_CN">
+			<Text>改变政体</Text>
+		</Row>		
+		<Row Tag="LOC_BSM_NOTIFICATION_WONDER_STARTED_MESSAGE" Language="zh_Hans_CN">
+			<Text>奇观开始建造</Text>
+		</Row>
+		<Row Tag="LOC_BSM_NOTIFICATION_PANTHEON_MESSAGE" Language="zh_Hans_CN">
+			<Text>万神殿成立</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_SETTLER_MESSAGE" Language="zh_Hans_CN">
+			<Text>开拓者丢失</Text>
+		</Row>				
+		<Row Tag="LOC_BSM_NOTIFICATION_SETTLER_SUMMARY" Language="zh_Hans_CN">
+			<Text>开拓者被俘虏了!!</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_FIRST_UNIT_MESSAGE" Language="zh_Hans_CN">
+			<Text>首个单位产生</Text>
+		</Row>			
+		<Row Tag="LOC_BSM_NOTIFICATION_STRONG_GP_MESSAGE" Language="zh_Hans_CN">
+			<Text>关键伟人被招募</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_NOTIFICATION_FIRST_DISTRICT_MESSAGE" Language="zh_Hans_CN">
+			<Text>首个区域开始建造</Text>
+		</Row>		
+
+		<Row Tag="LOC_BSM_DIPLOMACY_SCORE" Language="zh_Hans_CN">
+			<Text>分数</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_DIPLOMACY_YIELD" Language="zh_Hans_CN">
+			<Text>产出</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_TOTAL" Language="zh_Hans_CN">
+			<Text>统计</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_TECHS" Language="zh_Hans_CN">
+			<Text>研究</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_ERAS" Language="zh_Hans_CN">
+			<Text>时代分</Text>
+		</Row>
+		<Row Tag="LOC_BSM_DIPLOMACY_ARMY" Language="zh_Hans_CN">
+			<Text>军力</Text>
+		</Row>	
+		<Row Tag="LOC_BSM_DIPLOMACY_OBSERVER" Language="zh_Hans_CN">
+			<Text>观察者</Text>
+		</Row>			
+  </LocalizedText>
+</GameData>
