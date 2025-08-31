@@ -25,8 +25,9 @@ def combine_modinfo_files():
     mod_cnt = 0
     author_dict = {}
     special_thanks_dict = {}
-    author_dict['Calcifer'] = 1
-    author_dict['Apeul'] = 1
+    author_dict['CCB制作组'] = 1
+    special_thanks_dict['BBG制作组'] = 1
+    special_thanks_dict['BBG Expand'] = 1
     files_dict = {}
     for mod in get_mod_folders():
         modinfo_path = os.path.join(mod, "files.xml")
@@ -90,13 +91,10 @@ def combine_modinfo_files():
     for key, value in extraDependencies.items():
         dependenciesStr += f'    <Mod id="{key}" title="{value}"/>\n'
     newFileStr = f'''<?xml version="1.0" encoding="UTF-8"?>
-<!-- Release ModID-->
-<!-- <Mod id="2a0aa96a-a31c-4ce2-87ec-09152f6f3e00" version="1000"> -->
-<!-- WIP ModID-->
-<Mod id="2a0aa96a-a31c-4ce2-87ec-09144f6f3e00" version="1000">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="120">
   <Properties>
-    <Name>BBG Expanded WIP</Name>
-    <Description>Expansion of new civs</Description>
+    <Name>CCB 文明拓展 1.2</Name>
+    <Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
     <Authors>{', '.join(sorted_authors)} (alphabetical order)</Authors>
     <SpecialThanks>{', '.join(sorted_special_thanks)} (alphabetical order)</SpecialThanks>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -110,7 +108,7 @@ def combine_modinfo_files():
         #         newFileStr += f'item'
         # newFileStr += f'</{key}>\n'
     newFileStr += '</Mod>'
-    with open('BBGExpanded.modinfo', 'w') as file:
+    with open('CCBExpanded.modinfo', 'w') as file:
         file.write(newFileStr)
 
 if __name__ == "__main__":

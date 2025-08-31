@@ -463,12 +463,12 @@
 		</UpdateDatabase>
 
 		<!--CCB 适配配置-->
-		<UpdateText id="Config_CCB">
+		<UpdateDatabase id="Config_CCB">
 			<Properties>
 				<LoadOrder>100020</LoadOrder>
 			</Properties>
 			<File>MPH/Config.sql</File>
-		</UpdateText>
+		</UpdateDatabase>
 
 		<!--地图预设-->
         <UpdateDatabase id="CPL_SETTINGS">
@@ -1182,12 +1182,12 @@
             <File>MPH/data/no_more_stack.lua</File>
         </AddGameplayScripts>
 		<!--CCB 适配配置-->
-		<UpdateText id="Config_CCB">
+		<UpdateDatabase id="Config_CCB">
 			<Properties>
 				<LoadOrder>100020</LoadOrder>
 			</Properties>
 			<File>MPH/Config.sql</File>
-		</UpdateText>
+		</UpdateDatabase>
 
         <UpdateText id="MPH_TEXTS">
             <File>MPH/lang/Text_CN.xml</File>
