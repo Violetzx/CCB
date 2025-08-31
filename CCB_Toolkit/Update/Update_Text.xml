@@ -5,7 +5,7 @@
 			<Text>联机工具箱</Text>
 		</Replace>
 		<Replace Tag="LOC_TEAM_PVP_TOOLS_SUBSCRIPTION_ID" Language="zh_Hans_CN">	<!-- 纯数字无法准确读取 -->
-			<Text>G3201341023</Text>
+			<Text>G3559469993</Text>
 		</Replace>
 		<Replace Tag="LOC_TEAM_PVP_VERSION" Language="zh_Hans_CN">
 			<Text>v1.61-II</Text>
