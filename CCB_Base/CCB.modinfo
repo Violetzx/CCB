@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- Maybe change Expanded Criteria ? -->
-
 <!-- Release ModID-->
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e00" version="7110">
+<!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e00" version="7110"> -->
 
 <!-- BETA ModID-->
-<!-- <Mod id="cb84075d-5007-4207-b662-c35a5f7be250" version="7110"> -->
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" version="7110">
 
 <!-- WIP ModID -->
-<!-- <Mod id="cb84075d-5007-4207-b662-c35a5f7be254" version="7110"> -->
+<!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e08" version="7110"> -->
 	<Properties>
 		<Name>CCB 基础 1.0</Name>
 		<Description>
