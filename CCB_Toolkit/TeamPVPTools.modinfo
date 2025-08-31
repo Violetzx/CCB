@@ -9,8 +9,8 @@
 -->
 <Mod id="00000000-62F8-5A2D-B71C-24D31788D3BE" version="20240805">
 	<Properties>
-		<Name>LOC_TPT_NAME</Name>
-		<Description>LOC_TPT_DESCRIPTION</Description>
+		<Name>CCB 工具箱测试版</Name>
+		<Description>基于号码菌的联机工具箱的 CCB 适配版本，目前版本仅为内部测试使用，不代表最终品质</Description>
 		<Teaser>LOC_TPT_TEASER</Teaser>
 		<Authors>LOC_TPT_AUTHORS</Authors>
 		<SpecialThanks>LOC_TPT_THANKS</SpecialThanks>
@@ -458,6 +458,13 @@
 			<File>NHK/Config_NewUnitOperation.xml</File>
 			<File>NHK/Config_GreatPeople_Recruit.xml</File>
 		</UpdateDatabase>
+		<!--CCB 适配配置-->
+		<UpdateText id="Config_CCB">
+			<Properties>
+				<LoadOrder>100020</LoadOrder>
+			</Properties>
+			<File>MPH/Config.sql</File>
+		</UpdateText>
 	</FrontEndActions>
 
 	<InGameActions>
@@ -1153,6 +1160,11 @@
 		<ImportFiles id="BuilderChargesUnitFlagManager_Import">
 			<File>BCT/UnitFlagManager_BuilderCharges.lua</File>
 		</ImportFiles>
+
+		<!-- CCB：禁止SE科文 -->
+        <AddGameplayScripts id="no_more_stack">
+            <File>MPH/data/no_more_stack.lua</File>
+        </AddGameplayScripts>
 	</InGameActions>
 	<Files>
 		<File>Update/Lianjing_5th_300_268.dds</File>
@@ -1333,5 +1345,9 @@
 		<File>NHK/UI/AutoRecruit_GreatPerson_HotKey.xml</File>
 		<File>NHK/UI/AutoRecruit_GreatPerson_HotKey.lua</File>
 		<File>BCT/UnitFlagManager_BuilderCharges.lua</File>
+
+		<!--下面是 CCB 适配文件-->
+		<File>MPH/data/no_more_stack.lua</File>
+		<File>MPH/Config.sql</File>
 	</Files>
 </Mod>
