@@ -696,7 +696,7 @@
 		<!-- == INDIA == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DHARMA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>从城市中的每个宗教（其须拥有至少1个信徒）获得信徒信仰加成。城市若拥有多个宗教（须有至少1个信徒），则获得1点 [ICON_Amenities] 宜居度（文印度只需一个宗教）。传教士的传播次数+2。来自 [ICON_TradeRoute] 贸易路线的宗教压力+100%。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：无。</Text>
+			<Text>从城市中的每个宗教（其须拥有至少1个信徒）获得信徒信仰加成。城市若拥有至少一个主流宗教，则获得1点 [ICON_Amenities] 宜居度。传教士的传播次数+2。来自 [ICON_TradeRoute] 贸易路线的宗教压力+100%。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：无。</Text>
 		</Replace>
 		<!-- = leader ability (Chandragupta) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="zh_Hans_CN">
