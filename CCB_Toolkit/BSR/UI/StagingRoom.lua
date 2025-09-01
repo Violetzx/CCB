@@ -4509,8 +4509,8 @@ function Initialize()
 	Controls.HiddenPlayerInfoCheck:RegisterCallback(Mouse.eLClick, OnHiddenPlayerInfoCheck);
 	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpHiddenPlayerInfoCheck)
 	
-	Controls.LeaderStatsButton:RegisterCallback( Mouse.eLClick, OnLeaderStatsOpen );
-	Controls.LeaderStatsButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
+	-- Controls.LeaderStatsButton:RegisterCallback( Mouse.eLClick, OnLeaderStatsOpen );
+	-- Controls.LeaderStatsButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 
 	Controls.Header_CloseButton:RegisterCallback( Mouse.eLClick, OnLeaderStatsClose );
 
