@@ -764,14 +764,14 @@
 		</Grid>
 	</ToolTipType> -->
 
-	<Stack	ID="BGStack" Anchor="L,B" StackGrowth="Up" Padding="8" Offset="0,55">
+	<!-- <Stack	ID="BGStack" Anchor="L,B" StackGrowth="Up" Padding="8" Offset="0,55"> -->
 		<!-- 文明统计 -->
 		<!-- <Button ID="LeaderStatsButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_LEADERSTATS_OPEN_TT">
 			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
 			<Label Anchor="L,C" String="LOC_BSR_LEADERSTATS_OPEN_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
 		</Button> -->
 		<!-- 无限文明UI -->
-		<Button ID="FreeChooseAbilityCivilizationButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_FREE_ABILITY_TT">
+		<!-- <Button ID="FreeChooseAbilityCivilizationButton" Anchor="L,C" Size="49,49" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_FREE_ABILITY_TT">
 			<Image Anchor="C,C" Offset="0,0" Size="32,32" Icon="ICON_WB_TOOL_HAMBURGER_MENU"/>
 			<Label Anchor="L,C" String="LOC_BSR_FREE_ABILITY_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
 		</Button>
@@ -780,7 +780,7 @@
 			<FlipAnim FrameCount="60" Texture="Neon256_144.dds" Columns="10" Anchor="L,C" Size="256,144" Offset="0,0" Stopped="0"/>
 			<Label Anchor="C,C" String="LOC_BSR_EXP_1_NAME" Align="Center" Offset="0,-18"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
 			<Label Anchor="C,C" String="LOC_BSR_EXP_2_NAME" Align="Center" Offset="0,18"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
-		</Button>
+		</Button> -->
 
 		<Container	ID="Top" Size="1,50" Hidden="1">
 

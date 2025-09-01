@@ -3930,8 +3930,10 @@ function OnRandomTeamButtonL()
 	if Network.GetLocalPlayerID() ~= Network.GetGameHostPlayerID() then
 		return
 	end
-	local TeamID_A = 2*math.random(1,6) - 1
-	local TeamID_B = 2*math.random(1,5)
+	-- local TeamID_A = 2*math.random(1,6) - 1
+	-- local TeamID_B = 2*math.random(1,5)
+	local TeamID_A = 1
+	local TeamID_B = 2
 	local Participant_player_ids = {}
 	local player_ids = GameConfiguration.GetMultiplayerPlayerIDs();
 	
