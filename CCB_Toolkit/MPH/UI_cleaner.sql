@@ -1,0 +1,3 @@
+-- 删除准备房间的广告
+-- 文件位置 BSR/UI/StagingRoom.xml
+-- TODO: 自动化删除

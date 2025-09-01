@@ -12,8 +12,8 @@
 	<!-- 正式版 -->
 <!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e40" version="20240805"> -->
 	<Properties>
-		<Name>CCB 工具箱测试版</Name>
-		<Description>基于号码菌的联机工具箱的 CCB 适配版本，目前版本仅为内部测试使用，不代表最终品质</Description>
+		<Name>LOC_TPT_NAME</Name>
+		<Description>LOC_TPT_DESCRIPTION</Description>
 		<Teaser>LOC_TPT_TEASER</Teaser>
 		<Authors>LOC_TPT_AUTHORS</Authors>
 		<SpecialThanks>LOC_TPT_THANKS</SpecialThanks>
@@ -23,14 +23,15 @@
 
 	<LocalizedText>
 		<Text id="LOC_TPT_NAME">
-			<en_US>[ENDCOLOR][ENDCOLOR]Team PVP Tools [COLOR:ResGoldLabelCS]1.61[ENDCOLOR]</en_US>
-			<zh_Hans_CN>[ENDCOLOR][ENDCOLOR]Team PVP Tools[COLOR:ResGoldLabelCS] 联机工具箱 1.61[ENDCOLOR]</zh_Hans_CN>
+			<en_US>[ENDCOLOR][ENDCOLOR]CCB Tools [COLOR:ResGoldLabelCS][ENDCOLOR]</en_US>
+			<zh_Hans_CN>[ENDCOLOR][ENDCOLOR]CCB Tools[COLOR:ResGoldLabelCS] 联机工具箱 测试版[ENDCOLOR]</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_TPT_DESCRIPTION">
-			<en_US>[ICON_Bolt][COLOR:ResGoldLabelCS]Team PVP Tools : Designed for Multiplayer[ENDCOLOR][NEWLINE][NEWLINE][icon_Exclamation]Frontend improvements[NEWLINE][NEWLINE][icon_You]Net Connection Icon Logic Fix[NEWLINE][NEWLINE][icon_You]Stagingroom tools[NEWLINE][NEWLINE][icon_You]LAN player name limit increased: 22[icon_GoingTo]128[NEWLINE][NEWLINE][icon_Exclamation]UI Enhancements[NEWLINE][NEWLINE][icon_You]Better Great People Panel[NEWLINE][NEWLINE][icon_You]Top Panel Extension Pro[NEWLINE][NEWLINE][icon_You]Better City States Lite[NEWLINE][NEWLINE][icon_You]Better Trade Screen Lite[NEWLINE][NEWLINE][icon_You]Extended Policy Cards[NEWLINE][NEWLINE][icon_You]Expandable Mods In Use Area[NEWLINE][NEWLINE][icon_You]Tech Civic Boost Ratio Fix[NEWLINE][NEWLINE][icon_You]Hide Stats Evolved Pro[NEWLINE][NEWLINE][icon_Exclamation]Auxiliary Tools[NEWLINE][NEWLINE][icon_You]Notification Panel Quick Clear[NEWLINE][NEWLINE][icon_You]Forced End Button[NEWLINE][NEWLINE][icon_You]Auto Place Map Pins on the Poles[NEWLINE][NEWLINE][icon_You]New unit hotkeys[NEWLINE][NEWLINE][icon_You]Remove Map pin option[NEWLINE][NEWLINE][icon_You]Remove Create City Confirm Popup[NEWLINE][NEWLINE][icon_You]Better Builder Charges Tracking[NEWLINE][NEWLINE][icon_You]Chat Commands (/help)[NEWLINE][NEWLINE][icon_You]Observer button for the defeated[NEWLINE][NEWLINE][icon_You]No friendship and trading options[NEWLINE][NEWLINE][icon_You]Multiplayer Resource Visibility Sharing[NEWLINE][NEWLINE][icon_You]Blacklist Management[NEWLINE][NEWLINE][icon_You]Goody huts Boost Reminder[NEWLINE][NEWLINE][icon_Exclamation]Automatic updates
+			<en_US>sorry, this mod only supports Chinese
 			</en_US>
-			<zh_Hans_CN>
-			[ICON_Bolt][COLOR:ResGoldLabelCS]Team PVP Tools 联机工具箱 为多人联机增加全新功能[ENDCOLOR]
+			<zh_Hans_CN>基于号码菌的联机工具箱的 CCB 适配版本，目前版本仅为内部测试使用，不代表最终品质
+			[NEWLINE][NEWLINE]已获得号码菌本人授权，CCB 制作组拥有完整的修改权利
+			[NEWLINE][NEWLINE][ICON_Bolt][COLOR:ResGoldLabelCS]Team PVP Tools 联机工具箱 为多人联机增加全新功能[ENDCOLOR]
 			[NEWLINE][NEWLINE][icon_Exclamation]前端功能
 			[NEWLINE][NEWLINE][icon_You]优化延迟显示，使延迟小于1ms的玩家显示黑灯
 			[NEWLINE][NEWLINE][icon_You]准备房间顶部工具：快捷开关位置、显示房间人数、玩家名单工具
@@ -66,12 +67,12 @@
 			<zh_Hans_CN>[size_32][COLOR:ResGoldLabelCS]联机工具箱[ENDCOLOR]</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_TPT_AUTHORS">
-			<en_US>[COLOR:ResGoldLabelCS]Azukii[ENDCOLOR]</en_US>
-			<zh_Hans_CN>[COLOR:ResGoldLabelCS]号码菌[ENDCOLOR]</zh_Hans_CN>
+			<en_US>[COLOR:ResGoldLabelCS]CCB[ENDCOLOR]</en_US>
+			<zh_Hans_CN>[COLOR:ResGoldLabelCS]CCB 制作组[ENDCOLOR]</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_TPT_THANKS">
-			<en_US>CHS, MPH, PPK, Zpod, 红魔族首席魔法师, 336tarot, Maple_Leaves, [COLOR_FLOAT_CULTURE]墨香书挽风[ENDCOLOR]</en_US>
-			<zh_Hans_CN>CHS, MPH, 皮皮凯, Zpod, 红魔族首席魔法师, 336tarot, 枫叶, [COLOR_FLOAT_CULTURE]墨香书挽风[ENDCOLOR]</zh_Hans_CN>
+			<en_US>号码菌, CHS, MPH, PPK, Zpod, 红魔族首席魔法师, 336tarot, Maple_Leaves, [COLOR_FLOAT_CULTURE]墨香书挽风[ENDCOLOR]</en_US>
+			<zh_Hans_CN>号码菌, CHS, MPH, 皮皮凯, Zpod, 红魔族首席魔法师, 336tarot, 枫叶, [COLOR_FLOAT_CULTURE]墨香书挽风[ENDCOLOR]</zh_Hans_CN>
 		</Text>
 	</LocalizedText>
 
@@ -273,12 +274,12 @@
 		<UpdateDatabase id="BetterPantheonChooser_CFG">
 			<File>BPC/BetterPantheonChooser_Config.xml</File>
 		</UpdateDatabase>
-		<ImportFiles id="AD_dds">
+		<!-- <ImportFiles id="AD_dds">
 			<File>Update/AD_desc_yue_cup.dds</File>
 			<File>Update/yuejicpu_AD_33_300_300.dds</File>
 			<File>Update/Lianjing_5th_300_268.dds</File>
 			<File>Update/Lianjing_5th_desc_637_637.dds</File>
-		</ImportFiles>	
+		</ImportFiles>	 -->
 		<ImportFiles id="Texture_dds">
 			<File>Update/Neon256_144.dds</File>
 		</ImportFiles>
@@ -481,6 +482,12 @@
         <UpdateText id="MPH_TEXTS">
             <File>MPH/lang/Text_CN.xml</File>
         </UpdateText>
+		<ImportFiles id="UI_CLEANER">
+			<Properties>
+				<LoadOrder>100020</LoadOrder>
+			</Properties>
+			<File>MPH/UI_cleaner.sql</File>
+		</ImportFiles>
 	</FrontEndActions>
 
 	<InGameActions>
@@ -1383,5 +1390,6 @@
         <File>MPH/configuration/Config_BBS.xml</File>
         <File>MPH/configuration/Config_BSM.xml</File>
 		<File>MPH/lang/Text_CN.xml</File>
+		<File>MPH/UI_cleaner.sql</File>
 	</Files>
 </Mod>

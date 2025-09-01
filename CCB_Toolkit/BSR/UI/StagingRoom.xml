@@ -752,7 +752,7 @@
 		</Grid>
 	</ToolTipType>
 -->
-	<ToolTipType Name="TooltipType_yue_AD">
+	<!-- <ToolTipType Name="TooltipType_yue_AD">
 		<Grid ID="BG" AutoSize="1" Anchor="C,C">
 			<Image Anchor="L,C"  Offset="0,0" ID="IMG_yue" Size="349,439" Texture="AD_desc_yue_cup.dds" Hidden="0" />
 		</Grid>
@@ -762,7 +762,7 @@
 		<Grid ID="BG" AutoSize="1" Anchor="C,C">
 			<Image Anchor="L,C"  Offset="0,0" ID="IMG_yue" Size="720,645" Texture="Lianjing_5th_desc_637_637.dds" Hidden="0" />
 		</Grid>
-	</ToolTipType>
+	</ToolTipType> -->
 
 	<Stack	ID="BGStack" Anchor="L,B" StackGrowth="Up" Padding="8" Offset="0,55">
 		<!-- 文明统计 -->
@@ -807,7 +807,7 @@
 
 		</Container>
 		
-		<Button ID="TeamPVPMap_AD_Button" Anchor="L,C" Size="200,210" Offset="20,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_TEAMPVPMAP_AD_TT" Hidden="1">
+		<!-- <Button ID="TeamPVPMap_AD_Button" Anchor="L,C" Size="200,210" Offset="20,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_BSR_TEAMPVPMAP_AD_TT" Hidden="1">
 			<Grid ID="BG" AutoSize="1" Anchor="C,C">
 				<Stack	Anchor="L,T" StackGrowth="Down" Padding="-20" >
 					<Stack	Anchor="L,T" StackGrowth="Right" Padding="-16" >
@@ -877,7 +877,7 @@
 		
 		<Button ID="LianJing_5th_Button" Anchor="L,C" Size="300,268" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJing_5th_AD" Hidden="1">
 			<Image Anchor="C,C" Offset="0,0" ID="LianJing_5th_AD_Image" Size="300,268" Texture="Lianjing_5th_300_268.dds"/>
-		</Button>
+		</Button> -->
 <!--	
 		<Button ID="LianJing_AD_Button" Anchor="L,C" Size="256,256" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJing_AD" Hidden="1">
 			<Image Anchor="C,C" Offset="0,0" ID="LianJing_AD_Image" Size="256,256" Texture="LianJing_AD.dds"/>
