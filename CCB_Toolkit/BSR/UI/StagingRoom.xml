@@ -752,7 +752,7 @@
 		</Grid>
 	</ToolTipType>
 -->
-	<ToolTipType Name="TooltipType_yue_AD">
+	<!-- <ToolTipType Name="TooltipType_yue_AD">
 		<Grid ID="BG" AutoSize="1" Anchor="C,C">
 			<Image Anchor="L,C"  Offset="0,0" ID="IMG_yue" Size="349,439" Texture="AD_desc_yue_cup.dds" Hidden="0" />
 		</Grid>
@@ -762,7 +762,7 @@
 		<Grid ID="BG" AutoSize="1" Anchor="C,C">
 			<Image Anchor="L,C"  Offset="0,0" ID="IMG_yue" Size="720,645" Texture="Lianjing_5th_desc_637_637.dds" Hidden="0" />
 		</Grid>
-	</ToolTipType>
+	</ToolTipType> -->
 
 	<Stack	ID="BGStack" Anchor="L,B" StackGrowth="Up" Padding="8" Offset="0,55">
 		<!-- 文明统计 -->
@@ -869,7 +869,7 @@
 			<Label Anchor="C,B" String="LOC_BSR_TEAMPVPMAP_SUB_2_NAME" Align="Center" Offset="0,70"  Style="FontNormal28" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
 		</Button>
 
-		<Button ID="yue_AD_Button" Anchor="L,C" Size="300,400" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_yue_AD" Hidden="0">
+		<!-- <Button ID="yue_AD_Button" Anchor="L,C" Size="300,400" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_yue_AD" Hidden="0">
 			<FlipAnim FrameCount="33" Texture="yuejicpu_AD_33_300_300.dds" Columns="33" Speed="30" Anchor="C,C" Size="300,300" Offset="0,0" Stopped="0"/>
 			<Label Anchor="C,C" String="LOC_BSR_YUE_CUP_NAME" Align="Center" Offset="0,180"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
 			<Label Anchor="C,C" String="LOC_BSR_YUE_CUP1_NAME" Align="Center" Offset="0,220"  Style="FontNormal30" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255"/>
@@ -877,7 +877,7 @@
 		
 		<Button ID="LianJing_5th_Button" Anchor="L,C" Size="300,268" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJing_5th_AD" Hidden="1">
 			<Image Anchor="C,C" Offset="0,0" ID="LianJing_5th_AD_Image" Size="300,268" Texture="Lianjing_5th_300_268.dds"/>
-		</Button>
+		</Button> -->
 <!--	
 		<Button ID="LianJing_AD_Button" Anchor="L,C" Size="256,256" Offset="0,0" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTipType="TooltipType_LianJing_AD" Hidden="1">
 			<Image Anchor="C,C" Offset="0,0" ID="LianJing_AD_Image" Size="256,256" Texture="LianJing_AD.dds"/>
