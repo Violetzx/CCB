@@ -5557,11 +5557,11 @@ function Poker_Initialize()
 	Controls.Bet_Double_Button:RegisterCallback( Mouse.eLClick, OnBet);			-- 下注
 	Controls.Bet_Double_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over") end );
 	
-	Controls.PokerOpenButton:RegisterCallback(Mouse.eLClick, Poker_OnOpen);		-- 打开按钮
-	Controls.PokerOpenButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over") end );
+	-- Controls.PokerOpenButton:RegisterCallback(Mouse.eLClick, Poker_OnOpen);		-- 打开按钮
+	-- Controls.PokerOpenButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over") end );
 
 --	Controls.NoCashLimitCheck:RegisterCallback(Mouse.eLClick, OnNoCashLimitCheck);
 end
-if Controls.PokerOpenButton ~= nil then
-	Poker_Initialize()
-end
+-- if Controls.PokerOpenButton ~= nil then
+-- 	Poker_Initialize()
+-- end
