@@ -3938,10 +3938,10 @@
 			<Text>宗堡</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。驻守单位获得+5 [ICON_STRENGTH] 防御力。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
+			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。驻守单位获得+5 [ICON_STRENGTH] 防御力。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
+			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
 		</Replace>
 
 		<!-- === BBG new luxary resources === -->
