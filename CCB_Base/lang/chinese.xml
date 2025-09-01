@@ -696,7 +696,7 @@
 		<!-- == INDIA == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DHARMA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>从城市中的每个宗教（其须拥有至少1个信徒）获得信徒信仰加成。城市若拥有多个宗教（须有至少1个信徒），则获得1点 [ICON_Amenities] 宜居度。传教士的传播次数+2。来自 [ICON_TradeRoute] 贸易路线的宗教压力+100%。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：无。</Text>
+			<Text>从城市中的每个宗教（其须拥有至少1个信徒）获得信徒信仰加成。城市若拥有多个宗教（须有至少1个信徒），则获得1点 [ICON_Amenities] 宜居度（文印度只需一个宗教）。传教士的传播次数+2。来自 [ICON_TradeRoute] 贸易路线的宗教压力+100%。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：无。</Text>
 		</Replace>
 		<!-- = leader ability (Chandragupta) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="zh_Hans_CN">
@@ -3659,7 +3659,7 @@
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_DESC" Language="zh_Hans_CN">
-			<Text>当进入古典时代后，首都6环内的军事单位-2 [ICON_STRENGTH] 战斗力。首都6环外的军事单位+4 [ICON_STRENGTH] 战斗力。每启动一个 [ICON_TechBoosted] 尤里卡时刻，为所有单位回复5点生命值并获得2点经验值</Text>
+			<Text>当进入古典时代后，首都6环内的军事单位-2 [ICON_STRENGTH] 战斗力。首都6环外的军事单位+4 [ICON_STRENGTH] 战斗力。每启动一个 [ICON_TechBoosted] 尤里卡时刻，为所有单位回复5点生命值并获得2点经验值。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_NAME" Language="zh_Hans_CN">
             		<Text>金星之怒</Text>
