@@ -1098,7 +1098,7 @@
 		</Replace>
 		<!-- = leader ability = --> <!-- production icon -->
 		<Replace Tag="LOC_TRAIT_LEADER_KANDAKE_OF_MEROE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果城市中拥有努比亚金字塔，建造 [ICON_DISTRICT] 区域时+40% [ICON_Production] 生产力。所有 [ICON_DISTRICT] 区域从努比亚金字塔获得标准相邻加成。</Text>
+			<Text>建造 [ICON_DISTRICT] 区域时+20% [ICON_Production] 生产力。如果城市中拥有努比亚金字塔，加成提升至+40% [ICON_Production] 生产力。所有 [ICON_DISTRICT] 区域从努比亚金字塔获得标准相邻加成。</Text>
 		</Replace>
 		<!-- = unique improvement = -->
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="zh_Hans_CN">
