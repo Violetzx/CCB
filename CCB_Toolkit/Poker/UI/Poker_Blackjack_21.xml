@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Context>
-	<Button ID="PokerOpenButton" Anchor="L,B" Size="49,49"  Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_PBJ_OPEN_NAME">
+	<!-- <Button ID="PokerOpenButton" Anchor="L,B" Size="49,49"  Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_PBJ_OPEN_NAME">
 		<Image	ID="GoldIcon"		Anchor="C,C"	Offset="0,0"		Size="64,64"	TextureOffset="128,256"	Texture="YieldAtlas.dds"/>
 		<Label Anchor="L,C" String="LOC_PBJ_JOIN_NAME" Align="Center" Offset="50,0"  Style="FontNormal20" Color0="133,205,235,255" Color1="203,215,225,100" Color2="254,254,254,255" String="AAAAAAAAAAAAAA"/>
 	</Button>
@@ -135,6 +135,6 @@
 				</Stack>
 			</Container>
 		</Container>
-	</Instance>
+	</Instance> -->
 
 </Context>

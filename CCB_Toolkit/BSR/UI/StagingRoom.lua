@@ -3930,8 +3930,10 @@ function OnRandomTeamButtonL()
 	if Network.GetLocalPlayerID() ~= Network.GetGameHostPlayerID() then
 		return
 	end
-	local TeamID_A = 2*math.random(1,6) - 1
-	local TeamID_B = 2*math.random(1,5)
+	-- local TeamID_A = 2*math.random(1,6) - 1
+	-- local TeamID_B = 2*math.random(1,5)
+	local TeamID_A = 1
+	local TeamID_B = 2
 	local Participant_player_ids = {}
 	local player_ids = GameConfiguration.GetMultiplayerPlayerIDs();
 	
@@ -4411,22 +4413,22 @@ function OnTeamPVPMap_AD_Button()
 --	Modding.UpdateSubscription(3477107453)
 end
 
---function SetUpQQ_LianjingCup_AD()
---	Controls.LianJingCup_AD_Button:SetHide(str2time("2025-06-25") < os.time());
---end
+function SetUpQQ_LianjingCup_AD()
+	-- Controls.LianJingCup_AD_Button:SetHide(str2time("2025-06-25") < os.time());
+end
 
 function SetUpQQ_yueCup_AD()
-	Controls.yue_AD_Button:SetHide(str2time("2025-08-23") < os.time());
+	-- Controls.yue_AD_Button:SetHide(str2time("2025-08-23") < os.time());
 end
 
 function SetUpQQ_Lianjing_5th_AD()
-	Controls.LianJing_5th_Button:SetHide(str2time("2025-09-29") < os.time());
+	-- Controls.LianJing_5th_Button:SetHide(str2time("2025-09-29") < os.time());
 end
 
 function OnLianJing_5th_Button()
-	local url = "https://steamcommunity.com/sharedfiles/filedetails/?id=3523409763";
-	Steam.ActivateGameOverlayToUrl(url)
-	Modding.UpdateSubscription(3523409763)
+	-- local url = "https://steamcommunity.com/sharedfiles/filedetails/?id=3523409763";
+	-- Steam.ActivateGameOverlayToUrl(url)
+	-- Modding.UpdateSubscription(3523409763)
 end
 -- =====================================================================
 -- 更新所有启用模组
@@ -4509,8 +4511,8 @@ function Initialize()
 	Controls.HiddenPlayerInfoCheck:RegisterCallback(Mouse.eLClick, OnHiddenPlayerInfoCheck);
 	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpHiddenPlayerInfoCheck)
 	
-	Controls.LeaderStatsButton:RegisterCallback( Mouse.eLClick, OnLeaderStatsOpen );
-	Controls.LeaderStatsButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
+	-- Controls.LeaderStatsButton:RegisterCallback( Mouse.eLClick, OnLeaderStatsOpen );
+	-- Controls.LeaderStatsButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 
 	Controls.Header_CloseButton:RegisterCallback( Mouse.eLClick, OnLeaderStatsClose );
 
@@ -4531,11 +4533,11 @@ function Initialize()
 --	Controls.Flat_Balanced_AD_Button:RegisterCallback( Mouse.eLClick, OnFlat_Balanced_AD_Button );
 --	Controls.Flat_Balanced_AD_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 
-	Controls.TeamPVPMap_AD_Button:RegisterCallback( Mouse.eLClick, OnTeamPVPMap_AD_Button );
-	Controls.TeamPVPMap_AD_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
+	-- Controls.TeamPVPMap_AD_Button:RegisterCallback( Mouse.eLClick, OnTeamPVPMap_AD_Button );
+	-- Controls.TeamPVPMap_AD_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 
-	Controls.LianJing_5th_Button:RegisterCallback( Mouse.eLClick, OnLianJing_5th_Button );
-	Controls.LianJing_5th_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
+	-- Controls.LianJing_5th_Button:RegisterCallback( Mouse.eLClick, OnLianJing_5th_Button );
+	-- Controls.LianJing_5th_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 	
 --	Controls.NorthernContinentButton:RegisterCallback( Mouse.eLClick, OnNorthernContinentButton_L );
 --	Controls.NorthernContinentButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
@@ -4558,8 +4560,8 @@ function Initialize()
 	
 	LuaEvents.JoiningRoom_ShowStagingRoom.Add( OnFreeChooseAbilityCivilizationSetUpRaise );
 
-	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_Lianjing_5th_AD);	
-	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_yueCup_AD);	
+	-- LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_Lianjing_5th_AD);	
+	-- LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_yueCup_AD);	
 --	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_LianjingCup_AD);	
 --	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_Lianjing_AD);
 --	LuaEvents.JoiningRoom_ShowStagingRoom.Add(SetUpQQ_Lianjing);
@@ -5557,11 +5559,11 @@ function Poker_Initialize()
 	Controls.Bet_Double_Button:RegisterCallback( Mouse.eLClick, OnBet);			-- 下注
 	Controls.Bet_Double_Button:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over") end );
 	
-	Controls.PokerOpenButton:RegisterCallback(Mouse.eLClick, Poker_OnOpen);		-- 打开按钮
-	Controls.PokerOpenButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over") end );
+	-- Controls.PokerOpenButton:RegisterCallback(Mouse.eLClick, Poker_OnOpen);		-- 打开按钮
+	-- Controls.PokerOpenButton:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over") end );
 
 --	Controls.NoCashLimitCheck:RegisterCallback(Mouse.eLClick, OnNoCashLimitCheck);
 end
-if Controls.PokerOpenButton ~= nil then
-	Poker_Initialize()
-end
+-- if Controls.PokerOpenButton ~= nil then
+-- 	Poker_Initialize()
+-- end
