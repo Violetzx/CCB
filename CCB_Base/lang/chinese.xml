@@ -1224,7 +1224,7 @@
 		</Replace>
 		<!-- = leader ability (Julius Caesar) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CAESAR_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>首次征服一座城市或从蛮族哨站获得[ICON_GOLD] 金币时 +150 [ICON_GOLD] 金币。研究完“金属铸造”之后，两者提供的 [ICON_GOLD] 金币数量变为250，研究完“钢铁”之后，变为350（标准速度下）。当目标为蛮族时，获得+5 [ICON_Strength] 战斗力且总是获得正常经验值。[NEWLINE][NEWLINE]“法典”市政后，首都获得一个免费的勇士。除首都外，建立新城市时获得一个免费的近战单位。占领并保留至少一个城市时（该城市必须由任意主要文明建立，且被占领时属于主要文明），每种 [ICON_Government] 政体获得一个额外的通配符槽位。[NEWLINE][NEWLINE]所有单位获得+50%战斗经验值，通过科技或市政进入中世纪后提升至+100%。浴场获得+1 [ICON AMENITIES] 宜居度。</Text>
+			<Text>首次征服一座城市或从蛮族哨站获得[ICON_GOLD] 金币时 +150 [ICON_GOLD] 金币。研究完“金属铸造”之后，两者提供的 [ICON_GOLD] 金币数量变为250，研究完“钢铁”之后，变为350（标准速度下）。当目标为蛮族时，获得+5 [ICON_Strength] 战斗力且总是获得正常经验值。[NEWLINE][NEWLINE]“法典”市政后，首都获得一个免费的勇士。除首都外，建立新城市时获得一个免费的近战单位。占领并保留至少一个城市时（该城市必须由任意主要文明建立，且被占领时属于主要文明），每种 [ICON_Government] 政体获得一个额外的通配符槽位。[NEWLINE][NEWLINE]所有单位获得+50%战斗经验值，通过科技或市政进入中世纪后提升至+100%。浴场获得+1 [ICON_AMENITIES] 宜居度。</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_CAESAR_XP_BONUS_BASE_MODIFIER_NAME" Language="zh_Hans_CN">
 			<Text>+50%战斗经验值。（我来，我见，我征服）</Text>
