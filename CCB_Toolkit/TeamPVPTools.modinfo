@@ -290,7 +290,7 @@
 			<File>Update/PlayerData_Texture/HuaMing_Desc_Texture.dds</File>
 		</ImportFiles>
 		<!-- 扑克游戏(poker) -->
-		<UpdateText id="Poker_Text">
+		<!-- <UpdateText id="Poker_Text">
 			<Properties>
 				<LoadOrder>10</LoadOrder>
 			</Properties>
@@ -303,7 +303,7 @@
 			</Properties>
 			<File>Poker/UI/Poker_Blackjack_21.lua</File>
 			<File>Poker/UI/Poker_Blackjack_21.xml</File>
-		</ImportFiles>		
+		</ImportFiles>		 -->
 		<!-- 观察者模组优化(BSM) -->
 		<UpdateText id="BSM_Text" criteria="ModInUse_BSM">
 			<Properties>
