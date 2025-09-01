@@ -3743,7 +3743,7 @@
 			<Text>方舟</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SUK_JAHAZI_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>斯瓦西里远古时代特色海军支援单位，可建造渔船并使其获得+2 [ICON_GOLD] 金币，拥有两次建造次数。2格范围内的单位获得+1 [ICON_MOVEMENT] 移动力并且无视地形惩罚。可以被俘获。</Text>
+			<Text>斯瓦西里远古时代特色海军支援单位，可建造渔船并使其获得+2 [ICON_GOLD] 金币，拥有两次建造次数。2格范围内的海运单位获得+1 [ICON_MOVEMENT] 移动力并且无视地形惩罚。可以被俘获。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SUK_JAHAZI_EMBARKED_MOVEMENT_NAME" Language="zh_Hans_CN">
 			<Text>+1 [ICON_MOVEMENT] 移动力，无视地形惩罚</Text>
