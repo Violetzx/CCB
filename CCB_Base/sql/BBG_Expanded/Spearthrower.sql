@@ -31,7 +31,7 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_LIME_TEOTIHU
 DELETE FROM StartBiasFeatures WHERE CivilizationType='CIVILIZATION_LIME_TEOTIHUACAN';
 
 
-DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS';
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS' AND ModifierId NOT LIKE 'BBG_INTERNATIONAL_%';
 
 -- International trade routes to allies gain yields per type of CS under your control
 CREATE TEMPORARY TABLE "Teotihucan_trades"(
