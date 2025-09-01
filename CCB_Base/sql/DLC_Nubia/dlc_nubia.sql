@@ -61,17 +61,9 @@ UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_CRAFTSMANSHIP' WHERE
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='TRAIT_PYRAMID_DISTRICT_PRODUCTION_MODIFIER';
 UPDATE Modifiers SET ModifierType='MODIFIER_SINGLE_CITY_ADJUST_DISTRICT_PRODUCTION_MODIFIER' WHERE ModifierId='TRAIT_PYRAMID_DISTRICT_PRODUCTION_MODIFIER';
 UPDATE ModifierArguments SET Value=20 WHERE ModifierId='TRAIT_PYRAMID_DISTRICT_PRODUCTION_MODIFIER' AND Name='Amount';
--- DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LEADER_KANDAKE_OF_MEROE';
-INSERT INTO ImprovementModifiers (ImprovementType, ModifierId) VALUES
+DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LEADER_KANDAKE_OF_MEROE';
+INSERT INTO ImprovementModifiers (ImprovementType, ModifierID) VALUES
     ('IMPROVEMENT_PYRAMID', 'TRAIT_PYRAMID_DISTRICT_PRODUCTION_MODIFIER');
-
--- Nubian districts prod +20%
-INSERT INTO Modifiers(ModifierId, ModifierType) VALUES       
-    ('CCB_NUBIA_DISTRICTS_PROD_MODIFIER', 'MODIFIER_PLAYER_CITIES_ADJUST_ALL_DISTRICTS_PRODUCTION');
-INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
-    ('CCB_NUBIA_DISTRICTS_PROD_MODIFIER', 'Amount', 20);
-INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
-    ('TRAIT_CIVILIZATION_TA_SETI', 'CCB_NUBIA_DISTRICTS_PROD_MODIFIER');
 
 -- Pyramid can be placed on any flat tiles, limited to one per city and non adjacent to another pyramid
 UPDATE Improvements SET OnePerCity=1, SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_PYRAMID';
