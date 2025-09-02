@@ -1116,7 +1116,7 @@ function UpdateStatValues( playerID, uiLeader )
 		local Canshow = true
 		if Model == 0 then
 			if not IsTeamPlayer[playerID] then
-				Canshow = false
+				Canshow = true
 			end
 		end	
 		if Model == 1 then

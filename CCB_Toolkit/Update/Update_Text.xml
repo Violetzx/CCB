@@ -8,7 +8,7 @@
 			<Text>G3559469993</Text>
 		</Replace>
 		<Replace Tag="LOC_TEAM_PVP_VERSION" Language="zh_Hans_CN">
-			<Text>v1.61-II</Text>
+			<Text>CCB Tools</Text>
 		</Replace>
 		<Replace Tag="LOC_TEAM_PVP_TOOLS_UPDATE_HEADER" Language="zh_Hans_CN">
 			<Text>更新内容</Text>
