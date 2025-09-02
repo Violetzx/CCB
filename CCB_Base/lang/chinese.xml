@@ -5011,6 +5011,12 @@
 			<Text>特拉科奇卡尔科</Text>
 		</Replace>
 
+		<!--  New fix in XP1  -->
+		<Replace Tag="LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>所有同盟类型均可形成共享视野。[NEWLINE]输出的[ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Food] 食物。[NEWLINE]输入的 [ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Gold] 金币。</Text>
+		</Replace>
+		<!--  End  -->
+
 		
 	</LocalizedText>
 </GameData>
