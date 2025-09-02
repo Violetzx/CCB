@@ -61,7 +61,7 @@ end
 模式0
 
 分数：		所有人✓			
-军力：		仅队友			人口：		仅队友
+军力：		所有人✓(ccb)	人口：		仅队友
 科技：		所有人✓			粮食：		仅队友
 文化：		所有人✓			生产力：		仅队友
 金币：		所有人✓			回合金：		所有人✓
@@ -1116,7 +1116,7 @@ function UpdateStatValues( playerID, uiLeader )
 		local Canshow = true
 		if Model == 0 then
 			if not IsTeamPlayer[playerID] then
-				Canshow = false
+				Canshow = true
 			end
 		end	
 		if Model == 1 then
