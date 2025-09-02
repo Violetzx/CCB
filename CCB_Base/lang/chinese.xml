@@ -3647,6 +3647,144 @@
 		<Replace Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_NAME" Language="zh_Hans_CN">
 			<Text>众卡比洛斯之秘仪</Text>
         	</Replace>
+		<!-- = Vercingetorix = -->
+		<!--  Vercingetorix  -->
+		<!--  Agenda  -->
+		<Replace Tag="LOC_AGENDA_SUK_KING_OVER_WARRIORS_NAME" Language="zh_Hans_CN">
+			<Text>勇士之王</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_SUK_KING_OVER_WARRIORS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>喜欢拥有强大军事力量的文明，但前提是他们没有被征服的城市。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_SUK_KING_OVER_WARRIORS_KUDO" Language="zh_Hans_CN">
+			<Text>维钦托利钦佩你们强大的军队。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_SUK_KING_OVER_WARRIORS_WARNING" Language="zh_Hans_CN">
+			<Text>维钦托利认为你的军队对他的文明构成了威胁。</Text>
+		</Replace>
+		<!--  = Suk_Vercingetorix_LeaderText =  -->
+		<!--  Leader  -->
+		<Replace Tag="LOC_LEADER_SUK_VERCINGETORIX_DLC_NAME" Language="zh_Hans_CN">
+			<Text>维钦托利</Text>
+		</Replace>
+		<Replace Tag="LOC_LOADING_INFO_LEADER_SUK_VERCINGETORIX_DLC" Language="zh_Hans_CN">
+			<Text>骄傲的维钦托利，请时刻警惕那些威胁高卢的势力。团结你分裂的人民，凝聚你的信徒。巩固你的城市和定居点，让你的城墙屹立不倒。保障你人民的安全与繁荣，你的名字将永垂不朽。</Text>
+		</Replace>
+		<!--  Diplo  -->
+		<!--  First Meet  -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>你好！我是维钦托利。我被选中领导高卢人民，保卫他们，抵御敌人。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>来看看我们骄傲的殖民地吧！看看它们被保护得多么好！</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>以我首领的名义，是！</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>和我聊聊您的首都，我也会与您分享我的。</Text>
+		</Replace>
+		<!--  Agenda Diplo  -->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>一支强大的军队，一个强大的民族。看来我们在领导力上达成了共识。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>你也要把剑锋指向高卢人民吗？像你这样的暴君不值得信任。</Text>
+		</Replace>
+		<!--  War and Peace  -->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>你以为我们畏惧你吗？每个男人和女人都将战斗至最后一息！</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>你对整个高卢都构成威胁。为了我们的自由，你必须被逮捕！准备好迎接你的末日吧！</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
+			<Text>好吧。这场毫无意义的战争已经持续得够久了。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Cette guerre doit continuer. Mon peuple l'exige !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Je suis fatigué de cette guerre. Cherchons la paix.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Nous nous sommes battus jusqu'au dernier souffle - et avons perdu. Je vous remets mes armes et j'attends votre jugement.</Text>
+		</Replace>
+		<!--  DoF  -->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Annonçons notre amitié mutuelle. Ensemble, nous mettrons fin aux tyrans de ce monde !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Excellent ! Cela donnera à réfléchir à nos ennemis !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Je suis déçu. Peut-être la prochaine fois ?</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Nous sommes honorés. Merci beaucoup.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>La Gaule ne reconnaît aucune amitié avec vous.</Text>
+		</Replace>
+		<!--  Delegation  -->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Je vous envoie un cadeau digne de votre position de chef et de guerrier : un torque en or pesant 100 livres.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Votre délégation et les cadeaux que vous avez apportés sont les bienvenus. Merci beaucoup.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Malheureusement, je suis actuellement occupé par une querelle entre mes chefs et je n'ai pas le temps de recevoir une délégation.</Text>
+		</Replace>
+		<!--  Denounce  -->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Mes amis et mes compatriotes gaulois se rassembleront pour me défendre. Qui avez-vous pour soutenir vos paroles méchantes ?</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Vous n'êtes rien de plus qu'un tyran qui veut voir le monde enchaîné !</Text>
+		</Replace>
+		<!--  Alliance  -->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Mon peuple recherche une alliance contre les dangers de ce monde. Voulez-vous vous joindre à nous ?</Text>
+		</Replace>
+		<!--  Misc Standard Lines  -->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Salut !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Ce n'est pas acceptable.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Une bonne proposition. D'accord !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Mes chefs estiment que l'ouverture des frontières améliorera les relations entre nous.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Très bien. Je ne pense pas que nous ayons grand-chose à craindre de vous.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Non, je ne permettrai pas à des soldats ennemis de parcourir le territoire gaulois.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
+			<Text>Nos troupes sont bien protégées contre toute menace, comme vos soldats peuvent le constater. Êtes-vous satisfait de la reconnaissance de votre armée ?</Text>
+		</Replace>
+		<!--  Quote and Pedia  -->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_QUOTE" Language="fr_FR">
+			<Text>Vous voulez vous battre ? Vous voulez vivre éternellement ? Alors je vous guiderai.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_TITLE" Language="fr_FR">
+			<Text>Vercingétorix</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_SUBTITLE" Language="fr_FR">
+			<Text>Verrix le Gaulois</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_SUK_VERCINGETORIX_DLC_CHAPTER_CAPSULE_BODY" Language="fr_FR">
+			<Text>Vercingétorix tire sa force de son habileté diplomatique avec les cités-états. Unissez les tribus, et vos troupes deviendront continuellement plus fortes. Érigez des mines et des ateliers pour alimenter la machine de guerre, tout en assurant votre valeur culturelle et votre influence dans le monde.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_SUK_VERCINGETORIX_DLC_CHAPTER_DETAILED_BODY" Language="fr_FR">
+			<Text>La question la plus importante pour la Gaule est de savoir où s'installer. La majeure partie de leurs capacités uniques dépend du fait qu'ils s'installent sur des ressources exploitables, mais cela peut signifier qu'ils doivent s'installer à un ou deux champs d'une rivière ou d'un endroit plus avantageux. Cela est encore compliqué par les Dunons, qui sont également puissants, mais ont des exigences tout aussi strictes. La recherche d'endroits où vous pouvez exploiter pleinement les deux capacités est la clé du succès dans le jeu. Les capacités de Vercingétorix contribuent à la sécurité de votre empire : vous pouvez rapidement ériger des murs partout où ils sont nécessaires et obtenir un bonus de combat important tant que tout le monde reste loyal.</Text>
+		</Replace>
 		
 		<!-- == MAYA == -->
 		<!-- = Te' K'inich II = -->
@@ -3676,6 +3814,221 @@
 		<Replace Tag="LOC_BBG_TE_KINICH_GRANT_ABILITY_FAR_FROM_CITIES_DESC" Language="zh_Hans_CN">
 			<Text>金星之怒：+4 [ICON_STRENGTH] 战斗力</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_LIME_TE_KINICH_CARACOL" Language="zh_Hans_CN">
+			<Text>奥希察</Text>
+		</Replace>
+		<!-- = Te' K'inich II = -->
+		<!-- LUA -->
+		<Replace Tag="LOC_CITY_NAME_LIME_TE_KINICH_CARACOL" Language="fr_FR">
+			<Text>Oxhuitzá</Text>
+		</Replace>
+		<!-- Pedium Tedium -->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_QUOTE" Language="fr_FR">
+			<Text>PUIS vint aussi la destruction des peuples. Ils ont été emmenés de cette façon.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LL_TEKINICH_II_TITLE" Language="fr_FR">
+			<Text>Te' K'inich II</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LL_TEKINICH_II_SUBTITLE" Language="fr_FR">
+			<Text>Ajaw d'Oxhuitzá</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_CAPSULE_BODY" Language="fr_FR">
+			<Text>Te' K'inich II s'appuie sur le jeu scientifique maya, en se concentrant sur les conquêtes. Éloignez les ennemis de votre capitale, car cela rendra vos troupes humbles et faibles. Par conséquent, ils devraient construire des villes comme remparts pour défendre leur capitale, ou porter la bataille à l'ennemi, car alors vos troupes seront courageuses et fortes. La guérison et l'expérience sont acquises par vos troupes en accomplissant des tâches qui vous rapprochent du progrès technologique. Si vous choisissez le bon moment, vous ne devriez pas perdre beaucoup de batailles, car le progrès technologique mènera vos troupes à la victoire.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_DETAILED_BODY" Language="fr_FR">
+			<Text>Les Mayas sont naturellement une civilisation hautement scientifique et axée sur la croissance : si vous utilisez leurs compétences de base, vous créerez une civilisation prospère et technologiquement avancée. Mais où est le plaisir ? Te' K'inich II apporte la conquête dans le jeu : ses troupes gagnent du courage et donc une force de combat supplémentaire en dehors du territoire de sa capitale, car c'est la seule façon pour elles d'acquérir gloire et honneur. Malheureusement, la force de combat de vos troupes diminue à cause de toute cette humilité lorsqu'elles doivent se battre autour de votre capitale. Personne ne devrait s'approcher d'eux et vous humilier de la sorte. Essaimez et montrez que vous êtes militairement et technologiquement supérieurs. Obtenez toujours des Eurekas, peu importe comment, pour guérir vos troupes et les rendre plus expérimentées, afin qu'elles survivent aux batailles et deviennent plus avancées que toutes les autres. Ou construisez de nombreuses villes autour de votre capitale et défendez-les pendant que vous vous concentrez entièrement sur votre victoire technologique.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Yajaw Te' K'inich II, connu sous le nom de Lord Water et également appelé souverain III dans la science, était le roi de l'État maya de Caracol dans le Belize actuel. Il était le fils du roi K'an I et de Lady K'al K'inich et a été nommé d'après son grand-père paternel et le prédécesseur de son père, Yajaw Te' K'inich I. Son règne a duré de 553 à 593 apr. J.-C.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_2" Language="fr_FR">
+			<Text>La région autour de Caracol était déjà peuplée en 1200 av. J.-C., mais la colonisation de l'épicentre n'a eu lieu qu'en 650 av. J.-C. au plus tôt et a duré jusqu'en 950 apr. J.-C. au plus tard. Au début de la période classique, entre 250 et 550 apr. J.-C., Caracol était intégré à de vastes réseaux commerciaux et à des systèmes idéologiques des basses terres, ce qui a conduit à une économie régionale unifiée. Caracol a été officiellement fondée en 331 apr. J.-C. par Te' K'ab Chaak. Caracol était initialement un État vassal de la ville plus puissante de Tikal, mais l'influence de Tikal s'est affaiblie au milieu du VIe siècle, de sorte qu'elle a perdu le contrôle de Naranjo, qui se trouvait à mi-chemin entre les deux villes.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_3" Language="fr_FR">
+			<Text>Te' K'inich II est monté sur le trône en 553 apr. J.-C. sous le patronage de Lord Double Bird de Tikal, ou Wak Chan K'awiil. En 556 apr. J.-C., Tikal a mené une guerre Ch'ak, ou guerre de la hache, et a vaincu Caracol. En réponse, Te' K'inich II a mené la première guerre des étoiles connue en 562 et a vaincu Wak Chan K'awiil.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
+			<Text>Cette guerre des étoiles particulière a été la cause de la pause archéologiquement et épigraphiquement prouvée à Tikal pendant la période classique moyenne, au cours de laquelle la population de Tikal a diminué, la construction de monuments a cessé et certains monuments de la Grande Place ont été détruits. Cette pause de 120 ans à Tikal a coïncidé avec une augmentation de la population et de la construction monumentale à Caracol, ce qui a rendu cette ville plus prospère et plus fermée. Tikal a adopté des caractéristiques culturelles de Caracol pendant cette période, car même les bâtiments monumentaux repris à Tikal imitaient le style de Caracol. Te' K'inich II a transmis son trône à l'aîné de ses deux fils, Knot Ajaw.</Text>
+		</Replace>
+		<!-- = Port Lime - Te Kinich - Pedia = -->
+		<!-- Historical Agenda -->
+		<!-- Agenda: Lord Water -->
+		<Replace Tag="LOC_AGENDA_LIME_MAYA_TE_KINICH_LORD_WATER_NAME" Language="fr_FR">
+			<Text>Lord Water</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_LIME_MAYA_TE_KINICH_LORD_WATER_DESC" Language="fr_FR">
+			<Text>Il respectera votre civilisation tant qu'elle aura plus d'habitants que la sienne, mais sinon, il vous envahira sans pitié.</Text>
+		</Replace>
+		<!-- Kudos -->
+		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_AGENDA_LIME_TE_KINICH_LIKES" Language="fr_FR">
+			<Text>Te' K'inich II considère votre empire comme assez grand pour mériter le respect.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Votre royaume est manifestement béni par d'abondantes récoltes et de bons présages. Il serait insensé d'agir contre vous.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>(Vous avez une grande population.)</Text>
+		</Replace>
+		<!-- Warnings -->
+		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_AGENDA_LIME_TE_KINICH_HATES" Language="fr_FR">
+			<Text>Te' K'inich II considère votre empire comme peu peuplé et donc faible.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Mes prêtres se demandent pourquoi Oxhuitzá devrait reconnaître vos caprices. Je n'en vois aucune raison.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_ANY" Language="fr_FR">
+			<Text>(Votre population est plus petite que la sienne.)</Text>
+		</Replace>
+		<!-- Random Agendas -->
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_AGENDA_MODIFIER_NOT_COMPETING_MINORS" Language="fr_FR">
+			<Text>Vous n'avez pas attaqué mes vassaux. Je ne peux pas en dire autant des autres.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_MODIFIER_COMPETING_MINORS" Language="fr_FR">
+			<Text>Ces cités-états doivent servir le meilleur souverain. Il est évident de savoir qui c'est.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_PROTECT_CITY_STATES" Language="fr_FR">
+			<Text>Vous pouvez mener à bien vos plans sans mon ingérence. Je vois qu'ils n'ont pas affecté les miens.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_ATTACK_CITY_STATES" Language="fr_FR">
+			<Text>Vos conquêtes révèlent vos intrigues. Elles montrent un souverain incertain et mesquin qui n'est digne d'aucun respect.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_FAVOR" Language="fr_FR">
+			<Text>Votre nom n'est peut-être pas aussi vénéré que le mien, mais soyez assuré que votre place et vos services sont appréciés.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_LOW_FAVOR" Language="fr_FR">
+			<Text>N'essayez pas de me surpasser. Oxhuitzá ne doit pas être rejetée !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_EXPANSIONIST" Language="fr_FR">
+			<Text>Un empire aussi grand et puissant que le vôtre mérite sans aucun doute le respect.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_EXPANSIONIST" Language="fr_FR">
+			<Text>Oxhuitzá est une ville souveraine et a besoin de subordonnés. Prouvez votre force pour ne pas en devenir un vous-même.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_GOSSIP_POSITIVE" Language="fr_FR">
+			<Text>Les souverains doivent être prudents pour que leurs plans ne soient pas découverts par vous. Si j'avais de tels plans, je devrais faire de gros efforts pour vous les cacher.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_GOSSIP_NEGATIVE" Language="fr_FR">
+			<Text>Votre cécité est légendaire. Vous ne vous rendriez pas compte que vous avez été trompé tant que votre cœur ne vous aurait pas été arraché de la poitrine.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_INTOLERANT_SAME_RELIGION" Language="fr_FR">
+			<Text>Les dieux sont embrassés, tout comme l'univers. Ils sont heureux. La terre est heureuse.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_INTOLERANT_ENCROACHING_RELIGIONT" Language="fr_FR">
+			<Text>Les dieux exigent des sacrifices, et mes prêtres ont suggéré votre tête. Je suis d'accord avec eux.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYCOPHANT_GOLDEN_AGE" Language="fr_FR">
+			<Text>Les étoiles brillent de mille feux sur votre empire. Vos vassaux doivent être très loyaux.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYCOPHANT_DARK_AGE" Language="fr_FR">
+			<Text>Vos serviteurs prient pour un seigneur plus digne. Regardez mon empire glorieux avec envie.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYMPATHIZER_DARK_AGE" Language="fr_FR">
+			<Text>Les étoiles brillent le plus fort dans l'obscurité. Préparez-vous. Notre chance est presque là.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYMPATHIZER_GOLDEN_AGE" Language="fr_FR">
+			<Text>Votre arrogance n'est surpassée que par celle de Tikal, et le même sort vous est réservé.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_SCIENCE" Language="fr_FR">
+			<Text>Vos prêtres en savent autant que les miens, et c'est pourquoi votre pays prospère. De toute évidence, les dieux vous sont favorables.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LIME_TEO_OWL_REASON_AGENDA_TECHNOPHILE" Language="fr_FR">
+			<Text>Votre stupidité et votre retard ne m'offensent pas. Au contraire, vous m'avez donné une chance !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_WONDER_ADVOCATE" Language="fr_FR">
+			<Text>Les monuments d'Oxhuitzá témoignent de son grand prestige. Vous n'avez pas essayé de placer votre nom au-dessus du mien.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_WONDER_ADVOCATE" Language="fr_FR">
+			<Text>Oxhuitzá est clairement avantagée. Vos piètres efforts ne font que la rendre plus grande en comparaison.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_ZEALOT" Language="fr_FR">
+			<Text>La terre devient harmonieuse. Comme en bas, ainsi en haut. Ainsi, les cieux deviendront harmonieux.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_ZEALOT" Language="fr_FR">
+			<Text>Nier le divin, c'est diviser l'indivisible. Il n'est pas bon de nier le divin, car alors il quittera la terre.</Text>
+		</Replace>
+		<!-- Early Meetings -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Un nouveau venu. Votre arrivée n'a pas été annoncée. Je suis le seigneur d'Oxhuitzá et je suis curieux de savoir ce que vous apportez.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Un de mes fidèles vassaux n'est pas loin : nous pouvons l'utiliser pour nous rencontrer.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Je rejoindrai les observateurs d'étoiles aux yeux clairs et les guerriers aux bras forts.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Vous ne m'avez encore rien dit sur votre ville. Je veux savoir quels grands monuments ont été érigés en votre nom et quelles étoiles vous voyez.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>J'ai envoyé un ambassadeur dans votre ville. Hébergez-le en fonction de son prestige, mais il n'est pas nécessaire de lui fournir des serviteurs : il apporte les siens.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Un nouveau complexe sera attribué à votre délégué, et il sera équipé de serviteurs et de gardes que j'ai moi-même choisis. C'est un honneur pour moi.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Nous n'avons pas encore construit de maison appropriée pour votre délégué. Peut-être plus tard.</Text>
+		</Replace>
+		<!-- Open Borders -->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Je demande la libre circulation à travers vos frontières. Cela contribuerait à éliminer les menaces, et je ferai les sacrifices nécessaires.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Vos soldats sont autorisés et seront accompagnés de guerriers cérémoniels. Comme il sied à leur rang.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Je n'ai pas reçu les sacrifices habituels. La frontière reste fermée.</Text>
+		</Replace>
+		<!-- Friendship -->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Mes prêtres s'accordent à dire que les étoiles sont favorables. Oxhuitzá demande votre amitié.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Je vais satisfaire votre souhait, car il est partagé par les dieux.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>La Grande Étoile n'est pas favorable. Toute amitié conclue ce jour-là serait vouée à l'échec.</Text>
+		</Replace>
+		<!-- Denounce -->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Un mauvais coup, et de plus au mauvais moment. Vous n'avez rien gagné.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Il est évident pour tout le monde à quel point vous êtes sans valeur et irrespectueux. Et pourtant, j'ai l'impression de devoir le dire au monde une fois de plus. (Vous dénonce)</Text>
+		</Replace>
+		<!-- Trade Agreement -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>J'accepte.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Ce n'est pas correct.</Text>
+		</Replace>
+		<!-- Other Diplo -->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Ensemble, nous serions plus forts que séparés. Les étoiles et la situation politique sont favorables à une alliance.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Vos plans sont aussi insensés que transparents. Vous n'avez aucun avantage. Faites demi-tour.</Text>
+		</Replace>
+		<!-- War and Peace -->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>L'Étoile Rouge n'est plus en votre faveur, et la Grande Étoile ne verse plus d'eau. Cela ne durera pas longtemps.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Vous êtes un souverain aveugle. Vous ne pouviez voir ni les étoiles, ni mes armées, ni mes plans qui se réalisent. Maintenant, la Grande Étoile appelle à la guerre !</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>La Grande Étoile exige du sang. Je suis obligé de n'accepter rien de moins.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Le temps de la guerre touche à sa fin. C'est le bon moment pour un traité.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Ce résultat était clair. Pour tous ceux qui ont des yeux dans la tête, cela va de soi.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
+			<Text>Il semble que j'aie mal évalué les étoiles et que je vous aie mal évalué. C'est simplement le prix à payer.</Text>
+		</Replace>		
 		
 		<!-- == PHOENICIA == -->
 		<Replace Tag="LOC_LEADER_LIME_PHOE_AHIRAM_NAME" Language="zh_Hans_CN">
@@ -3693,7 +4046,7 @@
         	</Replace>
         	<!-- = unique building = -->
         	<Replace Tag="LOC_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>替代图书馆，每招募一个 [ICON_GREATADMIRAL] 海军统帅+0.5点基础 [ICON_SCIENCE] 科技值，提供等同于该区域相邻加成的 [ICON_GOLD] 金币。 [NEWLINE] 没有维护费。</Text>
+			<Text>替代图书馆，基础0 [ICON_SCIENCE] 科技值，每招募一个 [ICON_GREATADMIRAL] 海军统帅+1点基础 [ICON_SCIENCE] 科技值。没有维护费。</Text>
 		</Replace>
         	<Replace Tag="LOC_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_NAME" Language="zh_Hans_CN">
 	        	<Text>皇家陵墓</Text>
@@ -3761,6 +4114,97 @@
 		<Replace Tag="LOC_BUILDING_SUK_PILLAR_TOMB_XP1_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>斯瓦西里特色市中心建筑，替代“纪念碑”。+1 [ICON_CULTURE] 文化值，+1忠诚度。若忠诚度已满，则获得+1 [ICON_CULTURE] 文化值。若城市拥有此建筑，每两个市中心二环内区域（最多6个区域）可为该城市的每条国际 [ICON_TradeRoute] 贸易路线提供+2 [ICON_GOLD] 金币和+1 [ICON_SCIENCE] 科技值。</Text>
 		</Replace>
+		<!--  Cities  -->
+		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_KILWA_KISIWANI" Language="zh_Hans_CN">
+			<Text>基尔瓦</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MOMBASA" Language="zh_Hans_CN">
+      			<Text>蒙巴萨</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_LAMU" Language="zh_Hans_CN">
+      			<Text>拉穆</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MALINDI" Language="zh_Hans_CN">
+      			<Text>马林迪</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_SOFALA" Language="zh_Hans_CN">
+      			<Text>索法拉</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_PATE" Language="zh_Hans_CN">
+      			<Text>帕泰</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MZIZIMA" Language="zh_Hans_CN">
+      			<Text>姆济济马</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_BAGAMOYO" Language="zh_Hans_CN">
+      			<Text>巴加莫约</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_GEDI" Language="zh_Hans_CN">
+      			<Text>盖迪</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_QUELIMANE" Language="zh_Hans_CN">
+      			<Text>克利马内</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MOZAMBIQUE" Language="zh_Hans_CN">
+      			<Text>莫桑比克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_FAZA" Language="zh_Hans_CN">
+      			<Text>法扎</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_ANGOCHE" Language="zh_Hans_CN">
+      			<Text>安戈谢</Text>
+   	 	</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_LINDI" Language="zh_Hans_CN">
+      			<Text>林迪</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MKUMBULU" Language="zh_Hans_CN">
+      			<Text>姆昆布卢</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_SHANGA" Language="zh_Hans_CN">
+      			<Text>尚加</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_SONGO_MNARA" Language="zh_Hans_CN">
+      			<Text>松戈姆纳拉</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MERCA" Language="zh_Hans_CN">
+      			<Text>梅尔卡</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_KISIMANI_MAFIA" Language="zh_Hans_CN">
+      			<Text>基西马尼马菲亚</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_IBO" Language="zh_Hans_CN">
+      			<Text>伊博</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_PANGANI" Language="zh_Hans_CN">
+      			<Text>潘加尼</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_TANGA" Language="zh_Hans_CN">
+      			<Text>坦噶</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_MUTSAMUDU" Language="zh_Hans_CN">
+      			<Text>穆察穆杜</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_BRAVA" Language="zh_Hans_CN">
+      			<Text>布拉瓦</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_SIYU" Language="zh_Hans_CN">
+      			<Text>锡尤</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_KIZIMKAZI" Language="zh_Hans_CN">
+      			<Text>基济姆卡济</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_VANGA" Language="zh_Hans_CN">
+      			<Text>万加</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_TAKAUNGU" Language="zh_Hans_CN">
+      			<Text>塔卡温古</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_UNGUJA_UKUU" Language="zh_Hans_CN">
+      			<Text>温古贾乌库</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_KILWA_KIVINJE" Language="zh_Hans_CN">
+      			<Text>基尔瓦基温杰</Text>
+    		</Replace>
 
 		<!-- = TEOTIHUACAN = -->
 		<Replace Tag="LOC_LEADER_LIME_TEO_OWL_NAME" Language="zh_Hans_CN">
@@ -3850,6 +4294,74 @@
 			<Text>每宗主一个城邦+2 [ICON_FAVOR] 外交支持。</Text>
 		</Replace>
 
+		<Replace Tag="LOC_CIVILIZATION_LIME_TEOTIHUACAN_NAME" Language="zh_Hans_CN">
+      			<Text>特奥蒂瓦坎</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CIVILIZATION_LIME_TEOTIHUACAN_DESC" Language="zh_Hans_CN">
+      			<Text>特奥蒂瓦坎帝国</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CIVILIZATION_LIME_TEOTIHUACAN_ADJECTIVE" Language="zh_Hans_CN">
+      			<Text>特奥蒂瓦坎的</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CIVILIZATION_LIME_TEOTIHUACAN_DESCRIPTION_JFD_CIVILIZATION" Language="zh_Hans_CN">
+      			<Text>特奥蒂瓦坎文明</Text>
+    		</Replace>
+
+		<!--  Cities  -->
+    		<Replace Tag="LOC_LIME_NAMED_LAKE_LAKE_ILOPANGO" Language="zh_Hans_CN">
+      			<Text>伊洛潘戈湖</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_LAKE_LAKE_XALTOCAN" Language="zh_Hans_CN">
+      			<Text>萨尔托坎湖</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_CERRO_PATLACHIQUE" Language="zh_Hans_CN">
+      			<Text>帕特拉奇基山</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_CERRO_TLALOC" Language="zh_Hans_CN">
+      			<Text>特拉洛克山</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_SIERRA_MADRE" Language="zh_Hans_CN">
+      			<Text>马德雷山脉</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_CERRO_GORDO" Language="zh_Hans_CN">
+      			<Text>塞罗戈尔多山</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_CERRO_MALINALCO" Language="zh_Hans_CN">
+      			<Text>马利纳尔科山</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_VOLCANO_XITLE_NAME" Language="zh_Hans_CN">
+      			<Text>希特雷火山</Text>
+    		</Replace>
+    		<Replace Tag="LOC_LIME_NAMED_VOLCANO_TAJUMULCO_NAME" Language="zh_Hans_CN">
+      			<Text>塔胡穆尔科火山</Text>
+    		</Replace>
+    		<Replace Tag="NAMED_RIVER_LIME_TEO_SAN_PEDRO_RIVER" Language="zh_Hans_CN">
+      			<Text>圣佩德罗河</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_MONTANA" Language="zh_Hans_CN">
+      			<Text>夸乌特马兰</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_RIO_AZUL" Language="zh_Hans_CN">
+      			<Text>里奥阿苏尔</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_EL_PERU" Language="zh_Hans_CN">
+      			<Text>瓦卡</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_EL_ZAPOTE" Language="zh_Hans_CN">
+      			<Text>希什维茨</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_BEJUCAL" Language="zh_Hans_CN">
+      			<Text>贝胡卡尔</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_EL_ZOTZ" Language="zh_Hans_CN">
+      			<Text>帕昌</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_TEO_WEW" Language="zh_Hans_CN">
+      			<Text>昔日孤城</Text>
+    		</Replace>
+		
+
+
 		<!-- = THULE = -->
 		<Replace Tag="LOC_LEADER_LIME_THULE_DAVE_NAME" Language="zh_Hans_CN">
 			<Text>基维乌克</Text>
@@ -3903,6 +4415,104 @@
 		<Replace Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>图勒特色改良设施，在“航海术”科技解锁。建在冻土单元格上时获得+1 [ICON_FOOD] 食物（雪地则翻倍）。每相邻1个海洋资源或营地获得+1 [ICON_CULTURE] 文化值和+1 [ICON_FAITH] 信仰值。必须建在与加成或奢侈品资源相邻的单元格。“飞行”科技后提供等同于 [ICON_FAITH] 信仰值的 [ICON_Tourism] 旅游业绩。可建造在树林上。不能建在另一个猎人小屋旁。</Text>
 		</Replace>
+		<!--  Cities  -->
+		<Replace Tag="LOC_CITY_NAME_LIME_THULE_DAVE_QILAKITSOQ" Language="zh_Hans_CN">
+			<Text>奇拉基特索克</Text>
+		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_2" Language="zh_Hans_CN">
+      			<Text>塔西乌利特</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_3" Language="zh_Hans_CN">
+      			<Text>基奇克塔尔苏阿克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_4" Language="zh_Hans_CN">
+      			<Text>库加纳克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_5" Language="zh_Hans_CN">
+      			<Text>基奇克塔阿夏</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_6" Language="zh_Hans_CN">
+      			<Text>皮图菲克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_7" Language="zh_Hans_CN">
+      			<Text>金盖特</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_8" Language="zh_Hans_CN">
+      			<Text>康盖克利尼克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_9" Language="zh_Hans_CN">
+      			<Text>通加特</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_10" Language="zh_Hans_CN">
+      			<Text>卡科尔托克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_11" Language="zh_Hans_CN">
+      			<Text>伊卡卢伊特</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_12" Language="zh_Hans_CN">
+      			<Text>基朱里克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_13" Language="zh_Hans_CN">
+      			<Text>伊武吉维克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_14" Language="zh_Hans_CN">
+      			<Text>伊卡泰克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_15" Language="zh_Hans_CN">
+      			<Text>伊格卢利克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_16" Language="zh_Hans_CN">
+      			<Text>夸克塔克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_17" Language="zh_Hans_CN">
+      			<Text>西西缪特</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_18" Language="zh_Hans_CN">
+      			<Text>萨里克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_19" Language="zh_Hans_CN">
+      			<Text>伊克皮亚朱克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_20" Language="zh_Hans_CN">
+      			<Text>埃塔</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_21" Language="zh_Hans_CN">
+      			<Text>库加阿尔朱克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_22" Language="zh_Hans_CN">
+      			<Text>库格贾克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_23" Language="zh_Hans_CN">
+      			<Text>乌特基亚维克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_24" Language="zh_Hans_CN">
+      			<Text>康盖克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_25" Language="zh_Hans_CN">
+      			<Text>波拉图克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_26" Language="zh_Hans_CN">
+      			<Text>阿鲁克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_27" Language="zh_Hans_CN">
+      			<Text>克鲁苏克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_28" Language="zh_Hans_CN">
+      			<Text>努萨克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_29" Language="zh_Hans_CN">
+      			<Text>卡克托维克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_30" Language="zh_Hans_CN">
+      			<Text>夸苏伊图克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_31" Language="zh_Hans_CN">
+      			<Text>伊蒂利亚鲁克</Text>
+    		</Replace>
+    		<Replace Tag="LOC_CITY_NAME_LIME_THULE_32" Language="zh_Hans_CN">
+      			<Text>卡利博</Text>
+    		</Replace>
+
 
 		<!-- = TIBET = -->
 		<!-- = Leader = -->
@@ -3914,7 +4524,7 @@
 			<Text>世界屋脊</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SUK_DHARMA_KINGS_DESCRIPTION_XP2" Language="zh_Hans_CN">
-		<Text>公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：[NEWLINE]每个市中心获得+2 [ICON_FOOD] 食物。[NEWLINE]每个工业区获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]每个港口或商业中心获得+1 [ICON_GOLD] 金币。[NEWLINE]每个学院获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]每个剧院获得+1 [ICON_CULTURE] 文化值。[NEWLINE]每个圣地获得+1 [ICON_FAITH] 信仰值。[NEWLINE] 相邻山脉的特色区域可用信仰购买建筑。 [ICON_GOVERNOR] 总督每次升级（包括首次升级）都将提供5%城市 [ICON_FAITH] 信仰值产出。[NEWLINE][NEWLINE]出生地关联：T3草原山脉和平原山脉。</Text>
+			<Text>公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：[NEWLINE]每个市中心获得+2 [ICON_FOOD] 食物。[NEWLINE]每个工业区获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]每个港口或商业中心获得+1 [ICON_GOLD] 金币。[NEWLINE]每个学院获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]每个剧院获得+1 [ICON_CULTURE] 文化值。[NEWLINE]每个圣地获得+1 [ICON_FAITH] 信仰值。[NEWLINE] 相邻山脉的特色区域可用信仰购买建筑。 [ICON_GOVERNOR] 总督每次升级（包括首次升级）都将提供5%城市 [ICON_FAITH] 信仰值产出。[NEWLINE][NEWLINE]出生地关联：T3草原山脉和平原山脉。</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_YIELD_MODIFIER_PER_GOVERNOR_TITLA_TOOLTIP" Language="zh_Hans_CN">
 			<Text>{Value : number +#;-#}%（{ActualValue : number +#.#;-#.#}）来自总督（拥有{1}次{1 : plural 1?升级; other?升级;}的 [ICON_Governor] 总督）</Text>
@@ -3943,27 +4553,6 @@
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_DESCRIPTION_XP2" Language="zh_Hans_CN">
 			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
 		</Replace>
-
-		<!-- === BBG new luxary resources === -->
-		<Replace Tag="LOC_RESOURCE_P0K_PENGUINS_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
-			<Text>企鹅</Text>
-		</Replace>
-		<Replace Tag="LOC_RESOURCE_CVS_POMEGRANATES_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
-			<Text>石榴</Text>
-		</Replace>
-		<Replace Tag="LOC_RESOURCE_P0K_PAPYRUS_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
-			<Text>莎草纸</Text>
-		</Replace>
-		<Replace Tag="LOC_RESOURCE_P0K_MAPLE_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
-			<Text>枫糖</Text>
-		</Replace>
-		<Replace Tag="LOC_RESOURCE_P0K_OPAL_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
-			<Text>蛋白石</Text>
-		</Replace>
-		<Replace Tag="LOC_RESOURCE_P0K_PLUMS_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
-			<Text>梅子</Text>
-		</Replace>
-
 		<!-- = Trisong Detsen = -->
 		<!-- TIBET -->
 		<Replace Tag="LOC_CIVILIZATION_SUK_TIBET_NAME" Language="zh_Hans_CN">
@@ -4282,362 +4871,24 @@
 			<Text></Text>
 		</Replace>
 
-		<!-- = Vercingetorix = -->
-		<!--  Vercingetorix  -->
-		<!--  Agenda  -->
-		<Replace Tag="LOC_AGENDA_SUK_KING_OVER_WARRIORS_NAME" Language="zh_Hans_CN">
-			<Text>勇士之王</Text>
+		<!-- === BBG new luxary resources === -->
+		<Replace Tag="LOC_RESOURCE_P0K_PENGUINS_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
+			<Text>企鹅</Text>
 		</Replace>
-		<Replace Tag="LOC_AGENDA_SUK_KING_OVER_WARRIORS_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>喜欢拥有强大军事力量的文明，但前提是他们没有被征服的城市。</Text>
+		<Replace Tag="LOC_RESOURCE_CVS_POMEGRANATES_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
+			<Text>石榴</Text>
 		</Replace>
-		<Replace Tag="LOC_DIPLO_MODIFIER_SUK_KING_OVER_WARRIORS_KUDO" Language="zh_Hans_CN">
-			<Text>维钦托利钦佩你们强大的军队。</Text>
+		<Replace Tag="LOC_RESOURCE_P0K_PAPYRUS_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
+			<Text>莎草纸</Text>
 		</Replace>
-		<Replace Tag="LOC_DIPLO_MODIFIER_SUK_KING_OVER_WARRIORS_WARNING" Language="zh_Hans_CN">
-			<Text>维钦托利认为你的军队对他的文明构成了威胁。</Text>
+		<Replace Tag="LOC_RESOURCE_P0K_MAPLE_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
+			<Text>枫糖</Text>
 		</Replace>
-		<!--  = Suk_Vercingetorix_LeaderText =  -->
-		<!--  Leader  -->
-		<Replace Tag="LOC_LEADER_SUK_VERCINGETORIX_DLC_NAME" Language="zh_Hans_CN">
-			<Text>维钦托利</Text>
+		<Replace Tag="LOC_RESOURCE_P0K_OPAL_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
+			<Text>蛋白石</Text>
 		</Replace>
-		<Replace Tag="LOC_LOADING_INFO_LEADER_SUK_VERCINGETORIX_DLC" Language="zh_Hans_CN">
-			<Text>骄傲的维钦托利，请时刻警惕那些威胁高卢的势力。团结你分裂的人民，凝聚你的信徒。巩固你的城市和定居点，让你的城墙屹立不倒。保障你人民的安全与繁荣，你的名字将永垂不朽。</Text>
-		</Replace>
-		<!--  Diplo  -->
-		<!--  First Meet  -->
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>你好！我是维钦托利。我被选中领导高卢人民，保卫他们，抵御敌人。</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>来看看我们骄傲的殖民地吧！看看它们被保护得多么好！</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>以我首领的名义，是！</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>和我聊聊您的首都，我也会与您分享我的。</Text>
-		</Replace>
-		<!--  Agenda Diplo  -->
-		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>一支强大的军队，一个强大的民族。看来我们在领导力上达成了共识。</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>你也要把剑锋指向高卢人民吗？像你这样的暴君不值得信任。</Text>
-		</Replace>
-		<!--  War and Peace  -->
-		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>你以为我们畏惧你吗？每个男人和女人都将战斗至最后一息！</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>你对整个高卢都构成威胁。为了我们的自由，你必须被逮捕！准备好迎接你的末日吧！</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="zh_Hans_CN">
-			<Text>好吧。这场毫无意义的战争已经持续得够久了。</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Cette guerre doit continuer. Mon peuple l'exige !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Je suis fatigué de cette guerre. Cherchons la paix.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Nous nous sommes battus jusqu'au dernier souffle - et avons perdu. Je vous remets mes armes et j'attends votre jugement.</Text>
-		</Replace>
-		<!--  DoF  -->
-		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Annonçons notre amitié mutuelle. Ensemble, nous mettrons fin aux tyrans de ce monde !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Excellent ! Cela donnera à réfléchir à nos ennemis !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Je suis déçu. Peut-être la prochaine fois ?</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Nous sommes honorés. Merci beaucoup.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>La Gaule ne reconnaît aucune amitié avec vous.</Text>
-		</Replace>
-		<!--  Delegation  -->
-		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Je vous envoie un cadeau digne de votre position de chef et de guerrier : un torque en or pesant 100 livres.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Votre délégation et les cadeaux que vous avez apportés sont les bienvenus. Merci beaucoup.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Malheureusement, je suis actuellement occupé par une querelle entre mes chefs et je n'ai pas le temps de recevoir une délégation.</Text>
-		</Replace>
-		<!--  Denounce  -->
-		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Mes amis et mes compatriotes gaulois se rassembleront pour me défendre. Qui avez-vous pour soutenir vos paroles méchantes ?</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Vous n'êtes rien de plus qu'un tyran qui veut voir le monde enchaîné !</Text>
-		</Replace>
-		<!--  Alliance  -->
-		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Mon peuple recherche une alliance contre les dangers de ce monde. Voulez-vous vous joindre à nous ?</Text>
-		</Replace>
-		<!--  Misc Standard Lines  -->
-		<Replace Tag="LOC_DIPLO_GREETING_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Salut !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Ce n'est pas acceptable.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Une bonne proposition. D'accord !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Mes chefs estiment que l'ouverture des frontières améliorera les relations entre nous.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Très bien. Je ne pense pas que nous ayons grand-chose à craindre de vous.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Non, je ne permettrai pas à des soldats ennemis de parcourir le territoire gaulois.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
-			<Text>Nos troupes sont bien protégées contre toute menace, comme vos soldats peuvent le constater. Êtes-vous satisfait de la reconnaissance de votre armée ?</Text>
-		</Replace>
-		<!--  Quote and Pedia  -->
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_QUOTE" Language="fr_FR">
-			<Text>Vous voulez vous battre ? Vous voulez vivre éternellement ? Alors je vous guiderai.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_TITLE" Language="fr_FR">
-			<Text>Vercingétorix</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_SUBTITLE" Language="fr_FR">
-			<Text>Verrix le Gaulois</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_SUK_VERCINGETORIX_DLC_CHAPTER_CAPSULE_BODY" Language="fr_FR">
-			<Text>Vercingétorix tire sa force de son habileté diplomatique avec les cités-états. Unissez les tribus, et vos troupes deviendront continuellement plus fortes. Érigez des mines et des ateliers pour alimenter la machine de guerre, tout en assurant votre valeur culturelle et votre influence dans le monde.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_SUK_VERCINGETORIX_DLC_CHAPTER_DETAILED_BODY" Language="fr_FR">
-			<Text>La question la plus importante pour la Gaule est de savoir où s'installer. La majeure partie de leurs capacités uniques dépend du fait qu'ils s'installent sur des ressources exploitables, mais cela peut signifier qu'ils doivent s'installer à un ou deux champs d'une rivière ou d'un endroit plus avantageux. Cela est encore compliqué par les Dunons, qui sont également puissants, mais ont des exigences tout aussi strictes. La recherche d'endroits où vous pouvez exploiter pleinement les deux capacités est la clé du succès dans le jeu. Les capacités de Vercingétorix contribuent à la sécurité de votre empire : vous pouvez rapidement ériger des murs partout où ils sont nécessaires et obtenir un bonus de combat important tant que tout le monde reste loyal.</Text>
-		</Replace>
-
-		<!-- = Te' K'inich II = -->
-		<!-- LUA -->
-		<Replace Tag="LOC_CITY_NAME_LIME_TE_KINICH_CARACOL" Language="fr_FR">
-			<Text>Oxhuitzá</Text>
-		</Replace>
-		<!-- Pedium Tedium -->
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_QUOTE" Language="fr_FR">
-			<Text>PUIS vint aussi la destruction des peuples. Ils ont été emmenés de cette façon.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LL_TEKINICH_II_TITLE" Language="fr_FR">
-			<Text>Te' K'inich II</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LL_TEKINICH_II_SUBTITLE" Language="fr_FR">
-			<Text>Ajaw d'Oxhuitzá</Text>
-		</Replace>
-		
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_CAPSULE_BODY" Language="fr_FR">
-			<Text>Te' K'inich II s'appuie sur le jeu scientifique maya, en se concentrant sur les conquêtes. Éloignez les ennemis de votre capitale, car cela rendra vos troupes humbles et faibles. Par conséquent, ils devraient construire des villes comme remparts pour défendre leur capitale, ou porter la bataille à l'ennemi, car alors vos troupes seront courageuses et fortes. La guérison et l'expérience sont acquises par vos troupes en accomplissant des tâches qui vous rapprochent du progrès technologique. Si vous choisissez le bon moment, vous ne devriez pas perdre beaucoup de batailles, car le progrès technologique mènera vos troupes à la victoire.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_DETAILED_BODY" Language="fr_FR">
-			<Text>Les Mayas sont naturellement une civilisation hautement scientifique et axée sur la croissance : si vous utilisez leurs compétences de base, vous créerez une civilisation prospère et technologiquement avancée. Mais où est le plaisir ? Te' K'inich II apporte la conquête dans le jeu : ses troupes gagnent du courage et donc une force de combat supplémentaire en dehors du territoire de sa capitale, car c'est la seule façon pour elles d'acquérir gloire et honneur. Malheureusement, la force de combat de vos troupes diminue à cause de toute cette humilité lorsqu'elles doivent se battre autour de votre capitale. Personne ne devrait s'approcher d'eux et vous humilier de la sorte. Essaimez et montrez que vous êtes militairement et technologiquement supérieurs. Obtenez toujours des Eurekas, peu importe comment, pour guérir vos troupes et les rendre plus expérimentées, afin qu'elles survivent aux batailles et deviennent plus avancées que toutes les autres. Ou construisez de nombreuses villes autour de votre capitale et défendez-les pendant que vous vous concentrez entièrement sur votre victoire technologique.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
-			<Text>Yajaw Te' K'inich II, connu sous le nom de Lord Water et également appelé souverain III dans la science, était le roi de l'État maya de Caracol dans le Belize actuel. Il était le fils du roi K'an I et de Lady K'al K'inich et a été nommé d'après son grand-père paternel et le prédécesseur de son père, Yajaw Te' K'inich I. Son règne a duré de 553 à 593 apr. J.-C.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_2" Language="fr_FR">
-			<Text>La région autour de Caracol était déjà peuplée en 1200 av. J.-C., mais la colonisation de l'épicentre n'a eu lieu qu'en 650 av. J.-C. au plus tôt et a duré jusqu'en 950 apr. J.-C. au plus tard. Au début de la période classique, entre 250 et 550 apr. J.-C., Caracol était intégré à de vastes réseaux commerciaux et à des systèmes idéologiques des basses terres, ce qui a conduit à une économie régionale unifiée. Caracol a été officiellement fondée en 331 apr. J.-C. par Te' K'ab Chaak. Caracol était initialement un État vassal de la ville plus puissante de Tikal, mais l'influence de Tikal s'est affaiblie au milieu du VIe siècle, de sorte qu'elle a perdu le contrôle de Naranjo, qui se trouvait à mi-chemin entre les deux villes.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_3" Language="fr_FR">
-			<Text>Te' K'inich II est monté sur le trône en 553 apr. J.-C. sous le patronage de Lord Double Bird de Tikal, ou Wak Chan K'awiil. En 556 apr. J.-C., Tikal a mené une guerre Ch'ak, ou guerre de la hache, et a vaincu Caracol. En réponse, Te' K'inich II a mené la première guerre des étoiles connue en 562 et a vaincu Wak Chan K'awiil.</Text>
-		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
-			<Text>Cette guerre des étoiles particulière a été la cause de la pause archéologiquement et épigraphiquement prouvée à Tikal pendant la période classique moyenne, au cours de laquelle la population de Tikal a diminué, la construction de monuments a cessé et certains monuments de la Grande Place ont été détruits. Cette pause de 120 ans à Tikal a coïncidé avec une augmentation de la population et de la construction monumentale à Caracol, ce qui a rendu cette ville plus prospère et plus fermée. Tikal a adopté des caractéristiques culturelles de Caracol pendant cette période, car même les bâtiments monumentaux repris à Tikal imitaient le style de Caracol. Te' K'inich II a transmis son trône à l'aîné de ses deux fils, Knot Ajaw.</Text>
-		</Replace>
-		<!-- = Port Lime - Te Kinich - Pedia = -->
-		<!-- Historical Agenda -->
-		<!-- Agenda: Lord Water -->
-		<Replace Tag="LOC_AGENDA_LIME_MAYA_TE_KINICH_LORD_WATER_NAME" Language="fr_FR">
-			<Text>Lord Water</Text>
-		</Replace>
-		<Replace Tag="LOC_AGENDA_LIME_MAYA_TE_KINICH_LORD_WATER_DESC" Language="fr_FR">
-			<Text>Il respectera votre civilisation tant qu'elle aura plus d'habitants que la sienne, mais sinon, il vous envahira sans pitié.</Text>
-		</Replace>
-		<!-- Kudos -->
-		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_AGENDA_LIME_TE_KINICH_LIKES" Language="fr_FR">
-			<Text>Te' K'inich II considère votre empire comme assez grand pour mériter le respect.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Votre royaume est manifestement béni par d'abondantes récoltes et de bons présages. Il serait insensé d'agir contre vous.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>(Vous avez une grande population.)</Text>
-		</Replace>
-		<!-- Warnings -->
-		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_AGENDA_LIME_TE_KINICH_HATES" Language="fr_FR">
-			<Text>Te' K'inich II considère votre empire comme peu peuplé et donc faible.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Mes prêtres se demandent pourquoi Oxhuitzá devrait reconnaître vos caprices. Je n'en vois aucune raison.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_ANY" Language="fr_FR">
-			<Text>(Votre population est plus petite que la sienne.)</Text>
-		</Replace>
-		<!-- Random Agendas -->
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_AGENDA_MODIFIER_NOT_COMPETING_MINORS" Language="fr_FR">
-			<Text>Vous n'avez pas attaqué mes vassaux. Je ne peux pas en dire autant des autres.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_MODIFIER_COMPETING_MINORS" Language="fr_FR">
-			<Text>Ces cités-états doivent servir le meilleur souverain. Il est évident de savoir qui c'est.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_PROTECT_CITY_STATES" Language="fr_FR">
-			<Text>Vous pouvez mener à bien vos plans sans mon ingérence. Je vois qu'ils n'ont pas affecté les miens.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_ATTACK_CITY_STATES" Language="fr_FR">
-			<Text>Vos conquêtes révèlent vos intrigues. Elles montrent un souverain incertain et mesquin qui n'est digne d'aucun respect.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_FAVOR" Language="fr_FR">
-			<Text>Votre nom n'est peut-être pas aussi vénéré que le mien, mais soyez assuré que votre place et vos services sont appréciés.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_LOW_FAVOR" Language="fr_FR">
-			<Text>N'essayez pas de me surpasser. Oxhuitzá ne doit pas être rejetée !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_EXPANSIONIST" Language="fr_FR">
-			<Text>Un empire aussi grand et puissant que le vôtre mérite sans aucun doute le respect.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_EXPANSIONIST" Language="fr_FR">
-			<Text>Oxhuitzá est une ville souveraine et a besoin de subordonnés. Prouvez votre force pour ne pas en devenir un vous-même.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_GOSSIP_POSITIVE" Language="fr_FR">
-			<Text>Les souverains doivent être prudents pour que leurs plans ne soient pas découverts par vous. Si j'avais de tels plans, je devrais faire de gros efforts pour vous les cacher.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_GOSSIP_NEGATIVE" Language="fr_FR">
-			<Text>Votre cécité est légendaire. Vous ne vous rendriez pas compte que vous avez été trompé tant que votre cœur ne vous aurait pas été arraché de la poitrine.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_INTOLERANT_SAME_RELIGION" Language="fr_FR">
-			<Text>Les dieux sont embrassés, tout comme l'univers. Ils sont heureux. La terre est heureuse.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_INTOLERANT_ENCROACHING_RELIGIONT" Language="fr_FR">
-			<Text>Les dieux exigent des sacrifices, et mes prêtres ont suggéré votre tête. Je suis d'accord avec eux.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYCOPHANT_GOLDEN_AGE" Language="fr_FR">
-			<Text>Les étoiles brillent de mille feux sur votre empire. Vos vassaux doivent être très loyaux.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYCOPHANT_DARK_AGE" Language="fr_FR">
-			<Text>Vos serviteurs prient pour un seigneur plus digne. Regardez mon empire glorieux avec envie.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYMPATHIZER_DARK_AGE" Language="fr_FR">
-			<Text>Les étoiles brillent le plus fort dans l'obscurité. Préparez-vous. Notre chance est presque là.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_SYMPATHIZER_GOLDEN_AGE" Language="fr_FR">
-			<Text>Votre arrogance n'est surpassée que par celle de Tikal, et le même sort vous est réservé.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_HIGH_SCIENCE" Language="fr_FR">
-			<Text>Vos prêtres en savent autant que les miens, et c'est pourquoi votre pays prospère. De toute évidence, les dieux vous sont favorables.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LIME_TEO_OWL_REASON_AGENDA_TECHNOPHILE" Language="fr_FR">
-			<Text>Votre stupidité et votre retard ne m'offensent pas. Au contraire, vous m'avez donné une chance !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_WONDER_ADVOCATE" Language="fr_FR">
-			<Text>Les monuments d'Oxhuitzá témoignent de son grand prestige. Vous n'avez pas essayé de placer votre nom au-dessus du mien.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_WONDER_ADVOCATE" Language="fr_FR">
-			<Text>Oxhuitzá est clairement avantagée. Vos piètres efforts ne font que la rendre plus grande en comparaison.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_KUDO_LEADER_LL_TEKINICH_II_REASON_AGENDA_ZEALOT" Language="fr_FR">
-			<Text>La terre devient harmonieuse. Comme en bas, ainsi en haut. Ainsi, les cieux deviendront harmonieux.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_LEADER_LL_TEKINICH_II_REASON_AGENDA_ZEALOT" Language="fr_FR">
-			<Text>Nier le divin, c'est diviser l'indivisible. Il n'est pas bon de nier le divin, car alors il quittera la terre.</Text>
-		</Replace>
-		<!-- Early Meetings -->
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Un nouveau venu. Votre arrivée n'a pas été annoncée. Je suis le seigneur d'Oxhuitzá et je suis curieux de savoir ce que vous apportez.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Un de mes fidèles vassaux n'est pas loin : nous pouvons l'utiliser pour nous rencontrer.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Je rejoindrai les observateurs d'étoiles aux yeux clairs et les guerriers aux bras forts.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Vous ne m'avez encore rien dit sur votre ville. Je veux savoir quels grands monuments ont été érigés en votre nom et quelles étoiles vous voyez.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>J'ai envoyé un ambassadeur dans votre ville. Hébergez-le en fonction de son prestige, mais il n'est pas nécessaire de lui fournir des serviteurs : il apporte les siens.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Un nouveau complexe sera attribué à votre délégué, et il sera équipé de serviteurs et de gardes que j'ai moi-même choisis. C'est un honneur pour moi.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Nous n'avons pas encore construit de maison appropriée pour votre délégué. Peut-être plus tard.</Text>
-		</Replace>
-		<!-- Open Borders -->
-		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Je demande la libre circulation à travers vos frontières. Cela contribuerait à éliminer les menaces, et je ferai les sacrifices nécessaires.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Vos soldats sont autorisés et seront accompagnés de guerriers cérémoniels. Comme il sied à leur rang.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Je n'ai pas reçu les sacrifices habituels. La frontière reste fermée.</Text>
-		</Replace>
-		<!-- Friendship -->
-		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Mes prêtres s'accordent à dire que les étoiles sont favorables. Oxhuitzá demande votre amitié.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Je vais satisfaire votre souhait, car il est partagé par les dieux.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>La Grande Étoile n'est pas favorable. Toute amitié conclue ce jour-là serait vouée à l'échec.</Text>
-		</Replace>
-		<!-- Denounce -->
-		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Un mauvais coup, et de plus au mauvais moment. Vous n'avez rien gagné.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Il est évident pour tout le monde à quel point vous êtes sans valeur et irrespectueux. Et pourtant, j'ai l'impression de devoir le dire au monde une fois de plus. (Vous dénonce)</Text>
-		</Replace>
-		<!-- Trade Agreement -->
-		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>J'accepte.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Ce n'est pas correct.</Text>
-		</Replace>
-		<!-- Other Diplo -->
-		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Ensemble, nous serions plus forts que séparés. Les étoiles et la situation politique sont favorables à une alliance.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Vos plans sont aussi insensés que transparents. Vous n'avez aucun avantage. Faites demi-tour.</Text>
-		</Replace>
-		<!-- War and Peace -->
-		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>L'Étoile Rouge n'est plus en votre faveur, et la Grande Étoile ne verse plus d'eau. Cela ne durera pas longtemps.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Vous êtes un souverain aveugle. Vous ne pouviez voir ni les étoiles, ni mes armées, ni mes plans qui se réalisent. Maintenant, la Grande Étoile appelle à la guerre !</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>La Grande Étoile exige du sang. Je suis obligé de n'accepter rien de moins.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Le temps de la guerre touche à sa fin. C'est le bon moment pour un traité.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Ce résultat était clair. Pour tous ceux qui ont des yeux dans la tête, cela va de soi.</Text>
-		</Replace>
-		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_LL_TEKINICH_II_ANY" Language="fr_FR">
-			<Text>Il semble que j'aie mal évalué les étoiles et que je vous aie mal évalué. C'est simplement le prix à payer.</Text>
-		</Replace>
-
-		<!-- = Suk_Al_Hasan_InGame = -->
-		<!--  Cities  -->
-		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_KILWA_KISIWANI" Language="zh_Hans_CN">
-			<Text>基尔瓦</Text>
+		<Replace Tag="LOC_RESOURCE_P0K_PLUMS_NAME" Language="zh_Hans_CN"> <!-- BBG expanded -->
+			<Text>梅子</Text>
 		</Replace>
 
 		<!--  Named Places  -->
@@ -4690,9 +4941,76 @@
 			<Text>曼扎湾</Text>
 		</Replace>
 		<Replace Tag="LOC_NAMED_SEA_WINAM_GULF_NAME" Language="zh_Hans_CN">
-			<Text>威南湾</Text>
+			<Text>维南湾</Text>
 		</Replace>
 		
+		
+		<!--  New  -->
+		
+		<Replace Tag="LOC_CITY_NAME_CACAXTLA" Language="zh_Hans_CN">
+			<Text>卡卡什特拉</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CANTONA" Language="zh_Hans_CN">
+			<Text>坎托纳</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CUICUILCO" Language="zh_Hans_CN">
+			<Text>奎奎尔科</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MONTE_ALBAN" Language="zh_Hans_CN">
+			<Text>蒙特阿尔万</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_YAGUL" Language="zh_Hans_CN">
+			<Text>亚古尔</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_ZAACHILA" Language="zh_Hans_CN">
+			<Text>萨奇拉</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TEOTENANGO" Language="zh_Hans_CN">
+			<Text>特奥滕安戈</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CALIXTLAHUACA" Language="zh_Hans_CN">
+			<Text>卡利斯特拉瓦卡</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_HUAMANGO" Language="zh_Hans_CN">
+			<Text>瓦曼戈</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_XOCHITECATL" Language="zh_Hans_CN">
+			<Text>索奇泰卡特</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TZINTZUNTZAN" Language="zh_Hans_CN">
+			<Text>钦春钱</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_PATZCUARO" Language="zh_Hans_CN">
+			<Text>帕茨夸罗</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TINGUINDIN" Language="zh_Hans_CN">
+			<Text>廷金丁</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_IHUATZIO" Language="zh_Hans_CN">
+			<Text>伊瓦齐奥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TZACAPU" Language="zh_Hans_CN">
+			<Text>察卡普</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TINGAMBATO" Language="zh_Hans_CN">
+			<Text>廷甘巴托</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_HUANDACAREO" Language="zh_Hans_CN">
+			<Text>万达卡雷奥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_ZINAPECUARO" Language="zh_Hans_CN">
+			<Text>西纳佩夸罗</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_COYOACAN" Language="zh_Hans_CN">
+			<Text>科约阿坎</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TLATELOLCO" Language="zh_Hans_CN">
+			<Text>特拉特洛尔科</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TLACOCHCALCO" Language="zh_Hans_CN">
+			<Text>特拉科奇卡尔科</Text>
+		</Replace>
+
 		
 	</LocalizedText>
 </GameData>
