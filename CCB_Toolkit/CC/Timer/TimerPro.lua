@@ -83,9 +83,9 @@ function OnMultiplayerChat( fromPlayer, toPlayer, text, eTargetType )
 
 	if (string.lower(text) == "p+" or string.lower(text) == "p++") then
 		if not g_Action_ADD then
-			if TurnTimer.MaxTurnTime > 0 and TurnTimer.TimeRemaining < 8 then			-- 如果在小于10秒时p++, 则改为加30秒
-				GameConfiguration.SetValue("TURN_TIMER_TIME", GameConfiguration.GetValue("TURN_TIMER_TIME") + 24 )
-				g_Pre_Time_Base = g_Pre_Time_Base + 24
+			if TurnTimer.MaxTurnTime > 0 and TurnTimer.TimeRemaining < 10 then			-- 如果在小于10秒时p++, 则禁止
+				-- GameConfiguration.SetValue("TURN_TIMER_TIME", GameConfiguration.GetValue("TURN_TIMER_TIME") + 24 )
+				g_Pre_Time_Base = g_Pre_Time_Base
 			else
 				GameConfiguration.SetValue("TURN_TIMER_TIME", GameConfiguration.GetValue("TURN_TIMER_TIME") + 20 )
 				g_Pre_Time_Base = g_Pre_Time_Base + 20
@@ -201,6 +201,8 @@ function OnTurnEnd_TimeBalance(CurrentTurn)
 				count = count + 1
 			end
 		end
+
+		count = 2;
 
 		if count > 1 and GameConfiguration.GetTurnTimerType() ~= 2133509568 then
 			GameConfiguration.SetTurnTimerType("TURNTIMER_STANDARD")
@@ -390,7 +392,8 @@ function Initialize()
 	Events.LoadScreenClose.Add( LateInitialize )
 
 	Events.MultiplayerChat.Add( OnMultiplayerChat )	
-	Events.DiplomacyDeclareWar.Add( OnDiplomacyDeclareWar )
+	-- 禁用宣战加时间
+	-- Events.DiplomacyDeclareWar.Add( OnDiplomacyDeclareWar )
 	Events.MultiplayerPrePlayerDisconnected.Add( OnMultiplayerPrePlayerDisconnected )
 
 	Events.TurnEnd.Add(	OnTurnEnd_TimeBalance );	

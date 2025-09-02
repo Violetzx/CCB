@@ -8,7 +8,7 @@
   2023.05.04	号码菌
 -->
 	<!-- 测试版 -->
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e43" version="20240805">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e42" version="20240805">
 	<!-- 正式版 -->
 <!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e40" version="20240805"> -->
 	<Properties>
@@ -1060,6 +1060,7 @@
 		<AddUserInterfaces id="P+_UI">
 			<Properties>
 				<Context>InGame</Context>
+				<LoadOrder>100030</LoadOrder>
 			</Properties>
 			<File>CC/Timer/TimerPro.xml</File>
 		</AddUserInterfaces>
@@ -1188,6 +1189,14 @@
 			</Properties>
 			<File>MPH/Config.sql</File>
 		</UpdateDatabase>
+
+        <!-- <ImportFiles id="MPH_UI_Additions">
+            <Properties>
+                <LoadOrder>9</LoadOrder>
+            </Properties>
+            <File>CCB_Toolkit/MPH/data/TurnProcessing.lua</File>
+            <File>CCB_Toolkit/MPH/data/TurnProcessing.xml</File>
+        </ImportFiles> -->
 
         <UpdateText id="MPH_TEXTS">
             <File>MPH/lang/Text_CN.xml</File>
@@ -1382,6 +1391,8 @@
         <File>MPH/configuration/Config_BBG.xml</File>
         <File>MPH/configuration/Config_BBS.xml</File>
         <File>MPH/configuration/Config_BSM.xml</File>
+		<!-- <File>CCB_Toolkit/MPH/data/TurnProcessing.lua</File>
+		<File>CCB_Toolkit/MPH/data/TurnProcessing.xml</File> -->
 		<File>MPH/lang/Text_CN.xml</File>
 	</Files>
 </Mod>
