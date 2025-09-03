@@ -24,6 +24,10 @@
 		<Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
 	</Dependencies>
 	
+	<References>
+		<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" title="CCB 拓展" />
+	</References>
+	
 	<!-- can load only select files based on these requirements, if applied -->
 	<ActionCriteria>
 		<Criteria id="XP1" any="1">
