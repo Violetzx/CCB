@@ -82,32 +82,20 @@ DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_JFD_CABEIRI_MYSTERIES' 
 -- Olympia's melee +1 movement with zzzx
 INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
 ('TRAIT_LEADER_JFD_CABEIRI_MYSTERIES', 'CCB_OLYMPIA_MELEE_MOVEMENT_BONUS');
-
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
 ('CCB_OLYMPIA_MELEE_MOVEMENT_BONUS', 'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 0, 0, 0, 'BBG_UTILS_PLAYER_HAS_CIVIC_POLITICAL_PHILOSOPHY_REQSET', NULL);
-
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('CCB_OLYMPIA_MELEE_MOVEMENT_BONUS', 'ModifierId', 'CCB_OLYMPIA_MELEE_MOVEMENT_BONUS_MODIFIER');
-
 -- 
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
 ('CCB_OLYMPIA_MELEE_MOVEMENT_BONUS_MODIFIER', 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT', 0, 0, 0, 'CCB_REQSET_UNIT_IS_MELEE', NULL);
-
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('CCB_OLYMPIA_MELEE_MOVEMENT_BONUS_MODIFIER', 'Amount', '1');
-
--- RequirementSets
-
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
 ('CCB_REQSET_UNIT_IS_MELEE', 'REQUIREMENTSET_TEST_ALL');
-
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
 ('CCB_REQSET_UNIT_IS_MELEE', 'CCB_REQ_UNIT_IS_MELEE');
-
--- Requirements
-
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES 
 ('CCB_REQ_UNIT_IS_MELEE', 'REQUIREMENT_UNIT_PROMOTION_CLASS_MATCHES');
-
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
 ('CCB_REQ_UNIT_IS_MELEE', 'UnitPromotionClass', 'PROMOTION_CLASS_MELEE');
