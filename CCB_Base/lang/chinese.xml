@@ -351,6 +351,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁“制陶术”科技后+1 [ICON_TradeRoute] 贸易路线容量。商人首次进入克里城市3个单元格内的无主单元格后，这些单元格将划入克里领土中。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：T4牧场资源、T4鹿。</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>所有同盟类型均可形成共享视野。[NEWLINE]输出的[ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Food] 食物。[NEWLINE]输入的 [ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Gold] 金币。</Text>
+		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>远古时代的克里特色单位，替代侦察兵。侦察能力极强，初始便拥有1次免费升级。与基础战斗力更高的单位作战时+5 [ICON_Strength] 战斗力。</Text>
@@ -5011,12 +5014,5 @@
 			<Text>特拉科奇卡尔科</Text>
 		</Replace>
 
-		<!--  New fix in XP1  -->
-		<Replace Tag="LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>所有同盟类型均可形成共享视野。[NEWLINE]输出的[ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Food] 食物。[NEWLINE]输入的 [ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Gold] 金币。</Text>
-		</Replace>
-		<!--  End  -->
-
-		
 	</LocalizedText>
 </GameData>
