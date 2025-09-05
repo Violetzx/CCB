@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" version="174">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" version="100">
 
     <Properties>
-        <Name>CCB MPH 多人游戏助手 1.0.0</Name>
+        <Name>CCB MPH 多人游戏助手 1.0.1</Name>
         <Description>面向于电子竞技的模组，提升比赛、游戏的稳定性，并全面改善多人游戏的体验。[NEWLINE][NEWLINE][COLOR_RED]每次开启和关闭该模组时需要重启游戏以生效。[ENDCOLOR][NEWLINE][NEWLINE]否则模组中的一些功能会失效（例如征召功能）</Description>
         <Created>1</Created>
-        <Version>174</Version>
+        <Version>101</Version>
         <Teaser>面向于电子竞技的模组，提升比赛和游戏的稳定性。</Teaser>
         <Authors>CCB制作组</Authors>
         <SpecialThanks>MPH</SpecialThanks>
