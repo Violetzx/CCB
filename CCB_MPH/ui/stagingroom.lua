@@ -7458,7 +7458,7 @@ function Initialize()
 
 	Controls.TitleLabel:SetText(Locale.ToUpper(Locale.Lookup("LOC_MULTIPLAYER_STAGING_ROOM")));
 	
-	g_version = GetLocalModVersion("619ac86e-d99d-4bf3-b8f0-8c5b8c402567")
+	g_version = GetLocalModVersion("8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20")
 		
 	ResizeButtonToText(Controls.BackButton);
 	ResizeButtonToText(Controls.EndGameButton);
