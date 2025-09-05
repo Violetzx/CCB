@@ -247,15 +247,15 @@
 			<Text>建造远古和古典奇观时，可消耗建造者 [ICON_Charges] 劳动力来加速奇观原始建造进程的15%。建造者会获得1点额外 [ICON_Charges] 劳动力。城市中每座奇观+1 [ICON_FOOD] 食物。建成奇观时将获得奇观所处时代的一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>建造远古和古典奇观时，可消耗建造者 [ICON_Charges] 劳动力来加速奇观原始建造进程的15%。建造者会获得1点额外 [ICON_Charges] 劳动力。解锁“砌砖”科技的同时也解锁“运河”。城市中每座奇观+1 [ICON_FOOD] 食物。[NEWLINE][NEWLINE]建成奇观时将获得奇观所处时代的一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。长城获得1点 [ICON_FAITH] 信仰值和 [ICON_GOLD] 金币。</Text>
+			<Text>建造远古和古典奇观时，可消耗建造者 [ICON_Charges] 劳动力来加速奇观原始建造进程的15%。建造者会获得1点额外 [ICON_Charges] 劳动力。解锁“砌砖”科技的同时也解锁“运河”。城市中每座奇观+1 [ICON_FOOD] 食物。[NEWLINE][NEWLINE]建成奇观时将获得奇观所处时代的一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。若相邻长城，长城获得1点 [ICON_FAITH] 信仰值和 [ICON_GOLD] 金币。</Text>
 		</Replace>
 		<!-- = leader ability (Qin Shi Huang, Unifier) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_QIN_ALT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>近战单位获得“蛮族归顺”操作。此操作能将蛮族单位转化为你的单位，但会移除近战单位。[NEWLINE][NEWLINE]军营获得+1 [ICON_GREATWRITER] 大作家点数，建造军营建筑时+50% [Icon_Production] 生产力，兵营获得2个 [ICON_GreatWork_WRITING] 著作槽位。[ICON_GreatWork_WRITING] 著作+1 [ICON_FOOD] 食物。[NEWLINE][NEWLINE]招募 [ICON_GreatGeneral] 大将军或 [ICON_GREATWRITER] 大作家时获得一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。长城获得1点 [ICON_PRODUCTION] 生产力。</Text>
+			<Text>近战单位获得“蛮族归顺”操作。此操作能将蛮族单位转化为你的单位，但会移除近战单位。[NEWLINE][NEWLINE]军营获得+1 [ICON_GREATWRITER] 大作家点数，建造军营建筑时+50% [Icon_Production] 生产力，兵营获得2个 [ICON_GreatWork_WRITING] 著作槽位。[ICON_GreatWork_WRITING] 著作+1 [ICON_FOOD] 食物。[NEWLINE][NEWLINE]招募 [ICON_GreatGeneral] 大将军或 [ICON_GREATWRITER] 大作家时获得一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。若相邻长城，长城获得1点 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<!-- = leader ability (Yongle) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_YONGLE_XP_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>所有城市都可进行“里甲”项目，专注于以每回合的城市生产力来转换为 [Icon_Food] 食物（70%）、[Icon_Faith] 信仰值（70%）或者 [Icon_GOLD] 金币（150%）。10个人口或以上的大型城市，每一个人口便提供+1 [Icon_Gold] 金币、+0.7 [Icon_Science] 科技值以及+0.5 [Icon_Culture] 文化值。[NEWLINE][NEWLINE]每有城市达到13人口时，获得一项随机 [ICON_TechBoosted] 尤里卡（如可用）；每有城市达到18人口时，获得一项随机 [ICON_CivicBoosted] 鼓舞（如可用）。长城获得1点 [ICON_Food] 食物。</Text>
+			<Text>所有城市都可进行“里甲”项目，专注于以每回合的城市生产力来转换为 [Icon_Food] 食物（70%）、[Icon_Faith] 信仰值（70%）或者 [Icon_GOLD] 金币（150%）。10个人口或以上的大型城市，每一个人口便提供+1 [Icon_Gold] 金币、+0.7 [Icon_Science] 科技值以及+0.5 [Icon_Culture] 文化值。[NEWLINE][NEWLINE]每有城市达到13人口时，获得一项随机 [ICON_TechBoosted] 尤里卡（如可用）；每有城市达到18人口时，获得一项随机 [ICON_CivicBoosted] 鼓舞（如可用）。若相邻长城，长城获得1点 [ICON_Food] 食物。</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LIJIA_FAITH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>此项目每回合提供等同于此城市生产力70%的 [ICON_Faith] 信仰值。</Text>
@@ -268,7 +268,7 @@
 		</Replace>
 		<!-- = leader ability (Wu Zetian) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_WU_ZETIAN_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>进攻性间谍的行动效果提升1级。进攻性间谍任务成功时，获得目标城市该回合[ICON_Faith] 信仰值、[ICON_Culture] 文化值和 [ICON_SCIENCE] 科技值的100%。解锁“行政部门”市政后获得1名免费间谍（和一个额外的间谍容量）。可以使用[ICON_Faith] 信仰值购买间谍。[NEWLINE][NEWLINE]位于侦察单位3单元格范围的陆地单位+3 [ICON_Strength] 战斗力。[NEWLINE][NEWLINE]建成市政广场建筑或外交区建筑时获得一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。长城获得1点 [ICON_Science] 科技值</Text>
+			<Text>进攻性间谍的行动效果提升1级。进攻性间谍任务成功时，获得目标城市该回合[ICON_Faith] 信仰值、[ICON_Culture] 文化值和 [ICON_SCIENCE] 科技值的100%。解锁“行政部门”市政后获得1名免费间谍（和一个额外的间谍容量）。可以使用[ICON_Faith] 信仰值购买间谍。[NEWLINE][NEWLINE]位于侦察单位3单元格范围的陆地单位+3 [ICON_Strength] 战斗力。[NEWLINE][NEWLINE]建成市政广场建筑或外交区建筑时获得一项随机 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞（如可用）。若相邻长城，长城获得1点 [ICON_Science] 科技值</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_WUZETIAN_COMBAT_FROM_SPY_ABILITY_PREVIEW" Language="zh_Hans_CN">
 			<Text>+2 [ICON_STRENGTH] 位于间谍3单元格内（罗织经）</Text>
@@ -286,7 +286,7 @@
 			<Text>位于侦察单位3单元格范围时+3 [ICON_Strength] 战斗力。（罗织经）</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_WUZETIAN_RECON_GRANT_COMBATSTRENGTH_ABILITY_DESC" Language="zh_Hans_CN">
-			<Text>为3单元格范围内的陆地单位+3 [ICON_Strength] 战斗力。（罗织经）</Text>
+			<Text>为3单元格范围内的陆地军事单位+3 [ICON_Strength] 战斗力。（罗织经）</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_WUZETIAN_TRADER_SPY_SIGHT_ABILITY_DESC" Language="zh_Hans_CN">
 			<Text>+2视野。</Text>
@@ -350,6 +350,9 @@
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>解锁“制陶术”科技后+1 [ICON_TradeRoute] 贸易路线容量。商人首次进入克里城市3个单元格内的无主单元格后，这些单元格将划入克里领土中。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：T4牧场资源、T4鹿。</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>所有同盟类型均可形成共享视野。[NEWLINE]输出的[ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Food] 食物。[NEWLINE]输入的 [ICON_TradeRoute] 贸易路线目的地城市中的每座营地或牧场可为庞德梅克提供+1 [ICON_Gold] 金币。</Text>
 		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="zh_Hans_CN">
@@ -696,7 +699,7 @@
 		<!-- == INDIA == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DHARMA_EXPANSION2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>从城市中的每个宗教（其须拥有至少1个信徒）获得信徒信仰加成。城市若拥有多个宗教（须有至少1个信徒），则获得1点 [ICON_Amenities] 宜居度。传教士的传播次数+2。来自 [ICON_TradeRoute] 贸易路线的宗教压力+100%。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：无。</Text>
+			<Text>从城市中的每个宗教（其须拥有至少1个信徒）获得信徒信仰加成。城市若拥有至少一个主流宗教，则获得1点 [ICON_Amenities] 宜居度。传教士的传播次数+2。来自 [ICON_TradeRoute] 贸易路线的宗教压力+100%。[NEWLINE][NEWLINE][ICON_BULLET]出生地关联：无。</Text>
 		</Replace>
 		<!-- = leader ability (Chandragupta) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="zh_Hans_CN">
@@ -887,7 +890,7 @@
 		<!-- == KUBLAI (LEADER) == -->
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>任意 [ICON_Government] 政体中额外增加一个经济政策槽位。首次在另一个文明的城市中建立 [ICON_TradingPost] 贸易站时随机获得一项 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞。[NEWLINE]从国际 [ICON_TradeRoute] 贸易路线+1 [ICON_CULTURE] 文化值和+1 [ICON_SCIENCE] 科技值。[ICON_TradeRoute] 贸易路线每经过25个单元格，额外提供+1 [ICON_CULTURE] 文化值和+1 [ICON_SCIENCE] 科技值。（仅忽必烈中国）长城获得1点  [ICON_Culture]  文化值。</Text>
+			<Text>任意 [ICON_Government] 政体中额外增加一个经济政策槽位。首次在另一个文明的城市中建立 [ICON_TradingPost] 贸易站时随机获得一项 [ICON_TechBoosted] 尤里卡和 [ICON_CivicBoosted] 鼓舞。[NEWLINE]从国际 [ICON_TradeRoute] 贸易路线+1 [ICON_CULTURE] 文化值和+1 [ICON_SCIENCE] 科技值。[ICON_TradeRoute] 贸易路线每经过25个单元格，额外提供+1 [ICON_CULTURE] 文化值和+1 [ICON_SCIENCE] 科技值。（仅忽必烈中国）若相邻长城，长城获得1点 [ICON_Culture] 文化值。</Text>
 		</Replace>
 		
 
@@ -1224,7 +1227,7 @@
 		</Replace>
 		<!-- = leader ability (Julius Caesar) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CAESAR_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>首次征服一座城市或从蛮族哨站获得[ICON_GOLD] 金币时 +150 [ICON_GOLD] 金币。研究完“金属铸造”之后，两者提供的 [ICON_GOLD] 金币数量变为250，研究完“钢铁”之后，变为350（标准速度下）。当目标为蛮族时，获得+5 [ICON_Strength] 战斗力且总是获得正常经验值。[NEWLINE][NEWLINE]“法典”市政后，首都获得一个免费的勇士。除首都外，建立新城市时获得一个免费的近战单位。占领并保留至少一个城市时（该城市必须由任意主要文明建立，且被占领时属于主要文明），每种 [ICON_Government] 政体获得一个额外的通配符槽位。[NEWLINE][NEWLINE]所有单位获得+50%战斗经验值，通过科技或市政进入中世纪后提升至+100%。浴场获得+1 [ICON AMENITIES] 宜居度。</Text>
+			<Text>首次征服一座城市或从蛮族哨站获得[ICON_GOLD] 金币时 +150 [ICON_GOLD] 金币。研究完“金属铸造”之后，两者提供的 [ICON_GOLD] 金币数量变为250，研究完“钢铁”之后，变为350（标准速度下）。当目标为蛮族时，获得+5 [ICON_Strength] 战斗力且总是获得正常经验值。[NEWLINE][NEWLINE]“法典”市政后，首都获得一个免费的勇士。除首都外，建立新城市时获得一个免费的近战单位。占领并保留至少一个城市时（该城市必须由任意主要文明建立，且被占领时属于主要文明），每种 [ICON_Government] 政体获得一个额外的通配符槽位。[NEWLINE][NEWLINE]所有单位获得+50%战斗经验值，通过科技或市政进入中世纪后提升至+100%。浴场获得+1 [ICON_AMENITIES] 宜居度。</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_CAESAR_XP_BONUS_BASE_MODIFIER_NAME" Language="zh_Hans_CN">
 			<Text>+50%战斗经验值。（我来，我见，我征服）</Text>
@@ -3797,7 +3800,7 @@
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_DESC" Language="zh_Hans_CN">
-			<Text>当进入古典时代后，首都6环内的军事单位-2 [ICON_STRENGTH] 战斗力。首都6环外的军事单位+4 [ICON_STRENGTH] 战斗力。每启动一个 [ICON_TechBoosted] 尤里卡时刻，为所有单位回复5点生命值并获得2点经验值</Text>
+			<Text>当进入古典时代后，首都6环内的军事单位-2 [ICON_STRENGTH] 战斗力。首都6环外的军事单位+4 [ICON_STRENGTH] 战斗力。每启动一个 [ICON_TechBoosted] 尤里卡时刻，为所有单位回复5点生命值并获得2点经验值。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_NAME" Language="zh_Hans_CN">
             		<Text>金星之怒</Text>
@@ -4096,7 +4099,7 @@
 			<Text>方舟</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SUK_JAHAZI_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>斯瓦西里远古时代特色海军支援单位，可建造渔船并使其获得+2 [ICON_GOLD] 金币，拥有两次建造次数。2格范围内的单位获得+1 [ICON_MOVEMENT] 移动力并且无视地形惩罚。可以被俘获。</Text>
+			<Text>斯瓦西里远古时代特色海军支援单位，可建造渔船并使其获得+2 [ICON_GOLD] 金币，拥有两次建造次数。2格范围内的海运单位获得+1 [ICON_MOVEMENT] 移动力并且无视地形惩罚。可以被俘获。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SUK_JAHAZI_EMBARKED_MOVEMENT_NAME" Language="zh_Hans_CN">
 			<Text>+1 [ICON_MOVEMENT] 移动力，无视地形惩罚</Text>
@@ -4524,7 +4527,10 @@
 			<Text>世界屋脊</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SUK_DHARMA_KINGS_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：[NEWLINE]每个市中心获得+2 [ICON_FOOD] 食物。[NEWLINE]每个工业区获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]每个港口或商业中心获得+1 [ICON_GOLD] 金币。[NEWLINE]每个学院获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]每个剧院获得+1 [ICON_CULTURE] 文化值。[NEWLINE]每个圣地获得+1 [ICON_FAITH] 信仰值。[NEWLINE] 相邻山脉的特色区域可用信仰购买建筑。 [ICON_GOVERNOR] 总督每次升级（包括首次升级）都将提供5%城市 [ICON_FAITH] 信仰值产出。[NEWLINE][NEWLINE]出生地关联：T3草原山脉、平原山脉和冻土山脉。</Text>
+			<Text>公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：[NEWLINE]每个市中心获得+2 [ICON_FOOD] 食物。[NEWLINE]每个工业区获得+1 [ICON_PRODUCTION] 生产力。[NEWLINE]每个港口或商业中心获得+1 [ICON_GOLD] 金币。[NEWLINE]每个学院获得+1 [ICON_SCIENCE] 科技值。[NEWLINE]每个剧院获得+1 [ICON_CULTURE] 文化值。[NEWLINE]每个圣地获得+1 [ICON_FAITH] 信仰值。[NEWLINE] 相邻山脉的特色区域可用信仰购买建筑。 [ICON_GOVERNOR] 总督每次升级（包括首次升级）都将提供5%城市 [ICON_FAITH] 信仰值产出。[NEWLINE][NEWLINE]出生地关联：T3草原山脉和平原山脉。</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_YIELD_MODIFIER_PER_GOVERNOR_TITLA_TOOLTIP" Language="zh_Hans_CN">
+			<Text>{Value : number +#;-#}%（{ActualValue : number +#.#;-#.#}）来自总督（拥有{1}次{1 : plural 1?升级; other?升级;}的 [ICON_Governor] 总督）</Text>
 		</Replace>
 		<!-- = Leader ability -->
 		<Replace Tag="LOC_TRAIT_LEADER_SUK_CAPTURE_OF_CHANGAN_NAME" Language="zh_Hans_CN">
@@ -4545,10 +4551,10 @@
 			<Text>宗堡</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。驻守单位获得+5 [ICON_STRENGTH] 防御力。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
+			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。驻守单位获得+5 [ICON_STRENGTH] 防御力。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
+			<Text>吐蕃特色宗教活动区域，替代圣地，且建造费用更低。使用 [ICON_GOLD] 金币和 [ICON_FAITH] 信仰购买宗堡内建筑时，费用减少20%。</Text>
 		</Replace>
 		<!-- = Trisong Detsen = -->
 		<!-- TIBET -->
@@ -5008,6 +5014,5 @@
 			<Text>特拉科奇卡尔科</Text>
 		</Replace>
 
-		
 	</LocalizedText>
 </GameData>

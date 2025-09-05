@@ -9,7 +9,7 @@ INSERT INTO StartBiasTerrains (CivilizationType, TerrainType, Tier) VALUES
     ('CIVILIZATION_SUK_SWAHILI', 'TERRAIN_COAST', 1);
 
 -- 30/07/25 No more adjacency shenanigans
-DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_SUK_CORAL_CONSTRUCTION' AND ModifierId IS NOT 'TRAIT_SUK_SWAHILI_REEF_PRODUCTION';
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_CIVILIZATION_SUK_CORAL_CONSTRUCTION' AND ModifierId NOT IN ('TRAIT_SUK_SWAHILI_REEF_PRODUCTION', 'BBG_SWAHILI_DISTRICT_COASTAL_CITY');
 
 -- 30/07/25 Reef bonus production +1 at sailing on unimproved tiles only
 UPDATE ModifierArguments SET Value=1 WHERE ModifierId='TRAIT_SUK_SWAHILI_REEF_PRODUCTION' AND Name='Amount';

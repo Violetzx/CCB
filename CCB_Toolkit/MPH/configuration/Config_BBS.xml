@@ -1,0 +1,21 @@
+<GameInfo>
+	<ConfigurationUpdates>
+		<!--  CWC Defaulting  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="1" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+		<!-- CPL FFA Defaulting -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="2" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+		<!--  Squadron CivFR Defaulting  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="3" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+		<!--  CPL Premier League Defaulting  -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+		<!--1v1 RR Defaulting-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+		<!-- Chinese League Cup Defaulting -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Map" TargetId="BBSRidge" TargetValue="0" Hash="0" />
+		<!-- PPL Arena Defaulting -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Map" TargetId="BBSRidge" TargetValue="0" Hash="0" />
+		<!--PPL Battleground Defaulting-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Map" TargetId="BBSRidge" TargetValue="0" Hash="0" />
+		<!--2vi2 Defaulting-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="10" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+</GameInfo>
