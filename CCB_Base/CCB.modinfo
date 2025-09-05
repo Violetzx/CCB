@@ -3,7 +3,7 @@
 <!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e00" version="7110"> -->
 
 <!-- BETA ModID-->
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" version="7110">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" version="1001">
 
 <!-- WIP ModID -->
 <!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e08" version="7110"> -->
@@ -16,7 +16,7 @@
 		<Authors>github.com/CivilizationVIBetterBalancedGame</Authors>
 		<Version>1001</Version>
 		<SpecialThanks>GLaYD, Violet, 千川白浪，Vanadium，煎包，猪脚，gDot，Alan, 小闹钟，以及bbg制作组以前的努力</SpecialThanks>
-		<CompatibleVersions>1.1</CompatibleVersions>
+		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	
 	<Dependencies>
