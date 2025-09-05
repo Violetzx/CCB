@@ -7082,26 +7082,26 @@ function BuildAdditionalContent()
 		local modControl = m_modsIM:GetInstance();
 		local modTitleStr : string = curMod.Title;
 		-- Color unofficial mods to call them out.
-		if curMod.Id == "6e52c135-00e7-44b5-a7de-6588a4f38797" then
+		if curMod.Id == "6e52c135-00e7-44b5-a7de-6588a4f38797" then --
 			isCivPlayerName = true
 			modTitleStr =  "[COLOR_RED]".. modTitleStr .. "[ENDCOLOR]";
 		end
-		if curMod.Id == "619ac86e-d99d-4bf3-b8f0-8c5b8c402567" then
+		if curMod.Id == "619ac86e-d99d-4bf3-b8f0-8c5b8c402567" then --MPH
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_mph_game = true
 		end
-		if curMod.Id == "3291a787-4a93-445c-998d-e22034ab15b3" or curMod.Id == "c6e5ad32-0600-4a98-a7cd-5854a1abcaaf" then
+		if curMod.Id == "3291a787-4a93-445c-998d-e22034ab15b3" or curMod.Id == "c6e5ad32-0600-4a98-a7cd-5854a1abcaaf" then --BSMP BSM
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR]";
 			b_spec_game = true
 		end		
-		if curMod.Id == "c88cba8b-8311-4d35-90c3-51a4a5d66542" then
+		if curMod.Id == "c88cba8b-8311-4d35-90c3-51a4a5d66542" then --BBM
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_bbs_game = true
 			s_bbs_id = curMod.Id
 		end	
-		if curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be260" 
-			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be250"
-			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be254" then
+		if curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be260"  --BBG
+			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be250" --BBG beta
+			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be254" then --BBG low version?
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_bbg_game = true
 			s_bbg_id = curMod.Id
