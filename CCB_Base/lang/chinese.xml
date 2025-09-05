@@ -286,7 +286,7 @@
 			<Text>位于侦察单位3单元格范围时+3 [ICON_Strength] 战斗力。（罗织经）</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_WUZETIAN_RECON_GRANT_COMBATSTRENGTH_ABILITY_DESC" Language="zh_Hans_CN">
-			<Text>为3单元格范围内的陆地单位+3 [ICON_Strength] 战斗力。（罗织经）</Text>
+			<Text>为3单元格范围内的陆地军事单位+3 [ICON_Strength] 战斗力。（罗织经）</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_WUZETIAN_TRADER_SPY_SIGHT_ABILITY_DESC" Language="zh_Hans_CN">
 			<Text>+2视野。</Text>
