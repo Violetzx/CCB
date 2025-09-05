@@ -3645,11 +3645,11 @@
 		</Replace>
 		<!-- = leader ability (Olympia) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>创建万神殿后获得一个 [ICON_ENVOY] 使者。拥有皇家学堂并且信仰奥林匹亚 [ICON_RELIGION] 宗教的城市每个人口+1 [ICON_SCIENCE] 科技值并获得1[ICON_ENVOY] 使者。每宗主一个城邦可为近战和重骑兵单位+2 [ICON_STRENGTH] 战斗力。</Text>
-        	</Replace>
+			<Text>创建万神殿后获得一个 [ICON_ENVOY] 使者。（即将重做请期待）</Text>
+        </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_NAME" Language="zh_Hans_CN">
 			<Text>众卡比洛斯之秘仪</Text>
-        	</Replace>
+        </Replace>
 		<!-- = Vercingetorix = -->
 		<!--  Vercingetorix  -->
 		<!--  Agenda  -->
