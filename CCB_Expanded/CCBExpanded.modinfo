@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="120">
   <Properties>
-    <Name>CCB 文明拓展 1.2</Name>
+    <Name>CCB 文明拓展 1.3</Name>
     <Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
-    <Authors>CCB制作组, ChimpanG, Chrisy15, JFD, Leugi, Lime, Rıaın, SailorCat, SeelingCat, Sukritact, p0kiehl, thecrazyscotsman (alphabetical order)</Authors>
+    <Authors>CCB制作组</Authors>
     <SpecialThanks>Alexxis, BBG Expand, BBG制作组, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
-    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <CompatibleVersions>1.3,2.0</CompatibleVersions>
   </Properties>
 <Dependencies>
     <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="LOC_EXPANSION1_MOD_TITLE"/>

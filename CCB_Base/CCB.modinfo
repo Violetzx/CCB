@@ -8,15 +8,15 @@
 <!-- WIP ModID -->
 <!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e08" version="7110"> -->
 	<Properties>
-		<Name>CCB 基础 1.0</Name>
+		<Name>CCB 基础 1.1</Name>
 		<Description>
 			中国特色平衡模组，取代BBG。
 		</Description>
 		<Teaser>中国特色平衡模组，取代BBG。</Teaser>
 		<Authors>github.com/CivilizationVIBetterBalancedGame</Authors>
-		<Version>7110</Version>
-		<SpecialThanks>abstr, Apeul, Bastik, Bobnotarobot, Calcifer, codenaugh, coloo, D. / Jack The Narrator, Hej, Facu, FaelSCCP, FlashyFeeds, fl0r3k, GLaYD, goldfire, iElden, Ignasiuz, keride, Kid, Klas, MarsLife(puj), Moumoulax, Onyxum, OSCAR., priz, robal, seed.of.apricot, Sent Kurokawa, _vadya_queen, VioletXU1534, Vodairo, wazabaza, WhySoHate, Ybanca, Yenaleesternberg, ZhenjaMax, 3JIO6HbIU_Kycb</SpecialThanks>
-		<CompatibleVersions>2.0</CompatibleVersions>
+		<Version>1001</Version>
+		<SpecialThanks>GLaYD, Violet, 千川白浪，Vanadium，煎包，猪脚，gDot，Alan, 小闹钟，以及bbg制作组以前的努力</SpecialThanks>
+		<CompatibleVersions>1.1</CompatibleVersions>
 	</Properties>
 	
 	<Dependencies>
