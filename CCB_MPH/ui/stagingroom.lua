@@ -805,8 +805,10 @@ function RefreshStatus()
 				end
 				if player.Status == 1 then
 					-- We haven't received an answer most likely hasn't a fully loaded MPH
-						Network.SendChat("[COLOR_Civ6Red]错误:"..player.Name.." - MPH未预加载，无法检查Mod版本",-2,player.ID)
-						Network.SendChat("[COLOR_Civ6Red]没有完整加载MPH [NEWLINE]请在Steam创意工坊订阅CCB MPH [NEWLINE]确保在 额外内容 - 模组 中选择了MPH [NEWLINE]在加入此游戏之前，请务必重新启动游戏。[ENDCOLOR]",-2,player.ID)
+					    local msg_CCBError_MPH_nopreloaded = "[COLOR_Civ6Red]错误:"..player.Name.." - MPH未预加载，无法检查Mod版本"
+					    local msg_CCBError_MPH_gopreloaded = "[COLOR_Civ6Red]没有完整加载MPH [NEWLINE]请在Steam创意工坊订阅CCB MPH [NEWLINE]确保在 额外内容 - 模组 中选择了MPH [NEWLINE]在加入此游戏之前，请务必重新启动游戏。[ENDCOLOR]"
+						Network.SendChat( msg_CCBError_MPH_nopreloaded ,-2,player.ID)
+						Network.SendChat( msg_CCBError_MPH_gopreloaded ,-2,player.ID)
 
 					player.Status = 66
 					b_mods_ok = false
@@ -814,24 +816,28 @@ function RefreshStatus()
 				if player.Status == 2 then
 					-- We haven't received an answer most likely hasn't a fully loaded MPH
 						if tostring(player.Version) ~= tostring(g_version) then
-							Network.SendChat("[COLOR_Civ6Red]主机MPH版本: "..tostring(g_version).." 你的版本: "..tostring(player.Version),-2,player.ID)
+							local msg_CCBError_MPH_Version = "[COLOR_Civ6Red]MPH Host version: "..tostring(g_version).." Your version: "..tostring(player.Version)
+							Network.SendChat( msg_CCBError_MPH_Version ,-2,player.ID)
 							player.Status = 66
 						end
 						if b_bbs_game == true and tostring(player.bbs_v) ~= tostring(GetLocalModVersion(s_bbs_id)) then
-							Network.SendChat("[COLOR_Civ6Red]主机CCB地图版本: "..tostring(GetLocalModVersion(s_bbs_id)).." 你的版本: "..tostring(player.bbs_v),-2,player.ID)
+							local msg_CCBError_BBM = "[COLOR_Civ6Red]主机CCB地图版本: "..tostring(GetLocalModVersion(s_bbs_id)).." 你的版本: "..tostring(player.bbs_v)
+							Network.SendChat( msg_CCBError_BBM , -2, player.ID)
 							player.Status = 66
 						end
 						if b_bbg_game == true and tostring(player.bbg_v) ~= tostring(GetLocalModVersion(s_bbg_id)) then
-							Network.SendChat("[COLOR_Civ6Red]主机CCB基础版本: "..tostring(GetLocalModVersion(s_bbg_id)).." 你的版本: "..tostring(player.bbg_v),-2,player.ID)
+							local msg_CCBError_BBG = "[COLOR_Civ6Red]主机BBG版本: "..tostring(GetLocalModVersion(s_bbg_id)).." 你的版本: "..tostring(player.bbg_v)
+							Network.SendChat( msg_CCBError_BBG , -2, player.ID)
 							player.Status = 66
 						end
-						--
 						if player.Status == 66 then
-							Network.SendChat("[COLOR_Civ6Red]错误:"..player.Name.." - 版本不匹配.",-2,player.ID)
+							local msg_CCB_Version_Mismatch = "[COLOR_Civ6Red]错误:"..player.Name.." - 版本不匹配."
+							Network.SendChat( msg_CCB_Version_Mismatch ,-2,player.ID)
 							b_mods_ok = false
 							else
+							local msg_CCB_Version_Match = "[COLOR_Civ6Green]"..player.Name.." - 版本匹配 ."
 							player.Status = 3
-							Network.SendChat("[COLOR_Civ6Green]"..player.Name.." - 版本匹配 .",-2,player.ID)
+							Network.SendChat( msg_CCB_Version_Match ,-2,player.ID)
 						end
 				end				
 				if player.Status == 0 then
@@ -842,7 +848,7 @@ function RefreshStatus()
 					end
 					name = tostring(name)
 					-- Request Clients
-					Network.SendChat("[COLOR_Civ6Green]# 欢迎! "..name.." 加入了一个使用MPH的游戏房间 (v "..g_version.."). [ENDCOLOR]",-2,player.ID)
+					Network.SendChat("[COLOR_Civ6Green]# Greetings! "..name.." has joined a MP game using Multiplayer Helper (v "..g_version.."). [ENDCOLOR]",-2,player.ID)
 					player.Status = 1
 				end
 				if Network.IsPlayerConnected(player.ID) and (g_phase == PHASE_DEFAULT or g_phase == PHASE_INIT) then
@@ -1559,13 +1565,13 @@ function Refresh()
 		if curMod.Id == "3291a787-4a93-445c-998d-e22034ab15b3" or curMod.Id == "c6e5ad32-0600-4a98-a7cd-5854a1abcaaf" then
 			GameConfiguration.SetValue("MOD_BSM_ID",true)
 		end			
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --CCB BBM 1.0
+		if curMod.Id == "c88cba8b-8311-4d35-90c3-51a4a5d66540" then
 			GameConfiguration.SetValue("MOD_BBS_ID",true)
 		end		
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" or curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" then --CCB Base 1.0
+		if curMod.Id == "cb84074d-5007-4207-b662-c35a5f7be240" or curMod.Id == "cb84074d-5007-4207-b662-c35a5f7be230" then
 			GameConfiguration.SetValue("MOD_BBG_ID",true)
 		end				
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" then --CCB MPH 1.0.1 Modid 8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20
+		if curMod.Id == "619ac86e-d99d-4bf3-b8f0-8c5b8c402567" then
 			GameConfiguration.SetValue("MOD_MPH_ID",true)
 		end															 	 
 	end	
@@ -7095,12 +7101,12 @@ function BuildAdditionalContent()
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR]";
 			b_spec_game = true
 		end		
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --CCB map 1.0
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --BBM now CCBmap 1.0 on
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_bbs_game = true
 			s_bbs_id = curMod.Id
 		end	
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" --CCB1.1
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05"  --BBG now CCB1.0 on
 			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be250" --BBG beta
 			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be254" then --BBG low version?
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
@@ -7459,8 +7465,8 @@ function Initialize()
 
 	Controls.TitleLabel:SetText(Locale.ToUpper(Locale.Lookup("LOC_MULTIPLAYER_STAGING_ROOM")));
 	
-	g_version = GetLocalModVersion("8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20") --CCB MPH Modid 8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20
-	-- BBG MPH Modi 619ac86e-d99d-4bf3-b8f0-8c5b8c402567 --
+	g_version = GetLocalModVersion("8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20")
+		
 	ResizeButtonToText(Controls.BackButton);
 	ResizeButtonToText(Controls.EndGameButton);
 	ResizeButtonToText(Controls.QuitGameButton);
