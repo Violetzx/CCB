@@ -7095,7 +7095,7 @@ function BuildAdditionalContent()
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR]";
 			b_spec_game = true
 		end		
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" --CCB map 1.0
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --CCB map 1.0
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_bbs_game = true
 			s_bbs_id = curMod.Id
