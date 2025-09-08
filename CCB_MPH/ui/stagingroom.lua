@@ -7087,7 +7087,7 @@ function BuildAdditionalContent()
 			isCivPlayerName = true
 			modTitleStr =  "[COLOR_RED]".. modTitleStr .. "[ENDCOLOR]";
 		end
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" then --MPH now CCBMPH 1.0 on
+		if curMod.Id == "619ac86e-d99d-4bf3-b8f0-8c5b8c402567" then --MPH now CCBMPH 1.0 on
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_mph_game = true
 		end
@@ -7095,12 +7095,12 @@ function BuildAdditionalContent()
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR]";
 			b_spec_game = true
 		end		
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --BBM now CCBmap 1.0 on
+		if curMod.Id == "c88cba8b-8311-4d35-90c3-51a4a5d66542" then --BBM now CCBmap 1.0 on
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_bbs_game = true
 			s_bbs_id = curMod.Id
 		end	
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05"  --BBG now CCB1.0 on
+		if curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be260"  --BBG now CCB1.0 on
 			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be250" --BBG beta
 			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be254" then --BBG low version?
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
@@ -7459,8 +7459,7 @@ function Initialize()
 
 	Controls.TitleLabel:SetText(Locale.ToUpper(Locale.Lookup("LOC_MULTIPLAYER_STAGING_ROOM")));
 	
-	g_version = GetLocalModVersion("8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20")
-	g_version = GetLocalModVersion("8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20") --CCB MPH Modid
+	g_version = GetLocalModVersion("619ac86e-d99d-4bf3-b8f0-8c5b8c402567") --CCB MPH Modid
 		
 	ResizeButtonToText(Controls.BackButton);
 	ResizeButtonToText(Controls.EndGameButton);
