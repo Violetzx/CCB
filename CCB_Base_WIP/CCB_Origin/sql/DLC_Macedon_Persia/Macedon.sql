@@ -1,0 +1,94 @@
+--==========
+-- Macedon
+--==========
+-- adj general bugfix
+UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('GREAT_GENERAL_HETAIROI_COMBAT_STRENGTH_BBG', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY', 'IS_ADJ_HETAIROI_REQUIREMENTS_BBG');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('GREAT_GENERAL_HETAIROI_COMBAT_STRENGTH_BBG', 'AbilityType', 'ABILITY_HETAIROI_COMBAT_STRENGTH_BBG');
+INSERT OR IGNORE INTO Types (Type, Kind) VALUES
+	('ABILITY_HETAIROI_COMBAT_STRENGTH_BBG', 'KIND_ABILITY');
+INSERT OR IGNORE INTO TypeTags VALUES
+	('ABILITY_HETAIROI_COMBAT_STRENGTH_BBG' ,'CLASS_HETAIROI');
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description, Inactive) VALUES
+	('ABILITY_HETAIROI_COMBAT_STRENGTH_BBG', 'blah1', 'blah2', 1);
+DELETE FROM UnitAbilityModifiers WHERE UnitAbilityType='ABILITY_HETAIROI' AND ModifierId='HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
+INSERT OR IGNORE INTO UnitAbilityModifiers VALUES
+	('ABILITY_HETAIROI_COMBAT_STRENGTH_BBG', 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS');
+INSERT OR IGNORE INTO RequirementSets VALUES
+	('IS_ADJ_HETAIROI_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT OR IGNORE INTO RequirementSetRequirements VALUES
+	('IS_ADJ_HETAIROI_REQUIREMENTS_BBG', 'REQUIREMENT_UNIT_IS_HETAIROI'),
+	('IS_ADJ_HETAIROI_REQUIREMENTS_BBG', 'AOE_REQUIRES_OWNER_ADJACENCY_BBG');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES
+	('AOE_REQUIRES_OWNER_ADJACENCY_BBG', 'REQUIREMENT_PLOT_ADJACENT_TO_OWNER');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
+	('AOE_REQUIRES_OWNER_ADJACENCY_BBG', 'MinDistance', '0'),
+	('AOE_REQUIRES_OWNER_ADJACENCY_BBG', 'MaxDistance', '1');
+INSERT OR IGNORE INTO GreatPersonIndividualBirthModifiers
+	SELECT DISTINCT GreatPersonIndividualType, 'GREAT_GENERAL_HETAIROI_COMBAT_STRENGTH_BBG'
+	FROM (SELECT * FROM GreatPersonIndividuals WHERE GreatPersonClassType='GREAT_PERSON_CLASS_GENERAL');
+
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HYPASPIST_SIEGE_BONUS' AND Name='Amount';
+-- 25% Science from kills (online speed)
+-- 01/12/24 reduced to 20%
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
+	VALUES ('TRAIT_LEADER_TO_WORLDS_END', 'BBG_SCIENCE_ON_KILLS');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
+	VALUES ('BBG_SCIENCE_ON_KILLS', 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('BBG_SCIENCE_ON_KILLS', 'PercentDefeatedStrength', 40),
+	('BBG_SCIENCE_ON_KILLS', 'YieldType', 'YIELD_SCIENCE');
+
+-- 01/12/24 science on prod reduced to 20%
+UPDATE ModifierArguments SET Value=20 WHERE ModifierId='BASILIKOI_PAIDES_SCIENCE_TRAINED_UNIT' AND Name='UnitProductionPercent';
+
+-- Hetairoi no longer a Horseman replacement
+DELETE FROM UnitReplaces WHERE CivUniqueUnitType='UNIT_MACEDONIAN_HETAIROI';
+-- 13/01/25 Hetairoi cost to 110 (from 100)
+UPDATE Units SET Cost=110 WHERE UnitType='UNIT_MACEDONIAN_HETAIROI';
+
+
+
+-- =======================================================================================
+-- 2024/5/23 by OSCAR. 
+-- The implementation of Macedon's trait: grants bonus production after conquering cities
+-- =======================================================================================
+
+-- MODIFIER_PLAYER_ADD_DIPLOMATIC_YIELD_MODIFIER
+-- This should also work (from warlord original bonus)
+
+-- Define a dummy bonus resource																 
+INSERT OR REPLACE INTO Types (Type, Kind) VALUES 
+	('BBG_DUMMY_RESOURCE_MACEDON', 'KIND_RESOURCE');
+
+INSERT OR REPLACE INTO Resources (ResourceType, Name, ResourceClassType) VALUES 
+	('BBG_DUMMY_RESOURCE_MACEDON', 'LOC_BBG_DUMMY_RESOURCE_MACEDON_NAME', 'RESOURCECLASS_BONUS');
+
+-- Hide this dummy resource on the Civilopedia page
+INSERT OR REPLACE INTO CivilopediaPageExcludes (SectionId, PageId) VALUES 
+  	('RESOURCES', 'BBG_DUMMY_RESOURCE_MACEDON');
+
+INSERT OR REPLACE INTO TraitModifiers (TraitType, ModifierId) VALUES
+	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION', 'TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER');
+
+INSERT OR REPLACE INTO Modifiers (ModifierId, ModifierType, OwnerRequirementSetId) VALUES
+	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER', 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER', 'PLAYER_HAS_DUMMY_RESOURCE_MACEDON');
+
+INSERT OR REPLACE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER', 'YieldType', 'YIELD_PRODUCTION'),
+	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER', 'Amount', '20');
+
+-- Define the requirement for the player to possess that dummy resource
+INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES
+	('REQUIRES_PLAYER_HAS_DUMMY_RESOURCE_MACEDON', 'REQUIREMENT_PLAYER_HAS_RESOURCE_OWNED');
+
+INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES
+	('REQUIRES_PLAYER_HAS_DUMMY_RESOURCE_MACEDON', 'ResourceType', 'BBG_DUMMY_RESOURCE_MACEDON');
+
+INSERT OR REPLACE INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+	('PLAYER_HAS_DUMMY_RESOURCE_MACEDON', 'REQUIREMENTSET_TEST_ALL');
+
+INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+	('PLAYER_HAS_DUMMY_RESOURCE_MACEDON', 'REQUIRES_PLAYER_HAS_DUMMY_RESOURCE_MACEDON');

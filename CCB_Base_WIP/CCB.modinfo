@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发布 ModID-->
+<!-- <Mod id="CCCCCCCC-CCCC-CCCC-BBBB-000000001000" version="200"> -->
+
+<!-- 测试 ModID-->
+<Mod id="CCCCCCCC-CCCC-CCCC-BBBB-000000001010" version="201">
+
+<!-- 开发 ModID -->
+<!-- <Mod id="CCCCCCCC-CCCC-CCCC-BBBB-000000001020" version="202"> -->
+	<Properties>
+		<Name>CCB 基础 1.9.9.1 测试版</Name>
+		<Description>中国特色平衡模组，取代BBG。</Description>
+		<Teaser>中国特色平衡模组，取代BBG。</Teaser>
+		<Authors>github.com/CivilizationVIBetterBalancedGame</Authors>
+		<Version>1001</Version>
+		<SpecialThanks>GLaYD, Violet, 千川白浪，Vanadium，煎包，猪脚，gDot，Alan, 小闹钟，以及bbg制作组以前的努力</SpecialThanks>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	</Properties>
+	<Dependencies>
+		<Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall"/>
+		<Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="DLC_Aztec" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_MONTEZUMA,StandardPlayers::LEADER_MONTEZUMA,Players:Expansion1_Players::LEADER_MONTEZUMA,Players:Expansion2_Players::LEADER_MONTEZUMA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLC_Vikings">
+			<ModInUse>2F6E858A-28EF-46B3-BEAC-B985E52E9BC1</ModInUse>
+		</Criteria>
+		<Criteria id="DLC_Poland" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_JADWIGA,StandardPlayers::LEADER_JADWIGA,Players:Expansion1_Players::LEADER_JADWIGA,Players:Expansion2_Players::LEADER_JADWIGA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLC_Australia" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_JOHN_CURTIN,StandardPlayers::LEADER_JOHN_CURTIN,Players:Expansion1_Players::LEADER_JOHN_CURTIN,Players:Expansion2_Players::LEADER_JOHN_CURTIN</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLC_Macedon_Persia" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_ALEXANDER,Players:StandardPlayers::LEADER_CYRUS,StandardPlayers::LEADER_ALEXANDER,StandardPlayers::LEADER_CYRUS,Players:Expansion1_Players::LEADER_ALEXANDER,Players:Expansion1_Players::LEADER_CYRUS,Players:Expansion2_Players::LEADER_ALEXANDER,Players:Expansion2_Players::LEADER_CYRUS</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLC_Nubia" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_AMANITORE,StandardPlayers::LEADER_AMANITORE,Players:Expansion1_Players::LEADER_AMANITORE,Players:Expansion2_Players::LEADER_AMANITORE</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLC_Indonesia_Khmer" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_GITARJA,Players:StandardPlayers::LEADER_JAYAVARMAN,StandardPlayers::LEADER_GITARJA,StandardPlayers::LEADER_JAYAVARMAN,Players:Expansion1_Players::LEADER_GITARJA,Players:Expansion1_Players::LEADER_JAYAVARMAN,Players:Expansion2_Players::LEADER_GITARJA,Players:Expansion2_Players::LEADER_JAYAVARMAN</LeaderPlayable>
+		</Criteria>
+		<Criteria id="GranColombia_Maya" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_SIMON_BOLIVAR,Players:StandardPlayers::LEADER_LADY_SIX_SKY,StandardPlayers::LEADER_SIMON_BOLIVAR,StandardPlayers::LEADER_LADY_SIX_SKY,Players:Expansion1_Players::LEADER_SIMON_BOLIVAR,Players:Expansion1_Players::LEADER_LADY_SIX_SKY,Players:Expansion2_Players::LEADER_SIMON_BOLIVAR,Players:Expansion2_Players::LEADER_LADY_SIX_SKY</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Ethiopia" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_MENELIK,StandardPlayers::LEADER_MENELIK,Players:Expansion1_Players::LEADER_MENELIK,Players:Expansion2_Players::LEADER_MENELIK</LeaderPlayable>
+		</Criteria>
+		<Criteria id="CatherinePersona" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_CATHERINE_DE_MEDICI_ALT,StandardPlayers::LEADER_CATHERINE_DE_MEDICI_ALT,Players:Expansion1_Players::LEADER_CATHERINE_DE_MEDICI_ALT,Players:Expansion2_Players::LEADER_CATHERINE_DE_MEDICI_ALT</LeaderPlayable>
+		</Criteria>
+		<Criteria id="TeddyPersona" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_T_ROOSEVELT_ROUGHRIDER,StandardPlayers::LEADER_T_ROOSEVELT_ROUGHRIDER,Players:Expansion1_Players::LEADER_T_ROOSEVELT_ROUGHRIDER,Players:Expansion2_Players::LEADER_T_ROOSEVELT_ROUGHRIDER</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Byzantium_Gaul" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_BASIL,Players:StandardPlayers::LEADER_AMBIORIX,StandardPlayers::LEADER_BASIL,StandardPlayers::LEADER_AMBIORIX,Players:Expansion1_Players::LEADER_BASIL,Players:Expansion1_Players::LEADER_AMBIORIX,Players:Expansion2_Players::LEADER_BASIL,Players:Expansion2_Players::LEADER_AMBIORIX</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Babylon" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_HAMMURABI,Players:Expansion1_Players::LEADER_HAMMURABI,Players:Expansion2_Players::LEADER_HAMMURABI</LeaderPlayable>
+		</Criteria>
+		<Criteria id="KublaiKhan_Vietnam" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_LADY_TRIEU,Players:Expansion1_Players::LEADER_LADY_TRIEU,Players:Expansion2_Players::LEADER_LADY_TRIEU</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_KUBLAI_KHAN_CHINA,Players:Expansion1_Players::LEADER_KUBLAI_KHAN_CHINA,Players:Expansion2_Players::LEADER_KUBLAI_KHAN_CHINA</LeaderPlayable>
+			<LeaderPlayable>Players:Expansion1_Players::LEADER_KUBLAI_KHAN_MONGOLIA,Players:Expansion2_Players::LEADER_KUBLAI_KHAN_MONGOLIA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Portugal" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_JOAO_III,StandardPlayers::LEADER_JOAO_III,Players:Expansion1_Players::LEADER_JOAO_III,Players:Expansion2_Players::LEADER_JOAO_III</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Caesar" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_JULIUS_CAESAR,StandardPlayers::LEADER_JULIUS_CAESAR,Players:Expansion1_Players::LEADER_JULIUS_CAESAR,Players:Expansion2_Players::LEADER_JULIUS_CAESAR</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Negotiators" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_ABRAHAM_LINCOLN,StandardPlayers::LEADER_ABRAHAM_LINCOLN,Players:Expansion1_Players::LEADER_ABRAHAM_LINCOLN,Players:Expansion2_Players::LEADER_ABRAHAM_LINCOLN</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_NZINGA_MBANDE,StandardPlayers::LEADER_NZINGA_MBANDE,Players:Expansion1_Players::LEADER_NZINGA_MBANDE,Players:Expansion2_Players::LEADER_NZINGA_MBANDE</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_SALADIN_ALT,StandardPlayers::LEADER_SALADIN_ALT,Players:Expansion1_Players::LEADER_SALADIN_ALT,Players:Expansion2_Players::LEADER_SALADIN_ALT</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Warlords" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_TOKUGAWA,Players:Expansion1_Players::LEADER_TOKUGAWA,Players:Expansion2_Players::LEADER_TOKUGAWA</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_NADER_SHAH,Players:Expansion1_Players::LEADER_NADER_SHAH,Players:Expansion2_Players::LEADER_NADER_SHAH</LeaderPlayable>
+			<LeaderPlayable>Players:Expansion2_Players::LEADER_SULEIMAN_ALT</LeaderPlayable>
+		</Criteria>
+		<Criteria id="RulersChina" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_YONGLE,Players:Expansion1_Players::LEADER_YONGLE,Players:Expansion2_Players::LEADER_YONGLE</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_WU_ZETIAN,Players:Expansion1_Players::LEADER_WU_ZETIAN,Players:Expansion2_Players::LEADER_WU_ZETIAN</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_QIN_ALT,Players:Expansion1_Players::LEADER_QIN_ALT,Players:Expansion2_Players::LEADER_QIN_ALT</LeaderPlayable>
+			<LeaderPlayable>Players:Expansion2_Players::LEADER_SUNDIATA_KEITA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="Builders" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_THEODORA,Players:Expansion1_Players::LEADER_THEODORA,Players:Expansion2_Players::LEADER_THEODORA</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_LUDWIG,Players:Expansion1_Players::LEADER_LUDWIG,Players:Expansion2_Players::LEADER_LUDWIG</LeaderPlayable>
+			<LeaderPlayable>Players:Expansion1_Players::LEADER_SEJONG,Players:Expansion2_Players::LEADER_SEJONG</LeaderPlayable>
+		</Criteria>
+		<Criteria id="RulersSahara" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_RAMSES,Players:Expansion1_Players::LEADER_RAMSES,Players:Expansion2_Players::LEADER_RAMSES</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_CLEOPATRA_ALT,Players:Expansion1_Players::LEADER_CLEOPATRA_ALT,Players:Expansion2_Players::LEADER_CLEOPATRA_ALT</LeaderPlayable>
+			<LeaderPlayable>Players:Expansion2_Players::LEADER_SUNDIATA_KEITA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="RulersEngland" any="1">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_ELIZABETH,Players:Expansion1_Players::LEADER_ELIZABETH,Players:Expansion2_Players::LEADER_ELIZABETH</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_HARALD_ALT,Players:Expansion1_Players::LEADER_HARALD_ALT,Players:Expansion2_Players::LEADER_HARALD_ALT</LeaderPlayable>
+			<LeaderPlayable>Players:StandardPlayers::LEADER_VICTORIA_ALT,Players:Expansion1_Players::LEADER_VICTORIA_ALT,Players:Expansion2_Players::LEADER_VICTORIA_ALT</LeaderPlayable>
+		</Criteria>
+		<!-- Other Mods and Integrations -->
+		<Criteria id="BBS">
+			<ModInUse>8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10</ModInUse>
+		</Criteria>
+		<Criteria id="NoConflictingUIMod">
+			<ModInUse inverse="1">1d44b5e7-753e-405b-af24-5ee634ec8a01</ModInUse>
+			<ModInUse inverse="1">8d4fa23a-ef43-440c-8422-2bec11f8f5d7</ModInUse>
+		</Criteria>
+		<Criteria id="NO_BBGTS"> <!--new beta environment-->
+			<ModInUse inverse="1">d6b111c4-be33-4878-b1fc-8741b1cd6af7</ModInUse>
+		</Criteria>
+		<!--BBCC-->
+		<Criteria id="core_bbcc">
+	      <ConfigurationValueMatches inverse = "1">
+	        <Group>Game</Group>
+	        <ConfigurationId>BBCC_SETTING</ConfigurationId>
+	        <Value>-1</Value>
+	      </ConfigurationValueMatches>
+	    </Criteria>
+	    <Criteria id="bbcc_cap">
+	      <ConfigurationValueMatches>
+	        <Group>Game</Group>
+	        <ConfigurationId>BBCC_SETTING</ConfigurationId>
+	        <Value>1</Value>
+	      </ConfigurationValueMatches>
+	    </Criteria>
+	    <Criteria id="no_rng_bbcc">
+	      <ConfigurationValueMatches>
+	        <Group>Game</Group>
+	        <ConfigurationId>BBCC_SETTING_YIELD</ConfigurationId>
+	        <Value>1</Value>
+	      </ConfigurationValueMatches>
+	    </Criteria>
+		<Criteria id="CVSetting_2">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryCulturalSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>2</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="CVSetting_1">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryCulturalSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		
+		<Criteria id="SVSetting_2">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryScienceSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>2</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="SVSetting_1">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryScienceSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		
+		<Criteria id="DVSetting_2">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryDiploSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>2</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="DVSetting_1">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryDiploSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		
+		<Criteria id="RVSetting_2">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryReligiousSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>2</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="RVSetting_1">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryReligiousSetting</ConfigurationId>
+				<Group>Game</Group>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="TerritorialSetting_1">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VICTORY_TRADITIONAL_DOMINATION</ConfigurationId>
+				<Group>Game</Group>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="GlobalSetting_1">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryMasterSlider</ConfigurationId>
+				<Group>Game</Group>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="GlobalSetting_2">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryMasterSlider</ConfigurationId>
+				<Group>Game</Group>
+				<Value>2</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="GlobalSetting_BBG_Legacy">
+			<ConfigurationValueMatches>
+				<ConfigurationId>VictoryMasterSlider</ConfigurationId>
+				<Group>Game</Group>
+				<Value>5</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+		<!-- Settlers -->
+		<Criteria id="Settlers_Sent_Back">
+			<ConfigurationValueMatches>
+				<ConfigurationId>SettlersConfig</ConfigurationId>
+				<Group>Game</Group>
+				<Value>0</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+
+		<!-- BBG Expanded -->
+		<Criteria id="BBGExpanded" any="1">
+			<!-- WIP -->
+			<ModInUse>8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30</ModInUse>
+			<!-- <ModInUse>8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30</ModInUse> -->
+		</Criteria>
+	</ActionCriteria>
+	<FrontEndActions>
+		<UpdateColors id="Colors">
+		    <Properties>
+		    	<LoadOrder>10001</LoadOrder>
+		    </Properties>
+		    <File>CCB_Origin/sql/colors.sql</File>
+	    </UpdateColors>
+		<UpdateText id="Text">
+		    <Properties>
+		    	<LoadOrder>10001</LoadOrder>
+		    </Properties>
+			<File>Text/zh_Hans_CN.sql</File>
+	    </UpdateText>
+		<UpdateDatabase id="CCB_config">
+			<Properties>
+				<LoadOrder>10001</LoadOrder>
+			</Properties>
+			<File>Config/config.sql</File>
+		</UpdateDatabase>
+	</FrontEndActions>
+	<InGameActions>	
+		<!-- colors -->
+		<UpdateColors id="Colors">
+		    <Properties>
+		    	<LoadOrder>10000</LoadOrder>
+		    </Properties>
+		    <File>CCB_Origin/sql/colors.sql</File>
+	    </UpdateColors>
+		<UpdateText id="Text">
+		    <Properties>
+		    	<LoadOrder>10001</LoadOrder>
+		    </Properties>
+			<File>Text/zh_Hans_CN.sql</File>
+	    </UpdateText>
+		<UpdateIcons id="Icons">
+			<File>Gameplay/Icons/Icons.sql</File>
+		</UpdateIcons>
+
+		<UpdateDatabase id="CCB_GamePlay">
+			<Properties>
+				<LoadOrder>11000</LoadOrder>
+			</Properties>
+            <File>Gameplay/Buildings.sql</File>
+            <File>Gameplay/Districts.sql</File>
+            <File>Gameplay/Features.sql</File>
+            <File>Gameplay/Government.sql</File>
+            <File>Gameplay/Governors.sql</File>
+            <File>Gameplay/Policies.sql</File>
+            <File>Gameplay/Units.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_AKKAD.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_ANTANANARIVO.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_ANTIOCH.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_ARMAGH.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_AUCKLAND.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_AYUTTHAYA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_BABYLON.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_BARBARIAN.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_BOLOGNA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_BRUSSELS.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_BUENOS_AIRES.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_CAGUANA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_CAHOKIA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_CARDIFF.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_CHINGUETTI.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_FEZ.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_FREE_CITIES.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_GENEVA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_GRANADA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_HATTUSA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_HONG_KONG.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_HUNZA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_JAKARTA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_JERUSALEM.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_JOHANNESBURG.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_KABUL.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_KANDY.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_KUMASI.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_LAHORE.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_LA_VENTA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_LISBON.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_MEXICO_CITY.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_MOHENJO_DARO.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_MUSCAT.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_NALANDA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_NAN_MADOL.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_NAZCA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_NGAZARGAMU.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_PALENQUE.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_PRESLAV.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_RAPA_NUI.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_SAMARKAND.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_SINGAPORE.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_TARUGA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_VALLETTA.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_VATICAN_CITY.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_VILNIUS.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_WOLIN.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_YEREVAN.sql</File>
+            <File>Gameplay/Civilization/CITYSTATE_ZANZIBAR.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_AMERICA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_ARABIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_AUSTRALIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_AZTEC.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_BABYLON_STK.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_BRAZIL.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_BYZANTIUM.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_CANADA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_CHINA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_CREE.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_EGYPT.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_ENGLAND.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_ETHIOPIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_FRANCE.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_GAUL.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_GEORGIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_GERMANY.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_GRAN_COLOMBIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_GREECE.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_HUNGARY.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_INCA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_INDIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_INDONESIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_JAPAN.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_KHMER.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_KONGO.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_KOREA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_MACEDON.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_MALI.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_MAORI.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_MAPUCHE.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_MAYA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_MONGOLIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_NETHERLANDS.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_NORWAY.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_NUBIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_OTTOMAN.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_PERSIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_PHOENICIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_POLAND.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_PORTUGAL.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_ROME.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_RUSSIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_SCOTLAND.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_SCYTHIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_SPAIN.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_SUMERIA.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_SWEDEN.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_VIETNAM.sql</File>
+            <File>Gameplay/Civilization/CIVILIZATION_ZULU.sql</File>
+		</UpdateDatabase>
+
+		<AddGameplayScripts id="BBG_CoreScript">
+			<Criteria>NO_BBGTS</Criteria>
+			<File>Scripts/bbg_script.lua</File>
+		</AddGameplayScripts>
+
+		<AddUserInterfaces id="bbg_uitogameplay_dummy_xml">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<Criteria>NO_BBGTS</Criteria>
+			<File>Scripts/bbg_uitogameplay.xml</File>
+		</AddUserInterfaces>
+		
+		<!-- BBCC-->
+		<ImportFiles id="bbg_uitogameplay_lua">
+			<Criteria>NO_BBGTS</Criteria>
+			<File>Scripts/bbg_uitogameplay.lua</File>
+		</ImportFiles>
+
+		<!-- -->
+		<UpdateDatabase id="bbg_preload_db_updated">
+			<Properties>
+				<LoadOrder>11600</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_base_updated">
+			<Properties>
+				<LoadOrder>11601</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/Base/_base_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_vikings_updated">
+			<Properties>
+				<LoadOrder>11602</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Vikings</Criteria>
+			<File>CCB_Origin/sql/DLC_Vikings/_dlc_vikings_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Vikings_Vietnam">
+			<Properties>
+				<LoadOrder>11603</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Vikings</Criteria>
+			<File>CCB_Origin/sql/DLC_Vikings/dlc_vikings_xp1.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Vikings_xp1">
+			<Properties>
+				<LoadOrder>11603</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Vikings</Criteria>
+			<Criteria>KublaiKhan_Vietnam</Criteria>
+			<File>CCB_Origin/sql/DLC_Vikings/dlc_vikings_nfp.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_aust_updated">
+			<Properties>
+				<LoadOrder>11604</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Australia</Criteria>
+			<File>CCB_Origin/sql/DLC_Australia/_dlc_australia_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_indokhmer_updated">
+			<Properties>
+				<LoadOrder>11605</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Indonesia_Khmer</Criteria>
+			<File>CCB_Origin/sql/DLC_Indonesia_Khmer/_dlc_indo_khmer_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_xp1_updated">
+			<Properties>
+				<LoadOrder>11606</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/XP1/_xp1_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_xp2_updated">
+			<Properties>
+				<LoadOrder>11607</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/XP2/_xp2_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_mayacolombia_updated">
+			<Properties>
+				<LoadOrder>11608</LoadOrder>
+			</Properties>
+			<Criteria>GranColombia_Maya</Criteria>
+			<File>CCB_Origin/sql/NFP/_nfp_maya_colombia_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_preload_db_bbs_updated">
+			<Properties>
+				<LoadOrder>11609</LoadOrder>
+			</Properties>
+			<Criteria>BBS</Criteria>
+			<File>CCB_Origin/sql/mod_associations/bbs/_bbs_utils.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Base">
+			<Properties>
+				<LoadOrder>11611</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/Base/base.sql</File>
+			<File>CCB_Origin/sql/Base/Beliefs.sql</File>
+			<File>CCB_Origin/sql/Base/Features.sql</File>
+			<File>CCB_Origin/sql/Base/Buildings.sql</File>
+			<File>CCB_Origin/sql/Base/CityStates.sql</File>
+			<File>CCB_Origin/sql/Base/Districts.sql</File>
+			<File>CCB_Origin/sql/Base/Government.sql</File>
+			<File>CCB_Origin/sql/Base/GreatPeoples.sql</File>
+			<File>CCB_Origin/sql/Base/GreatWorks.sql</File>
+			<File>CCB_Origin/sql/Base/Policies.sql</File>
+			<File>CCB_Origin/sql/Base/Spy.sql</File>
+			<File>CCB_Origin/sql/Base/Units.sql</File>
+			<File>CCB_Origin/sql/Base/Wonders.sql</File>
+			<File>CCB_Origin/sql/Base/America.sql</File>
+			<File>CCB_Origin/sql/Base/Arabia.sql</File>
+			<File>CCB_Origin/sql/Base/Brazil.sql</File>
+			<File>CCB_Origin/sql/Base/China.sql</File>
+			<File>CCB_Origin/sql/Base/Egypt.sql</File>
+			<File>CCB_Origin/sql/Base/England.sql</File>
+			<File>CCB_Origin/sql/Base/France.sql</File>
+			<File>CCB_Origin/sql/Base/Germany.sql</File>
+			<File>CCB_Origin/sql/Base/Greece.sql</File>
+			<File>CCB_Origin/sql/Base/India.sql</File>
+			<File>CCB_Origin/sql/Base/Japan.sql</File>
+			<File>CCB_Origin/sql/Base/Kongo.sql</File>
+			<File>CCB_Origin/sql/Base/Norway.sql</File>
+			<File>CCB_Origin/sql/Base/Rome.sql</File>
+			<File>CCB_Origin/sql/Base/Russia.sql</File>
+			<File>CCB_Origin/sql/Base/Scythia.sql</File>
+			<File>CCB_Origin/sql/Base/Spain.sql</File>
+			<File>CCB_Origin/sql/Base/Sumer.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP1">
+			<Properties>
+				<LoadOrder>11612</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/XP1/xp1__rise_and_fall.sql</File>
+			<File>CCB_Origin/sql/XP1/Features.sql</File>
+			<File>CCB_Origin/sql/XP1/Buildings.sql</File>
+			<File>CCB_Origin/sql/XP1/Dutch.sql</File>
+			<File>CCB_Origin/sql/XP1/Cree.sql</File>
+			<File>CCB_Origin/sql/XP1/Scotland.sql</File>
+			<File>CCB_Origin/sql/XP1/Zulu.sql</File>
+			<File>CCB_Origin/sql/XP1/Georgia.sql</File>
+			<File>CCB_Origin/sql/XP1/Korea.sql</File>
+			<File>CCB_Origin/sql/XP1/Mapuche.sql</File>
+			<File>CCB_Origin/sql/XP1/Mongolia.sql</File>
+			<File>CCB_Origin/sql/XP1/Netherlands.sql</File>
+			<File>CCB_Origin/sql/XP1/Chandragupta.sql</File>
+		</UpdateDatabase>
+		<!-- XP1 or XP2-->
+		<UpdateDatabase id="BBG_XP1_OR_XP2">
+			<Properties>
+				<LoadOrder>11613</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/XP1/Government_XP1_or_XP2.sql</File>
+			<File>CCB_Origin/sql/XP1/Policies_XP1_or_XP2.sql</File>
+			<File>CCB_Origin/sql/XP1/Buildings_XP1_or_XP2.sql</File>
+			<File>CCB_Origin/sql/XP1/Governors_XP1_or_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/Sumer_XP1_or_XP2.sql</File>
+			<File>CCB_Origin/sql/XP1/Other_XP1_or_XP2.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP2">
+			<Properties>
+				<LoadOrder>11614</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/XP2/xp2__gathering_storm.sql</File>
+			<File>CCB_Origin/sql/XP2/Districts.sql</File>
+			<File>CCB_Origin/sql/XP2/Buildings.sql</File>
+			<File>CCB_Origin/sql/XP2/Features.sql</File>
+			<File>CCB_Origin/sql/XP2/Government.sql</File>
+			<File>CCB_Origin/sql/XP2/Governors.sql</File>
+			<File>CCB_Origin/sql/XP2/new_bbg_citystates_xp2.sql</File>
+			<File>CCB_Origin/sql/XP2/new_bbg_improvement.sql</File>
+			<File>CCB_Origin/sql/XP2/new_bbg_xp2_world_congress.sql</File>
+			<File>CCB_Origin/sql/XP2/Policies.sql</File>
+			<File>CCB_Origin/sql/XP2/Units.sql</File>
+			<File>CCB_Origin/sql/XP2/Maori.sql</File>
+			<File>CCB_Origin/sql/XP2/Phoenicie.sql</File>
+			<File>CCB_Origin/sql/XP2/Canada.sql</File>
+			<File>CCB_Origin/sql/XP2/Eleanor.sql</File>
+			<File>CCB_Origin/sql/XP2/Sweden.sql</File>
+			<File>CCB_Origin/sql/XP2/Mali.sql</File>
+			<File>CCB_Origin/sql/XP2/new_bbg_hungary.sql</File>
+			<File>CCB_Origin/sql/XP2/new_bbg_ottoman.sql</File>
+			<File>CCB_Origin/sql/XP2/new_bbg_inca.sql</File>
+			<!-- -->
+			<File>CCB_Origin/sql/Base/Sumer_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/America_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/Egypt_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/France_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/Kongo_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/Rome_XP2.sql</File>
+			<File>CCB_Origin/sql/Base/Scythia_XP2.sql</File>
+		</UpdateDatabase>
+		<!-- XP1 and XP2 -->
+		<UpdateDatabase id="BBG_XP1_AND_XP2">
+			<Properties>
+				<LoadOrder>11615</LoadOrder>
+			</Properties>
+			<File>CCB_Origin/sql/XP1/Buildings_XP1_and_XP2.sql</File>
+			<File>CCB_Origin/sql/XP1/Cree_XP2.sql</File>
+		</UpdateDatabase>
+		<!-- -->
+		<UpdateDatabase id="BBG_Aztec">
+			<Properties>
+				<LoadOrder>11616</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Aztec</Criteria>
+			<File>CCB_Origin/sql/DLC_Aztec/Aztec.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Vikings">
+			<Properties>
+				<LoadOrder>11617</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Vikings</Criteria>
+			<File>CCB_Origin/sql/DLC_Vikings/dlc_vikings.sql</File>
+		</UpdateDatabase>
+		
+		<UpdateDatabase id="BBG_Poland">
+			<Properties>
+				<LoadOrder>11618</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Poland</Criteria>
+			<File>CCB_Origin/sql/DLC_Poland/dlc_poland.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP2_Poland">
+			<Properties>
+				<LoadOrder>11619</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Poland</Criteria>
+			<File>CCB_Origin/sql/DLC_Poland/xp2_poland.sql</File>
+		</UpdateDatabase>
+		<!-- -->
+		<UpdateDatabase id="BBG_Austrlia">
+			<Properties>
+				<LoadOrder>11620</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Australia</Criteria>
+			<File>CCB_Origin/sql/DLC_Australia/dlc_australia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP2_Australia">
+			<Properties>
+				<LoadOrder>11621</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Australia</Criteria>
+			<File>CCB_Origin/sql/DLC_Australia/xp2_australia.sql</File>
+		</UpdateDatabase>
+		<!-- -->
+		<UpdateDatabase id="BBG_Macedon_Persia">
+			<Properties>
+				<LoadOrder>11622</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<File>CCB_Origin/sql/DLC_Macedon_Persia/Macedon.sql</File>
+			<File>CCB_Origin/sql/DLC_Macedon_Persia/Persia.sql</File>
+			<File>CCB_Origin/sql/DLC_Macedon_Persia/Wonders.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP1_Macedon_Persia">
+			<Properties>
+				<LoadOrder>11623</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<File>CCB_Origin/sql/DLC_Macedon_Persia/Macedon_XP1.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP2_Macedon_Persia">
+			<Properties>
+				<LoadOrder>11624</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<File>CCB_Origin/sql/DLC_Macedon_Persia/Macedon_XP2.sql</File>
+			<File>CCB_Origin/sql/DLC_Macedon_Persia/Persia_XP2.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Nubia">
+			<Properties>
+				<LoadOrder>11625</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Nubia</Criteria>
+			<File>CCB_Origin/sql/DLC_Nubia/dlc_nubia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP2_Nubia">
+			<Properties>
+				<LoadOrder>11626</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Nubia</Criteria>
+			<File>CCB_Origin/sql/DLC_Nubia/xp2_nubia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_NFP_Nubia">
+			<Properties>
+				<LoadOrder>11626</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Nubia</Criteria>
+			<Criteria>Ethiopia</Criteria>
+			<File>CCB_Origin/sql/DLC_Nubia/Nubia_nfp.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Indonesia_Khmer">
+			<Properties>
+				<LoadOrder>11627</LoadOrder>
+			</Properties>
+			<Criteria>DLC_Indonesia_Khmer</Criteria>
+			<File>CCB_Origin/sql/DLC_Indonesia_Khmer/Other.sql</File>
+			<File>CCB_Origin/sql/DLC_Indonesia_Khmer/Khmer.sql</File>
+			<File>CCB_Origin/sql/DLC_Indonesia_Khmer/Indonesia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_NFP_GranColombia_Maya">
+			<Properties>
+				<LoadOrder>11640</LoadOrder>
+			</Properties>
+			<Criteria>GranColombia_Maya</Criteria>
+			<File>CCB_Origin/sql/NFP/dlc_maya_colombia.sql</File>
+			<File>CCB_Origin/sql/NFP/GranColombia.sql</File>
+			<File>CCB_Origin/sql/NFP/Maya.sql</File>
+		</UpdateDatabase>		
+		<UpdateDatabase id="BBG_NFP_XP1_GranColombia_Maya">
+			<Properties>
+				<LoadOrder>11641</LoadOrder>
+			</Properties>
+			<Criteria>GranColombia_Maya</Criteria>
+			<File>CCB_Origin/sql/NFP/nfp_xp1_maya_colombia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_NFP_XP2_GranColombia_Maya">
+			<Properties>
+				<LoadOrder>11642</LoadOrder>
+			</Properties>
+			<Criteria>GranColombia_Maya</Criteria>
+			<File>CCB_Origin/sql/NFP/new_bbg_disasters.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Ethiopia">
+			<Properties>
+				<LoadOrder>11643</LoadOrder>
+			</Properties>
+			<Criteria>Ethiopia</Criteria>
+			<File>CCB_Origin/sql/NFP/nfp_ethiopia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_TeddyPersona">
+			<Properties>
+				<LoadOrder>11645</LoadOrder>
+			</Properties>
+			<Criteria>TeddyPersona</Criteria>
+			<File>CCB_Origin/sql/NFP/Teddy_Persona.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_CatherinePersona">
+			<Properties>
+				<LoadOrder>11646</LoadOrder>
+			</Properties>
+			<Criteria>CatherinePersona</Criteria>
+			<File>CCB_Origin/sql/NFP/Catherine_Persona.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Byzantium_Gaul">
+			<Properties>
+				<LoadOrder>11647</LoadOrder>
+			</Properties>
+			<Criteria>Byzantium_Gaul</Criteria>
+			<File>CCB_Origin/sql/NFP/nfp_byzantium_gaul.sql</File>
+			<File>CCB_Origin/sql/NFP/Gaul.sql</File>
+			<File>CCB_Origin/sql/NFP/Byzantium.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Babylon">
+			<Properties>
+				<LoadOrder>11648</LoadOrder>
+			</Properties>
+			<Criteria>Babylon</Criteria>
+			<File>CCB_Origin/sql/NFP/new_bbg_nfp_babylon.sql</File>
+			<File>CCB_Origin/sql/NFP/Babylon.sql</File>
+			<File>CCB_Origin/sql/NFP/GreatPeoples.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Babylon_XP2">
+			<Properties>
+				<LoadOrder>11649</LoadOrder>
+			</Properties>
+			<Criteria>Babylon</Criteria>
+			<File>CCB_Origin/sql/NFP/mali_dlc_babylon.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_KublaiKhan_Vietnam">
+			<Properties>
+				<LoadOrder>11650</LoadOrder>
+			</Properties>
+			<Criteria>KublaiKhan_Vietnam</Criteria>
+			<File>CCB_Origin/sql/NFP/Vietnam.sql</File>
+			<File>CCB_Origin/sql/NFP/new_bbg_kublai.sql</File>
+			<File>CCB_Origin/sql/NFP/new_bbg_buildings_preserve.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Portugal">
+			<Properties>
+				<LoadOrder>11651</LoadOrder>
+			</Properties>
+			<Criteria>Portugal</Criteria>
+			<File>CCB_Origin/sql/NFP/new_bbg_nfp_portugal.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Caesar">
+			<Properties>
+				<LoadOrder>11652</LoadOrder>
+			</Properties>
+			<Criteria>Caesar</Criteria>
+			<File>CCB_Origin/sql/LP/lp_rome_caesar.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Negotiators">
+			<Properties>
+				<LoadOrder>11653</LoadOrder>
+			</Properties>
+			<Criteria>Negotiators</Criteria>
+			<File>CCB_Origin/sql/LP/lp_america_lincoln.sql</File>
+			<File>CCB_Origin/sql/LP/lp_arabia_saladin_sultan.sql</File>
+			<File>CCB_Origin/sql/LP/lp_kongo_mbande.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Negotiators_XP2">
+			<Properties>
+				<LoadOrder>11654</LoadOrder>
+			</Properties>
+			<Criteria>Negotiators</Criteria>
+			<File>CCB_Origin/sql/LP/Sultan.sql</File>
+		</UpdateDatabase>
+		
+		<UpdateDatabase id="BBG_Warlords">
+			<Properties>
+				<LoadOrder>11655</LoadOrder>
+			</Properties>
+			<Criteria>Warlords</Criteria>
+			<File>CCB_Origin/sql/LP/Tokugawa.sql</File>
+			<File>CCB_Origin/sql/LP/lp_ottoman_suleiman_magnificent.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Warlords_Persia">
+			<Properties>
+				<LoadOrder>11655</LoadOrder>
+			</Properties>
+			<Criteria>Warlords</Criteria>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<File>CCB_Origin/sql/LP/NaderShah.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_RulesChina">
+			<Properties>
+				<LoadOrder>11656</LoadOrder>
+			</Properties>
+			<Criteria>RulersChina</Criteria>
+			<File>CCB_Origin/sql/LP/QinUnifier.sql</File>
+			<File>CCB_Origin/sql/LP/Yongle.sql</File>
+			<File>CCB_Origin/sql/LP/WuZetian.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_RulesChina_XP1">
+			<Properties>
+				<LoadOrder>11657</LoadOrder>
+			</Properties>
+			<Criteria>RulersChina</Criteria>
+			<File>CCB_Origin/sql/LP/lp_qin_unifier_xp1.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_RulesChina_NFPEthiopia">
+			<Properties>
+				<LoadOrder>11658</LoadOrder>
+			</Properties>
+			<Criteria>RulersChina</Criteria>
+			<Criteria>Ethiopia</Criteria>
+			<File>CCB_Origin/sql/LP/WuZetian_nfp.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_RulesChina_XP2">
+			<Properties>
+				<LoadOrder>11659</LoadOrder>
+			</Properties>
+			<Criteria>RulersChina</Criteria>
+			<File>CCB_Origin/sql/LP/lp_qin_unifier_xp2.sql</File>	
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Builders">
+			<Properties>
+				<LoadOrder>11660</LoadOrder>
+			</Properties>
+			<Criteria>Builders</Criteria>
+			<File>CCB_Origin/sql/LP/lp_ludwig.sql</File>
+			<File>CCB_Origin/sql/LP/Sejong.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_Builders_Byzantium">
+			<Properties>
+				<LoadOrder>11661</LoadOrder>
+			</Properties>
+			<Criteria>Builders</Criteria>
+			<Criteria>Byzantium_Gaul</Criteria>
+			<File>CCB_Origin/sql/LP/Theodora.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_RulersSahara">
+			<Properties>
+				<LoadOrder>11662</LoadOrder>
+			</Properties>
+			<Criteria>RulersSahara</Criteria>
+			<File>CCB_Origin/sql/LP/Ptolemaic.sql</File>
+			<File>CCB_Origin/sql/LP/Ramses.sql</File>
+			<File>CCB_Origin/sql/LP/Sundiata.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_RulersEngland">
+			<Properties>
+				<LoadOrder>11663</LoadOrder>
+			</Properties>
+			<Criteria>RulersEngland</Criteria>
+			<File>CCB_Origin/sql/LP/VictoriaSteam.sql</File>
+			<File>CCB_Origin/sql/LP/Elizabeth.sql</File>
+			<File>CCB_Origin/sql/LP/Varangian.sql</File>
+		</UpdateDatabase>
+
+		<UpdateDatabase id="BBG_Expanded">
+			<Properties>
+				<LoadOrder>100000000</LoadOrder>
+			</Properties>
+			<Criteria>BBGExpanded</Criteria>
+			<Criteria>DLC_Aztec</Criteria>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<Criteria>Byzantium_Gaul</Criteria>
+			<Criteria>GranColombia_Maya</Criteria>
+			<File>CCB_Origin/sql/BBG_Expanded/Vercingetorix.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Olympia.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Thule.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Te_Kinich.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Trisong.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Ahiram.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Al_Hasan.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Spearthrower.sql</File>
+			<File>CCB_Origin/sql/BBG_Expanded/Resources.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="BBG_XP2_SecretSocieties">
+			<Properties>
+				<LoadOrder>11670</LoadOrder>
+			</Properties>
+			<Criteria>Ethiopia</Criteria>
+			<File>CCB_Origin/sql/Secret_Societies.sql</File>
+		</UpdateDatabase>
+
+		<!--BBCC-->
+		<UpdateDatabase id="bbcc_configvalues_db">
+	      <Properties>
+	          <LoadOrder>11661</LoadOrder>
+	      </Properties>
+	      <Criteria>core_bbcc</Criteria>
+	      <File>CCB_Origin/sql/bbcc/bbcc_configvalues.sql</File>
+	    </UpdateDatabase>
+		<UpdateDatabase id="core_bbcc_db">
+	      <Properties>
+	          <LoadOrder>11662</LoadOrder>
+	      </Properties>
+	      <Criteria>core_bbcc</Criteria>
+	      <File>CCB_Origin/sql/bbcc/core_bbcc.sql</File>
+	    </UpdateDatabase>	    
+	    <UpdateDatabase id="no_rng_bbcc_db">
+	      <Properties>
+	          <LoadOrder>11663</LoadOrder>
+	      </Properties>
+	      <Criteria>core_bbcc</Criteria>
+	      <Criteria>no_rng_bbcc</Criteria>
+	      <File>CCB_Origin/sql/bbcc/no_rng_bbcc.sql</File>
+	    </UpdateDatabase>
+	    <UpdateDatabase id="cap_bbcc_db">
+	      <Properties>
+	          <LoadOrder>11670</LoadOrder>
+	      </Properties>
+	      <Criteria>core_bbcc</Criteria>
+	      <Criteria>bbcc_cap</Criteria>
+	      <File>CCB_Origin/sql/bbcc/cap_only_bbcc.sql</File>
+	    </UpdateDatabase>
+		<!-- -->
+		<UpdateDatabase id="VictoryCulturalSetting_2">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>CVSetting_2</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_cv.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_cv_2.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryCulturalSetting_1">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>CVSetting_1</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_cv.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryScienceSetting_2">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>SVSetting_2</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_sv_2.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryScienceSetting_1">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>SVSetting_1</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_sv_1.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryDiploSetting_2">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>DVSetting_2</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_dv_2.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryDiploSetting_1">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>DVSetting_1</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_dv_1.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryReligiousSetting_2">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>RVSetting_2</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_rv_2.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryReligiousSetting_1">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>RVSetting_1</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_rv_1.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="VictoryTerritorialSetting_1">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>TerritorialSetting_1</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_new_domination.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="GlobalVictorySetting_1">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>GlobalSetting_1</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_rv_1.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_dv_1.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_sv_1.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_cv.sql</File>
+		</UpdateDatabase>	
+		<UpdateDatabase id="GlobalVictorySetting_2">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>GlobalSetting_2</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_rv_2.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_dv_2.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_sv_2.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_cv.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_cv_2.sql</File>
+		</UpdateDatabase>	
+		<UpdateDatabase id="GlobalVictorySetting_BBG_Legacy">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>GlobalSetting_BBG_Legacy</Criteria>
+			<File>CCB_Origin/sql/victories/new_bbg_dv_2.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_cv.sql</File>
+			<File>CCB_Origin/sql/victories/new_bbg_cv_2.sql</File>
+		</UpdateDatabase>
+		<!-- Settlers -->
+		<UpdateDatabase id="Settlers">
+			<Properties>
+				<LoadOrder>20000</LoadOrder>
+			</Properties>
+			<Criteria>Settlers_Sent_Back</Criteria>
+			<File>CCB_Origin/sql/Settlers/Settlers.sql</File>
+		</UpdateDatabase>
+		<ReplaceUIScript id="bbg_worldranking">
+			<Properties>
+			<LoadOrder>19998</LoadOrder>
+			<LuaContext>WorldRankings</LuaContext>
+			<LuaReplace>UI/replacements/worldrankings_bbg.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ReplaceUIScript id="BBG_UnitPanel_XP2">
+			<Properties>
+				<LoadOrder>19999</LoadOrder>
+				<LuaContext>UnitPanel</LuaContext>
+				<LuaReplace>UI/replacements/unitpanel_bbg.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="bbg_files">
+				<File>UI/replacements/endgamemenu_bbg.lua</File>
+				<File>UI/replacements/endgamemenu.xml</File>
+		</ImportFiles>
+		<ImportFiles id="bbg_tradesupport">
+			<Properties>
+				<LoadOrder>300</LoadOrder>
+			</Properties>
+			<Criteria>NoConflictingUIMod</Criteria>
+			<File>UI/replacements/tradesupport.lua</File>
+		</ImportFiles>
+		<ImportFiles id="bbg_basetradeui">
+			<Properties>
+				<LoadOrder>301</LoadOrder>
+			</Properties>
+			<Criteria>NoConflictingUIMod</Criteria>
+			<File>UI/replacements/compatibility/traderoutechooser.lua</File>
+			<File>UI/replacements/compatibility/tradeoverview.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="base_tradeoverview">
+			<Properties>
+				<LoadOrder>302</LoadOrder>
+				<LuaContext>TradeOverview</LuaContext>
+				<LuaReplace>UI/replacements/compatibility/tradeoverview.lua</LuaReplace>
+			</Properties>
+			<Criteria>NoConflictingUIMod</Criteria>
+		</ReplaceUIScript>
+		<ImportFiles id="bbg_tradeoverview_import">
+			<Properties>
+				<LoadOrder>303</LoadOrder>
+			</Properties>
+			<Criteria>NoConflictingUIMod</Criteria>
+			<File>UI/replacements/tradeoverview_bbg.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="bbg_tradeoverview">
+			<Properties>
+				<LoadOrder>304</LoadOrder>
+				<LuaContext>TradeOverview</LuaContext>
+				<LuaReplace>UI/replacements/tradeoverview_bbg.lua</LuaReplace>
+			</Properties>
+			<Criteria>NoConflictingUIMod</Criteria>
+		</ReplaceUIScript>
+		<AddGameplayScripts id="Lua">
+			<Criteria>BBGExpanded</Criteria>
+			<Criteria>DLC_Aztec</Criteria>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<Criteria>Byzantium_Gaul</Criteria>
+			<Criteria>GranColombia_Maya</Criteria>
+      		<File>Scripts/BBG_Expanded/Thule.lua</File>
+      		<File>Scripts/BBG_Expanded/Te_Kinich.lua</File>
+      		<File>Scripts/BBG_Expanded/Al_Hasan.lua</File>
+      		<File>Scripts/BBG_Expanded/Olympia.lua</File>
+    	</AddGameplayScripts>
+	</InGameActions>
+	<Files>
+		<!-- Config -->
+		<File>Config/config.sql</File>
+		<!-- Gameplay -->
+        <File>Gameplay/Buildings.sql</File>
+        <File>Gameplay/Districts.sql</File>
+        <File>Gameplay/Features.sql</File>
+        <File>Gameplay/Government.sql</File>
+        <File>Gameplay/Governors.sql</File>
+        <File>Gameplay/Policies.sql</File>
+        <File>Gameplay/Units.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_AKKAD.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_ANTANANARIVO.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_ANTIOCH.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_ARMAGH.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_AUCKLAND.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_AYUTTHAYA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_BABYLON.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_BARBARIAN.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_BOLOGNA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_BRUSSELS.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_BUENOS_AIRES.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_CAGUANA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_CAHOKIA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_CARDIFF.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_CHINGUETTI.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_FEZ.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_FREE_CITIES.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_GENEVA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_GRANADA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_HATTUSA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_HONG_KONG.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_HUNZA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_JAKARTA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_JERUSALEM.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_JOHANNESBURG.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_KABUL.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_KANDY.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_KUMASI.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_LAHORE.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_LA_VENTA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_LISBON.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_MEXICO_CITY.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_MOHENJO_DARO.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_MUSCAT.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_NALANDA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_NAN_MADOL.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_NAZCA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_NGAZARGAMU.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_PALENQUE.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_PRESLAV.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_RAPA_NUI.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_SAMARKAND.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_SINGAPORE.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_TARUGA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_VALLETTA.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_VATICAN_CITY.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_VILNIUS.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_WOLIN.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_YEREVAN.sql</File>
+        <File>Gameplay/Civilization/CITYSTATE_ZANZIBAR.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_AMERICA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_ARABIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_AUSTRALIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_AZTEC.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_BABYLON_STK.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_BRAZIL.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_BYZANTIUM.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_CANADA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_CHINA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_CREE.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_EGYPT.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_ENGLAND.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_ETHIOPIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_FRANCE.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_GAUL.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_GEORGIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_GERMANY.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_GRAN_COLOMBIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_GREECE.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_HUNGARY.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_INCA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_INDIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_INDONESIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_JAPAN.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_KHMER.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_KONGO.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_KOREA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_MACEDON.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_MALI.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_MAORI.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_MAPUCHE.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_MAYA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_MONGOLIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_NETHERLANDS.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_NORWAY.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_NUBIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_OTTOMAN.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_PERSIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_PHOENICIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_POLAND.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_PORTUGAL.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_ROME.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_RUSSIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_SCOTLAND.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_SCYTHIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_SPAIN.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_SUMERIA.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_SWEDEN.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_VIETNAM.sql</File>
+        <File>Gameplay/Civilization/CIVILIZATION_ZULU.sql</File>
+		<!-- Icons -->
+		<File>Gameplay/Icons/Icons.sql</File>
+		<!-- Text -->
+		<File>Text/zh_Hans_CN.sql</File>
+
+		<File>UI/replacements/worldrankings_bbg.lua</File>
+		<File>UI/replacements/endgamemenu_bbg.lua</File>
+		<File>UI/replacements/endgamemenu.xml</File>
+		<File>UI/replacements/tradeoverview_bbg.lua</File>
+		<File>UI/replacements/unitpanel_bbg.lua</File>
+		<File>UI/replacements/tradesupport.lua</File>
+		<File>UI/replacements/compatibility/traderoutechooser.lua</File>
+		<File>UI/replacements/compatibility/tradeoverview.lua</File>
+
+      	<File>Scripts/BBG_Expanded/Thule.lua</File>
+      	<File>Scripts/BBG_Expanded/Te_Kinich.lua</File>
+      	<File>Scripts/BBG_Expanded/Al_Hasan.lua</File>
+      	<File>Scripts/BBG_Expanded/Olympia.lua</File>
+		<File>Scripts/bbg_uitogameplay.xml</File>
+		<File>Scripts/bbg_uitogameplay.lua</File>
+		<File>Scripts/bbg_script.lua</File>
+
+	    <File>CCB_Origin/sql/colors.sql</File>
+		<File>CCB_Origin/sql/_utils.sql</File>
+		<File>CCB_Origin/sql/Base/_base_utils.sql</File>
+		<File>CCB_Origin/sql/Base/base.sql</File>
+		<File>CCB_Origin/sql/Base/America.sql</File>
+		<File>CCB_Origin/sql/Base/Arabia.sql</File>
+		<File>CCB_Origin/sql/Base/Beliefs.sql</File>
+		<File>CCB_Origin/sql/Base/Brazil.sql</File>
+		<File>CCB_Origin/sql/Base/Buildings.sql</File>
+		<File>CCB_Origin/sql/Base/China.sql</File>
+		<File>CCB_Origin/sql/Base/CityStates.sql</File>
+		<File>CCB_Origin/sql/Base/Districts.sql</File>
+		<File>CCB_Origin/sql/Base/Egypt.sql</File>
+		<File>CCB_Origin/sql/Base/England.sql</File>
+		<File>CCB_Origin/sql/Base/Features.sql</File>
+		<File>CCB_Origin/sql/Base/France.sql</File>
+		<File>CCB_Origin/sql/Base/Germany.sql</File>
+		<File>CCB_Origin/sql/Base/Government.sql</File>
+		<File>CCB_Origin/sql/Base/GreatPeoples.sql</File>
+		<File>CCB_Origin/sql/Base/GreatWorks.sql</File>
+		<File>CCB_Origin/sql/Base/Greece.sql</File>
+		<File>CCB_Origin/sql/Base/India.sql</File>
+		<File>CCB_Origin/sql/Base/Japan.sql</File>
+		<File>CCB_Origin/sql/Base/Kongo.sql</File>
+		<File>CCB_Origin/sql/Base/Norway.sql</File>
+		<File>CCB_Origin/sql/Base/Policies.sql</File>
+		<File>CCB_Origin/sql/Base/Rome.sql</File>
+		<File>CCB_Origin/sql/Base/Russia.sql</File>
+		<File>CCB_Origin/sql/Base/Scythia.sql</File>
+		<File>CCB_Origin/sql/Base/Spain.sql</File>
+		<File>CCB_Origin/sql/Base/Spy.sql</File>
+		<File>CCB_Origin/sql/Base/Sumer.sql</File>
+		<File>CCB_Origin/sql/Base/Units.sql</File>
+		<File>CCB_Origin/sql/Base/Wonders.sql</File>
+		<File>CCB_Origin/sql/XP1/_xp1_utils.sql</File>
+		<File>CCB_Origin/sql/XP1/xp1__rise_and_fall.sql</File>
+		<File>CCB_Origin/sql/XP1/Dutch.sql</File>
+		<File>CCB_Origin/sql/XP1/Cree.sql</File>
+		<File>CCB_Origin/sql/XP1/Scotland.sql</File>
+		<File>CCB_Origin/sql/XP1/Zulu.sql</File>
+		<File>CCB_Origin/sql/XP1/Features.sql</File>
+		<File>CCB_Origin/sql/XP1/Buildings.sql</File>
+		<File>CCB_Origin/sql/XP1/Georgia.sql</File>
+		<File>CCB_Origin/sql/XP1/Korea.sql</File>
+		<File>CCB_Origin/sql/XP1/Mongolia.sql</File>
+		<File>CCB_Origin/sql/XP1/Netherlands.sql</File>
+		<File>CCB_Origin/sql/XP1/Mapuche.sql</File>
+		<File>CCB_Origin/sql/XP1/Chandragupta.sql</File>
+		<File>CCB_Origin/sql/XP1/Government_XP1_or_XP2.sql</File>
+		<File>CCB_Origin/sql/XP1/Policies_XP1_or_XP2.sql</File>
+		<File>CCB_Origin/sql/XP1/Buildings_XP1_or_XP2.sql</File>
+		<File>CCB_Origin/sql/XP1/Governors_XP1_or_XP2.sql</File>
+		<File>CCB_Origin/sql/XP1/Other_XP1_or_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/Sumer_XP1_or_XP2.sql</File>
+		<File>CCB_Origin/sql/XP2/_xp2_utils.sql</File>
+		<File>CCB_Origin/sql/XP2/xp2__gathering_storm.sql</File>
+		<File>CCB_Origin/sql/XP2/Buildings.sql</File>
+		<File>CCB_Origin/sql/XP2/Districts.sql</File>
+		<File>CCB_Origin/sql/XP2/Features.sql</File>
+		<File>CCB_Origin/sql/XP2/Government.sql</File>
+		<File>CCB_Origin/sql/XP2/Governors.sql</File>
+		<File>CCB_Origin/sql/XP2/new_bbg_citystates_xp2.sql</File>
+		<File>CCB_Origin/sql/XP2/new_bbg_improvement.sql</File>
+		<File>CCB_Origin/sql/XP2/new_bbg_xp2_world_congress.sql</File>
+		<File>CCB_Origin/sql/XP2/Policies.sql</File>
+		<File>CCB_Origin/sql/XP2/Units.sql</File>
+		<File>CCB_Origin/sql/XP2/Mali.sql</File>
+		<File>CCB_Origin/sql/XP2/Canada.sql</File>
+		<File>CCB_Origin/sql/XP2/new_bbg_hungary.sql</File>
+		<File>CCB_Origin/sql/XP2/new_bbg_ottoman.sql</File>
+		<File>CCB_Origin/sql/XP2/new_bbg_inca.sql</File>
+		<File>CCB_Origin/sql/XP2/Maori.sql</File>
+		<File>CCB_Origin/sql/XP2/Phoenicie.sql</File>
+		<File>CCB_Origin/sql/XP2/Eleanor.sql</File>
+		<File>CCB_Origin/sql/XP2/Sweden.sql</File>
+		<File>CCB_Origin/sql/Base/Sumer_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/America_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/Egypt_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/France_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/Kongo_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/Rome_XP2.sql</File>
+		<File>CCB_Origin/sql/Base/Scythia_XP2.sql</File>
+		<File>CCB_Origin/sql/XP1/Cree_XP2.sql</File>
+		<File>CCB_Origin/sql/XP1/Buildings_XP1_and_XP2.sql</File>
+		<File>CCB_Origin/sql/DLC_Aztec/Aztec.sql</File>
+		<File>CCB_Origin/sql/DLC_Vikings/_dlc_vikings_utils.sql</File>
+		<File>CCB_Origin/sql/DLC_Vikings/dlc_vikings.sql</File>
+		<File>CCB_Origin/sql/DLC_Vikings/dlc_vikings_nfp.sql</File>
+		<File>CCB_Origin/sql/DLC_Vikings/dlc_vikings_xp1.sql</File>
+		<File>CCB_Origin/sql/DLC_Poland/dlc_poland.sql</File>
+		<File>CCB_Origin/sql/DLC_Poland/xp2_poland.sql</File>
+		<File>CCB_Origin/sql/DLC_Australia/_dlc_australia_utils.sql</File>
+		<File>CCB_Origin/sql/DLC_Australia/dlc_australia.sql</File>
+		<File>CCB_Origin/sql/DLC_Australia/xp2_australia.sql</File>
+		<File>CCB_Origin/sql/DLC_Macedon_Persia/Macedon.sql</File>
+		<File>CCB_Origin/sql/DLC_Macedon_Persia/Persia.sql</File>
+		<File>CCB_Origin/sql/DLC_Macedon_Persia/Persia_XP2.sql</File>
+		<File>CCB_Origin/sql/DLC_Macedon_Persia/Wonders.sql</File>
+		<File>CCB_Origin/sql/DLC_Macedon_Persia/Macedon_XP1.sql</File>
+		<File>CCB_Origin/sql/DLC_Macedon_Persia/Macedon_XP2.sql</File>
+		<File>CCB_Origin/sql/DLC_Nubia/dlc_nubia.sql</File>
+		<File>CCB_Origin/sql/DLC_Nubia/xp2_nubia.sql</File>
+		<File>CCB_Origin/sql/DLC_Nubia/Nubia_nfp.sql</File>
+		<File>CCB_Origin/sql/DLC_Indonesia_Khmer/_dlc_indo_khmer_utils.sql</File>
+		<File>CCB_Origin/sql/DLC_Indonesia_Khmer/Other.sql</File>
+		<File>CCB_Origin/sql/DLC_Indonesia_Khmer/Khmer.sql</File>
+		<File>CCB_Origin/sql/DLC_Indonesia_Khmer/Indonesia.sql</File>
+		<File>CCB_Origin/sql/NFP/_nfp_maya_colombia_utils.sql</File>
+		<File>CCB_Origin/sql/NFP/dlc_maya_colombia.sql</File>
+		<File>CCB_Origin/sql/NFP/Maya.sql</File>
+		<File>CCB_Origin/sql/NFP/GranColombia.sql</File>
+		<File>CCB_Origin/sql/NFP/nfp_xp1_maya_colombia.sql</File>
+		<File>CCB_Origin/sql/NFP/new_bbg_disasters.sql</File>
+		<File>CCB_Origin/sql/NFP/nfp_ethiopia.sql</File>
+		<File>CCB_Origin/sql/NFP/Teddy_Persona.sql</File>
+		<File>CCB_Origin/sql/NFP/Catherine_Persona.sql</File>
+		<File>CCB_Origin/sql/NFP/nfp_byzantium_gaul.sql</File>
+		<File>CCB_Origin/sql/NFP/Gaul.sql</File>
+		<File>CCB_Origin/sql/NFP/Byzantium.sql</File>
+		<File>CCB_Origin/sql/NFP/new_bbg_nfp_babylon.sql</File>
+		<File>CCB_Origin/sql/NFP/Babylon.sql</File>
+		<File>CCB_Origin/sql/NFP/mali_dlc_babylon.sql</File>
+		<File>CCB_Origin/sql/NFP/GreatPeoples.sql</File>
+		<File>CCB_Origin/sql/NFP/Vietnam.sql</File>
+		<File>CCB_Origin/sql/NFP/new_bbg_kublai.sql</File>
+		<File>CCB_Origin/sql/NFP/new_bbg_buildings_preserve.sql</File>
+		<File>CCB_Origin/sql/NFP/new_bbg_nfp_portugal.sql</File>
+		<File>CCB_Origin/sql/LP/lp_rome_caesar.sql</File>
+		<File>CCB_Origin/sql/LP/lp_america_lincoln.sql</File>
+		<File>CCB_Origin/sql/LP/lp_arabia_saladin_sultan.sql</File>
+		<File>CCB_Origin/sql/LP/Sultan.sql</File>
+		<File>CCB_Origin/sql/LP/lp_kongo_mbande.sql</File>
+		<File>CCB_Origin/sql/LP/Tokugawa.sql</File>
+		<File>CCB_Origin/sql/LP/NaderShah.sql</File>
+		<File>CCB_Origin/sql/LP/lp_ottoman_suleiman_magnificent.sql</File>
+		<File>CCB_Origin/sql/LP/QinUnifier.sql</File>
+		<File>CCB_Origin/sql/LP/Yongle.sql</File>
+		<File>CCB_Origin/sql/LP/WuZetian.sql</File>
+		<File>CCB_Origin/sql/LP/WuZetian_nfp.sql</File>
+		<File>CCB_Origin/sql/LP/Theodora.sql</File>
+		<File>CCB_Origin/sql/LP/lp_ludwig.sql</File>
+		<File>CCB_Origin/sql/LP/Sejong.sql</File>
+		<File>CCB_Origin/sql/LP/lp_qin_unifier_xp2.sql</File>
+		<File>CCB_Origin/sql/LP/lp_qin_unifier_xp1.sql</File>
+		<File>CCB_Origin/sql/LP/Ptolemaic.sql</File>
+		<File>CCB_Origin/sql/LP/Ramses.sql</File>
+		<File>CCB_Origin/sql/LP/Sundiata.sql</File>
+		<File>CCB_Origin/sql/LP/Elizabeth.sql</File>
+		<File>CCB_Origin/sql/LP/VictoriaSteam.sql</File>
+		<File>CCB_Origin/sql/LP/Varangian.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Vercingetorix.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Olympia.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Thule.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Te_Kinich.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Trisong.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Ahiram.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Al_Hasan.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Spearthrower.sql</File>
+		<File>CCB_Origin/sql/BBG_Expanded/Resources.sql</File>
+		<File>CCB_Origin/sql/Secret_Societies.sql</File>
+		<File>CCB_Origin/sql/mod_associations/bbs/_bbs_utils.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_cv_2.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_sv_2.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_dv_2.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_cv.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_sv_1.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_dv_1.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_rv_1.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_rv_2.sql</File>
+		<File>CCB_Origin/sql/victories/new_bbg_new_domination.sql</File>
+		<File>CCB_Origin/sql/Settlers/Settlers.sql</File>
+		<File>CCB_Origin/sql/bbcc/bbcc_configvalues.sql</File>
+	    <File>CCB_Origin/sql/bbcc/core_bbcc.sql</File>
+	    <File>CCB_Origin/sql/bbcc/no_rng_bbcc.sql</File>
+	    <File>CCB_Origin/sql/bbcc/cap_only_bbcc.sql</File>
+	</Files>
+</Mod>

@@ -1,0 +1,101 @@
+-- by: iElden
+
+-- Portugal UI (Feitora) nerf
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRADE_GOLD_FROM_FEITORIA' AND Name='Amount';
+
+-- Trade route only give gold yield multiplier.
+-- UPDATE ModifierArguments SET Value='0, 0, 0, 0, 50, 0' WHERE ModifierId='TRAIT_INTERNATIONAL_TRADE_GAIN_ALL_YIELDS' AND Name='Amount';
+
+-- Remove trade route on meet
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_JOAO_III' AND ModifierId='TRAIT_JOAO_TRADE_ROUTE_ON_MEET';
+
+-- ===Give 1 traderoute per era===
+
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId, RunOnce, Permanent)
+    SELECT 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType, 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY', 'BBG_GAME_IS_IN_' || EraType || '_REQUIREMENTS', 1, 1
+    FROM Eras;
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+    SELECT 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType, 'Amount', '1'
+    FROM Eras;
+
+INSERT INTO TraitModifiers(TraitType, ModifierId)
+    SELECT 'TRAIT_LEADER_JOAO_III', 'BBG_GRANT_TRADE_ROUTE_ON_' || EraType
+    FROM Eras;
+
+-- 15/06/23 50% bonus yields on trade routes at Carto (gold), Medieval (culture), Education (science)
+INSERT INTO Modifiers (ModifierId, ModifierType, OwnerRequirementSetId) VALUES
+    ('BBG_PORTUGAL_GAIN_GOLD_ON_INTERNATIONAL_CARTOGRAPHY', 'MODIFIER_PLAYER_ADJUST_INTERNATIONAL_TRADE_ROUTE_YIELD_MODIFIER_WARLORDS', 'BBG_UTILS_PLAYER_HAS_TECH_CARTOGRAPHY'),
+    ('BBG_PORTUGAL_GAIN_SCIENCE_ON_INTERNATIONAL_EDUCATION', 'MODIFIER_PLAYER_ADJUST_INTERNATIONAL_TRADE_ROUTE_YIELD_MODIFIER_WARLORDS', 'BBG_UTILS_PLAYER_HAS_TECH_EDUCATION'),
+    ('BBG_PORTUGAL_GAIN_CULTURE_ON_INTERNATIONAL_MEDIEVAL_FAIRES', 'MODIFIER_PLAYER_ADJUST_INTERNATIONAL_TRADE_ROUTE_YIELD_MODIFIER_WARLORDS', 'BBG_UTILS_PLAYER_HAS_CIVIC_MEDIEVAL_FAIRES_REQSET');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+    ('BBG_PORTUGAL_GAIN_GOLD_ON_INTERNATIONAL_CARTOGRAPHY', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_PORTUGAL_GAIN_GOLD_ON_INTERNATIONAL_CARTOGRAPHY', 'Amount', '50'),
+    ('BBG_PORTUGAL_GAIN_SCIENCE_ON_INTERNATIONAL_EDUCATION', 'YieldType', 'YIELD_SCIENCE'),
+    ('BBG_PORTUGAL_GAIN_SCIENCE_ON_INTERNATIONAL_EDUCATION', 'Amount', '50'),
+    ('BBG_PORTUGAL_GAIN_CULTURE_ON_INTERNATIONAL_MEDIEVAL_FAIRES', 'YieldType', 'YIELD_CULTURE'),
+    ('BBG_PORTUGAL_GAIN_CULTURE_ON_INTERNATIONAL_MEDIEVAL_FAIRES', 'Amount', '50');
+DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_INTERNATIONAL_TRADE_GAIN_ALL_YIELDS';
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
+    ('TRAIT_CIVILIZATION_PORTUGAL', 'BBG_PORTUGAL_GAIN_GOLD_ON_INTERNATIONAL_CARTOGRAPHY'),
+    ('TRAIT_CIVILIZATION_PORTUGAL', 'BBG_PORTUGAL_GAIN_SCIENCE_ON_INTERNATIONAL_EDUCATION'),
+    ('TRAIT_CIVILIZATION_PORTUGAL', 'BBG_PORTUGAL_GAIN_CULTURE_ON_INTERNATIONAL_MEDIEVAL_FAIRES');
+
+-- === Etemenanki ===
+UPDATE ModifierArguments SET Value=1 WHERE ModifierId='ETEMENANKI_SCIENCE_MARSH' AND Name='Amount';
+
+-- 18/12/23 Etemenanki science need a farm to be improved
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+    ('BBG_TILE_IS_FARM_GRASS_FLOODPLAIN_REQSET', 'REQUIREMENTSET_TEST_ALL'),
+    ('BBG_TILE_IS_FARM_PLAINS_FLOODPLAIN_REQSET', 'REQUIREMENTSET_TEST_ALL'),
+    ('BBG_TILE_IS_FARM_DESERT_FLOODPLAIN_REQSET', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+    ('BBG_TILE_IS_FARM_GRASS_FLOODPLAIN_REQSET', 'REQUIRES_PLOT_HAS_GRASS_FLOODPLAINS'),
+    ('BBG_TILE_IS_FARM_GRASS_FLOODPLAIN_REQSET', 'REQUIRES_PLOT_HAS_FARM'),
+    ('BBG_TILE_IS_FARM_PLAINS_FLOODPLAIN_REQSET', 'REQUIRES_PLOT_HAS_PLAINS_FLOODPLAINS'),
+    ('BBG_TILE_IS_FARM_PLAINS_FLOODPLAIN_REQSET', 'REQUIRES_PLOT_HAS_FARM'),
+    ('BBG_TILE_IS_FARM_DESERT_FLOODPLAIN_REQSET', 'REQUIRES_PLOT_HAS_FLOODPLAINS'),
+    ('BBG_TILE_IS_FARM_DESERT_FLOODPLAIN_REQSET', 'REQUIRES_PLOT_HAS_FARM');
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_TILE_IS_FARM_GRASS_FLOODPLAIN_REQSET' WHERE ModifierId='ETEMENANKI_SCIENCE_GRASS_FLOODPLAINS';
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_TILE_IS_FARM_PLAINS_FLOODPLAIN_REQSET' WHERE ModifierId='ETEMENANKI_SCIENCE_PLAINS_FLOODPLAINS';
+UPDATE Modifiers SET SubjectRequirementSetId='BBG_TILE_IS_FARM_DESERT_FLOODPLAIN_REQSET' WHERE ModifierId='ETEMENANKI_SCIENCE_FLOODPLAINS';
+
+--=======================================================================
+--******                       CITY STATE                          ******
+--=======================================================================
+
+-- 09/03/24 Mogadiscio +2 golds flat for external
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+    ('BBG_MINOR_CIV_LISBON_UNIQUE_INFLUENCE_BONUS_GOLD', 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER', 'PLAYER_IS_SUZERAIN'),
+    ('BBG_MINOR_CIV_LISBON_GOLD_BONUS', 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL', NULL);
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+    ('BBG_MINOR_CIV_LISBON_UNIQUE_INFLUENCE_BONUS_GOLD', 'ModifierId', 'BBG_MINOR_CIV_LISBON_GOLD_BONUS'),
+    ('BBG_MINOR_CIV_LISBON_GOLD_BONUS', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_MINOR_CIV_LISBON_GOLD_BONUS', 'Amount', '2');
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
+    ('MINOR_CIV_LISBON_TRAIT', 'BBG_MINOR_CIV_LISBON_UNIQUE_INFLUENCE_BONUS_GOLD');
+
+
+
+--=======================================================================
+--******                         WONDER                            ******
+--=======================================================================
+
+-- Torre de Belem : Cost reduced to 400 [from 460] 
+UPDATE Buildings SET Cost=800 WHERE BuildingType='BUILDING_TORRE_DE_BELEM';
+-- Give one promotion to every naval units (Terracotta no longer work on naval units)
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TORRE_DE_BELEM';
+
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES
+    ('BBG_UNIT_IS_NAVAL_REQUIREMENT', 'REQUIREMENT_UNIT_DOMAIN_MATCHES');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
+    ('BBG_UNIT_IS_NAVAL_REQUIREMENT', 'UnitDomain', 'DOMAIN_SEA');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+    ('BBG_UNIT_IS_NAVAL_REQSET', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+    ('BBG_UNIT_IS_NAVAL_REQSET', 'BBG_UNIT_IS_NAVAL_REQUIREMENT');
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, SubjectRequirementSetId) VALUES
+    ('BBG_TORRE_LEVEL_UP_NAVAL', 'MODIFIER_PLAYER_UNITS_ADJUST_GRANT_EXPERIENCE', 1, 1, 'BBG_UNIT_IS_NAVAL_REQSET');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+    ('BBG_TORRE_LEVEL_UP_NAVAL', 'Amount', -1);
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+    ('BUILDING_TORRE_DE_BELEM', 'BBG_TORRE_LEVEL_UP_NAVAL');

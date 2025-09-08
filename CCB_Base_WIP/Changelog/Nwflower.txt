@@ -1,0 +1,3 @@
+version 1.9.9.1
+[架构]重新分类文件
+[MODID]确定为CCCCCCCC-CCCC-CCCC-BBBB-000000001010
