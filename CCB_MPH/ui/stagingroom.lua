@@ -105,10 +105,12 @@ local b_clean = true
 --------------------------------------------
 local b_mph_game = false;
 local b_spec_game = false;
+local b_bbge_game = false;
 local b_bbg_game = false;
 local b_bbs_game = false;
 local s_bbs_id = "";
 local s_bbg_id = "";
+local s_bbge_id = "";
 local b_mods_ok = false
 
 
@@ -576,8 +578,8 @@ function GetLocalModVersion(id)
 	
 end
 
-function RefreshStatusID(playerID,version,bbs_version,bbg_version)
-	print("RefreshStatusID",playerID,version,bbg_version,bbs_version)
+function RefreshStatusID(playerID,version,bbs_version,bbg_version,bbge_version)
+	print("RefreshStatusID",playerID,version,bbg_version,bbs_version,bbge_version)
 	if GameConfiguration.GetGameState() ~= -901772834 or m_countdownType =="Launch" then
 		return
 	end
@@ -586,6 +588,7 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 	local hostID = Network.GetGameHostPlayerID()
 	local versionBBS = GetLocalModVersion(s_bbs_id)
 	local versionBBG = GetLocalModVersion(s_bbg_id)
+	local versionBBGE = GetLocalModVersion(s_bbge_id)
 	
 	if g_player_status ~= nil then
 		if version == nil then
@@ -597,6 +600,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 						if b_bbg_game == true then
 							player.bbg_id = s_bbg_id
 							player.bbg_v = 0
+						end
+						if b_bbge_game == true then
+							player.bbge_id = s_bbge_id
+							player.bbge_v = 0
 						end
 						if b_bbs_game == true then
 							player.bbs_id = s_bbs_id
@@ -611,6 +618,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 								player.bbg_id = s_bbg_id
 								player.bbg_v = versionBBG
 							end
+							if b_bbge_game == true then
+								player.bbge_id = s_bbge_id
+								player.bbge_v = versionBBGE
+							end
 							if b_bbs_game == true then
 								player.bbs_id = s_bbs_id
 								player.bbs_v = versionBBS
@@ -621,6 +632,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 						player.Status = -1
 						player.Version = 0
 						player.Name = "AI"
+						if b_bbge_game == true then
+							player.bbge_id = s_bbge_id
+							player.bbge_v = 0
+						end
 						if b_bbg_game == true then
 							player.bbg_id = s_bbg_id
 							player.bbg_v = 0
@@ -643,6 +658,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 								tmp.bbg_id = s_bbg_id
 								tmp.bbg_v = versionBBG
 							end
+							if b_bbge_game == true then
+								tmp.bbge_id = s_bbge_id
+								tmp.bbge_v = versionBBGE
+							end
 							if b_bbs_game == true then
 								tmp.bbs_id = s_bbs_id
 								tmp.bbs_v = versionBBS
@@ -653,6 +672,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 							if b_bbg_game == true then
 								tmp.bbg_id = s_bbg_id
 								tmp.bbg_v = 0
+							end
+							if b_bbge_game == true then
+								tmp.bbge_id = s_bbge_id
+								tmp.bbge_v = 0
 							end
 							if b_bbs_game == true then
 								tmp.bbs_id = s_bbs_id
@@ -669,6 +692,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 						tmp.bbg_id = s_bbg_id
 						tmp.bbg_v = 0
 					end
+					if b_bbge_game == true then
+						tmp.bbge_id = s_bbge_id
+						tmp.bbge_v = 0
+					end
 					if b_bbs_game == true then
 						tmp.bbs_id = s_bbs_id
 						tmp.bbs_v = 0
@@ -684,7 +711,8 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 					if Network.IsPlayerConnected(playerID) then
 						player.Status = 2
 						player.Version = tostring(version)	
-						player.bbg_v = tostring(bbg_version)	
+						player.bbg_v = tostring(bbg_version)
+						player.bbge_v = tostring(bbge_version)	
 						player.bbs_v = tostring(bbs_version)	
 						player.Name = PlayerConfigurations[playerID]:GetPlayerName()
 					end
@@ -703,6 +731,7 @@ function ResetStatus()
 	local hostID = Network.GetGameHostPlayerID()
 	local versionBBS = GetLocalModVersion(s_bbs_id)
 	local versionBBG = GetLocalModVersion(s_bbg_id)
+	local versionBBGE = GetLocalModVersion(s_bbge_id)
 	g_player_status = {}
 	local player_ids = GameConfiguration.GetMultiplayerPlayerIDs();
 	for i, iPlayer in ipairs(player_ids) do
@@ -712,6 +741,10 @@ function ResetStatus()
 				if b_bbg_game == true then
 					tmp.bbg_id = s_bbg_id
 					tmp.bbg_v = 0
+				end
+				if b_bbge_game == true then
+					tmp.bbge_id = s_bbge_id
+					tmp.bbge_v = 0
 				end
 				if b_bbs_game == true then
 					tmp.bbs_id = s_bbs_id
@@ -724,6 +757,10 @@ function ResetStatus()
 					tmp.bbg_id = s_bbg_id
 					tmp.bbg_v = versionBBG
 				end
+				if b_bbge_game == true then
+					tmp.bbge_id = s_bbge_id
+					tmp.bbge_v = versionBBGE
+				end
 				if b_bbs_game == true then
 					tmp.bbs_id = s_bbs_id
 					tmp.bbs_v = versionBBS
@@ -735,6 +772,10 @@ function ResetStatus()
 				if b_bbg_game == true then
 					tmp.bbg_id = s_bbg_id
 					tmp.bbg_v = versionBBG
+				end
+				if b_bbge_game == true then
+					tmp.bbge_id = s_bbge_id
+					tmp.bbge_v = versionBBGE
 				end
 				if b_bbs_game == true then
 					tmp.bbs_id = s_bbs_id
@@ -761,6 +802,10 @@ function ResetStatus_SpecificID(playerID)
 				if b_bbg_game == true then
 					player.bbg_id = s_bbg_id
 					player.bbg_v = 0
+				end
+				if b_bbge_game == true then
+					player.bbge_id = s_bbge_id
+					player.bbge_v = 0
 				end
 				if b_bbs_game == true then
 					player.bbs_id = s_bbs_id
@@ -830,6 +875,11 @@ function RefreshStatus()
 							Network.SendChat( msg_CCBError_BBG , -2, player.ID)
 							player.Status = 66
 						end
+						if b_bbge_game == true and tostring(player.bbge_v) ~= tostring(GetLocalModVersion(s_bbge_id)) then
+							local msg_CCBError_BBGE = "[COLOR_Civ6Red]主机BBGE版本: "..tostring(GetLocalModVersion(s_bbge_id)).." 你的版本: "..tostring(player.bbge_v)
+							Network.SendChat( msg_CCBError_BBGE , -2, player.ID)
+							player.Status = 66
+						end
 						if player.Status == 66 then
 							local msg_CCB_Version_Mismatch = "[COLOR_Civ6Red]错误:"..player.Name.." - 版本不匹配."
 							Network.SendChat( msg_CCB_Version_Mismatch ,-2,player.ID)
@@ -838,6 +888,7 @@ function RefreshStatus()
 							local msg_CCB_Version_Match = "[COLOR_Civ6Green]"..player.Name.." - 版本匹配 ."
 							player.Status = 3
 							Network.SendChat( msg_CCB_Version_Match ,-2,player.ID)
+							Network.SendChat( s_bbge_id ,-2,player.ID)
 						end
 				end				
 				if player.Status == 0 then
@@ -878,7 +929,8 @@ function SendVersion()
 	if localID ~= hostID and b_mph_game == true then
 		local bbs_version = GetLocalModVersion(s_bbs_id)
 		local bbg_version = GetLocalModVersion(s_bbg_id)
-		Network.SendChat(".mph_ui_modversion_"..tostring(g_version).."_BBM_"..tostring(bbs_version).."_BBG_"..tostring(bbg_version),-2,hostID)
+		local bbge_version = GetLocalModVersion(s_bbge_id)
+		Network.SendChat(".mph_ui_modversion_"..tostring(g_version).."_BBM_"..tostring(bbs_version).."_BBG_"..tostring(bbg_version).."_BBGE_"..tostring(bbge_version),-2,hostID)
 	end
 end
 
@@ -1558,6 +1610,7 @@ function Refresh()
 	GameConfiguration.SetValue("MOD_BSM_ID",false)
 	GameConfiguration.SetValue("MOD_BBS_ID",false)
 	GameConfiguration.SetValue("MOD_BBG_ID",false)
+	GameConfiguration.SetValue("MOD_BBGE_ID",false)
 	GameConfiguration.SetValue("MOD_MPH_ID",false)
 	local enabledMods = GameConfiguration.GetEnabledMods();
 	for _, curMod in ipairs(enabledMods) do
@@ -1565,14 +1618,17 @@ function Refresh()
 		if curMod.Id == "3291a787-4a93-445c-998d-e22034ab15b3" or curMod.Id == "c6e5ad32-0600-4a98-a7cd-5854a1abcaaf" then
 			GameConfiguration.SetValue("MOD_BSM_ID",true)
 		end			
-		if curMod.Id == "c88cba8b-8311-4d35-90c3-51a4a5d66540" then
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then
 			GameConfiguration.SetValue("MOD_BBS_ID",true)
 		end		
-		if curMod.Id == "cb84074d-5007-4207-b662-c35a5f7be240" or curMod.Id == "cb84074d-5007-4207-b662-c35a5f7be230" then
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05" or curMod.Id == "cb84074d-5007-4207-b662-c35a5f7be230" then
 			GameConfiguration.SetValue("MOD_BBG_ID",true)
 		end				
-		if curMod.Id == "619ac86e-d99d-4bf3-b8f0-8c5b8c402567" then
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" then
 			GameConfiguration.SetValue("MOD_MPH_ID",true)
+		end
+		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" then
+			GameConfiguration.SetValue("MOD_BBGE_ID",true)
 		end															 	 
 	end	
 	
@@ -4104,10 +4160,12 @@ function OnMultiplayerChat( fromPlayer, toPlayer, text, eTargetType )
 	if string.sub(text,1,18) == ".mph_ui_modversion"  then --and toPlayer == Network.GetGameHostPlayerID()
 		local indexBBSs, indexBBSe = string.find(text,"_BBM_")
 		local indexBBGs, indexBBGe = string.find(text,"_BBG_")
+		local indexBBGEs, indexBBGEe = string.find(text,"_BBGE_")
 		local mph_version = string.sub(text,20,indexBBSs-1)
 		local bbs_version = string.sub(text,indexBBSe+1,indexBBGs-1)
-		local bbg_version = string.sub(text, indexBBGe+1)
-		RefreshStatusID(fromPlayer,mph_version,bbs_version,bbg_version)
+		local bbg_version = string.sub(text, indexBBGe+1,indexBBGEs-1)
+		local bbge_version = string.sub(text,indexBBGEe+1)
+		RefreshStatusID(fromPlayer,mph_version,bbs_version,bbg_version,bbge_version)
 
 	end
 	
@@ -7078,51 +7136,81 @@ end
 
 -- ===========================================================================
 function BuildAdditionalContent()
-	m_modsIM:ResetInstances();
-	local enabledMods = GameConfiguration.GetEnabledMods();
-	b_mph_game = false
-	b_spec_game = false
-	isCivPlayerName = false
-	local count = 0
-	for _, curMod in ipairs(enabledMods) do
-		count = count + 1
-		local modControl = m_modsIM:GetInstance();
-		local modTitleStr : string = curMod.Title;
-		-- Color unofficial mods to call them out.
-		if curMod.Id == "6e52c135-00e7-44b5-a7de-6588a4f38797" then --未知
-			isCivPlayerName = true
-			modTitleStr =  "[COLOR_RED]".. modTitleStr .. "[ENDCOLOR]";
-		end
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" then --MPH now CCBMPH 1.0 on
-			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
-			b_mph_game = true
-		end
-		if curMod.Id == "3291a787-4a93-445c-998d-e22034ab15b3" or curMod.Id == "c6e5ad32-0600-4a98-a7cd-5854a1abcaaf" then --BSMP BSM 不需要改变
-			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR]";
-			b_spec_game = true
-		end		
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --BBM now CCBmap 1.0 on
-			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
-			b_bbs_game = true
-			s_bbs_id = curMod.Id
-		end	
-		if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05"  --BBG now CCB1.0 on
-			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be250" --BBG beta
-			or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be254" then --BBG low version?
-			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
-			b_bbg_game = true
-			s_bbg_id = curMod.Id
-		end		
-		if(not curMod.Official) then
-			modTitleStr = ColorString_ModGreen .. modTitleStr .. "[ENDCOLOR]";
-		end
-		modControl.ModTitle:SetText(modTitleStr);
-	end
+    m_modsIM:ResetInstances();
+    local enabledMods = GameConfiguration.GetEnabledMods();
+    b_mph_game = false
+    b_spec_game = false
+	b_bbge_game = false
+    isCivPlayerName = false
+    local count = 0
+    
+    for _, curMod in ipairs(enabledMods) do
+        count = count + 1
+        local modControl = m_modsIM:GetInstance();
+        
+        -- 确保 curMod.Title 不为 nil //防止UI崩坏（调试）需要
+        local modTitleStr = curMod.Title or "Unknown Mod"
+        
+        -- Color unofficial mods to call them out.
+        if curMod.Id == "6e52c135-00e7-44b5-a7de-6588a4f38797" then --未知
+            isCivPlayerName = true
+            modTitleStr = "[COLOR_RED]".. modTitleStr .. "[ENDCOLOR]";
+        end
+        if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e20" then --MPH now CCBMPH 1.0 on
+            local version = GetLocalModVersion(curMod.Id)
+            if version then
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: ".. version ..")";
+            else
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: unknown)";
+            end
+            b_mph_game = true
+        end
+        if curMod.Id == "3291a787-4a93-445c-998d-e22034ab15b3" or curMod.Id == "c6e5ad32-0600-4a98-a7cd-5854a1abcaaf" then --BSMP BSM 不需要改变
+            modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR]";
+            b_spec_game = true
+        end
+        if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e10" then --BBM now CCBmap 1.0 on
+            local version = GetLocalModVersion(curMod.Id)
+            if version then
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: ".. version ..")";
+            else
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: unknown)";
+            end
+            b_bbs_game = true
+            s_bbs_id = curMod.Id
+        end
+        
+        if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e05"  --BBG now CCB Base on
+            or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be250" --BBG beta
+            or curMod.Id == "cb84075d-5007-4207-b662-c35a5f7be254" then --BBG low version?
+            local version = GetLocalModVersion(curMod.Id)
+            if version then
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: ".. version ..")";
+            else
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: unknown)";
+            end
+            b_bbg_game = true
+            s_bbg_id = curMod.Id
+        end
+        if curMod.Id == "8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" then --BBM now CCBmap 1.0 on
+            local version = GetLocalModVersion(curMod.Id)
+            if version then
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: ".. version ..")";
+            else
+                modTitleStr = "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: unknown)";
+            end
+            b_bbge_game = true
+            s_bbge_id = curMod.Id
+        end
+        if(not curMod.Official) then
+            modTitleStr = ColorString_ModGreen .. modTitleStr .. "[ENDCOLOR]";
+        end
+        
+        modControl.ModTitle:SetText(modTitleStr);
+    end
 
-
-
-	Controls.AdditionalContentStack:CalculateSize();
-	Controls.ParametersScrollPanel:CalculateSize();
+    Controls.AdditionalContentStack:CalculateSize();
+    Controls.ParametersScrollPanel:CalculateSize();
 end
 
 -- ===========================================================================
